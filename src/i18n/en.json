@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "en"
+  },
+  "meta": {
+    "title": "mybackhurts: a tiny desk app that gets you off your chair",
+    "description": "mybackhurts is a tiny app for Mac and Windows that reminds you to get up every 45 minutes and walks you through two or three short exercises. It can count your reps with the webcam, on-device. Free, no account.",
+    "ogTitle": "mybackhurts: your back called, it wants a word",
+    "ogDescription": "A tiny app for Mac and Windows that gets you off your chair every 45 minutes. Reps counted on-device. No video leaves your computer. Free, no account.",
+    "url": "https://mybackhurts.app/",
+    "ogImageAlt": "mybackhurts: “Your back called. It wants a word.” A stick figure slumped over a laptop at a desk says “ow.”"
+  },
+  "og": {
+    "tape": "TAKE A BREAK",
+    "headline1": "Your back called.",
+    "headline2": "It wants a word.",
+    "tagline1": "A tiny app for Mac and Windows that gets you",
+    "tagline2": "off your chair every 45 minutes.",
+    "footerNote": "reps counted on-device. no video leaves your computer.",
+    "noteOw": "ow."
+  },
+  "a11y": {
+    "skipLink": "Skip to content"
+  },
+  "nav": {
+    "ariaLabel": "Main",
+    "wordmarkAria": "mybackhurts home",
+    "how": "How",
+    "moves": "Moves",
+    "privacy": "Privacy",
+    "cta": "Get it",
+    "languageLabel": "Language",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "Your back called.<br />It wants <span class=\"scribble\">a word.</span>",
+    "lede": "<strong>mybackhurts</strong> lives in your menu bar or system tray, nudges you every 45 minutes and walks you through a few quick moves. The camera stays off unless you ask it to count your reps.",
+    "secondaryCta": "or see the moves ↓",
+    "figureTitle": "A stick figure slumped over a laptop, who sits up and stretches, then slumps again.",
+    "noteOw": "ow.",
+    "noteBetter": "better."
+  },
+  "notification": {
+    "ariaLabel": "A reminder from mybackhurts",
+    "appLine": "mybackhurts · now",
+    "title": "Time to move",
+    "body": "Chair Squat, Arm Circles, Neck Side Stretch.",
+    "start": "Start",
+    "snooze": "Start in 10 min",
+    "afterCall": "Start after my next call",
+    "skip": "Skip"
+  },
+  "tapeStrip": "stand up ✶ roll your shoulders ✶ unclench your jaw ✶ drink some water ✶ look at something far away ✶ stand up ✶ roll your shoulders ✶ unclench your jaw ✶ drink some water ✶ look at something far away ✶",
+  "preview": {
+    "title": "See it in 24 seconds.",
+    "note": "no sound. it's an office.",
+    "label": "App preview: a webcam session counts chair squats, then a neck stretch hold, the session summary and the weekly stats.",
+    "play": "Play video",
+    "pause": "Pause video"
+  },
+  "how": {
+    "title": "The whole routine,<br />in three panels.",
+    "panel1Title": "Every 45 minutes",
+    "panel1Body": "Only during your work hours. Never mid-call.",
+    "panel3Title": "Two or three moves",
+    "panel3Body": "Picked for you. Swap any you don't like.",
+    "panel4Doodle": "brb",
+    "panel4Title": "Walked away? Counts.",
+    "panel4Body": "5 minutes away from the keyboard counts as a break."
+  },
+  "menu": {
+    "ariaLabel": "The menu bar menu",
+    "dayTime": "Fri 14:02",
+    "nextReminder": "Next reminder at 14:45",
+    "goal": "2 of 4 breaks today",
+    "startNow": "Start now",
+    "snooze": "Start in 10 min",
+    "pause": "Pause",
+    "library": "Exercise Library",
+    "stats": "Stats",
+    "help": "Help",
+    "settings": "Settings…",
+    "quit": "Quit",
+    "note": "lives up here. no Dock icon."
+  },
+  "moves": {
+    "title": "Moves you can do next to your desk.",
+    "subtitle": "Office clothes and headphones welcome.",
+    "posture": {
+      "label": "Show the standing or seated moves",
+      "standing": "Standing",
+      "seated": "Seated"
+    },
+    "camera": "Counted by the camera",
+    "squat": {
+      "name": "Chair Squat",
+      "counter": "/ 10 reps",
+      "figureTitle": "A stick figure doing a chair squat.",
+      "description": "Sit back, tap the chair, stand tall."
+    },
+    "calf": {
+      "name": "Standing Calf Raise",
+      "counter": "/ 15 reps",
+      "figureTitle": "A stick figure rising onto toes for a calf raise.",
+      "description": "Rise onto your toes, then lower slowly."
+    },
+    "seatedCalf": {
+      "name": "Seated Calf Raise",
+      "counter": "/ 45 s",
+      "figureTitle": "A stick figure on a stool lifting its heels.",
+      "description": "Heels up, heels down, without leaving your chair."
+    },
+    "march": {
+      "name": "Standing March",
+      "counter": "/ 20 reps",
+      "figureTitle": "A stick figure marching on the spot with its knees up high.",
+      "description": "Knees up high, arms swinging, one side then the other."
+    },
+    "seatedMarch": {
+      "name": "Seated March",
+      "counter": "/ 45 s",
+      "figureTitle": "A stick figure on a stool lifting one knee, then the other.",
+      "description": "Sit tall and lift one knee, then the other."
+    },
+    "arms": {
+      "name": "Arm Circles",
+      "counter": "/ 10 reps",
+      "figureTitle": "A stick figure drawing circles with both arms.",
+      "description": "Arms out, small circles, a little bigger each time."
+    },
+    "chest": {
+      "name": "Chest Opener",
+      "counter": "/ 20 s",
+      "figureTitle": "A stick figure raising its arms into a goalpost.",
+      "description": "Arms up like a goalpost, squeeze your shoulder blades, hold 20 seconds."
+    },
+    "shrugs": {
+      "name": "Shoulder Shrugs",
+      "counter": "/ 12 reps",
+      "figureTitle": "A stick figure lifting and lowering both shoulders.",
+      "description": "Shoulders up to your ears, then let them drop."
+    },
+    "neck": {
+      "name": "Neck Side Stretch",
+      "counter": "s <span>left</span>",
+      "figureTitle": "A stick figure tilting its head for a neck side stretch.",
+      "description": "Ear to shoulder, 15 seconds each side."
+    },
+    "wrist": {
+      "name": "Wrist & Forearm Stretch",
+      "counter": "s <span>left</span>",
+      "figureTitle": "A stick figure reaching one arm out and gently pulling its fingers back.",
+      "description": "Arm out, fingers up, ease them back with the other hand. 15 seconds a side."
+    },
+    "eye": {
+      "name": "20-20-20 Eye Break",
+      "counter": "/ 20 s",
+      "figureTitle": "A stick figure on a stool looking out of a far window.",
+      "description": "Look at something far away for 20 seconds. Blinking is allowed."
+    },
+    "pack": {
+      "title": "+3 moves",
+      "label": "in the Supporter pack",
+      "move1": "Seated Spinal Twist",
+      "move2": "Standing Quad Stretch",
+      "move3": "Overhead Side Reach"
+    },
+    "more": "Show all moves",
+    "poster": {
+      "cut": "cut here",
+      "link": "Print the cheat sheet",
+      "meta": "PDF · one page"
+    }
+  },
+  "modes": {
+    "title": "Count your own reps, or let the camera count.",
+    "simpleLabel": "Simple · the default",
+    "spaceKey": "space",
+    "simpleTitle": "You count. It keeps time.",
+    "simpleBody": "A timer and a <b>+1 rep</b> button (or Space). The camera never turns on.",
+    "webcamLabel": "Webcam · opt in",
+    "hint": "step back a little",
+    "webcamTitle": "It counts. You just move.",
+    "webcamBody": "An on-device pose model tracks your joints to count reps and holds, with form hints.",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "No video stored, no video sent, on-device, zero network requests.",
+    "stampRing": "NO VIDEO STORED ✶ NO VIDEO SENT ✶ ON-DEVICE ✶",
+    "stampZero": "0",
+    "stampNetwork": "NETWORK",
+    "stampRequests": "REQUESTS",
+    "item1": "Frames are analyzed in memory, then thrown away.",
+    "item2": "No network requests of its own.",
+    "purchases": "Purchases go through the App Store or Microsoft Store.",
+    "item3": "Your stats stay on your computer, unless you export a CSV.",
+    "verify": "don't trust us? check with <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> or <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "A record of every time you stood up.",
+    "chartTitle": "An example chart of minutes moved per day over one week.",
+    "days": {
+      "mon": "M",
+      "tue": "T",
+      "wed": "W",
+      "thu": "T",
+      "fri": "F",
+      "sat": "S",
+      "sun": "S"
+    },
+    "bestDay": "best day!",
+    "caption": "minutes moved, last 7 days",
+    "suggestion": "You skip most 3 pm reminders. Pause that hour?",
+    "suggestionApply": "Apply",
+    "streak": "5 day streak",
+    "freeze": "missed a day? one freeze a week.",
+    "stickersLabel": "Stickers for showing up",
+    "stickers": {
+      "firstBreak": "First break",
+      "weekStreak": "Week streak",
+      "monthStreak": "Month streak"
+    }
+  },
+  "faq": {
+    "title": "Things people<br />usually ask.",
+    "scheduleQuestion": "Will it bother me at 11pm on a Sunday?",
+    "scheduleAnswer": "Only if you say you work then. You pick the hours, days and interval.",
+    "countingQuestion": "How good is the rep counting?",
+    "countingAnswer": "Decent, not magic. Light and camera position matter, and calf raises often fall back to a timer. If the camera loses you, one click lets you count it yourself.",
+    "officeQuestion": "I'm in an open office. Will I look weird?",
+    "officeAnswer": "A little. Set posture to Seated and every break works from your chair.",
+    "callQuestion": "How does it know I'm on a call?",
+    "callAnswer": "It checks whether another app is using your camera or microphone, or is full screen. It never opens either one itself, so it never asks for permission.",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "Stand up.<br /><span>Seriously, now.</span>",
+    "body": "Then grab the app, so a web page doesn't have to nag you.",
+    "small": "Free · no account · 17 languages"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "Your receipt",
+    "reminders": "Reminders",
+    "moves": "The core moves",
+    "webcam": "Webcam counting",
+    "stats": "Stats + stickers",
+    "subscription": "Subscription",
+    "account": "Account",
+    "free": "Free",
+    "none": "None",
+    "once": "Once",
+    "supporter": "Supporter (optional)",
+    "supporterDetails": "3 extra moves, teal ink, a thank-you figure, your year in squares, every future pack",
+    "total": "Total",
+    "totalValue": "0.00",
+    "coffee": "less than a coffee",
+    "thanks": "thanks for standing up"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts, <span class=\"credit\">made by <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "Not medical advice. Move gently, stop if anything hurts.",
+    "privacy": "Privacy policy",
+    "terms": "Terms of use",
+    "contact": "Contact",
+    "openSource": "This site is open source"
+  },
+  "notFound": {
+    "metaTitle": "Page not found · mybackhurts",
+    "title": "This page<br />threw its back out.",
+    "body": "Nothing here. Stand up, stretch, then head back to the start.",
+    "home": "Back to the start"
+  },
+  "poster": {
+    "title": "Stand up. Do these.",
+    "subtitle": "Moves for the space next to your desk. Tape this to your monitor.",
+    "neckDose": "15 s per side",
+    "handNote": "yes, right now."
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "Fine. 10 minutes. We're counting.",
+      "afterCall": "Go. We'll wait.",
+      "skip": "Noted. Your back will remember this."
+    },
+    "themeNames": {
+      "system": "system",
+      "light": "light",
+      "dark": "dark"
+    },
+    "themeAriaTemplate": "Theme: {current}. Switch to {next}",
+    "themeTitleTemplate": "Theme: {current}",
+    "themeLabels": {
+      "systemAria": "Theme: system. Switch to light",
+      "systemTitle": "Theme: system"
+    },
+    "holdSides": {
+      "left": "left",
+      "right": "right"
+    }
+  }
+}

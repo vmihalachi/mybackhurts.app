@@ -1,0 +1,21 @@
+# Version updates are paused (open-pull-requests-limit: 0); remove those lines to resume.
+# Weekly npm bumps and monthly Actions bumps, each grouped into one pull request that deploy.yml checks.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    open-pull-requests-limit: 0
+    schedule:
+      interval: weekly
+    groups:
+      npm:
+        patterns: ["*"]
+
+  - package-ecosystem: github-actions
+    directory: /
+    open-pull-requests-limit: 0
+    schedule:
+      interval: monthly
+    groups:
+      actions:
+        patterns: ["*"]

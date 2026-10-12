@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "da"
+  },
+  "meta": {
+    "title": "mybackhurts: en lille skrivebordsapp, der får dig op af stolen",
+    "description": "mybackhurts er en lille app til Mac og Windows, der minder dig om at rejse dig hvert 45. minut og guider dig gennem to eller tre korte øvelser. Den kan tælle dine gentagelser med webcam, direkte på enheden. Gratis, ingen konto.",
+    "ogTitle": "mybackhurts: din ryg ringede, den vil tale med dig",
+    "ogDescription": "En lille app til Mac og Windows, der får dig op af stolen hvert 45. minut. Gentagelser bliver talt på enheden. Ingen video forlader din computer. Gratis, ingen konto.",
+    "url": "https://mybackhurts.app/da/",
+    "ogImageAlt": "mybackhurts: “Din ryg ringede. Den vil tale med dig.” En pindemand hænger sammensunket over en bærbar ved et skrivebord og siger “av.”"
+  },
+  "og": {
+    "tape": "HOLD EN PAUSE",
+    "headline1": "Din ryg ringede.",
+    "headline2": "Den vil tale med dig.",
+    "tagline1": "En lille app til Mac og Windows, der får dig",
+    "tagline2": "op af stolen hvert 45. minut.",
+    "footerNote": "gentagelser tælles på enheden. ingen video forlader din computer.",
+    "noteOw": "av."
+  },
+  "a11y": {
+    "skipLink": "Hop til indhold"
+  },
+  "nav": {
+    "ariaLabel": "Hoved",
+    "wordmarkAria": "mybackhurts forside",
+    "how": "Sådan",
+    "moves": "Øvelser",
+    "privacy": "Privatliv",
+    "cta": "Hent den",
+    "languageLabel": "Sprog",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "Din ryg ringede.<br />Den vil <span class=\"scribble\">tale med dig.</span>",
+    "lede": "<strong>mybackhurts</strong> bor i din menulinje eller dit systembakke-område, skubber til dig hvert 45. minut og guider dig gennem nogle hurtige øvelser. Kameraet forbliver slukket, medmindre du beder det tælle dine gentagelser.",
+    "secondaryCta": "eller se øvelserne ↓",
+    "figureTitle": "En pindemand, der hænger sammensunket over en bærbar, sætter sig op og strækker sig, og så synker sammen igen.",
+    "noteOw": "av.",
+    "noteBetter": "bedre."
+  },
+  "notification": {
+    "ariaLabel": "En påmindelse fra mybackhurts",
+    "appLine": "mybackhurts · nu",
+    "title": "Tid til at bevæge sig",
+    "body": "Stolesquat, Armcirkler, Nakkestræk til siden.",
+    "start": "Start",
+    "snooze": "Start om 10 min",
+    "afterCall": "Start efter mit næste opkald",
+    "skip": "Spring over"
+  },
+  "tapeStrip": "rejs dig ✶ rul skuldrene ✶ slap af i kæben ✶ drik noget vand ✶ kig på noget langt væk ✶ rejs dig ✶ rul skuldrene ✶ slap af i kæben ✶ drik noget vand ✶ kig på noget langt væk ✶",
+  "preview": {
+    "title": "Se det på 24 sekunder.",
+    "note": "ingen lyd. det er et kontor.",
+    "label": "App-forhåndsvisning: en webcam-session tæller stolesquats, så et nakkestræk, sessionsopsummeringen og ugens statistik.",
+    "play": "Afspil video",
+    "pause": "Sæt video på pause"
+  },
+  "how": {
+    "title": "Hele rutinen,<br />i tre ruder.",
+    "panel1Title": "Hvert 45. minut",
+    "panel1Body": "Kun i din arbejdstid. Aldrig midt i et opkald.",
+    "panel3Title": "To eller tre øvelser",
+    "panel3Body": "Valgt til dig. Byt dem, du ikke bryder dig om.",
+    "panel4Doodle": "straks tilbage",
+    "panel4Title": "Gået væk? Det tæller.",
+    "panel4Body": "5 minutter væk fra tastaturet tæller som en pause."
+  },
+  "menu": {
+    "ariaLabel": "Menuen i menulinjen",
+    "dayTime": "Fre 14:02",
+    "nextReminder": "Næste påmindelse kl. 14:45",
+    "goal": "2 af 4 pauser i dag",
+    "startNow": "Start nu",
+    "snooze": "Start om 10 min",
+    "pause": "Pause",
+    "library": "Øvelsesbibliotek",
+    "stats": "Statistik",
+    "help": "Hjælp",
+    "settings": "Indstillinger…",
+    "quit": "Afslut",
+    "note": "bor heroppe. intet ikon i Dock."
+  },
+  "moves": {
+    "title": "Øvelser, du kan lave ved dit skrivebord.",
+    "subtitle": "Kontortøj og høretelefoner er velkomne.",
+    "posture": {
+      "label": "Vis de stående eller siddende øvelser",
+      "standing": "Stående",
+      "seated": "Siddende"
+    },
+    "camera": "Talt af kameraet",
+    "squat": {
+      "name": "Stolesquat",
+      "counter": "/ 10 gent.",
+      "figureTitle": "En pindemand, der laver en stolesquat.",
+      "description": "Sæt dig tilbage, rør stolen, rejs dig rank."
+    },
+    "calf": {
+      "name": "Stående lægløft",
+      "counter": "/ 15 gent.",
+      "figureTitle": "En pindemand, der kommer op på tæerne til et lægløft.",
+      "description": "Kom op på tæerne, og sænk dig så langsomt."
+    },
+    "seatedCalf": {
+      "name": "Siddende lægløft",
+      "counter": "/ 45 s",
+      "figureTitle": "En pindemand på en taburet, der løfter hælene.",
+      "description": "Hælene op, hælene ned, uden at forlade stolen."
+    },
+    "march": {
+      "name": "Stående marchering",
+      "counter": "/ 20 gent.",
+      "figureTitle": "En pindemand, der marcherer på stedet med knæene højt oppe.",
+      "description": "Knæene højt, armene svinger, først den ene side, så den anden."
+    },
+    "seatedMarch": {
+      "name": "Siddende marchering",
+      "counter": "/ 45 s",
+      "figureTitle": "En pindemand på en taburet, der løfter det ene knæ og så det andet.",
+      "description": "Sid rank, og løft det ene knæ og så det andet."
+    },
+    "arms": {
+      "name": "Armcirkler",
+      "counter": "/ 10 gent.",
+      "figureTitle": "En pindemand, der tegner cirkler med begge arme.",
+      "description": "Arme ud, små cirkler, lidt større hver gang."
+    },
+    "chest": {
+      "name": "Bryståbner",
+      "counter": "/ 20 s",
+      "figureTitle": "En pindemand, der løfter armene op som en målstolpe.",
+      "description": "Arme op som en målstolpe, pres skulderbladene sammen, hold i 20 sekunder."
+    },
+    "shrugs": {
+      "name": "Skuldertræk",
+      "counter": "/ 12 gent.",
+      "figureTitle": "En pindemand, der løfter og sænker begge skuldre.",
+      "description": "Skuldrene op til ørerne, og lad dem så falde."
+    },
+    "neck": {
+      "name": "Nakkestræk til siden",
+      "counter": "s <span>venstre</span>",
+      "figureTitle": "En pindemand, der vipper hovedet til et nakkestræk til siden.",
+      "description": "Øre mod skulder, 15 sekunder på hver side."
+    },
+    "wrist": {
+      "name": "Håndleds- og underarmsstræk",
+      "counter": "s <span>venstre</span>",
+      "figureTitle": "En pindemand, der strækker den ene arm ud og blidt trækker fingrene tilbage.",
+      "description": "Arm ud, fingrene op, træk dem blidt tilbage med den anden hånd. 15 sekunder pr. side."
+    },
+    "eye": {
+      "name": "20-20-20 øjenpause",
+      "counter": "/ 20 s",
+      "figureTitle": "En pindemand på en taburet, der kigger ud af et vindue langt væk.",
+      "description": "Kig på noget langt væk i 20 sekunder. Du må gerne blinke."
+    },
+    "pack": {
+      "title": "+3 øvelser",
+      "label": "i Supporter-pakken",
+      "move1": "Siddende rygvrid",
+      "move2": "Stående forlårsstræk",
+      "move3": "Sidestræk over hovedet"
+    },
+    "more": "Vis alle øvelser",
+    "poster": {
+      "cut": "klip her",
+      "link": "Print snydearket",
+      "meta": "PDF · én side"
+    }
+  },
+  "modes": {
+    "title": "Tæl dine egne gentagelser, eller lad kameraet tælle.",
+    "simpleLabel": "Enkel · standard",
+    "spaceKey": "mellemrum",
+    "simpleTitle": "Du tæller. Den holder tiden.",
+    "simpleBody": "En timer og en <b>+1 gentagelse</b>-knap (eller mellemrum). Kameraet tændes aldrig.",
+    "webcamLabel": "Webcam · fra og til efter valg",
+    "hint": "gå lidt tilbage",
+    "webcamTitle": "Den tæller. Du bevæger dig bare.",
+    "webcamBody": "En positurmodel på enheden sporer dine led for at tælle gentagelser og holdøvelser, med tips til din form.",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "Ingen video gemt, ingen video sendt, på enheden, nul netværksanmodninger.",
+    "stampRing": "INGEN VIDEO GEMT ✶ INGEN VIDEO SENDT ✶ PÅ ENHEDEN ✶",
+    "stampZero": "0",
+    "stampNetwork": "NETVÆRK",
+    "stampRequests": "ANMODNINGER",
+    "item1": "Billeder analyseres i hukommelsen og smides så væk.",
+    "item2": "Ingen netværksanmodninger af egen drift.",
+    "purchases": "Køb går via App Store eller Microsoft Store.",
+    "item3": "Din statistik bliver på din computer, medmindre du eksporterer en CSV.",
+    "verify": "stoler du ikke på os? tjek med <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> eller <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "En oversigt over hver gang, du rejste dig.",
+    "chartTitle": "Et eksempeldiagram over bevægede minutter pr. dag i løbet af en uge.",
+    "days": {
+      "mon": "M",
+      "tue": "T",
+      "wed": "O",
+      "thu": "T",
+      "fri": "F",
+      "sat": "L",
+      "sun": "S"
+    },
+    "bestDay": "bedste dag!",
+    "caption": "minutter bevæget, seneste 7 dage",
+    "suggestion": "Du springer de fleste påmindelser kl. 15 over. Sæt den time på pause?",
+    "suggestionApply": "Anvend",
+    "streak": "5 dages stribe",
+    "freeze": "glemt en dag? én fryser om ugen.",
+    "stickersLabel": "Klistermærker for at møde op",
+    "stickers": {
+      "firstBreak": "Første pause",
+      "weekStreak": "Ugestribe",
+      "monthStreak": "Månedsstribe"
+    }
+  },
+  "faq": {
+    "title": "Ting, folk<br />som regel spørger om.",
+    "scheduleQuestion": "Generer den mig kl. 23 en søndag?",
+    "scheduleAnswer": "Kun hvis du siger, at du arbejder da. Du vælger timer, dage og interval.",
+    "countingQuestion": "Hvor god er optællingen af gentagelser?",
+    "countingAnswer": "Habil, ikke magi. Lys og kameraplacering betyder noget, og lægløft falder ofte tilbage til en timer. Hvis kameraet mister dig, kan du med et klik tælle selv.",
+    "officeQuestion": "Jeg sidder i et åbent kontorlandskab. Ser jeg mærkelig ud?",
+    "officeAnswer": "Lidt. Sæt stilling til Siddende, og alle pauser virker fra din stol.",
+    "callQuestion": "Hvordan ved den, at jeg er i et opkald?",
+    "callAnswer": "Den tjekker, om en anden app bruger dit kamera eller din mikrofon, eller kører i fuld skærm. Den åbner aldrig nogen af dem selv, så den beder aldrig om tilladelse.",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "Rejs dig.<br /><span>Helt seriøst, nu.</span>",
+    "body": "Hent så appen, så en hjemmeside ikke behøver at pusle til dig.",
+    "small": "Gratis · ingen konto · 17 sprog"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "Din kvittering",
+    "reminders": "Påmindelser",
+    "moves": "Kerneøvelserne",
+    "webcam": "Webcam-optælling",
+    "stats": "Statistik + klistermærker",
+    "subscription": "Abonnement",
+    "account": "Konto",
+    "free": "Gratis",
+    "none": "Ingen",
+    "once": "Én gang",
+    "supporter": "Supporter (valgfri)",
+    "supporterDetails": "3 ekstra øvelser, blågrønt blæk, en tak-figur, dit år i firkanter, alle fremtidige pakker",
+    "total": "I alt",
+    "totalValue": "0,00",
+    "coffee": "mindre end en kop kaffe",
+    "thanks": "tak, fordi du rejste dig"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts, <span class=\"credit\">lavet af <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "Ikke lægelig rådgivning. Bevæg dig forsigtigt, og stop, hvis noget gør ondt.",
+    "privacy": "Privatlivspolitik",
+    "terms": "Brugsvilkår",
+    "contact": "Kontakt",
+    "openSource": "Dette websted er open source"
+  },
+  "notFound": {
+    "metaTitle": "Siden blev ikke fundet · mybackhurts",
+    "title": "Denne side<br />har fået hold i ryggen.",
+    "body": "Her er intet. Rejs dig, stræk dig, og gå så tilbage til start.",
+    "home": "Tilbage til start"
+  },
+  "poster": {
+    "title": "Rejs dig. Lav de her.",
+    "subtitle": "Øvelser til pladsen ved siden af dit skrivebord. Tape den op på din skærm.",
+    "neckDose": "15 s pr. side",
+    "handNote": "ja, lige nu."
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "Fint. 10 minutter. Vi tæller.",
+      "afterCall": "Af sted. Vi venter.",
+      "skip": "Noteret. Din ryg husker det her."
+    },
+    "themeNames": {
+      "system": "system",
+      "light": "lys",
+      "dark": "mørk"
+    },
+    "themeAriaTemplate": "Tema: {current}. Skift til {next}",
+    "themeTitleTemplate": "Tema: {current}",
+    "themeLabels": {
+      "systemAria": "Tema: system. Skift til lys",
+      "systemTitle": "Tema: system"
+    },
+    "holdSides": {
+      "left": "venstre",
+      "right": "højre"
+    }
+  }
+}

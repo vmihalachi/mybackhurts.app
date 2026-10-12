@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "zh-Hans"
+  },
+  "meta": {
+    "title": "mybackhurts：一个让你离开椅子的桌面小应用",
+    "description": "mybackhurts 是一款 Mac 和 Windows 小应用，每 45 分钟提醒你起身，并带你做两三个简短的动作。它可以用摄像头在本机上为你数次数。免费，无需账号。",
+    "ogTitle": "mybackhurts：你的后背来电了，想跟你聊聊",
+    "ogDescription": "一款 Mac 和 Windows 小应用，每 45 分钟让你离开椅子。次数在本机统计，视频不会离开你的电脑。免费，无需账号。",
+    "url": "https://mybackhurts.app/zh-hans/",
+    "ogImageAlt": "mybackhurts：“你的后背来电了。它想跟你聊聊。”一个火柴人趴在桌上的笔记本电脑前，喊着“哎哟”。"
+  },
+  "og": {
+    "tape": "休息一下",
+    "headline1": "你的后背来电了。",
+    "headline2": "它想跟你聊聊。",
+    "tagline1": "一款 Mac 和 Windows 小应用，每 45 分钟",
+    "tagline2": "让你离开椅子。",
+    "footerNote": "次数在本机统计。视频不会离开你的电脑。",
+    "noteOw": "哎哟。"
+  },
+  "a11y": {
+    "skipLink": "跳到正文"
+  },
+  "nav": {
+    "ariaLabel": "主导航",
+    "wordmarkAria": "mybackhurts 首页",
+    "how": "玩法",
+    "moves": "动作",
+    "privacy": "隐私",
+    "cta": "立即获取",
+    "languageLabel": "语言",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "你的后背来电了。<br />它想<span class=\"scribble\">聊聊。</span>",
+    "lede": "<strong>mybackhurts</strong> 住在你的菜单栏或系统托盘里，每 45 分钟提醒你一次，带你做几个简短的动作。除非你让它数次数，否则摄像头一直关着。",
+    "secondaryCta": "或者先看看动作 ↓",
+    "figureTitle": "一个火柴人趴在笔记本电脑前，然后坐直、伸了个懒腰，接着又趴了下去。",
+    "noteOw": "哎哟。",
+    "noteBetter": "好多了。"
+  },
+  "notification": {
+    "ariaLabel": "来自 mybackhurts 的一条提醒",
+    "appLine": "mybackhurts · 现在",
+    "title": "该动一动了",
+    "body": "椅子深蹲、手臂画圈、颈部侧拉伸。",
+    "start": "开始",
+    "snooze": "10 分钟后开始",
+    "afterCall": "下次通话后开始",
+    "skip": "跳过"
+  },
+  "tapeStrip": "站起来 ✶ 活动肩膀 ✶ 放松下巴 ✶ 喝点水 ✶ 看看远处 ✶ 站起来 ✶ 活动肩膀 ✶ 放松下巴 ✶ 喝点水 ✶ 看看远处 ✶",
+  "preview": {
+    "title": "24 秒看完。",
+    "note": "没有声音。毕竟是办公室。",
+    "label": "应用预览：摄像头练习统计椅子深蹲，然后是颈部拉伸保持，接着是练习总结和每周统计。",
+    "play": "播放视频",
+    "pause": "暂停视频"
+  },
+  "how": {
+    "title": "整套流程，<br />三格漫画讲完。",
+    "panel1Title": "每 45 分钟",
+    "panel1Body": "只在你的工作时间。绝不在通话中打扰。",
+    "panel3Title": "两三个动作",
+    "panel3Body": "替你选好。不喜欢的可以换掉。",
+    "panel4Doodle": "马上回",
+    "panel4Title": "走开了？也算数。",
+    "panel4Body": "离开键盘 5 分钟，就算一次休息。"
+  },
+  "menu": {
+    "ariaLabel": "菜单栏菜单",
+    "dayTime": "周五 14:02",
+    "nextReminder": "下次提醒：14:45",
+    "goal": "今天 4 次休息中的 2 次",
+    "startNow": "立即开始",
+    "snooze": "10 分钟后开始",
+    "pause": "暂停",
+    "library": "运动库",
+    "stats": "统计",
+    "help": "帮助",
+    "settings": "设置…",
+    "quit": "退出",
+    "note": "住在这上面。没有 Dock 图标。"
+  },
+  "moves": {
+    "title": "办公桌边就能做的动作。",
+    "subtitle": "穿着办公室的衣服、戴着耳机也欢迎。",
+    "posture": {
+      "label": "显示站姿或坐姿动作",
+      "standing": "站姿",
+      "seated": "坐姿"
+    },
+    "camera": "由摄像头计数",
+    "squat": {
+      "name": "椅子深蹲",
+      "counter": "/ 10 次",
+      "figureTitle": "一个火柴人在做椅子深蹲。",
+      "description": "向后坐，轻触椅子，站直。"
+    },
+    "calf": {
+      "name": "站姿提踵",
+      "counter": "/ 15 次",
+      "figureTitle": "一个火柴人踮起脚尖做提踵。",
+      "description": "踮起脚尖，再慢慢放下。"
+    },
+    "seatedCalf": {
+      "name": "坐姿提踵",
+      "counter": "/ 45 秒",
+      "figureTitle": "一个火柴人坐在凳子上抬起脚跟。",
+      "description": "脚跟抬起，脚跟放下，不用离开椅子。"
+    },
+    "march": {
+      "name": "站姿原地踏步",
+      "counter": "/ 20 次",
+      "figureTitle": "一个火柴人原地踏步，膝盖抬得高高的。",
+      "description": "膝盖抬高，手臂摆动，先一边再另一边。"
+    },
+    "seatedMarch": {
+      "name": "坐姿踏步",
+      "counter": "/ 45 秒",
+      "figureTitle": "一个火柴人坐在凳子上，先抬一个膝盖，再抬另一个。",
+      "description": "坐直，先抬一个膝盖，再抬另一个。"
+    },
+    "arms": {
+      "name": "手臂画圈",
+      "counter": "/ 10 次",
+      "figureTitle": "一个火柴人用双臂画圈。",
+      "description": "手臂张开，先画小圈，一次比一次大一点。"
+    },
+    "chest": {
+      "name": "扩胸",
+      "counter": "/ 20 秒",
+      "figureTitle": "一个火柴人把双臂举成球门柱的样子。",
+      "description": "手臂像球门柱一样举起，夹紧肩胛骨，保持 20 秒。"
+    },
+    "shrugs": {
+      "name": "耸肩",
+      "counter": "/ 12 次",
+      "figureTitle": "一个火柴人抬起又放下双肩。",
+      "description": "肩膀耸向耳朵，然后放下。"
+    },
+    "neck": {
+      "name": "颈部侧拉伸",
+      "counter": "秒 <span>剩余</span>",
+      "figureTitle": "一个火柴人歪着头做颈部侧拉伸。",
+      "description": "耳朵贴肩膀，每侧 15 秒。"
+    },
+    "wrist": {
+      "name": "手腕与前臂拉伸",
+      "counter": "秒 <span>剩余</span>",
+      "figureTitle": "一个火柴人伸出一只手臂，轻轻向后拉手指。",
+      "description": "手臂伸出，手指向上，用另一只手轻轻往回带。每侧 15 秒。"
+    },
+    "eye": {
+      "name": "20-20-20 护眼休息",
+      "counter": "/ 20 秒",
+      "figureTitle": "一个火柴人坐在凳子上望向远处的窗外。",
+      "description": "看向远处 20 秒。允许眨眼。"
+    },
+    "pack": {
+      "title": "+3 个动作",
+      "label": "在支持者包中",
+      "move1": "坐姿脊柱扭转",
+      "move2": "站姿股四头肌拉伸",
+      "move3": "举臂侧伸展"
+    },
+    "more": "显示全部动作",
+    "poster": {
+      "cut": "沿此剪下",
+      "link": "打印速查表",
+      "meta": "PDF · 一页"
+    }
+  },
+  "modes": {
+    "title": "自己数次数，或让摄像头来数。",
+    "simpleLabel": "简易 · 默认",
+    "spaceKey": "空格键",
+    "simpleTitle": "你来数，它来计时。",
+    "simpleBody": "一个计时器和一个 <b>+1 次</b> 按钮（或空格键）。摄像头永远不会打开。",
+    "webcamLabel": "摄像头 · 需主动开启",
+    "hint": "再往后退一点",
+    "webcamTitle": "它来数，你只管动。",
+    "webcamBody": "本机上的姿态模型追踪你的关节，为次数和保持计数，并给出动作提示。",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "不存储视频，不发送视频，本机处理，零网络请求。",
+    "stampRing": "不存储视频 ✶ 不发送视频 ✶ 本机处理 ✶",
+    "stampZero": "0",
+    "stampNetwork": "网络",
+    "stampRequests": "请求",
+    "item1": "画面在内存中分析，然后丢弃。",
+    "item2": "自身不发起任何网络请求。",
+    "purchases": "购买通过 App Store 或 Microsoft Store 完成。",
+    "item3": "你的统计数据留在你的电脑上，除非你导出 CSV。",
+    "verify": "不信我们？可以用 <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>、<a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> 或 <a href=\"https://www.glasswire.com/\">GlassWire</a> 查证。",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "记录你每一次站起来。",
+    "chartTitle": "一周内每天运动分钟数的示例图表。",
+    "days": {
+      "mon": "一",
+      "tue": "二",
+      "wed": "三",
+      "thu": "四",
+      "fri": "五",
+      "sat": "六",
+      "sun": "日"
+    },
+    "bestDay": "最佳日！",
+    "caption": "过去 7 天运动分钟数",
+    "suggestion": "你经常跳过下午 3 点的提醒。暂停这个小时吗？",
+    "suggestionApply": "应用",
+    "streak": "连续 5 天",
+    "freeze": "漏了一天？每周一张冻结卡。",
+    "stickersLabel": "出勤贴纸",
+    "stickers": {
+      "firstBreak": "第一次休息",
+      "weekStreak": "连续一周",
+      "monthStreak": "连续一个月"
+    }
+  },
+  "faq": {
+    "title": "大家<br />常问的问题。",
+    "scheduleQuestion": "周日晚上 11 点它会打扰我吗？",
+    "scheduleAnswer": "只有你说那时要工作才会。时段、日期和间隔都由你定。",
+    "countingQuestion": "次数统计准不准？",
+    "countingAnswer": "还不错，但不是魔法。光线和摄像头位置都有影响，提踵常常会退回到计时器。如果摄像头把你跟丢了，点一下就能自己计数。",
+    "officeQuestion": "我在开放式办公室，会显得很奇怪吗？",
+    "officeAnswer": "稍微有一点。把姿势设为坐姿，每次休息都能在椅子上完成。",
+    "callQuestion": "它怎么知道我在通话？",
+    "callAnswer": "它会检查是否有其他应用正在使用你的摄像头或麦克风，或处于全屏状态。它自己从不会打开这两者，所以也从不请求权限。",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "站起来。<br /><span>说真的，现在。</span>",
+    "body": "然后下载应用，这样就不用网页来催你了。",
+    "small": "免费 · 无需账号 · 17 种语言"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "你的小票",
+    "reminders": "提醒",
+    "moves": "核心动作",
+    "webcam": "摄像头计数",
+    "stats": "统计与贴纸",
+    "subscription": "订阅",
+    "account": "账号",
+    "free": "免费",
+    "none": "无",
+    "once": "一次",
+    "supporter": "支持者（可选）",
+    "supporterDetails": "3 个额外动作、青绿色墨水、一个感谢小人、一整年的小方块、以后每个新包",
+    "total": "合计",
+    "totalValue": "0.00",
+    "coffee": "比一杯咖啡还便宜",
+    "thanks": "谢谢你站起来"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts，<span class=\"credit\">由 <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a> 制作</span>",
+    "medical": "非医疗建议。动作要轻柔，哪里疼就停下。",
+    "privacy": "隐私政策",
+    "terms": "使用条款",
+    "contact": "联系我们",
+    "openSource": "本网站是开源的"
+  },
+  "notFound": {
+    "metaTitle": "找不到页面 · mybackhurts",
+    "title": "这个页面<br />闪到腰了。",
+    "body": "这里什么都没有。站起来，伸个懒腰，然后回到首页。",
+    "home": "回到起点"
+  },
+  "poster": {
+    "title": "站起来，做这几个。",
+    "subtitle": "办公桌边的空地就能做的动作。把它贴在显示器上。",
+    "neckDose": "每侧 15 秒",
+    "handNote": "对，就是现在。"
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "好吧。10 分钟。我们在计时。",
+      "afterCall": "走吧。我们等你。",
+      "skip": "记下了。你的后背会记住这笔账。"
+    },
+    "themeNames": {
+      "system": "系统",
+      "light": "浅色",
+      "dark": "深色"
+    },
+    "themeAriaTemplate": "主题：{current}。切换到{next}",
+    "themeTitleTemplate": "主题：{current}",
+    "themeLabels": {
+      "systemAria": "主题：系统。切换到浅色",
+      "systemTitle": "主题：系统"
+    },
+    "holdSides": {
+      "left": "左",
+      "right": "右"
+    }
+  }
+}

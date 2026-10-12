@@ -1,0 +1,37 @@
+# Checks and builds every push and pull request; master deploys dist/ (with the _headers file that carries
+# the CSP) to the mybackhurts-landing Worker (wrangler.json), served on mybackhurts.app.
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
+
+# One deploy at a time; a newer push waits for the running one.
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    name: ${{ github.event_name == 'pull_request' && 'Check' || 'Check and deploy' }}
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npx vp check
+      - run: npm run build
+      - name: Deploy
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4.147.0 deploy

@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "nl"
+  },
+  "meta": {
+    "title": "mybackhurts: een klein bureau-appje dat je van je stoel haalt",
+    "description": "mybackhurts is een kleine app voor Mac en Windows die je elke 45 minuten eraan herinnert op te staan en je door twee of drie korte oefeningen leidt. Hij kan je herhalingen tellen met de webcam, op je apparaat. Gratis, geen account.",
+    "ogTitle": "mybackhurts: je rug belde, hij wil even praten",
+    "ogDescription": "Een kleine app voor Mac en Windows die je elke 45 minuten van je stoel haalt. Herhalingen worden op je apparaat geteld. Geen video verlaat je computer. Gratis, geen account.",
+    "url": "https://mybackhurts.app/nl/",
+    "ogImageAlt": "mybackhurts: „Je rug belde. Hij wil even praten.” Een stokfiguurtje hangt voorovergebogen over een laptop aan een bureau en zegt „au.”"
+  },
+  "og": {
+    "tape": "NEEM PAUZE",
+    "headline1": "Je rug belde.",
+    "headline2": "Hij wil even praten.",
+    "tagline1": "Een kleine app voor Mac en Windows die je",
+    "tagline2": "elke 45 minuten van je stoel haalt.",
+    "footerNote": "herhalingen geteld op je apparaat. geen video verlaat je computer.",
+    "noteOw": "au."
+  },
+  "a11y": {
+    "skipLink": "Ga naar de inhoud"
+  },
+  "nav": {
+    "ariaLabel": "Hoofdmenu",
+    "wordmarkAria": "mybackhurts startpagina",
+    "how": "Hoe",
+    "moves": "Oefeningen",
+    "privacy": "Privacy",
+    "cta": "Downloaden",
+    "languageLabel": "Taal",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "Je rug belde.<br />Hij wil <span class=\"scribble\">even praten.</span>",
+    "lede": "<strong>mybackhurts</strong> woont in je menubalk of systeemvak, port je elke 45 minuten aan en loodst je door een paar snelle oefeningen. De camera blijft uit tenzij jij hem vraagt je herhalingen te tellen.",
+    "secondaryCta": "of bekijk de oefeningen ↓",
+    "figureTitle": "Een stokfiguurtje hangt voorovergebogen over een laptop, zit rechtop en rekt zich uit, en zakt dan weer in.",
+    "noteOw": "au.",
+    "noteBetter": "beter."
+  },
+  "notification": {
+    "ariaLabel": "Een herinnering van mybackhurts",
+    "appLine": "mybackhurts · nu",
+    "title": "Tijd om te bewegen",
+    "body": "Stoelsquat, Armcirkels, Nek zijwaarts rekken.",
+    "start": "Start",
+    "snooze": "Start over 10 min",
+    "afterCall": "Start na mijn volgende gesprek",
+    "skip": "Sla over"
+  },
+  "tapeStrip": "sta op ✶ rol je schouders ✶ ontspan je kaak ✶ drink wat water ✶ kijk naar iets in de verte ✶ sta op ✶ rol je schouders ✶ ontspan je kaak ✶ drink wat water ✶ kijk naar iets in de verte ✶",
+  "preview": {
+    "title": "Zie het in 24 seconden.",
+    "note": "geen geluid. het is een kantoor.",
+    "label": "App-preview: een webcamsessie telt stoelsquats, daarna een vastgehouden nekrek, de sessiesamenvatting en de wekelijkse statistieken.",
+    "play": "Video afspelen",
+    "pause": "Video pauzeren"
+  },
+  "how": {
+    "title": "De hele routine,<br />in drie panelen.",
+    "panel1Title": "Elke 45 minuten",
+    "panel1Body": "Alleen tijdens je werkuren. Nooit midden in een gesprek.",
+    "panel3Title": "Twee of drie oefeningen",
+    "panel3Body": "Voor jou gekozen. Wissel wat je niet leuk vindt.",
+    "panel4Doodle": "zo terug",
+    "panel4Title": "Weggelopen? Telt mee.",
+    "panel4Body": "5 minuten weg van het toetsenbord telt als een pauze."
+  },
+  "menu": {
+    "ariaLabel": "Het menubalkmenu",
+    "dayTime": "Vr 14:02",
+    "nextReminder": "Volgende herinnering om 14:45",
+    "goal": "2 van 4 pauzes vandaag",
+    "startNow": "Nu starten",
+    "snooze": "Start over 10 min",
+    "pause": "Pauzeer",
+    "library": "Oefeningenbibliotheek",
+    "stats": "Statistieken",
+    "help": "Help",
+    "settings": "Instellingen…",
+    "quit": "Stop",
+    "note": "woont hier boven. geen Dock-icoon."
+  },
+  "moves": {
+    "title": "Oefeningen die je naast je bureau kunt doen.",
+    "subtitle": "Kantoorkleding en koptelefoon welkom.",
+    "posture": {
+      "label": "Toon de staande of zittende oefeningen",
+      "standing": "Staand",
+      "seated": "Zittend"
+    },
+    "camera": "Geteld door de camera",
+    "squat": {
+      "name": "Stoelsquat",
+      "counter": "/ 10 herh.",
+      "figureTitle": "Een stokfiguurtje doet een stoelsquat.",
+      "description": "Zak naar achteren, tik de stoel aan, sta weer rechtop."
+    },
+    "calf": {
+      "name": "Staande kuitheffing",
+      "counter": "/ 15 herh.",
+      "figureTitle": "Een stokfiguurtje komt op zijn tenen voor een kuitheffing.",
+      "description": "Kom op je tenen omhoog en zak dan langzaam weer omlaag."
+    },
+    "seatedCalf": {
+      "name": "Zittende kuitheffing",
+      "counter": "/ 45 s",
+      "figureTitle": "Een stokfiguurtje op een kruk tilt zijn hielen op.",
+      "description": "Hielen omhoog, hielen omlaag, zonder je stoel te verlaten."
+    },
+    "march": {
+      "name": "Staand marcheren",
+      "counter": "/ 20 herh.",
+      "figureTitle": "Een stokfiguurtje marcheert op de plek met de knieën hoog.",
+      "description": "Knieën hoog, armen zwaaiend, eerst de ene kant en dan de andere."
+    },
+    "seatedMarch": {
+      "name": "Zittend marcheren",
+      "counter": "/ 45 s",
+      "figureTitle": "Een stokfiguurtje op een kruk tilt één knie op, dan de andere.",
+      "description": "Zit rechtop en til één knie op, dan de andere."
+    },
+    "arms": {
+      "name": "Armcirkels",
+      "counter": "/ 10 herh.",
+      "figureTitle": "Een stokfiguurtje tekent cirkels met beide armen.",
+      "description": "Armen opzij, kleine cirkels, elke keer iets groter."
+    },
+    "chest": {
+      "name": "Borstopener",
+      "counter": "/ 20 s",
+      "figureTitle": "Een stokfiguurtje heft zijn armen als een doelpaal.",
+      "description": "Armen omhoog als een doelpaal, knijp je schouderbladen samen, houd 20 seconden vast."
+    },
+    "shrugs": {
+      "name": "Schouderophalen",
+      "counter": "/ 12 herh.",
+      "figureTitle": "Een stokfiguurtje tilt beide schouders op en laat ze zakken.",
+      "description": "Schouders naar je oren, laat ze dan zakken."
+    },
+    "neck": {
+      "name": "Nek zijwaarts rekken",
+      "counter": "s <span>links</span>",
+      "figureTitle": "Een stokfiguurtje kantelt zijn hoofd voor een zijwaartse nekrek.",
+      "description": "Oor naar schouder, 15 seconden per kant."
+    },
+    "wrist": {
+      "name": "Pols- en onderarmstrek",
+      "counter": "s <span>links</span>",
+      "figureTitle": "Een stokfiguurtje strekt één arm en trekt zachtjes zijn vingers terug.",
+      "description": "Arm gestrekt, vingers omhoog, trek ze met de andere hand zachtjes terug. 15 seconden per kant."
+    },
+    "eye": {
+      "name": "20-20-20 oogpauze",
+      "counter": "/ 20 s",
+      "figureTitle": "Een stokfiguurtje op een kruk kijkt uit een raam in de verte.",
+      "description": "Kijk 20 seconden naar iets in de verte. Knipperen mag."
+    },
+    "pack": {
+      "title": "+3 oefeningen",
+      "label": "in het Supporterpakket",
+      "move1": "Zittende rugdraai",
+      "move2": "Staande quadricepsstrek",
+      "move3": "Zijwaartse strek boven het hoofd"
+    },
+    "more": "Toon alle oefeningen",
+    "poster": {
+      "cut": "hier knippen",
+      "link": "Print het spiekbriefje",
+      "meta": "PDF · één pagina"
+    }
+  },
+  "modes": {
+    "title": "Tel zelf je herhalingen, of laat de camera tellen.",
+    "simpleLabel": "Eenvoudig · de standaard",
+    "spaceKey": "spatie",
+    "simpleTitle": "Jij telt. Hij houdt de tijd bij.",
+    "simpleBody": "Een timer en een <b>+1 herhaling</b>-knop (of Spatie). De camera gaat nooit aan.",
+    "webcamLabel": "Webcam · optioneel",
+    "hint": "ga iets naar achteren",
+    "webcamTitle": "Hij telt. Jij beweegt gewoon.",
+    "webcamBody": "Een houdingsmodel op je apparaat volgt je gewrichten om herhalingen en houdoefeningen te tellen, met tips voor je houding.",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "Geen video opgeslagen, geen video verstuurd, op je apparaat, nul netwerkverzoeken.",
+    "stampRing": "GEEN VIDEO OPGESLAGEN ✶ GEEN VIDEO VERSTUURD ✶ OP JE APPARAAT ✶",
+    "stampZero": "0",
+    "stampNetwork": "NETWERK",
+    "stampRequests": "VERZOEKEN",
+    "item1": "Beelden worden in het geheugen geanalyseerd en daarna weggegooid.",
+    "item2": "Geen eigen netwerkverzoeken.",
+    "purchases": "Aankopen lopen via de App Store of Microsoft Store.",
+    "item3": "Je statistieken blijven op je computer, tenzij je een CSV exporteert.",
+    "verify": "vertrouw je ons niet? controleer het met <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> of <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "Een overzicht van elke keer dat je opstond.",
+    "chartTitle": "Een voorbeeldgrafiek van bewogen minuten per dag over één week.",
+    "days": {
+      "mon": "M",
+      "tue": "D",
+      "wed": "W",
+      "thu": "D",
+      "fri": "V",
+      "sat": "Z",
+      "sun": "Z"
+    },
+    "bestDay": "beste dag!",
+    "caption": "minuten bewogen, afgelopen 7 dagen",
+    "suggestion": "Je slaat de meeste herinneringen van 15:00 over. Dat uur pauzeren?",
+    "suggestionApply": "Pas toe",
+    "streak": "5 dagen op rij",
+    "freeze": "dag gemist? één bevriezing per week.",
+    "stickersLabel": "Stickers voor opdagen",
+    "stickers": {
+      "firstBreak": "Eerste pauze",
+      "weekStreak": "Weekreeks",
+      "monthStreak": "Maandreeks"
+    }
+  },
+  "faq": {
+    "title": "Dingen die mensen<br />meestal vragen.",
+    "scheduleQuestion": "Stoort het me zondagavond om 23:00?",
+    "scheduleAnswer": "Alleen als je zegt dat je dan werkt. Jij kiest de uren, dagen en het interval.",
+    "countingQuestion": "Hoe goed is het tellen van herhalingen?",
+    "countingAnswer": "Redelijk, geen magie. Licht en camerapositie doen ertoe, en kuitheffingen vallen vaak terug op een timer. Als de camera je kwijtraakt, laat één klik je zelf tellen.",
+    "officeQuestion": "Ik zit in een open kantoor. Zie ik er raar uit?",
+    "officeAnswer": "Een beetje. Zet je houding op Zittend en elke pauze werkt vanaf je stoel.",
+    "callQuestion": "Hoe weet hij dat ik in een gesprek zit?",
+    "callAnswer": "Hij controleert of een andere app je camera of microfoon gebruikt, of op volledig scherm staat. Hij opent zelf nooit een van beide, dus hij vraagt nooit om toestemming.",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "Sta op.<br /><span>Serieus, nu.</span>",
+    "body": "Pak dan de app, zodat een webpagina je niet hoeft op te jagen.",
+    "small": "Gratis · geen account · 17 talen"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "Jouw bon",
+    "reminders": "Herinneringen",
+    "moves": "De kernoefeningen",
+    "webcam": "Tellen met de webcam",
+    "stats": "Statistieken + stickers",
+    "subscription": "Abonnement",
+    "account": "Account",
+    "free": "Gratis",
+    "none": "Geen",
+    "once": "Eenmalig",
+    "supporter": "Supporter (optioneel)",
+    "supporterDetails": "3 extra oefeningen, blauwgroene inkt, een bedankfiguurtje, je jaar in vierkantjes, elk toekomstig pakket",
+    "total": "Totaal",
+    "totalValue": "0,00",
+    "coffee": "minder dan een kop koffie",
+    "thanks": "bedankt dat je opstond"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts, <span class=\"credit\">gemaakt door <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "Geen medisch advies. Beweeg rustig, stop als iets pijn doet.",
+    "privacy": "Privacybeleid",
+    "terms": "Gebruiksvoorwaarden",
+    "contact": "Contact",
+    "openSource": "Deze site is open source"
+  },
+  "notFound": {
+    "metaTitle": "Pagina niet gevonden · mybackhurts",
+    "title": "Deze pagina heeft<br />zijn rug verrekt.",
+    "body": "Hier is niets. Sta op, rek je uit en ga dan terug naar het begin.",
+    "home": "Terug naar het begin"
+  },
+  "poster": {
+    "title": "Sta op. Doe dit.",
+    "subtitle": "Oefeningen voor de ruimte naast je bureau. Plak dit op je monitor.",
+    "neckDose": "15 s per kant",
+    "handNote": "ja, nu meteen."
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "Vooruit. 10 minuten. We tellen mee.",
+      "afterCall": "Ga maar. We wachten.",
+      "skip": "Genoteerd. Je rug onthoudt dit."
+    },
+    "themeNames": {
+      "system": "systeem",
+      "light": "licht",
+      "dark": "donker"
+    },
+    "themeAriaTemplate": "Thema: {current}. Wissel naar {next}",
+    "themeTitleTemplate": "Thema: {current}",
+    "themeLabels": {
+      "systemAria": "Thema: systeem. Wissel naar licht",
+      "systemTitle": "Thema: systeem"
+    },
+    "holdSides": {
+      "left": "links",
+      "right": "rechts"
+    }
+  }
+}

@@ -1,0 +1,2694 @@
+/* Self-hosted so every language gets the full glyph set (built by macos/scripts/patch-fonts.py). */
+@font-face {
+  font-family: "Zine Display";
+  src: url("./fonts/ZineDisplay-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Courier Prime";
+  src: url("./fonts/CourierPrime-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Courier Prime";
+  src: url("./fonts/CourierPrime-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Reenie Beanie";
+  src: url("./fonts/ReenieBeanie.woff2") format("woff2");
+  font-display: swap;
+}
+
+:root {
+  --paper: #f3ede1;
+  --paper-2: #ebe3d3;
+  --ink: #26336b;
+  --ink-soft: rgba(38, 51, 107, 0.72);
+  --pink: #ff4d9d;
+  --pink-soft: #ffc3dd;
+  /* Pink used as text: 4.5:1 on paper (the bright plate is for marks and shadows). */
+  --pink-text: #c8105f;
+  --line: rgba(38, 51, 107, 0.22);
+  --card: #fbf8f1;
+  --shadow: rgba(38, 51, 107, 0.16);
+  --tape: rgba(255, 77, 157, 0.42);
+  --tape-ink: rgba(38, 51, 107, 0.2);
+  --dots: rgba(38, 51, 107, 0.12);
+  --band: var(--pink);
+  --band-ink: #26336b;
+  --teal: #14ada5;
+  --blend: multiply;
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.2 0 0 0 0 0.42 0 0 0 0.176 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  color-scheme: light;
+  --display: "Zine Display", "Arial Black", sans-serif;
+  --mono: "Courier Prime", "Courier New", monospace;
+  --hand: "Reenie Beanie", "Bradley Hand", cursive;
+  --wrap: 1180px;
+  --gutter: clamp(1.25rem, 5vw, 4.5rem);
+}
+
+/* "Ink night": rich navy paper, cool blue-gray ink (~8.7:1), riso pink. Mirrors the app's Palette.swift. */
+:root[data-theme="dark"] {
+  --paper: #20263f;
+  --paper-2: #242b45;
+  --card: #29304b;
+  --ink: #c2c6d3;
+  --ink-soft: rgba(194, 198, 211, 0.72);
+  --pink: #d8709f;
+  --pink-soft: #4b3254;
+  --pink-text: #e597ba;
+  --line: rgba(194, 198, 211, 0.16);
+  --shadow: rgba(0, 0, 0, 0.25);
+  --tape: rgba(216, 112, 159, 0.35);
+  --tape-ink: rgba(194, 198, 211, 0.16);
+  --dots: rgba(194, 198, 211, 0.07);
+  --band: #d8709f;
+  --band-ink: #20263f;
+  --teal: #4fbdb5;
+  --blend: screen;
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.2 0 0 0 0 0.42 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #20263f;
+    --paper-2: #242b45;
+    --card: #29304b;
+    --ink: #c2c6d3;
+    --ink-soft: rgba(194, 198, 211, 0.72);
+    --pink: #d8709f;
+    --pink-soft: #4b3254;
+    --pink-text: #e597ba;
+    --line: rgba(194, 198, 211, 0.16);
+    --shadow: rgba(0, 0, 0, 0.25);
+    --tape: rgba(216, 112, 159, 0.35);
+    --tape-ink: rgba(194, 198, 211, 0.16);
+    --dots: rgba(194, 198, 211, 0.07);
+    --band: #d8709f;
+    --band-ink: #20263f;
+    --teal: #4fbdb5;
+    --blend: screen;
+    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.2 0 0 0 0 0.42 0 0 0 0.055 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    color-scheme: dark;
+  }
+}
+
+/* The Supporter line on the pricing receipt is a switch: it swaps the pink plate for the app's teal one. */
+:root[data-accent="teal"] {
+  --pink: #14ada5;
+  --pink-soft: #b8e6e1;
+  --pink-text: #00716c;
+  --tape: rgba(20, 173, 165, 0.42);
+}
+:root[data-accent="teal"][data-theme="dark"] {
+  --pink: #4fbdb5;
+  --pink-soft: #244b55;
+  --pink-text: #7cd3cc;
+  --tape: rgba(79, 189, 181, 0.35);
+  --band: #4fbdb5;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-accent="teal"]:not([data-theme="light"]) {
+    --pink: #4fbdb5;
+    --pink-soft: #244b55;
+    --pink-text: #7cd3cc;
+    --tape: rgba(79, 189, 181, 0.35);
+    --band: #4fbdb5;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+  overflow-x: clip;
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  font:
+    400 1.05rem/1.55 var(--mono),
+    monospace;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+/* Paper grain lives in the page background (not a fixed overlay), so it also tints the area behind Safari's status/address bars. */
+html {
+  background-color: var(--paper);
+  background-image: var(--grain);
+  background-blend-mode: var(--blend);
+}
+a {
+  color: inherit;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+::selection {
+  background: var(--pink);
+  color: var(--paper);
+}
+:focus-visible {
+  outline: 3px dashed var(--pink);
+  outline-offset: 4px;
+}
+.defs {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 60;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.5rem 1rem;
+}
+.skip:focus {
+  top: 1rem;
+}
+
+/* ---------- Type ---------- */
+h1,
+h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: clamp(2.7rem, 7.4vw, 6.3rem);
+  padding-bottom: 0.12em;
+}
+h2 {
+  font-size: clamp(2rem, 4.6vw, 3.7rem);
+  text-wrap: balance;
+}
+h3 {
+  font:
+    700 1.15rem/1.2 var(--mono),
+    monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+/* Two-ink misregistration: the pink plate is slightly off. */
+.riso {
+  text-shadow: 0.06em 0.045em 0 var(--pink);
+}
+.label {
+  font:
+    700 0.78rem/1 var(--mono),
+    monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.note {
+  font-family: var(--hand);
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--pink-text);
+}
+.small {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.scribble {
+  /* The underline is a background cloned onto each line, so a long phrase can wrap. */
+  padding-inline: 0.02em 0.04em;
+  margin-inline: -0.02em -0.04em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 24' preserveAspectRatio='none'%3E%3Cpath d='M3 15 C60 4 120 22 180 10 S270 6 297 13' fill='none' stroke='%23ff4d9d' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E")
+    left bottom 0.02em / 100% 0.22em no-repeat;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+:root[data-accent="teal"] .scribble {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 24' preserveAspectRatio='none'%3E%3Cpath d='M3 15 C60 4 120 22 180 10 S270 6 297 13' fill='none' stroke='%2314ada5' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+/* ---------- Layout ---------- */
+.masthead,
+section,
+.footer {
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.footer-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.footer-links a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.legal-page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 4rem var(--gutter) 5rem;
+}
+
+.legal-page header {
+  margin-bottom: 3rem;
+}
+
+.legal-page h1 {
+  margin: 0 0 1rem;
+  font: 3.4rem/0.95 var(--display);
+}
+
+.legal-page h2 {
+  margin: 2.5rem 0 0.7rem;
+  font: 1.45rem/1.1 var(--display);
+}
+
+.legal-page p,
+.legal-page li {
+  max-width: 70ch;
+  font: 1rem/1.65 var(--mono);
+}
+
+.legal-page p + p {
+  margin-top: 1rem;
+}
+
+.legal-page ul {
+  padding-left: 1.4rem;
+}
+
+.legal-page a {
+  color: var(--ink);
+  text-underline-offset: 0.18em;
+}
+
+.legal-back {
+  /* A comfortable click target, kept clear of the big heading's glyphs below. */
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  margin: -0.6rem 0 1.2rem -0.5rem;
+  padding: 0.6rem 0.5rem;
+  font: 0.85rem var(--mono);
+}
+section {
+  padding-block: clamp(4rem, 9vw, 7.5rem);
+}
+.section-head {
+  display: grid;
+  gap: 1.1rem;
+  margin-bottom: clamp(2.2rem, 5vw, 3.6rem);
+  max-width: 50rem;
+}
+.how-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem 3rem;
+  margin-bottom: clamp(2.2rem, 5vw, 3.6rem);
+}
+.how-top .section-head {
+  margin-bottom: 0;
+}
+.section-sub {
+  max-width: 34rem;
+}
+
+/* ---------- Masthead ---------- */
+/* Fixed header: full-bleed paper strip, content scrolls beneath it. */
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  max-width: none;
+  padding-inline: 0;
+  background: color-mix(in srgb, var(--paper) 90%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px dashed var(--line);
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding: 0.85rem var(--gutter);
+}
+.wordmark {
+  font:
+    400 1.45rem/1 var(--display),
+    sans-serif;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+.wordmark span {
+  color: var(--pink-text);
+  display: inline-block;
+  transform: rotate(-4deg) translateY(1px);
+}
+.nav-links {
+  display: flex;
+  gap: 1.8rem;
+  margin-left: auto;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: linear-gradient(var(--pink), var(--pink)) 0 100% / 0 3px no-repeat;
+  transition: background-size 0.25s;
+}
+.nav-links a:hover {
+  background-size: 100% 3px;
+}
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.language-switcher {
+  position: relative;
+  padding: 0;
+  border: 0;
+}
+.language-switcher summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 2.3rem;
+  padding: 0 0.7rem 0 0.6rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  font:
+    700 0.78rem/1 var(--mono),
+    monospace;
+  letter-spacing: 0.08em;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.language-switcher summary::-webkit-details-marker {
+  display: none;
+}
+.language-switcher summary::after {
+  content: none;
+}
+.language-switcher summary:hover,
+.language-switcher[open] summary {
+  background: var(--ink);
+  color: var(--paper);
+}
+.language-switcher .globe {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.language-switcher .caret {
+  width: 0.7rem;
+  height: 0.7rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s;
+}
+.language-switcher[open] .caret {
+  transform: rotate(180deg);
+}
+.language-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 20;
+  min-width: 10rem;
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 0.6rem;
+  box-shadow: 4px 4px 0 var(--ink);
+  transform: rotate(-1deg);
+}
+.language-menu a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.35rem;
+  text-decoration: none;
+  font:
+    700 0.85rem/1 var(--mono),
+    monospace;
+}
+.language-menu a[aria-current="page"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.language-code {
+  margin-left: auto;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+.language-menu a:not([aria-current="page"]):hover,
+.language-menu a:not([aria-current="page"]):focus-visible {
+  background: var(--pink-soft);
+}
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  height: 2.3rem;
+  padding: 0 0.95rem;
+  text-decoration: none;
+  white-space: nowrap;
+  font:
+    700 0.8rem/1 var(--mono),
+    monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 var(--pink);
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+.nav-cta svg {
+  width: 0.85rem;
+  height: 0.85rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s;
+}
+.nav-cta:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--pink);
+}
+.nav-cta:hover svg {
+  transform: translateY(2px);
+}
+.nav-cta:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--pink);
+}
+
+.theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  padding: 0;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+.theme-toggle:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+.theme-toggle svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.theme-toggle [data-icon] {
+  display: none;
+}
+:root:not([data-theme]) .theme-toggle [data-icon="system"],
+:root[data-theme="light"] .theme-toggle [data-icon="light"],
+:root[data-theme="dark"] .theme-toggle [data-icon="dark"] {
+  display: block;
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-block;
+  text-decoration: none;
+  font:
+    700 0.95rem/1 var(--mono),
+    monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 1rem 1.4rem;
+  border-radius: 4px;
+  box-shadow: 5px 5px 0 var(--pink);
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+.button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0 var(--pink);
+}
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 var(--pink);
+}
+.hand-link {
+  font-family: var(--hand);
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--pink-text);
+  text-decoration: none;
+}
+.hand-link:hover {
+  text-decoration: underline wavy;
+  text-underline-offset: 6px;
+}
+
+/* ---------- Tape ---------- */
+.tape {
+  position: absolute;
+  width: 92px;
+  height: 26px;
+  background: var(--tape);
+  mix-blend-mode: var(--blend);
+  clip-path: polygon(3% 0, 97% 6%, 100% 100%, 0 92%);
+}
+.tape-a {
+  top: -13px;
+  left: 38%;
+  transform: rotate(-5deg);
+}
+.tape-b {
+  top: -12px;
+  right: 20px;
+  transform: rotate(7deg);
+}
+.tape-c {
+  top: -12px;
+  left: 16px;
+  transform: rotate(-8deg);
+  background: var(--tape-ink);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid;
+  /* minmax(0, …): a long headline wraps instead of squeezing the art column. */
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding-top: clamp(2.5rem, 6vw, 5rem);
+}
+.hero-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.6rem;
+}
+.lede {
+  max-width: 33rem;
+  font-size: 1.12rem;
+}
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.4rem 1.8rem;
+  margin-top: 0.4rem;
+}
+.hero-art {
+  position: relative;
+  padding-top: 8.5rem;
+}
+.hero-fig {
+  width: 100%;
+  max-width: 520px;
+}
+
+/* ---------- Figures (shared) ---------- */
+.figure {
+  display: block;
+  overflow: visible;
+  filter: drop-shadow(2px 1.5px 0 var(--pink-soft));
+}
+.ink,
+.skeleton,
+.bars,
+.stamp-ink {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 4.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: url(#wobble);
+}
+.ink .thin,
+.thin {
+  stroke-width: 2.5;
+}
+.ink .pink,
+.pink-line {
+  stroke: var(--pink);
+}
+.dashed {
+  stroke-dasharray: 3 5;
+}
+.head {
+  fill: var(--paper);
+}
+svg text {
+  stroke: none;
+}
+svg .note {
+  fill: var(--pink-text);
+  font-size: 22px;
+}
+.figure g,
+.figure path {
+  transform-box: view-box;
+}
+
+/* Hero: slump, sit up and stretch, slump again. */
+.hero-torso {
+  transform-origin: 50px 108px;
+  animation: hero-torso 9s ease-in-out infinite;
+}
+.hero-head {
+  transform-origin: 50px 58px;
+  animation: hero-head 9s ease-in-out infinite;
+}
+.hero-arm {
+  transform-origin: 50px 66px;
+  animation: hero-arm 9s ease-in-out infinite;
+}
+.note-ow {
+  animation: show-slumped 9s ease-in-out infinite;
+}
+.note-better {
+  opacity: 0;
+  animation: show-upright 9s ease-in-out infinite;
+}
+.steam {
+  animation: steam 3s ease-in-out infinite;
+}
+@keyframes hero-torso {
+  0%,
+  48%,
+  92%,
+  100% {
+    transform: rotate(28deg);
+  }
+  58%,
+  82% {
+    transform: rotate(-2deg);
+  }
+}
+@keyframes hero-head {
+  0%,
+  48%,
+  92%,
+  100% {
+    transform: rotate(22deg);
+  }
+  58%,
+  82% {
+    transform: rotate(-12deg);
+  }
+}
+@keyframes hero-arm {
+  0%,
+  48%,
+  92%,
+  100% {
+    transform: rotate(-90deg);
+  }
+  60%,
+  80% {
+    transform: rotate(-172deg);
+  }
+}
+@keyframes show-slumped {
+  0%,
+  46%,
+  94%,
+  100% {
+    opacity: 1;
+  }
+  54%,
+  86% {
+    opacity: 0;
+  }
+}
+@keyframes show-upright {
+  0%,
+  54%,
+  88%,
+  100% {
+    opacity: 0;
+  }
+  62%,
+  80% {
+    opacity: 1;
+  }
+}
+@keyframes steam {
+  50% {
+    transform: translateY(-3px);
+    opacity: 0.4;
+  }
+}
+
+/* Notification cut-out */
+.notif {
+  position: absolute;
+  right: -0.5rem;
+  top: 0;
+  width: min(320px, 78%);
+  padding: 1rem 1.1rem 1.05rem;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  box-shadow: 6px 7px 0 var(--shadow);
+  transform: rotate(2.5deg);
+  font-size: 0.88rem;
+  line-height: 1.35;
+  animation: drop-in 0.7s 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.notif-app {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+.notif-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: var(--pink);
+}
+.notif-title {
+  margin-top: 0.4rem;
+  font-weight: 700;
+}
+.notif-actions {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+  flex-wrap: wrap;
+}
+.notif-actions button {
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--ink);
+  background: transparent;
+  border: 1.5px solid var(--ink);
+  border-radius: 7px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+}
+.notif-actions button:hover {
+  background: var(--pink-soft);
+}
+.notif-actions button[data-notif="start"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.notif-reply {
+  font-family: var(--hand);
+  font-size: 1.45rem;
+  line-height: 1;
+  color: var(--pink-text);
+  min-height: 0;
+}
+.notif-reply:not(:empty) {
+  margin-top: 0.6rem;
+}
+@keyframes drop-in {
+  from {
+    opacity: 0;
+    transform: translateY(-40px) rotate(-6deg);
+  }
+}
+
+/* Pink bands keep dark ink on cream highlights in both themes. */
+.tape-strip {
+  --ink: var(--band-ink);
+  --paper: #f3ede1;
+  --blend: multiply;
+  color: var(--ink);
+}
+
+/* ---------- Tape strip ---------- */
+.tape-strip {
+  overflow: hidden;
+  background: var(--band);
+  color: var(--ink);
+  transform: rotate(-1.6deg);
+  margin: 1rem -2rem;
+  border-block: 2px solid var(--ink);
+}
+.tape-strip p {
+  white-space: nowrap;
+  padding: 0.7rem 0;
+  font:
+    400 1.1rem/1 var(--display),
+    sans-serif;
+  text-transform: uppercase;
+  width: max-content;
+  animation: slide 40s linear infinite;
+}
+@keyframes slide {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- App preview ---------- */
+.preview-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1.6rem;
+  max-width: none;
+}
+.preview-note {
+  transform: rotate(-3deg);
+}
+.preview-frame {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1040px;
+  border: 3px solid var(--ink);
+  background: var(--card);
+  box-shadow: 10px 10px 0 var(--pink);
+  --tilt: -0.6deg;
+  transform: rotate(var(--tilt));
+}
+.preview-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+.preview-toggle {
+  position: absolute;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  display: grid;
+  place-items: center;
+  width: 2.9rem;
+  height: 2.9rem;
+  padding: 0;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 3px 3px 0 var(--pink);
+  cursor: pointer;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
+}
+.preview-toggle:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0 var(--pink);
+}
+.preview-toggle svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.preview-toggle [data-icon="pause"],
+.preview-toggle.playing [data-icon="play"] {
+  display: none;
+}
+.preview-toggle.playing [data-icon="pause"] {
+  display: block;
+}
+
+/* ---------- How ---------- */
+.how {
+  position: relative;
+}
+.strip {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 3px solid var(--ink);
+  background: var(--card);
+}
+.panel {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 0.7rem;
+  padding: 1.4rem 1.3rem 1.6rem;
+  font-size: 0.95rem;
+}
+.panel + .panel {
+  border-left: 3px solid var(--ink);
+}
+.panel:nth-child(even) {
+  background: radial-gradient(var(--pink-soft) 1.3px, transparent 1.6px) 0 0 / 9px 9px;
+}
+.panel-no {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 700;
+}
+.doodle {
+  width: 100%;
+  max-width: 150px;
+  height: 100px;
+  margin: 0.6rem auto 0.2rem;
+  overflow: visible;
+}
+.doodle .note {
+  font-size: 20px;
+}
+.menu-cutout {
+  position: relative;
+  flex: 0 0 min(270px, 100%);
+  margin-right: 1rem;
+  transform: rotate(3deg);
+  z-index: 1;
+  margin-bottom: -1.2rem;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  border-radius: 10px;
+  font-size: 0.86rem;
+  box-shadow: 6px 7px 0 var(--shadow);
+}
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.35rem 0.8rem;
+  border-bottom: 2px solid var(--ink);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.menu-cutout ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.4rem 0;
+}
+.menu-cutout li {
+  padding: 0.18rem 0.9rem;
+}
+.menu-cutout li:hover {
+  background: var(--pink-soft);
+}
+.menu-dim {
+  color: var(--ink-soft);
+}
+.menu-sep {
+  border-top: 1px dashed var(--line);
+  margin-top: 0.3rem;
+  padding-top: 0.45rem !important;
+}
+.menu-note {
+  position: absolute;
+  left: -1.5rem;
+  top: -2.6rem;
+  width: auto;
+  white-space: nowrap;
+  transform: rotate(-5deg);
+}
+
+/* ---------- Moves ---------- */
+.moves {
+  padding-top: clamp(4rem, 8vw, 6rem);
+}
+.move-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.4rem, 3vw, 2.4rem);
+}
+.move {
+  position: relative;
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+  padding: 1.2rem 1.3rem 1.4rem;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  transform: rotate(var(--tilt, 0deg));
+  transition: transform 0.25s;
+  font-size: 0.95rem;
+}
+.move:hover {
+  transform: rotate(0deg) translateY(-4px);
+}
+/* Standing / Seated: swaps calf raise and march for their seated versions. */
+.posture-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin: calc(-1 * clamp(0.6rem, 2vw, 1.2rem)) 0 clamp(1.4rem, 3vw, 2rem);
+}
+.posture-toggle[hidden] {
+  display: none;
+}
+.chip {
+  padding: 0.35rem 0.95rem;
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font:
+    700 0.8rem/1.2 var(--mono),
+    monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+}
+.chip:hover {
+  background: var(--pink-soft);
+}
+.chip[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper);
+}
+.chip:focus-visible {
+  outline: 3px solid var(--pink);
+  outline-offset: 2px;
+}
+.move-grid[data-posture="standing"] [data-posture-only="seated"],
+.move-grid[data-posture="seated"] [data-posture-only="standing"] {
+  display: none;
+}
+/* Wide screens show six moves; the rest, and the Supporter pack, wait behind "Show all moves". */
+.moves-more {
+  display: block;
+  margin: clamp(1.8rem, 3.5vw, 2.6rem) auto 0;
+}
+.moves-more[hidden] {
+  display: none;
+}
+@media (min-width: 721px) {
+  .move-grid.is-collapsed .move-more {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .moves-more {
+    display: none;
+  }
+}
+/* Camera-counted moves wear a small ink camera in the corner of the figure. */
+.cam {
+  position: absolute;
+  top: 0.55rem;
+  right: 0.6rem;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--card);
+  rotate: 8deg;
+}
+.cam svg {
+  width: 19px;
+  height: 19px;
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+/* Figures off screen hold still. */
+.js .move:not(.in-view) .figure *,
+.js .move:not(.in-view) .figure {
+  animation-play-state: paused;
+}
+.move .figure {
+  width: 100%;
+  height: 190px;
+  background: radial-gradient(var(--dots) 1.2px, transparent 1.5px) 0 0 / 10px 10px;
+  border-bottom: 2px solid var(--ink);
+  margin: -1.2rem -1.3rem 0.3rem;
+  width: calc(100% + 2.6rem);
+  padding: 0.8rem 0 0.2rem;
+}
+.move-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.counter {
+  font-size: 0.85rem;
+  white-space: nowrap;
+  color: var(--ink-soft);
+}
+.counter b {
+  display: inline-block;
+  min-width: 1.2em;
+  font:
+    400 1.5rem/1 var(--display),
+    sans-serif;
+  color: var(--pink-text);
+}
+.counter.done b {
+  color: var(--ink);
+}
+/* The Supporter pack: a sealed envelope in the grid, a fact rather than a prompt. */
+.pack {
+  align-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  background: radial-gradient(var(--pink-soft) 1.3px, transparent 1.6px) 0 0 / 9px 9px var(--card);
+}
+/* On three columns the envelope takes its own row, laid out sideways. */
+@media (min-width: 981px) {
+  .pack {
+    grid-column: 1 / -1;
+    grid-template-columns: auto auto 1fr;
+    grid-template-areas:
+      "envelope title list"
+      "envelope label list";
+    justify-items: start;
+    align-items: center;
+    text-align: left;
+    column-gap: clamp(1.4rem, 3vw, 2.6rem);
+    padding: 1.4rem 2rem;
+  }
+  .pack .envelope {
+    grid-area: envelope;
+    width: 170px;
+    margin: 0;
+  }
+  .pack .pack-title {
+    grid-area: title;
+    align-self: end;
+  }
+  .pack .pack-label {
+    grid-area: label;
+    align-self: start;
+  }
+  .pack .pack-list {
+    grid-area: list;
+    justify-self: stretch;
+    margin: 0;
+    padding: 0 0 0 clamp(1.4rem, 3vw, 2.6rem);
+    border-top: 0;
+    border-left: 1px dashed var(--ink);
+  }
+}
+.envelope {
+  width: min(210px, 90%);
+  overflow: visible;
+  margin-bottom: 0.4rem;
+}
+.envelope .ink {
+  fill: var(--card);
+}
+.seal {
+  fill: var(--pink);
+  transform-box: fill-box;
+  transform-origin: center;
+  transform: rotate(-12deg);
+}
+.seal-mark {
+  fill: var(--band-ink);
+  font: 18px var(--mono);
+  text-anchor: middle;
+}
+.pack-title {
+  font:
+    400 clamp(1.9rem, 3.4vw, 2.5rem) / 1 var(--display),
+    sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.pack-label {
+  font-size: 1.7rem;
+  transform: rotate(-2deg);
+}
+.pack-list {
+  list-style: none;
+  margin: 0.3rem 0 0;
+  padding: 0.7rem 0 0;
+  border-top: 1px dashed var(--ink);
+  display: grid;
+  gap: 0.25rem;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+}
+
+/* Poster: a dashed tear-off coupon under the grid. */
+.coupon {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.2rem;
+  margin-top: clamp(2.4rem, 5vw, 3.4rem);
+  padding: 1.5rem 4.2rem 1.4rem 1.6rem;
+  border: 2px dashed var(--ink);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.coupon:hover {
+  background: var(--pink-soft);
+}
+.coupon-cut {
+  position: absolute;
+  top: 0;
+  left: 1.4rem;
+  translate: 0 -55%;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0 0.5rem;
+  background: var(--paper);
+  font:
+    700 0.72rem/1 var(--mono),
+    monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.coupon-cut svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-linecap: round;
+  rotate: -90deg;
+}
+.coupon-title {
+  font:
+    400 clamp(1.25rem, 2.4vw, 1.6rem) / 1.1 var(--display),
+    sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0.06em 0.045em 0 var(--pink);
+}
+.coupon-meta {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+.coupon-arrow {
+  position: absolute;
+  right: 1.4rem;
+  top: 50%;
+  translate: 0 -50%;
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: translate 0.2s;
+}
+.coupon:hover .coupon-arrow {
+  translate: 0 -30%;
+}
+
+/* Chair squat: shin pivots on the foot, thigh on the knee, torso on the hip. */
+.sq-shin {
+  transform-origin: 66px 160px;
+  animation: sq-shin 2.6s ease-in-out infinite;
+}
+.sq-thigh {
+  transform-origin: 66px 130px;
+  animation: sq-thigh 2.6s ease-in-out infinite;
+}
+.sq-torso {
+  transform-origin: 66px 100px;
+  animation: sq-torso 2.6s ease-in-out infinite;
+}
+.sq-arm {
+  transform-origin: 66px 60px;
+  animation: sq-arm 2.6s ease-in-out infinite;
+}
+@keyframes sq-shin {
+  40%,
+  55% {
+    transform: rotate(20deg);
+  }
+}
+@keyframes sq-thigh {
+  40%,
+  55% {
+    transform: rotate(-98deg);
+  }
+}
+@keyframes sq-torso {
+  40%,
+  55% {
+    transform: rotate(103deg);
+  }
+}
+@keyframes sq-arm {
+  40%,
+  55% {
+    transform: rotate(-115deg);
+  }
+}
+
+/* Calf raise */
+.cr-body {
+  animation: cr-body 1.7s ease-in-out infinite;
+}
+.cr-foot {
+  transform-origin: 86px 157px;
+  animation: cr-foot 1.7s ease-in-out infinite;
+}
+@keyframes cr-body {
+  35%,
+  60% {
+    transform: translateY(-7px);
+  }
+}
+@keyframes cr-foot {
+  35%,
+  60% {
+    transform: rotate(24deg);
+  }
+}
+
+/* Arm circles: the arms stay level while tracing a small circle. */
+.ac-left,
+.ac-right {
+  animation: ac 1.8s linear infinite;
+}
+.ac-right {
+  animation-direction: reverse;
+}
+@keyframes ac {
+  from {
+    transform: rotate(0deg) translateX(7px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(7px) rotate(-360deg);
+  }
+}
+
+/* Shoulder shrugs */
+.sh-shoulders {
+  animation: shrug 1.9s ease-in-out infinite;
+}
+@keyframes shrug {
+  35%,
+  60% {
+    transform: translateY(-9px);
+  }
+}
+
+/* Neck side stretch: ~15 s each side. */
+.nk-head {
+  transform-origin: 70px 43px;
+  animation: neck 32s ease-in-out infinite;
+}
+@keyframes neck {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  2%,
+  49% {
+    transform: rotate(-24deg);
+  }
+  51%,
+  98% {
+    transform: rotate(24deg);
+  }
+}
+
+/* Standing march: thighs swing up, shins hang from the knee, arms swing against the legs. */
+.mr-thigh-a,
+.mr-thigh-b {
+  transform-origin: 66px 100px;
+  animation: mr-thigh 1.8s ease-in-out infinite;
+}
+.mr-shin-a,
+.mr-shin-b {
+  transform-origin: 66px 129px;
+  animation: mr-shin 1.8s ease-in-out infinite;
+}
+.mr-arm-near,
+.mr-arm-far {
+  transform-origin: 66px 54px;
+  animation: mr-arm 1.8s ease-in-out infinite;
+}
+.mr-thigh-b,
+.mr-shin-b,
+.mr-arm-far {
+  animation-delay: -0.9s;
+}
+@keyframes mr-thigh {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-80deg);
+  }
+}
+@keyframes mr-shin {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(80deg);
+  }
+}
+@keyframes mr-arm {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+}
+
+/* Seated march: the same knee lift, from a stool. */
+.sm-thigh-a,
+.sm-thigh-b {
+  transform-origin: 46px 108px;
+  animation: sm-thigh 1.8s ease-in-out infinite;
+}
+.sm-shin-a,
+.sm-shin-b {
+  transform-origin: 82px 108px;
+  animation: sm-shin 1.8s ease-in-out infinite;
+}
+.sm-thigh-b,
+.sm-shin-b {
+  animation-delay: -0.9s;
+}
+@keyframes sm-thigh {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-16deg);
+  }
+}
+@keyframes sm-shin {
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(16deg);
+  }
+}
+
+/* Seated calf raise: heels lift, the knee comes up a little. */
+.sc-thigh {
+  transform-origin: 46px 108px;
+  animation: sc-thigh 1.7s ease-in-out infinite;
+}
+.sc-shin {
+  animation: sc-shin 1.7s ease-in-out infinite;
+}
+.sc-foot {
+  transform-origin: 96px 155px;
+  animation: sc-foot 1.7s ease-in-out infinite;
+}
+@keyframes sc-thigh {
+  35%,
+  60% {
+    transform: rotate(-8deg);
+  }
+}
+@keyframes sc-shin {
+  35%,
+  60% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes sc-foot {
+  35%,
+  60% {
+    transform: rotate(20deg);
+  }
+}
+
+/* Chest opener: arms fold up into a goalpost and hold 20 s. */
+.co-upper {
+  transform-origin: 52px 54px;
+  animation: co-upper 26s ease-in-out infinite;
+}
+.co-fore {
+  transform-origin: 28px 54px;
+  animation: co-fore 26s ease-in-out infinite;
+}
+.co-glow {
+  animation: co-glow 26s ease-in-out infinite;
+}
+@keyframes co-upper {
+  0%,
+  97%,
+  100% {
+    transform: rotate(-75deg);
+  }
+  10%,
+  87% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes co-fore {
+  0%,
+  97%,
+  100% {
+    transform: rotate(-95deg);
+  }
+  10%,
+  87% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes co-glow {
+  0%,
+  90%,
+  100% {
+    opacity: 0;
+  }
+  12%,
+  85% {
+    opacity: 1;
+  }
+}
+
+/* Wrist and forearm stretch: 15 s a side; the figure turns round for the other arm. */
+.wr-body {
+  transform-origin: 70px 0;
+  animation: wr-body 34s ease-in-out infinite;
+}
+.wr-hand {
+  transform-origin: 88px 56px;
+  animation: wr-hand 34s ease-in-out infinite;
+}
+.wr-help {
+  transform-origin: 72px 68px;
+  animation: wr-help 34s ease-in-out infinite;
+}
+@keyframes wr-body {
+  0%,
+  49%,
+  100% {
+    transform: scaleX(1);
+  }
+  51%,
+  98.5% {
+    transform: scaleX(-1);
+  }
+}
+@keyframes wr-hand {
+  0%,
+  49%,
+  51%,
+  98.5%,
+  100% {
+    transform: rotate(0deg);
+  }
+  3%,
+  47.5%,
+  52.5%,
+  97% {
+    transform: rotate(-75deg);
+  }
+}
+@keyframes wr-help {
+  0%,
+  49%,
+  51%,
+  98.5%,
+  100% {
+    transform: rotate(0deg);
+  }
+  3%,
+  47.5%,
+  52.5%,
+  97% {
+    transform: rotate(-19deg);
+  }
+}
+
+/* 20-20-20 eye break: look up at the window for 20 s, blinking now and then. */
+.ey-head {
+  transform-origin: 36px 57px;
+  animation: ey-head 26s ease-in-out infinite;
+}
+.ey-eye {
+  transform-origin: 42px 42px;
+  animation: ey-blink 4.3333s ease-in-out infinite;
+}
+.ey-sight {
+  animation: ey-sight 26s ease-in-out infinite;
+}
+@keyframes ey-head {
+  0%,
+  90%,
+  100% {
+    transform: rotate(0deg);
+  }
+  6%,
+  84% {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes ey-blink {
+  0%,
+  90%,
+  100% {
+    transform: scaleY(1);
+  }
+  95% {
+    transform: scaleY(0.15);
+  }
+}
+@keyframes ey-sight {
+  0%,
+  88%,
+  100% {
+    opacity: 0;
+  }
+  7%,
+  84% {
+    opacity: 1;
+  }
+}
+
+/* ---------- Modes ---------- */
+.mode-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 3px solid var(--ink);
+}
+.mode {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+}
+.mode-cam {
+  border-left: 3px solid var(--ink);
+  background: radial-gradient(var(--pink-soft) 1.3px, transparent 1.6px) 0 0 / 9px 9px;
+}
+.keycap {
+  position: relative;
+  justify-self: start;
+  margin: 1rem 0;
+  padding: 1.1rem 4.5rem 1.4rem 1.2rem;
+  border: 3px solid var(--ink);
+  border-radius: 10px;
+  background: var(--card);
+  box-shadow:
+    0 6px 0 var(--ink),
+    6px 12px 0 var(--pink-soft);
+  font-weight: 700;
+  font-size: 0.85rem;
+  animation: press 1.6s ease-in-out infinite;
+}
+.keycap::after {
+  content: attr(data-pop);
+  position: absolute;
+  right: -2.6rem;
+  top: -1.4rem;
+  font-family: var(--hand);
+  font-size: 2rem;
+  color: var(--pink-text);
+  animation: plus 1.6s ease-out infinite;
+}
+@keyframes press {
+  0%,
+  30%,
+  100% {
+    transform: translateY(0);
+    box-shadow:
+      0 6px 0 var(--ink),
+      6px 12px 0 var(--pink-soft);
+  }
+  12% {
+    transform: translateY(5px);
+    box-shadow:
+      0 1px 0 var(--ink),
+      6px 7px 0 var(--pink-soft);
+  }
+}
+@keyframes plus {
+  0%,
+  10% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  25% {
+    opacity: 1;
+  }
+  70%,
+  100% {
+    opacity: 0;
+    transform: translateY(-18px);
+  }
+}
+.viewfinder {
+  position: relative;
+  justify-self: start;
+  width: min(260px, 100%);
+}
+.viewfinder svg {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+.skeleton {
+  stroke: var(--pink);
+  stroke-width: 3;
+}
+.skeleton circle {
+  fill: var(--ink);
+  stroke: var(--ink);
+  stroke-width: 1;
+  animation: blink 2.4s ease-in-out infinite;
+}
+.skeleton circle:nth-of-type(2n) {
+  animation-delay: 0.6s;
+}
+@keyframes blink {
+  50% {
+    opacity: 0.35;
+  }
+}
+.hint {
+  position: absolute;
+  right: -0.5rem;
+  bottom: 1.4rem;
+  font-family: var(--hand);
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 0.2rem 0.6rem 0.3rem;
+  transform: rotate(4deg);
+}
+
+/* ---------- Privacy (the proof under the two modes) ---------- */
+.privacy-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "stamp list"
+    "stamp verify";
+  gap: 1.4rem 2.5rem;
+  align-items: center;
+  margin-top: clamp(2rem, 4vw, 2.8rem);
+}
+/* A pink rubber stamp, the loudest promise on the page. */
+.stamp {
+  grid-area: stamp;
+  width: 150px;
+  transform: rotate(-12deg);
+  opacity: 0.9;
+}
+.stamp-ink {
+  stroke: var(--pink-text);
+  stroke-width: 4;
+}
+.stamp-ink text {
+  fill: var(--pink-text);
+  stroke: none;
+  font:
+    700 13px var(--mono),
+    monospace;
+  letter-spacing: 0.1em;
+}
+.stamp-ink .stamp-mid {
+  font:
+    400 58px var(--display),
+    sans-serif;
+}
+.stamp-ink .stamp-small {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+.privacy-list {
+  grid-area: list;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.5rem 2rem;
+  color: var(--ink-soft);
+}
+.privacy-list li {
+  padding-left: 1.4rem;
+  position: relative;
+}
+.privacy-list li::before {
+  content: attr(data-marker);
+  position: absolute;
+  left: 0;
+  color: var(--ink-soft);
+}
+.stamp-ink .stamp-star {
+  fill: var(--ink);
+  font-size: 16px;
+}
+.footmark {
+  color: var(--pink-text);
+  font-weight: 700;
+}
+.footnote {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+}
+.footnote span {
+  color: var(--pink-text);
+  font-weight: 700;
+}
+/* Hand note that points back at the stamp: the no-network claim is checkable. */
+.privacy-verify {
+  grid-area: verify;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 1.75rem;
+  line-height: 1.05;
+  transform: rotate(-1.5deg);
+  transform-origin: left center;
+}
+.privacy-verify svg {
+  flex: none;
+  width: 54px;
+  height: 36px;
+  fill: none;
+  stroke: var(--pink);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.privacy-verify a {
+  color: inherit;
+  text-decoration: underline wavy;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+.privacy-verify a:hover {
+  color: var(--ink);
+}
+
+/* ---------- Stats ---------- */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.chart {
+  position: relative;
+  margin: 0;
+  padding: 1.4rem 1.4rem 1rem;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  transform: rotate(-1deg);
+}
+.chart svg {
+  display: block;
+  width: 100%;
+  overflow: visible;
+}
+.bars {
+  fill: var(--pink-soft);
+  stroke-width: 3;
+}
+.axis text {
+  fill: var(--ink);
+  font:
+    700 12px var(--mono),
+    monospace;
+  text-anchor: middle;
+}
+.chart figcaption {
+  text-align: right;
+}
+/* Mock of the Stats suggestion card, stuck on the chart's corner. */
+.suggestion-note {
+  position: absolute;
+  top: -2.2rem;
+  right: -1.6rem;
+  width: 11.5rem;
+  padding: 1rem 0.9rem 0.8rem;
+  background: var(--pink-soft);
+  color: var(--ink);
+  box-shadow: 3px 4px 0 var(--tape-ink);
+  transform: rotate(4deg);
+}
+.suggestion-note p {
+  margin: 0 0 0.6rem;
+  font:
+    700 0.8rem/1.35 var(--mono),
+    monospace;
+}
+.suggestion-apply {
+  display: inline-block;
+  font:
+    700 0.7rem/1 var(--mono),
+    monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.4rem 0.6rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 0 var(--pink);
+}
+.tape-e {
+  top: -12px;
+  left: 30%;
+  width: 64px;
+  transform: rotate(-6deg);
+}
+.streak-freeze {
+  margin: -0.6rem 0 0 1rem;
+  font-size: 1.5rem;
+  transform: rotate(-2deg);
+}
+.stats-copy {
+  display: grid;
+  gap: 1.4rem;
+}
+.streak {
+  font:
+    400 2.6rem/1 var(--hand),
+    cursive;
+}
+.circled {
+  display: inline-block;
+  padding: 0.3rem 1rem 0.4rem;
+  border: 3px solid var(--pink);
+  border-radius: 50% 45% 55% 48% / 60% 52% 48% 55%;
+  transform: rotate(-3deg);
+}
+/* A sheet of stickers, the app's achievements. The last one isn't earned yet. */
+.stickers {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  padding: 1.2rem 1rem 1.3rem;
+  background: var(--card);
+  box-shadow: 5px 6px 0 var(--shadow);
+  transform: rotate(1deg);
+}
+.sticker-sheet {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.3rem 0.8rem;
+  margin: 0;
+  padding: 0.3rem 0 0;
+  list-style: none;
+}
+.sticker {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  gap: 0.55rem;
+  font:
+    700 0.75rem/1.2 var(--mono),
+    monospace;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  overflow-wrap: anywhere;
+  transform: rotate(var(--tilt, 0deg));
+}
+/* A white die-cut edge, then an ink drop shadow, like a real sticker. */
+.sticker-mark {
+  display: grid;
+  place-items: center;
+  width: 4.2rem;
+  aspect-ratio: 1;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  outline: 3px solid var(--card);
+  background: var(--pink);
+  color: var(--band-ink);
+  box-shadow: 4px 4px 0 3px var(--shadow);
+  font:
+    400 1.35rem/1 var(--display),
+    sans-serif;
+}
+.sticker-square .sticker-mark {
+  border-radius: 22%;
+}
+.sticker-seal .sticker-mark {
+  border-radius: 46% 54% 42% 58% / 55% 43% 57% 45%;
+}
+.sticker-teal .sticker-mark {
+  background: var(--teal);
+}
+.sticker-paper .sticker-mark {
+  background: var(--paper);
+  color: var(--ink);
+}
+.sticker-next {
+  color: var(--ink-soft);
+}
+.sticker-next .sticker-mark {
+  border-style: dashed;
+  outline: 0;
+  background: transparent;
+  color: var(--ink-soft);
+  box-shadow: none;
+}
+.store-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.2rem;
+}
+.store-buttons .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+}
+.store-buttons .button.is-alt {
+  background: transparent;
+  color: var(--ink);
+  box-shadow: inset 0 0 0 2px var(--ink);
+}
+.store-buttons .button.is-alt:hover {
+  background: var(--pink-soft);
+  box-shadow: inset 0 0 0 2px var(--ink);
+}
+.store-icon {
+  flex: none;
+  width: 1.15em;
+  height: 1.15em;
+}
+.store-icon-apple {
+  translate: 0 -0.1em;
+}
+.hero-actions .store-buttons {
+  justify-content: flex-start;
+}
+/* The CTA column is narrow: stack the two big buttons at one width. */
+.get-action .store-buttons {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+.get-action .store-buttons .button-big {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* ---------- FAQ ---------- */
+/* Centered, so it leads into the centered "Get it" section. */
+.faq .section-head {
+  margin-inline: auto;
+  text-align: center;
+}
+.faq-list {
+  max-width: 48rem;
+  margin-inline: auto;
+  border-top: 3px solid var(--ink);
+}
+details {
+  border-bottom: 1px dashed var(--ink);
+  padding: 1.05rem 0;
+}
+summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::after {
+  content: attr(data-marker);
+  font:
+    400 1.4rem/1 var(--display),
+    sans-serif;
+  color: var(--pink-text);
+  transition: transform 0.2s;
+}
+details[open] summary::after {
+  transform: rotate(45deg);
+}
+details p {
+  padding-top: 0.7rem;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+
+/* ---------- CTA + footer ---------- */
+.get {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 1.4rem;
+  padding-block: clamp(5rem, 11vw, 9rem);
+}
+.get h1,
+.get h2 {
+  font-size: clamp(2.8rem, 8vw, 6.5rem);
+  text-shadow: 0.06em 0.045em 0 var(--pink);
+}
+.get h2 span {
+  display: inline-block;
+  font-family: var(--hand);
+  text-transform: none;
+  color: var(--pink-text);
+  text-shadow: none;
+  font-size: 0.72em;
+  transform: rotate(-3deg);
+}
+.get-deal {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2.5rem, 7vw, 6rem);
+  margin-top: clamp(1rem, 3vw, 2rem);
+}
+/* Top-weighted beside the long receipt, so the headline leads straight into
+   the buttons; the "less than a coffee" note fills the gutter below them. */
+.get-action {
+  display: grid;
+  justify-items: center;
+  gap: 1.2rem;
+  max-width: 26rem;
+  align-self: start;
+  margin-top: clamp(3rem, 7vw, 5.5rem);
+}
+.get-action p {
+  margin: 0;
+}
+
+/* The pricing table is a till receipt: everything free, one optional line. */
+.receipt-wrap {
+  --tilt: -2deg;
+  position: relative;
+  width: min(360px, 100%);
+  transform: rotate(var(--tilt));
+}
+.tape-d {
+  top: -20px;
+  left: 50%;
+  translate: -50% 0;
+  z-index: 1;
+  transform: rotate(3deg);
+}
+.receipt {
+  position: relative;
+  padding: 1.6rem 1.4rem 1.3rem;
+  background: var(--card);
+  box-shadow: 6px 7px 0 var(--shadow);
+  text-align: left;
+  font-size: 0.86rem;
+  line-height: 1.35;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+/* Torn top and bottom edges. */
+.receipt::before,
+.receipt::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 9px;
+  background: var(--card);
+}
+.receipt::before {
+  bottom: 100%;
+  mask: conic-gradient(from -45deg at bottom, #0000, #000 1deg 89deg, #0000 90deg) 50% / 18px 100%;
+}
+.receipt::after {
+  top: 100%;
+  mask: conic-gradient(from 135deg at top, #0000, #000 1deg 89deg, #0000 90deg) 50% / 18px 100%;
+}
+.receipt-shop {
+  text-align: center;
+  font:
+    400 1.35rem/1 var(--display),
+    sans-serif;
+  letter-spacing: 0;
+}
+.receipt-title {
+  margin: 0.35rem 0 0.9rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px dashed var(--ink);
+  text-align: center;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  color: var(--ink-soft);
+}
+.receipt dl {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+}
+.receipt dl > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  column-gap: 0.4rem;
+}
+.receipt dt {
+  display: flex;
+  align-items: baseline;
+}
+/* Dotted leader between label and value. */
+.receipt dt::after {
+  content: "";
+  flex: 1 0 1.2rem;
+  margin: 0 0 0.25em 0.4rem;
+  border-bottom: 2px dotted var(--line);
+}
+.receipt dd {
+  margin: 0;
+  font-weight: 700;
+}
+.receipt-supporter {
+  margin-top: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 2px dashed var(--ink);
+}
+.receipt-supporter > dd:not(.receipt-detail) {
+  position: relative;
+}
+.receipt-detail {
+  grid-column: 1 / -1;
+  margin-top: 0.2rem !important;
+  font-weight: 400 !important;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--ink-soft);
+}
+.receipt-theme {
+  display: inline-flex;
+  align-items: baseline;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.receipt-theme {
+  font-weight: 700;
+  color: var(--pink-text);
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.3em;
+}
+/* The whole receipt is the hit area; the button inside stays the keyboard and screen reader control. */
+.receipt {
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.receipt:hover {
+  transform: translateY(-2px);
+  box-shadow: 8px 9px 0 var(--shadow);
+}
+.receipt:hover .swatch,
+.receipt-theme[aria-pressed="true"] .swatch {
+  transform: rotate(8deg) scale(1.25);
+}
+.receipt-theme:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+.swatch {
+  transition: transform 0.2s;
+  flex: none;
+  align-self: center;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0.45rem;
+  background: var(--teal);
+  border: 1.5px solid var(--ink);
+  transform: rotate(-8deg);
+}
+.receipt-total {
+  margin-top: 0.4rem;
+  padding-top: 0.75rem;
+  border-top: 3px solid var(--ink);
+  font-size: 1.05rem;
+}
+.receipt-total dd {
+  font:
+    400 1.5rem/1 var(--display),
+    sans-serif;
+  color: var(--pink-text);
+}
+.receipt-barcode {
+  height: 34px;
+  margin: 1.1rem 0 0.5rem;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--ink) 0 2px,
+    transparent 2px 4px,
+    var(--ink) 4px 7px,
+    transparent 7px 8px,
+    var(--ink) 8px 9px,
+    transparent 9px 12px
+  );
+  opacity: 0.8;
+}
+.receipt-thanks {
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.6rem;
+}
+/* "less than a coffee", scribbled in the margin next to the Supporter line. */
+.receipt-coffee {
+  position: absolute;
+  left: calc(100% + 1.9rem);
+  top: 50%;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.2rem;
+  width: max-content;
+  max-width: 11rem;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 1.65rem;
+  transform: translateY(-65%) rotate(4deg);
+}
+.receipt-coffee svg {
+  flex: none;
+  order: -1;
+  width: 44px;
+  height: 30px;
+  fill: none;
+  stroke: var(--pink);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.button-big {
+  font-size: 1.05rem;
+  padding: 1.2rem 1.8rem;
+  margin-top: 0.6rem;
+}
+.footer {
+  width: min(calc(var(--wrap) - 2 * var(--gutter)), calc(100% - 2 * var(--gutter)));
+  padding-inline: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem 2rem;
+  padding-block: 1.6rem 2.4rem;
+  border-top: 2px solid var(--ink);
+  font-size: 0.82rem;
+}
+.footer .credit a {
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}
+.footer .credit a:hover {
+  color: var(--pink-text);
+}
+
+/* ---------- Reveal on scroll (only when JS runs) ---------- */
+.js .reveal {
+  opacity: 0;
+  transform: translateY(24px) rotate(var(--tilt, 0deg));
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: rotate(var(--tilt, 0deg));
+}
+.js .move.reveal.is-visible:hover {
+  transform: rotate(0deg) translateY(-4px);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .privacy-list {
+    grid-template-columns: 1fr;
+  }
+  /* Section links need ~910px in German and French. */
+  .nav-links {
+    display: none;
+  }
+  .nav-controls {
+    margin-left: auto;
+  }
+  .hero,
+  .stats-grid,
+  .get-deal {
+    grid-template-columns: 1fr;
+  }
+  .get-deal {
+    justify-items: center;
+  }
+  .receipt-wrap {
+    order: 2;
+  }
+  .get-action {
+    margin-top: 0;
+  }
+  .get-deal {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .suggestion-note {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin: 1.4rem 0 0 auto;
+  }
+  .receipt-coffee {
+    position: static;
+    width: auto;
+    max-width: 9rem;
+    margin-top: 0.3rem;
+    text-align: right;
+    transform: rotate(-2deg);
+  }
+  .receipt-coffee svg {
+    display: none;
+  }
+  .receipt dl > .receipt-supporter {
+    align-items: start;
+  }
+  .receipt-supporter > dd:not(.receipt-detail) {
+    display: grid;
+    justify-items: end;
+  }
+  .hero-art {
+    max-width: 560px;
+  }
+  .move-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .how-top {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .menu-cutout {
+    margin: 0 auto;
+    flex-basis: auto;
+    width: min(270px, 100%);
+    transform: rotate(-2deg);
+  }
+  .menu-note {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    gap: 0.75rem;
+  }
+}
+@media (max-width: 720px) {
+  .strip,
+  .mode-grid {
+    grid-template-columns: 1fr;
+  }
+  /* Moves become a swipeable strip; the next card peeks in from the edge. */
+  .move-grid {
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: min(82%, 320px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    margin-inline: calc(-1 * var(--gutter, 1.25rem));
+    padding: 0.8rem var(--gutter, 1.25rem) 1.4rem;
+    scroll-padding-inline: var(--gutter, 1.25rem);
+    gap: 1.1rem;
+  }
+  .move {
+    scroll-snap-align: start;
+  }
+  .panel + .panel {
+    border-left: 0;
+    border-top: 3px solid var(--ink);
+  }
+  .panel:nth-child(even) {
+    background: none;
+  }
+  .panel:nth-child(odd):not(:first-child) {
+    background: radial-gradient(var(--pink-soft) 1.3px, transparent 1.6px) 0 0 / 9px 9px;
+  }
+  .mode-cam {
+    border-left: 0;
+    border-top: 3px solid var(--ink);
+  }
+  .privacy-inner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "stamp"
+      "list"
+      "verify";
+  }
+  .stamp {
+    width: 120px;
+    margin-left: 0.4rem;
+  }
+  .privacy-verify svg {
+    display: none;
+  }
+  .coupon {
+    padding-right: 3.6rem;
+  }
+  .notif {
+    position: relative;
+    right: auto;
+    margin: 0 0 1rem auto;
+    width: min(320px, 100%);
+  }
+  .hero-art {
+    padding-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .note-better {
+    opacity: 0;
+  }
+  .js .reveal {
+    opacity: 1;
+    transform: rotate(var(--tilt, 0deg));
+  }
+}
+
+/*
+ * Japanese, Korean and Chinese. The zine faces have no CJK glyphs, so these pages fall back to the
+ * system's CJK fonts. Tracking meant for capitals spreads CJK text apart, the display line-heights
+ * clip its taller glyphs, and a heading may break inside a word, so undo all three. `!important`
+ * because every tracked rule above is more specific than a language selector.
+ */
+:is(:lang(ja), :lang(ko), :lang(zh)) * {
+  letter-spacing: normal !important;
+}
+
+:is(:lang(ja), :lang(ko), :lang(zh)) :is(h1, h2, h3) {
+  line-height: 1.2 !important;
+}
+
+:is(:lang(ja), :lang(zh)) {
+  line-break: strict;
+  word-break: auto-phrase;
+}
+
+:lang(ko) {
+  word-break: keep-all;
+}

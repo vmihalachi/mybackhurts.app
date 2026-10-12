@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "ja"
+  },
+  "meta": {
+    "title": "mybackhurts：イスから立ち上がらせてくれる、小さなデスクアプリ",
+    "description": "mybackhurtsは、MacとWindowsで使える小さなアプリです。45分ごとに立ち上がるよう知らせて、2〜3個の短いエクササイズを案内します。Webカメラで回数をデバイス上でカウントすることもできます。無料、アカウント不要。",
+    "ogTitle": "mybackhurts：背中から電話です。話があるそうです",
+    "ogDescription": "45分ごとにイスから立ち上がらせてくれる、MacとWindows用の小さなアプリ。回数はデバイス上でカウント。映像はコンピュータの外に出ません。無料、アカウント不要。",
+    "url": "https://mybackhurts.app/ja/",
+    "ogImageAlt": "mybackhurts：「背中から電話です。話があるそうです。」ノートパソコンの前で机に突っ伏した棒人間が「いてて」と言っています。"
+  },
+  "og": {
+    "tape": "休憩しよう",
+    "headline1": "背中から電話です。",
+    "headline2": "話があるそうです。",
+    "tagline1": "MacとWindowsの小さなアプリが",
+    "tagline2": "45分ごとにイスから立たせます。",
+    "footerNote": "回数はデバイス上でカウント。映像はコンピュータの外に出ません。",
+    "noteOw": "いてて。"
+  },
+  "a11y": {
+    "skipLink": "本文へスキップ"
+  },
+  "nav": {
+    "ariaLabel": "メイン",
+    "wordmarkAria": "mybackhurtsのホーム",
+    "how": "しくみ",
+    "moves": "動き",
+    "privacy": "プライバシー",
+    "cta": "入手する",
+    "languageLabel": "言語",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "背中から電話です。<br />ちょっと<span class=\"scribble\">お話</span>があるそうです。",
+    "lede": "<strong>mybackhurts</strong>はメニューバーやシステムトレイに住んで、45分ごとにそっと声をかけ、短い動きを案内します。回数を数えてもらいたいと頼まない限り、カメラはオフのままです。",
+    "secondaryCta": "または動きを見る ↓",
+    "figureTitle": "ノートパソコンの前で突っ伏していた棒人間が、起き上がって伸びをして、またぐったりします。",
+    "noteOw": "いてて。",
+    "noteBetter": "すっきり。"
+  },
+  "notification": {
+    "ariaLabel": "mybackhurtsからのリマインダー",
+    "appLine": "mybackhurts · 今",
+    "title": "体を動かす時間です",
+    "body": "チェアスクワット、腕回し、首のサイドストレッチ。",
+    "start": "開始",
+    "snooze": "10分後に開始",
+    "afterCall": "次の通話のあとに開始",
+    "skip": "スキップ"
+  },
+  "tapeStrip": "立ち上がる ✶ 肩を回す ✶ あごの力を抜く ✶ お水を飲む ✶ 遠くを見る ✶ 立ち上がる ✶ 肩を回す ✶ あごの力を抜く ✶ お水を飲む ✶ 遠くを見る ✶",
+  "preview": {
+    "title": "24秒で見られます。",
+    "note": "音は出ません。オフィスですからね。",
+    "label": "アプリのプレビュー：Webカメラのセッションでチェアスクワットを数え、続いて首のストレッチのキープ、セッションの結果、週間の統計を表示します。",
+    "play": "動画を再生",
+    "pause": "動画を一時停止"
+  },
+  "how": {
+    "title": "1日の流れを、<br />3コマで。",
+    "panel1Title": "45分ごとに",
+    "panel1Body": "勤務時間中だけ。通話中は絶対に邪魔しません。",
+    "panel3Title": "2〜3個の動き",
+    "panel3Body": "おまかせで選びます。気に入らないものは入れ替えできます。",
+    "panel4Doodle": "すぐ戻る",
+    "panel4Title": "席を離れた？それもカウント。",
+    "panel4Body": "キーボードから5分離れたら、休憩としてカウントします。"
+  },
+  "menu": {
+    "ariaLabel": "メニューバーのメニュー",
+    "dayTime": "金 14:02",
+    "nextReminder": "次のリマインダー：14:45",
+    "goal": "今日の休憩 2 / 4回",
+    "startNow": "今すぐ開始",
+    "snooze": "10分後に開始",
+    "pause": "一時停止",
+    "library": "エクササイズライブラリ",
+    "stats": "統計",
+    "help": "ヘルプ",
+    "settings": "設定…",
+    "quit": "終了",
+    "note": "ここに住んでいます。Dockにはいません。"
+  },
+  "moves": {
+    "title": "デスクの横でできる動き。",
+    "subtitle": "仕事着でもヘッドホンのままでも大丈夫です。",
+    "posture": {
+      "label": "立ちの動きと座りの動きを切り替え",
+      "standing": "立ち",
+      "seated": "座り"
+    },
+    "camera": "カメラでカウント",
+    "squat": {
+      "name": "チェアスクワット",
+      "counter": "/ 10回",
+      "figureTitle": "チェアスクワットをする棒人間。",
+      "description": "腰を引いて、イスにタッチして、まっすぐ立ちます。"
+    },
+    "calf": {
+      "name": "立ちカーフレイズ",
+      "counter": "/ 15回",
+      "figureTitle": "カーフレイズでつま先立ちになる棒人間。",
+      "description": "つま先立ちになって、ゆっくり下ろします。"
+    },
+    "seatedCalf": {
+      "name": "座りカーフレイズ",
+      "counter": "/ 45秒",
+      "figureTitle": "スツールに座ってかかとを上げる棒人間。",
+      "description": "かかとを上げて、下ろして。イスから立たなくてもできます。"
+    },
+    "march": {
+      "name": "立ち足踏み",
+      "counter": "/ 20回",
+      "figureTitle": "ひざを高く上げて、その場で足踏みする棒人間。",
+      "description": "ひざを高く、腕を振って、右・左と交互に。"
+    },
+    "seatedMarch": {
+      "name": "座り足踏み",
+      "counter": "/ 45秒",
+      "figureTitle": "スツールに座って、ひざを片方ずつ上げる棒人間。",
+      "description": "背すじを伸ばして、ひざを片方ずつ上げます。"
+    },
+    "arms": {
+      "name": "腕回し",
+      "counter": "/ 10回",
+      "figureTitle": "両腕で円を描く棒人間。",
+      "description": "腕を横に開いて、小さな円を、回すたびに少しずつ大きく。"
+    },
+    "chest": {
+      "name": "胸ひらき",
+      "counter": "/ 20秒",
+      "figureTitle": "ゴールポストのように腕を上げる棒人間。",
+      "description": "ゴールポストのように腕を上げて、肩甲骨を寄せて、20秒キープ。"
+    },
+    "shrugs": {
+      "name": "肩すくめ",
+      "counter": "/ 12回",
+      "figureTitle": "両肩を持ち上げて下ろす棒人間。",
+      "description": "肩を耳まで上げて、ストンと落とします。"
+    },
+    "neck": {
+      "name": "首のサイドストレッチ",
+      "counter": "秒 <span>残り</span>",
+      "figureTitle": "首のサイドストレッチで頭を倒す棒人間。",
+      "description": "耳を肩へ、片側15秒ずつ。"
+    },
+    "wrist": {
+      "name": "手首と前腕のストレッチ",
+      "counter": "秒 <span>残り</span>",
+      "figureTitle": "片腕を伸ばして、指をそっと手前に引く棒人間。",
+      "description": "腕を伸ばして、指を上に向けて、反対の手でそっと引きます。片側15秒。"
+    },
+    "eye": {
+      "name": "20-20-20 目の休憩",
+      "counter": "/ 20秒",
+      "figureTitle": "スツールに座って、遠くの窓の外を見る棒人間。",
+      "description": "20秒間、遠くのものを見ます。まばたきはOKです。"
+    },
+    "pack": {
+      "title": "+3つの動き",
+      "label": "サポーターパックに入っています",
+      "move1": "座りツイスト",
+      "move2": "立ち前ももストレッチ",
+      "move3": "頭上サイドリーチ"
+    },
+    "more": "すべての動きを見る",
+    "poster": {
+      "cut": "ここで切る",
+      "link": "早見表を印刷",
+      "meta": "PDF · 1ページ"
+    }
+  },
+  "modes": {
+    "title": "回数は自分で数えても、カメラに任せてもOK。",
+    "simpleLabel": "シンプル · 初期設定",
+    "spaceKey": "スペース",
+    "simpleTitle": "数えるのはあなた。時間は私が計ります。",
+    "simpleBody": "タイマーと<b>+1回</b>ボタン（またはスペースキー）。カメラは絶対にオンになりません。",
+    "webcamLabel": "Webカメラ · 使いたい人だけ",
+    "hint": "少し下がって",
+    "webcamTitle": "数えるのは私。あなたは動くだけ。",
+    "webcamBody": "デバイス上のポーズモデルが関節を追跡して、回数やキープ時間を数え、フォームのヒントも出します。",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "映像の保存なし、映像の送信なし、デバイス上で処理、ネットワーク通信ゼロ。",
+    "stampRing": "映像の保存なし ✶ 映像の送信なし ✶ デバイス上で処理 ✶",
+    "stampZero": "0",
+    "stampNetwork": "ネットワーク",
+    "stampRequests": "通信",
+    "item1": "フレームはメモリ内で解析して、すぐに破棄します。",
+    "item2": "アプリ自身のネットワーク通信はありません。",
+    "purchases": "購入はApp StoreまたはMicrosoft Storeを通して行われます。",
+    "item3": "統計はコンピュータの中だけに残ります。CSVを書き出さない限り。",
+    "verify": "信じられない？<a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>、<a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a>、<a href=\"https://www.glasswire.com/\">GlassWire</a>で確かめてみてください。",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "立ち上がった回数の、全記録。",
+    "chartTitle": "1週間の、1日あたりの運動時間（分）のグラフの例。",
+    "days": {
+      "mon": "月",
+      "tue": "火",
+      "wed": "水",
+      "thu": "木",
+      "fri": "金",
+      "sat": "土",
+      "sun": "日"
+    },
+    "bestDay": "ベストな日！",
+    "caption": "動いた時間（分）、直近7日間",
+    "suggestion": "午後3時のリマインダーはほとんどスキップしていますね。この時間帯は休止しますか？",
+    "suggestionApply": "適用",
+    "streak": "5日連続",
+    "freeze": "1日休んだ？週に1回はフリーズできます。",
+    "stickersLabel": "続けた人へのステッカー",
+    "stickers": {
+      "firstBreak": "初めての休憩",
+      "weekStreak": "1週間連続",
+      "monthStreak": "1か月連続"
+    }
+  },
+  "faq": {
+    "title": "よくある質問に<br />お答えします。",
+    "scheduleQuestion": "日曜の夜11時に通知が来ませんか？",
+    "scheduleAnswer": "その時間に働くと設定しない限り、来ません。時間帯、曜日、間隔は自分で決められます。",
+    "countingQuestion": "回数のカウントはどのくらい正確ですか？",
+    "countingAnswer": "まずまずで、魔法ではありません。明るさやカメラの位置が影響しますし、カーフレイズはタイマーに切り替わることがよくあります。カメラに見失われたときは、ワンクリックで自分で数えられます。",
+    "officeQuestion": "オープンオフィスです。変に見られませんか？",
+    "officeAnswer": "少しは。姿勢を「座り」にすれば、どの休憩もイスに座ったままできます。",
+    "callQuestion": "通話中かどうか、どうやって分かるのですか？",
+    "callAnswer": "ほかのアプリがカメラやマイクを使っていないか、全画面になっていないかを確認しています。自分でカメラやマイクを開くことはないので、許可を求めることもありません。",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "立ち上がって。<br /><span>いますぐ、本気で。</span>",
+    "body": "それからアプリを入手しましょう。ウェブページにガミガミ言わせないために。",
+    "small": "無料 · アカウント不要 · 17言語"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "レシート",
+    "reminders": "リマインダー",
+    "moves": "基本の動き",
+    "webcam": "Webカメラでカウント",
+    "stats": "統計 + ステッカー",
+    "subscription": "サブスク",
+    "account": "アカウント",
+    "free": "無料",
+    "none": "なし",
+    "once": "1回きり",
+    "supporter": "サポーター（任意）",
+    "supporterDetails": "動き3つ追加、ティールのインク、ありがとうの棒人間、1年ぶんのマス目、今後のパックも全部",
+    "total": "合計",
+    "totalValue": "0.00",
+    "coffee": "コーヒー1杯より安い",
+    "thanks": "立ち上がってくれてありがとう"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts、<span class=\"credit\">作った人：<a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "医療的なアドバイスではありません。やさしく動いて、痛みがあればやめてください。",
+    "privacy": "プライバシーポリシー",
+    "terms": "利用規約",
+    "contact": "お問い合わせ",
+    "openSource": "このサイトはオープンソースです"
+  },
+  "notFound": {
+    "metaTitle": "ページが見つかりません · mybackhurts",
+    "title": "このページ、<br />ぎっくり腰になりました。",
+    "body": "ここには何もありません。立ち上がって、伸びをして、最初のページに戻りましょう。",
+    "home": "最初に戻る"
+  },
+  "poster": {
+    "title": "立ち上がって。これをやろう。",
+    "subtitle": "デスクの横のスペースでできる動き。モニターに貼ってください。",
+    "neckDose": "片側15秒",
+    "handNote": "そう、今すぐ。"
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "しかたないですね。10分だけですよ。数えてますからね。",
+      "afterCall": "どうぞ。待ってます。",
+      "skip": "了解。背中はちゃんと覚えてますからね。"
+    },
+    "themeNames": {
+      "system": "システム",
+      "light": "ライト",
+      "dark": "ダーク"
+    },
+    "themeAriaTemplate": "テーマ：{current}。{next}に切り替え",
+    "themeTitleTemplate": "テーマ：{current}",
+    "themeLabels": {
+      "systemAria": "テーマ：システム。ライトに切り替え",
+      "systemTitle": "テーマ：システム"
+    },
+    "holdSides": {
+      "left": "左",
+      "right": "右"
+    }
+  }
+}

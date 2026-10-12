@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "ro"
+  },
+  "meta": {
+    "title": "mybackhurts: o mică aplicație de birou care te ridică de pe scaun",
+    "description": "mybackhurts este o mică aplicație Mac și Windows care îți amintește la fiecare 45 de minute să te ridici și te ghidează prin două sau trei exerciții scurte. Poate număra repetările cu webcamul, pe dispozitiv. Gratuită, fără cont.",
+    "ogTitle": "mybackhurts: te-a sunat spatele, vrea să-ți spună ceva",
+    "ogDescription": "O mică aplicație Mac și Windows care te ridică de pe scaun la fiecare 45 de minute. Repetări numărate pe dispozitiv. Niciun video nu pleacă de pe computer. Gratuită, fără cont.",
+    "url": "https://mybackhurts.app/ro/",
+    "ogImageAlt": "mybackhurts: „Te-a sunat spatele. Vrea să-ți spună ceva.” O siluetă aplecată peste un laptop, la birou, spune „au.”"
+  },
+  "og": {
+    "tape": "IA O PAUZĂ",
+    "headline1": "Te-a sunat",
+    "headline2": "spatele.",
+    "tagline1": "O mică aplicație Mac și Windows care te ridică",
+    "tagline2": "de pe scaun la fiecare 45 de minute.",
+    "footerNote": "repetări pe dispozitiv. niciun video nu pleacă de pe computer.",
+    "noteOw": "au."
+  },
+  "a11y": {
+    "skipLink": "Sari la conținut"
+  },
+  "nav": {
+    "ariaLabel": "Principal",
+    "wordmarkAria": "pagina principală mybackhurts",
+    "how": "Cum",
+    "moves": "Mișcări",
+    "privacy": "Confidențialitate",
+    "cta": "Ia-l",
+    "languageLabel": "Limbă",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "Te-a sunat spatele.<br />Vrea să-ți spună <span class=\"scribble\">ceva.</span>",
+    "lede": "<strong>mybackhurts</strong> stă în bara de meniu sau în zona de notificare, îți dă semn la fiecare 45 de minute și te ghidează prin câteva mișcări rapide. Camera rămâne închisă, decât dacă o ceri să numere repetările.",
+    "secondaryCta": "sau vezi mișcările ↓",
+    "figureTitle": "O siluetă aplecată peste un laptop, care se îndreaptă, se întinde, apoi se lasă iar în jos.",
+    "noteOw": "au.",
+    "noteBetter": "mai bine."
+  },
+  "notification": {
+    "ariaLabel": "Un memento de la mybackhurts",
+    "appLine": "mybackhurts · acum",
+    "title": "E timpul să te miști",
+    "body": "Genuflexiune la scaun, Cercuri cu brațele, Întindere laterală a gâtului.",
+    "start": "Începe",
+    "snooze": "Începe în 10 min",
+    "afterCall": "Începe după următorul apel",
+    "skip": "Omite"
+  },
+  "tapeStrip": "ridică-te ✶ rotește umerii ✶ relaxează maxilarul ✶ bea niște apă ✶ uită-te la ceva îndepărtat ✶ ridică-te ✶ rotește umerii ✶ relaxează maxilarul ✶ bea niște apă ✶ uită-te la ceva îndepărtat ✶",
+  "how": {
+    "title": "Toată rutina,<br />în trei panouri.",
+    "panel1Title": "La fiecare 45 de minute",
+    "panel1Body": "Doar în orele de lucru. Niciodată în mijlocul unui apel.",
+    "panel3Title": "Două sau trei mișcări",
+    "panel3Body": "Alese pentru tine. Schimbă-le pe cele care nu-ți plac.",
+    "panel4Doodle": "revin",
+    "panel4Title": "Ai plecat? Contează.",
+    "panel4Body": "5 minute departe de tastatură contează ca pauză."
+  },
+  "menu": {
+    "ariaLabel": "Meniul din bara de meniu",
+    "dayTime": "vin. 14:02",
+    "nextReminder": "Următorul memento la 14:45",
+    "goal": "2 din 4 pauze azi",
+    "startNow": "Începe acum",
+    "snooze": "Începe în 10 min",
+    "pause": "Pauză",
+    "library": "Biblioteca de exerciții",
+    "stats": "Statistici",
+    "help": "Ajutor",
+    "settings": "Configurări…",
+    "quit": "Închide",
+    "note": "stă aici sus. fără pictogramă în Dock."
+  },
+  "moves": {
+    "title": "Mișcări pe care le poți face lângă birou.",
+    "subtitle": "Merge și în haine de birou, cu căștile pe urechi.",
+    "posture": {
+      "label": "Arată mișcările în picioare sau pe scaun",
+      "standing": "În picioare",
+      "seated": "Pe scaun"
+    },
+    "camera": "Numărat de cameră",
+    "squat": {
+      "name": "Genuflexiune la scaun",
+      "counter": "/ 10 rep.",
+      "figureTitle": "O siluetă face o genuflexiune la scaun.",
+      "description": "Împinge șoldurile înapoi, atinge scaunul, ridică-te drept."
+    },
+    "calf": {
+      "name": "Ridicări pe vârfuri",
+      "counter": "/ 15 rep.",
+      "figureTitle": "O siluetă se ridică pe vârfuri pentru gambe.",
+      "description": "Ridică-te pe vârfuri, apoi coboară încet."
+    },
+    "seatedCalf": {
+      "name": "Ridicări pe vârfuri pe scaun",
+      "counter": "/ 45 s",
+      "figureTitle": "Un omuleț pe un taburet își ridică călcâiele.",
+      "description": "Călcâiele sus, călcâiele jos, fără să te ridici de pe scaun."
+    },
+    "march": {
+      "name": "Marș în picioare",
+      "counter": "/ 20 repetări",
+      "figureTitle": "Un omuleț mărșăluiește pe loc cu genunchii sus.",
+      "description": "Genunchii sus, brațele se balansează, o parte apoi cealaltă."
+    },
+    "seatedMarch": {
+      "name": "Marș pe scaun",
+      "counter": "/ 45 s",
+      "figureTitle": "Un omuleț pe un taburet ridică un genunchi, apoi pe celălalt.",
+      "description": "Stai drept și ridică un genunchi, apoi pe celălalt."
+    },
+    "arms": {
+      "name": "Cercuri cu brațele",
+      "counter": "/ 10 rep.",
+      "figureTitle": "O siluetă desenează cercuri cu ambele brațe.",
+      "description": "Brațele lateral, cercuri mici, tot mai mari."
+    },
+    "chest": {
+      "name": "Deschidere de piept",
+      "counter": "/ 20 s",
+      "figureTitle": "Un omuleț își ridică brațele ca niște stâlpi de poartă.",
+      "description": "Brațele sus ca niște stâlpi de poartă, strânge omoplații, menține 20 de secunde."
+    },
+    "shrugs": {
+      "name": "Ridicări din umeri",
+      "counter": "/ 12 rep.",
+      "figureTitle": "O siluetă ridică și coboară ambii umeri.",
+      "description": "Umerii spre urechi, apoi lasă-i să cadă."
+    },
+    "neck": {
+      "name": "Întindere laterală a gâtului",
+      "counter": "s <span>stânga</span>",
+      "figureTitle": "O siluetă își înclină capul pentru o întindere laterală a gâtului.",
+      "description": "Urechea spre umăr, 15 secunde pe fiecare parte."
+    },
+    "wrist": {
+      "name": "Întindere pentru încheietură și antebraț",
+      "counter": "s <span>rămase</span>",
+      "figureTitle": "Un omuleț întinde un braț și își trage ușor degetele înapoi.",
+      "description": "Brațul întins, degetele sus, trage-le ușor înapoi cu cealaltă mână. 15 secunde pe fiecare parte."
+    },
+    "eye": {
+      "name": "Pauza pentru ochi 20-20-20",
+      "counter": "/ 20 s",
+      "figureTitle": "Un omuleț pe un taburet privește pe o fereastră îndepărtată.",
+      "description": "Privește ceva îndepărtat timp de 20 de secunde. Clipitul e permis."
+    },
+    "pack": {
+      "title": "+3 mișcări",
+      "label": "în pachetul Susținător",
+      "move1": "Răsucire a coloanei pe scaun",
+      "move2": "Întinderea cvadricepșilor în picioare",
+      "move3": "Întindere laterală cu brațul sus"
+    },
+    "more": "Arată toate mișcările",
+    "poster": {
+      "cut": "decupează aici",
+      "link": "Printează fițuica",
+      "meta": "PDF · o pagină"
+    }
+  },
+  "modes": {
+    "title": "Numără tu repetările sau lasă camera să numere.",
+    "simpleLabel": "Simplu · implicit",
+    "spaceKey": "spațiu",
+    "simpleTitle": "Tu numeri. El ține timpul.",
+    "simpleBody": "Un cronometru și un buton <b>+1 repetare</b> (sau Spațiu). Camera nu pornește niciodată.",
+    "webcamLabel": "Webcam · opțional",
+    "hint": "fă un pas înapoi",
+    "webcamTitle": "El numără. Tu doar te miști.",
+    "webcamBody": "Un model de detectare a posturii, pe dispozitiv, îți urmărește articulațiile ca să numere repetările și menținerile, cu sfaturi pentru formă.",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "Niciun video stocat, niciun video trimis, pe dispozitiv, zero cereri de rețea.",
+    "stampRing": "NICIUN VIDEO STOCAT ✶ NICIUN VIDEO TRIMIS ✶ PE DISPOZITIV ✶",
+    "stampZero": "0",
+    "stampNetwork": "CERERI",
+    "stampRequests": "DE REȚEA",
+    "item1": "Cadrele sunt analizate în memorie, apoi aruncate.",
+    "item2": "Nicio cerere de rețea proprie.",
+    "purchases": "Achizițiile sunt gestionate de App Store sau Microsoft Store.",
+    "item3": "Statisticile rămân pe computer, dacă nu exporți un CSV.",
+    "verify": "nu ne crezi? verifică cu <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> sau <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "Dovada fiecărei dăți când te-ai ridicat.",
+    "chartTitle": "Un grafic exemplu cu minutele de mișcare pe zi într-o săptămână.",
+    "days": {
+      "mon": "L",
+      "tue": "M",
+      "wed": "M",
+      "thu": "J",
+      "fri": "V",
+      "sat": "S",
+      "sun": "D"
+    },
+    "bestDay": "cea mai bună zi!",
+    "caption": "minute în mișcare, ultimele 7 zile",
+    "suggestion": "Ignori cele mai multe notificări la 3 PM. Pauza în acea oră?",
+    "suggestionApply": "Aplică",
+    "streak": "serie de 5 zile",
+    "freeze": "ai ratat o zi? o protecție pe săptămână.",
+    "stickersLabel": "Abțibilduri pentru prezență",
+    "stickers": {
+      "firstBreak": "Prima pauză",
+      "weekStreak": "Șir săptămânal",
+      "monthStreak": "Șir lunar"
+    }
+  },
+  "faq": {
+    "title": "Lucruri pe care<br />lumea le întreabă.",
+    "scheduleQuestion": "Mă va deranja duminică la 23:00?",
+    "scheduleAnswer": "Doar dacă îi spui că atunci lucrezi. Tu alegi orele, zilele și intervalul.",
+    "countingQuestion": "Cât de bine numără repetările?",
+    "countingAnswer": "Acceptabil, nu magie. Lumina și locul camerei contează, iar ridicările pe vârfuri trec des la cronometru. Dacă te pierde camera, cu un clic numeri singur.",
+    "officeQuestion": "Sunt într-un birou deschis. Voi arăta ciudat?",
+    "officeAnswer": "Puțin. Setează Poziția pe Așezat și fiecare pauză se face de pe scaun.",
+    "callQuestion": "Cum știe că sunt la apel?",
+    "callAnswer": "Verifică dacă o altă aplicație folosește camera sau microfonul, sau dacă este pe ecran complet. Nu deschide niciodată nici pe una, deci niciodată nu cere permisiune.",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "Ridică-te.<br /><span>Serios, acum.</span>",
+    "body": "Apoi ia aplicația, ca să nu trebuiască să te bată la cap o pagină web.",
+    "small": "Gratuit · fără cont · 17 limbi"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "Bonul tău",
+    "reminders": "Mementouri",
+    "moves": "Mișcările de bază",
+    "webcam": "Numărare cu webcam",
+    "stats": "Statistici + abțibilduri",
+    "subscription": "Abonament",
+    "account": "Cont",
+    "free": "Gratuit",
+    "none": "Niciunul",
+    "once": "O dată",
+    "supporter": "Susținător (opțional)",
+    "supporterDetails": "3 mișcări în plus, cerneală turcoaz, o figurină de mulțumire, anul tău în pătrățele, toate pachetele viitoare",
+    "total": "Total",
+    "totalValue": "0,00",
+    "coffee": "mai puțin decât o cafea",
+    "thanks": "mersi că te-ai ridicat"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts, <span class=\"credit\">făcut de <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "Nu este sfat medical. Mișcă-te ușor, oprește-te dacă te doare ceva.",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni de utilizare",
+    "contact": "Contact",
+    "openSource": "Acest site este open source"
+  },
+  "notFound": {
+    "metaTitle": "Pagina nu a fost găsită · mybackhurts",
+    "title": "Paginii ăsteia<br />i-a înțepenit spatele.",
+    "body": "Nu e nimic aici. Ridică-te, întinde-te, apoi întoarce-te la început.",
+    "home": "Înapoi la început"
+  },
+  "poster": {
+    "title": "Ridică-te. Fă-le pe astea.",
+    "subtitle": "Mișcări pentru spațiul de lângă birou. Lipește asta pe monitor.",
+    "neckDose": "15 s pe fiecare parte",
+    "handNote": "da, chiar acum."
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "Bine. 10 minute. Le punem la socoteală.",
+      "afterCall": "Du-te. Te așteptăm.",
+      "skip": "Notat. Spatele tău o să țină minte."
+    },
+    "themeNames": {
+      "system": "sistem",
+      "light": "luminos",
+      "dark": "întunecat"
+    },
+    "themeAriaTemplate": "Temă: {current}. Comută la {next}",
+    "themeTitleTemplate": "Temă: {current}",
+    "themeLabels": {
+      "systemAria": "Temă: sistem. Comută la luminos",
+      "systemTitle": "Temă: sistem"
+    },
+    "holdSides": {
+      "left": "stânga",
+      "right": "dreapta"
+    }
+  },
+  "preview": {
+    "title": "Vezi-o în 24 de secunde.",
+    "note": "fără sunet. e pe birou.",
+    "label": "Previzualizare aplicație: o sesiune cu webcam numără flexiuni pe scaun, apoi o ținere de întindere a gâtului, rezumatul sesiunii și statisticile săptămânale.",
+    "play": "Redă video",
+    "pause": "Pauză video"
+  }
+}

@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="{{locale.lang}}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{meta.title}}</title>
+    <meta name="description" content="{{meta.description}}" />
+    <meta name="theme-color" content="#f3ede1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#20263f" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="{{meta.url}}" />
+    {{hreflangLinks}}
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        const theme = localStorage.getItem("theme");
+        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+      } catch {}
+    </script>
+    {{langRedirectScript}} {{jsonLd}}
+    <meta property="og:title" content="{{meta.ogTitle}}" />
+    <meta property="og:description" content="{{meta.ogDescription}}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="{{ogLocale}}" />
+    {{ogLocaleAlternates}}
+    <meta property="og:site_name" content="mybackhurts" />
+    <meta property="og:url" content="{{meta.url}}" />
+    <meta property="og:image" content="https://mybackhurts.app/og-{{locale.lang}}.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="{{meta.ogImageAlt}}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{meta.ogTitle}}" />
+    <meta name="twitter:description" content="{{meta.ogDescription}}" />
+    <meta name="twitter:image" content="https://mybackhurts.app/og-{{locale.lang}}.png" />
+    <meta name="twitter:image:alt" content="{{meta.ogImageAlt}}" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" vite-ignore />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" vite-ignore />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="preload"
+      href="/src/fonts/ZineDisplay-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/fonts/CourierPrime-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/src/fonts/ReenieBeanie.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <!-- Shared SVG filter that makes every line look hand-inked. -->
+    <svg class="defs" aria-hidden="true" focusable="false">
+      <filter id="wobble" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" />
+        <feDisplacementMap in="SourceGraphic" scale="2.6" />
+      </filter>
+    </svg>
+
+    <a class="skip" href="#main">{{a11y.skipLink}}</a>
+
+    <header class="masthead">
+      <nav class="nav" aria-label="{{nav.ariaLabel}}">
+        <a class="wordmark" href="#top" aria-label="{{nav.wordmarkAria}}">{{nav.wordmark}}</a>
+        <div class="nav-links">
+          <a href="#how">{{nav.how}}</a>
+          <a href="#moves">{{nav.moves}}</a>
+          <a href="#privacy">{{nav.privacy}}</a>
+        </div>
+        <div class="nav-controls">
+          {{languageSwitcher}}
+          <button
+            class="theme-toggle"
+            type="button"
+            aria-label="{{runtime.themeLabels.systemAria}}"
+            title="{{runtime.themeLabels.systemTitle}}"
+          >
+            <svg data-icon="system" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="8" />
+              <path d="M12 4a8 8 0 0 1 0 16Z" fill="currentColor" />
+            </svg>
+            <svg data-icon="light" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+              />
+            </svg>
+            <svg data-icon="dark" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z" />
+            </svg>
+          </button>
+        </div>
+        <a class="nav-cta" href="#get"
+          >{{nav.cta}}
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" /></svg
+        ></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title" class="riso">{{hero.title}}</h1>
+          <p class="lede">{{hero.lede}}</p>
+          <div class="hero-actions">
+            <div class="store-buttons">
+              <a class="button" data-store="mac" href="{{appStoreUrl}}"
+                ><svg
+                  class="store-icon store-icon-apple"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
+                  /></svg
+                ><span>{{store.mac}}</span></a
+              >
+              <a class="button" data-store="windows" href="{{microsoftStoreUrl}}"
+                ><svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <g fill="currentColor">
+                    <rect x="1" y="1" width="10.5" height="10.5" />
+                    <rect x="12.5" y="1" width="10.5" height="10.5" />
+                    <rect x="1" y="12.5" width="10.5" height="10.5" />
+                    <rect x="12.5" y="12.5" width="10.5" height="10.5" />
+                  </g></svg
+                ><span>{{store.windows}}</span></a
+              >
+            </div>
+            <a class="hand-link" href="#moves">{{hero.secondaryCta}}</a>
+          </div>
+        </div>
+
+        <div class="hero-art">
+          <svg
+            class="figure hero-fig"
+            viewBox="0 0 200 165"
+            role="img"
+            aria-labelledby="hero-fig-title"
+          >
+            <title id="hero-fig-title">{{hero.figureTitle}}</title>
+            <g class="ink">
+              <!-- floor, chair, desk, laptop, mug -->
+              <path d="M6 151 L196 150" />
+              <path d="M30 113 L62 113 M31 113 L26 73 M33 113 L33 150 M59 113 L59 150" />
+              <path d="M96 92 L188 91 M180 92 L181 150" />
+              <path d="M104 89 L142 89 L153 57" />
+              <path class="thin" d="M163 88 L163 76 L175 76 L175 88 M175 79 Q181 80 175 85" />
+              <path class="thin steam" d="M167 70 Q164 65 168 61 Q171 57 168 53" />
+              <!-- legs -->
+              <path d="M50 108 L84 108 L84 146 L97 146" />
+              <!-- torso, head, arm -->
+              <g class="hero-torso">
+                <path d="M50 108 Q43 84 50 60" />
+                <g class="hero-head">
+                  <circle class="head" cx="50" cy="46" r="11" />
+                </g>
+                <g class="hero-arm">
+                  <path d="M50 66 L50 106" />
+                </g>
+              </g>
+            </g>
+            <g class="notes">
+              <text class="note note-ow" x="4" y="92">{{hero.noteOw}}</text>
+              <path class="note note-ow thin" d="M18 97 Q28 104 38 100" />
+              <text class="note note-better" x="2" y="40">{{hero.noteBetter}}</text>
+            </g>
+          </svg>
+
+          <div class="notif" role="group" aria-label="{{notification.ariaLabel}}">
+            <span class="tape tape-a" aria-hidden="true"></span>
+            <p class="notif-app">
+              <span class="notif-icon" aria-hidden="true"></span> {{notification.appLine}}
+            </p>
+            <p class="notif-title">{{notification.title}}</p>
+            <p class="notif-body">{{notification.body}}</p>
+            <div class="notif-actions">
+              <button type="button" data-notif="start">{{notification.start}}</button>
+              <button type="button" data-notif="snooze">{{notification.snooze}}</button>
+              <button type="button" data-notif="afterCall">{{notification.afterCall}}</button>
+              <button type="button" data-notif="skip">{{notification.skip}}</button>
+            </div>
+            <p class="notif-reply" aria-live="polite"></p>
+          </div>
+        </div>
+      </section>
+
+      <div class="tape-strip" aria-hidden="true">
+        <p>{{tapeStrip}}</p>
+      </div>
+
+      <!-- APP PREVIEW (macos/scripts/app-preview-web.sh) -->
+      <section class="preview" aria-labelledby="preview-title">
+        <header class="section-head preview-head">
+          <h2 id="preview-title" class="riso">{{preview.title}}</h2>
+          <p class="note preview-note" aria-hidden="true">{{preview.note}}</p>
+        </header>
+        <figure class="preview-frame">
+          <span class="tape tape-a" aria-hidden="true"></span>
+          <span class="tape tape-c" aria-hidden="true"></span>
+          <video
+            muted
+            loop
+            playsinline
+            preload="none"
+            width="1920"
+            height="1080"
+            poster="{{previewPoster}}"
+            aria-label="{{preview.label}}"
+          >
+            <source src="{{previewVideo}}" type="video/mp4" />
+          </video>
+          <button
+            type="button"
+            class="preview-toggle"
+            data-play="{{preview.play}}"
+            data-pause="{{preview.pause}}"
+            aria-label="{{preview.play}}"
+            hidden
+          >
+            <svg data-icon="play" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5.5v13l10.5-6.5Z" />
+            </svg>
+            <svg data-icon="pause" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 5.5v13M16 5.5v13" />
+            </svg>
+          </button>
+        </figure>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="how" id="how" aria-labelledby="how-title">
+        <div class="how-top">
+          <header class="section-head">
+            <h2 id="how-title" class="riso">{{how.title}}</h2>
+          </header>
+
+          <aside class="menu-cutout" aria-label="{{menu.ariaLabel}}">
+            <span class="tape tape-b" aria-hidden="true"></span>
+            <p class="menu-bar"><span aria-hidden="true"> </span><span>{{menu.dayTime}}</span></p>
+            <ul>
+              <li class="menu-dim">{{menu.nextReminder}}</li>
+              <li class="menu-dim">{{menu.goal}}</li>
+              <li>{{menu.startNow}}</li>
+              <li>{{menu.snooze}}</li>
+              <li>{{menu.pause}}</li>
+              <li class="menu-sep">{{menu.library}}</li>
+              <li>{{menu.stats}}</li>
+              <li>{{menu.help}}</li>
+              <li>{{menu.settings}}</li>
+              <li class="menu-sep">{{menu.quit}}</li>
+            </ul>
+            <p class="note menu-note">{{menu.note}}</p>
+          </aside>
+        </div>
+
+        <ol class="strip">
+          <li class="panel">
+            <span class="panel-no">1</span>
+            <svg class="doodle" viewBox="0 0 100 80" aria-hidden="true">
+              <g class="ink">
+                <circle cx="50" cy="42" r="30" />
+                <path d="M50 42 L50 22 M50 42 L64 50" />
+                <path class="thin" d="M50 14 L50 17 M78 42 L75 42 M50 70 L50 67 M22 42 L25 42" />
+              </g>
+            </svg>
+            <h3>{{how.panel1Title}}</h3>
+            <p>{{how.panel1Body}}</p>
+          </li>
+          <li class="panel">
+            <span class="panel-no">2</span>
+            <svg class="doodle" viewBox="0 0 100 80" aria-hidden="true">
+              <g class="ink">
+                <circle class="head" cx="50" cy="14" r="8" />
+                <path d="M50 23 L50 50 M50 30 L30 18 M50 30 L70 18 M50 50 L38 74 M50 50 L62 74" />
+              </g>
+            </svg>
+            <h3>{{how.panel3Title}}</h3>
+            <p>{{how.panel3Body}}</p>
+          </li>
+          <li class="panel">
+            <span class="panel-no">3</span>
+            <svg class="doodle" viewBox="0 0 100 80" aria-hidden="true">
+              <g class="ink">
+                <path d="M14 60 L86 60 M26 60 L26 34 L74 34 L74 60" />
+                <path class="thin" d="M40 46 L60 46" />
+                <text class="note" x="30" y="24">{{how.panel4Doodle}}</text>
+              </g>
+            </svg>
+            <h3>{{how.panel4Title}}</h3>
+            <p>{{how.panel4Body}}</p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- MOVES -->
+      <section class="moves" id="moves" aria-labelledby="moves-title">
+        <header class="section-head">
+          <h2 id="moves-title" class="riso">{{moves.title}}</h2>
+          <p class="section-sub">{{moves.subtitle}}</p>
+        </header>
+
+        <div class="posture-toggle" role="group" aria-label="{{moves.posture.label}}" hidden>
+          <button type="button" class="chip" data-posture="standing" aria-pressed="true">
+            {{moves.posture.standing}}
+          </button>
+          <button type="button" class="chip" data-posture="seated" aria-pressed="false">
+            {{moves.posture.seated}}
+          </button>
+        </div>
+
+        <div class="move-grid" id="move-grid" data-posture="standing">
+          <article class="move" style="--tilt: -1.2deg">
+            <span class="cam" role="img" aria-label="{{moves.camera}}" title="{{moves.camera}}"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 8.5 L7.5 8.5 L9.5 5.5 L14.5 5.5 L16.5 8.5 L21 8.3 L21.2 19 L3.1 19.2 Z"
+                />
+                <circle cx="12" cy="13.2" r="3.4" /></svg
+            ></span>
+            <svg class="figure" viewBox="0 0 140 170" role="img" aria-labelledby="move-squat-title">
+              <title id="move-squat-title">{{moves.squat.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <path
+                  class="chair"
+                  d="M26 128 L52 128 M26 128 L24 86 M27 128 L27 160 M50 128 L50 160"
+                />
+                <path d="M60 160 L78 160" />
+                <g class="sq-shin" data-clock>
+                  <path d="M66 160 L66 130" />
+                  <g class="sq-thigh">
+                    <path d="M66 130 L66 100" />
+                    <g class="sq-torso">
+                      <path d="M66 100 L66 56" />
+                      <circle class="head" cx="66" cy="42" r="11" />
+                      <g class="sq-arm"><path d="M66 60 L66 96" /></g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.squat.name}}</h3>
+              <p class="counter" data-kind="reps" data-goal="10">
+                <b>0</b> {{moves.squat.counter}}
+              </p>
+            </div>
+            <p>{{moves.squat.description}}</p>
+          </article>
+
+          <article class="move" style="--tilt: 0.8deg" data-posture-only="standing">
+            <span class="cam" role="img" aria-label="{{moves.camera}}" title="{{moves.camera}}"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 8.5 L7.5 8.5 L9.5 5.5 L14.5 5.5 L16.5 8.5 L21 8.3 L21.2 19 L3.1 19.2 Z"
+                />
+                <circle cx="12" cy="13.2" r="3.4" /></svg
+            ></span>
+            <svg class="figure" viewBox="0 0 140 170" role="img" aria-labelledby="move-calf-title">
+              <title id="move-calf-title">{{moves.calf.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <g class="cr-body" data-clock>
+                  <circle class="head" cx="70" cy="34" r="11" />
+                  <path d="M70 46 L70 102 L70 154" />
+                  <path d="M70 54 L73 98" />
+                </g>
+                <g class="cr-foot"><path d="M62 157 L86 157" /></g>
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.calf.name}}</h3>
+              <p class="counter" data-kind="reps" data-goal="15"><b>0</b> {{moves.calf.counter}}</p>
+            </div>
+            <p>{{moves.calf.description}}</p>
+          </article>
+
+          <article class="move" style="--tilt: 0.8deg" data-posture-only="seated">
+            <svg
+              class="figure"
+              viewBox="0 0 140 170"
+              role="img"
+              aria-labelledby="move-seatedCalf-title"
+            >
+              <title id="move-seatedCalf-title">{{moves.seatedCalf.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <path class="thin" d="M30 112 L62 112 M34 112 L32 160 M58 112 L60 160" />
+                <path d="M46 56 L46 108" />
+                <circle class="head" cx="46" cy="44" r="11" />
+                <g class="sc-thigh" data-clock><path d="M46 108 L82 108" /></g>
+                <g class="sc-shin"><path d="M82 108 L82 152" /></g>
+                <g class="sc-foot"><path d="M72 155 L96 155" /></g>
+                <path d="M46 64 L50 90 L58 110" />
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.seatedCalf.name}}</h3>
+              <p class="counter" data-kind="timer" data-goal="45">
+                <b>0</b> {{moves.seatedCalf.counter}}
+              </p>
+            </div>
+            <p>{{moves.seatedCalf.description}}</p>
+          </article>
+
+          <article class="move" style="--tilt: -0.7deg" data-posture-only="standing">
+            <span class="cam" role="img" aria-label="{{moves.camera}}" title="{{moves.camera}}"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 8.5 L7.5 8.5 L9.5 5.5 L14.5 5.5 L16.5 8.5 L21 8.3 L21.2 19 L3.1 19.2 Z"
+                />
+                <circle cx="12" cy="13.2" r="3.4" /></svg
+            ></span>
+            <svg class="figure" viewBox="0 0 140 170" role="img" aria-labelledby="move-march-title">
+              <title id="move-march-title">{{moves.march.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <g class="mr-arm-far"><path d="M66 54 L66 94" /></g>
+                <g class="mr-thigh-b">
+                  <path d="M66 100 L66 129" />
+                  <g class="mr-shin-b"><path d="M66 129 L66 158 L76 158" /></g>
+                </g>
+                <path d="M66 42 L66 100" />
+                <circle class="head" cx="66" cy="30" r="11" />
+                <g class="mr-thigh-a" data-clock>
+                  <path d="M66 100 L66 129" />
+                  <g class="mr-shin-a"><path d="M66 129 L66 158 L76 158" /></g>
+                </g>
+                <g class="mr-arm-near"><path d="M66 54 L66 94" /></g>
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.march.name}}</h3>
+              <p class="counter" data-kind="reps" data-goal="20" data-step="2">
+                <b>0</b> {{moves.march.counter}}
+              </p>
+            </div>
+            <p>{{moves.march.description}}</p>
+          </article>
+
+          <article class="move" style="--tilt: -0.7deg" data-posture-only="seated">
+            <svg
+              class="figure"
+              viewBox="0 0 140 170"
+              role="img"
+              aria-labelledby="move-seatedMarch-title"
+            >
+              <title id="move-seatedMarch-title">{{moves.seatedMarch.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <path class="thin" d="M30 112 L62 112 M34 112 L32 160 M58 112 L60 160" />
+                <g class="sm-thigh-b">
+                  <path d="M46 108 L82 108" />
+                  <g class="sm-shin-b"><path d="M82 108 L82 157 L92 157" /></g>
+                </g>
+                <path d="M46 56 L46 108" />
+                <circle class="head" cx="46" cy="44" r="11" />
+                <g class="sm-thigh-a" data-clock>
+                  <path d="M46 108 L82 108" />
+                  <g class="sm-shin-a"><path d="M82 108 L82 157 L92 157" /></g>
+                </g>
+                <path d="M46 64 L50 90 L58 110" />
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.seatedMarch.name}}</h3>
+              <p class="counter" data-kind="timer" data-goal="45">
+                <b>0</b> {{moves.seatedMarch.counter}}
+              </p>
+            </div>
+            <p>{{moves.seatedMarch.description}}</p>
+          </article>
+
+          <article class="move" style="--tilt: -0.5deg">
+            <span class="cam" role="img" aria-label="{{moves.camera}}" title="{{moves.camera}}"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 8.5 L7.5 8.5 L9.5 5.5 L14.5 5.5 L16.5 8.5 L21 8.3 L21.2 19 L3.1 19.2 Z"
+                />
+                <circle cx="12" cy="13.2" r="3.4" /></svg
+            ></span>
+            <svg class="figure" viewBox="0 0 140 170" role="img" aria-labelledby="move-arms-title">
+              <title id="move-arms-title">{{moves.arms.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <circle class="head" cx="70" cy="30" r="11" />
+                <path d="M70 42 L70 100 M52 52 L88 52 M70 100 L58 158 M70 100 L82 158" />
+                <g class="ac-left" data-clock><path d="M52 52 L14 52" /></g>
+                <g class="ac-right"><path d="M88 52 L126 52" /></g>
+                <circle class="thin pink dashed" cx="14" cy="52" r="7" />
+                <circle class="thin pink dashed" cx="126" cy="52" r="7" />
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.arms.name}}</h3>
+              <p class="counter" data-kind="reps" data-goal="10"><b>0</b> {{moves.arms.counter}}</p>
+            </div>
+            <p>{{moves.arms.description}}</p>
+          </article>
+
+          <article class="move" style="--tilt: 1deg">
+            <span class="cam" role="img" aria-label="{{moves.camera}}" title="{{moves.camera}}"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 8.5 L7.5 8.5 L9.5 5.5 L14.5 5.5 L16.5 8.5 L21 8.3 L21.2 19 L3.1 19.2 Z"
+                />
+                <circle cx="12" cy="13.2" r="3.4" /></svg
+            ></span>
+            <svg class="figure" viewBox="0 0 140 170" role="img" aria-labelledby="move-chest-title">
+              <title id="move-chest-title">{{moves.chest.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <circle class="head" cx="70" cy="30" r="11" />
+                <path d="M70 42 L70 100 M52 54 L88 54 M70 100 L58 158 M70 100 L82 158" />
+                <g class="co-upper" data-clock>
+                  <path d="M52 54 L28 54" />
+                  <g class="co-fore"><path d="M28 54 L28 28" /></g>
+                </g>
+                <g transform="matrix(-1 0 0 1 140 0)">
+                  <g class="co-upper">
+                    <path d="M52 54 L28 54" />
+                    <g class="co-fore"><path d="M28 54 L28 28" /></g>
+                  </g>
+                </g>
+                <path class="thin pink co-glow" d="M62 62 Q58 70 62 78 M78 62 Q82 70 78 78" />
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.chest.name}}</h3>
+              <p class="counter" data-kind="hold" data-goal="20" data-holds="0.1">
+                <b>0</b> {{moves.chest.counter}}
+              </p>
+            </div>
+            <p>{{moves.chest.description}}</p>
+          </article>
+
+          <article class="move" style="--tilt: 1.4deg">
+            <span class="cam" role="img" aria-label="{{moves.camera}}" title="{{moves.camera}}"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 8.5 L7.5 8.5 L9.5 5.5 L14.5 5.5 L16.5 8.5 L21 8.3 L21.2 19 L3.1 19.2 Z"
+                />
+                <circle cx="12" cy="13.2" r="3.4" /></svg
+            ></span>
+            <svg
+              class="figure"
+              viewBox="0 0 140 170"
+              role="img"
+              aria-labelledby="move-shrugs-title"
+            >
+              <title id="move-shrugs-title">{{moves.shrugs.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <circle class="head" cx="70" cy="30" r="11" />
+                <path d="M70 42 L70 100 M70 100 L58 158 M70 100 L82 158" />
+                <g class="sh-shoulders" data-clock>
+                  <path d="M52 54 L88 54 M52 54 L46 98 M88 54 L94 98" />
+                </g>
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.shrugs.name}}</h3>
+              <p class="counter" data-kind="reps" data-goal="12">
+                <b>0</b> {{moves.shrugs.counter}}
+              </p>
+            </div>
+            <p>{{moves.shrugs.description}}</p>
+          </article>
+
+          <article class="move move-more" style="--tilt: -1deg">
+            <span class="cam" role="img" aria-label="{{moves.camera}}" title="{{moves.camera}}"
+              ><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M3 8.5 L7.5 8.5 L9.5 5.5 L14.5 5.5 L16.5 8.5 L21 8.3 L21.2 19 L3.1 19.2 Z"
+                />
+                <circle cx="12" cy="13.2" r="3.4" /></svg
+            ></span>
+            <svg class="figure" viewBox="0 0 140 170" role="img" aria-labelledby="move-neck-title">
+              <title id="move-neck-title">{{moves.neck.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <path
+                  d="M70 42 L70 100 M52 52 L88 52 M52 52 L46 96 M88 52 L94 96 M70 100 L58 158 M70 100 L82 158"
+                />
+                <g class="nk-head" data-clock><circle class="head" cx="70" cy="30" r="11" /></g>
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.neck.name}}</h3>
+              <p class="counter" data-kind="hold" data-goal="15" data-holds="0.02 0.51">
+                <b>0</b> {{moves.neck.counter}}
+              </p>
+            </div>
+            <p>{{moves.neck.description}}</p>
+          </article>
+
+          <article class="move move-more" style="--tilt: 0.6deg">
+            <svg class="figure" viewBox="0 0 140 170" role="img" aria-labelledby="move-wrist-title">
+              <title id="move-wrist-title">{{moves.wrist.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <g class="wr-body" data-clock>
+                  <circle class="head" cx="44" cy="30" r="11" />
+                  <path
+                    d="M44 42 L44 100 M44 100 L38 158 M44 100 L50 158 M38 158 L46 158 M50 158 L58 158"
+                  />
+                  <path d="M44 54 L88 56" />
+                  <g class="wr-hand"><path d="M88 56 L102 56" /></g>
+                  <path d="M44 58 L72 68" />
+                  <g class="wr-help"><path d="M72 68 L95 56" /></g>
+                  <path class="thin pink dashed" d="M54 48 Q68 43 82 48" />
+                </g>
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.wrist.name}}</h3>
+              <p class="counter" data-kind="hold" data-goal="15" data-holds="0.03 0.525">
+                <b>0</b> {{moves.wrist.counter}}
+              </p>
+            </div>
+            <p>{{moves.wrist.description}}</p>
+          </article>
+
+          <article class="move move-more" style="--tilt: -1.3deg">
+            <svg class="figure" viewBox="0 0 140 170" role="img" aria-labelledby="move-eye-title">
+              <title id="move-eye-title">{{moves.eye.figureTitle}}</title>
+              <g class="ink">
+                <path d="M4 161 L136 160" />
+                <path class="thin" d="M20 112 L52 112 M24 112 L22 160 M48 112 L50 160" />
+                <path
+                  class="thin"
+                  d="M92 16 L130 16 L130 58 L92 58 Z M111 16 L111 58 M92 37 L130 37"
+                />
+                <circle class="thin pink" cx="121" cy="27" r="4" />
+                <path
+                  d="M36 56 L36 108 M36 108 L72 108 M72 108 L72 157 L82 157 M36 64 L48 92 L64 104"
+                />
+                <g class="ey-head" data-clock>
+                  <circle class="head" cx="36" cy="44" r="11" />
+                  <g class="ey-eye"><path class="thin" d="M42 40 L42 43.5" /></g>
+                </g>
+                <path class="thin pink dashed ey-sight" d="M50 40 L96 30" />
+              </g>
+            </svg>
+            <div class="move-meta">
+              <h3>{{moves.eye.name}}</h3>
+              <p class="counter" data-kind="hold" data-goal="20" data-holds="0.07">
+                <b>0</b> {{moves.eye.counter}}
+              </p>
+            </div>
+            <p>{{moves.eye.description}}</p>
+          </article>
+
+          <aside class="move pack move-more" style="--tilt: 2deg" aria-labelledby="pack-title">
+            <svg class="envelope" viewBox="0 0 200 96" aria-hidden="true">
+              <g class="ink">
+                <path d="M8 10 L192 9 L193 90 L7 91 Z" />
+                <path class="thin" d="M9 11 L100 58 L191 10" />
+                <path class="thin" d="M8 89 L78 46 M192 88 L122 46" />
+              </g>
+              <circle class="seal" cx="100" cy="58" r="15" />
+              <text class="seal-mark" x="100" y="64">✶</text>
+            </svg>
+            <h3 id="pack-title" class="pack-title riso">{{moves.pack.title}}</h3>
+            <p class="note pack-label">{{moves.pack.label}}</p>
+            <ul class="pack-list">
+              <li>{{moves.pack.move1}}</li>
+              <li>{{moves.pack.move2}}</li>
+              <li>{{moves.pack.move3}}</li>
+            </ul>
+          </aside>
+        </div>
+        <button
+          type="button"
+          class="chip moves-more"
+          aria-controls="move-grid"
+          aria-expanded="false"
+          hidden
+        >
+          {{moves.more}}
+        </button>
+
+        <a class="coupon" href="{{posterUrl}}">
+          <span class="coupon-cut" aria-hidden="true"
+            ><svg viewBox="0 0 24 24">
+              <circle cx="6" cy="6" r="3" />
+              <circle cx="6" cy="18" r="3" />
+              <path d="M8.1 8.1 20 20M8.1 15.9 20 4" /></svg
+            >{{moves.poster.cut}}</span
+          >
+          <span class="coupon-title">{{moves.poster.link}}</span>
+          <span class="coupon-meta">{{moves.poster.meta}}</span>
+          <svg class="coupon-arrow" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4v14M6 12l6 6 6-6M5 21h14" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- MODES -->
+      <section class="modes" id="privacy" aria-labelledby="modes-title">
+        <header class="section-head">
+          <h2 id="modes-title" class="riso">{{modes.title}}</h2>
+        </header>
+
+        <div class="mode-grid">
+          <article class="mode">
+            <p class="label">{{modes.simpleLabel}}</p>
+            <div class="keycap" aria-hidden="true" data-pop="{{modes.keycapPop}}">
+              <span>{{modes.spaceKey}}</span>
+            </div>
+            <h3>{{modes.simpleTitle}}</h3>
+            <p>{{modes.simpleBody}}</p>
+          </article>
+
+          <article class="mode mode-cam">
+            <p class="label">{{modes.webcamLabel}}</p>
+            <div class="viewfinder" aria-hidden="true">
+              <svg viewBox="0 0 160 124">
+                <g class="ink thin">
+                  <path
+                    d="M8 24 L8 8 L24 8 M136 8 L152 8 L152 24 M152 96 L152 112 L136 112 M24 112 L8 112 L8 96"
+                  />
+                </g>
+                <g class="skeleton">
+                  <path
+                    d="M80 36 L80 76 M64 44 L96 44 M64 44 L56 74 M96 44 L104 74 M80 76 L70 112 M80 76 L90 112"
+                  />
+                  <circle cx="80" cy="26" r="4" />
+                  <circle cx="64" cy="44" r="3.5" />
+                  <circle cx="96" cy="44" r="3.5" />
+                  <circle cx="56" cy="74" r="3.5" />
+                  <circle cx="104" cy="74" r="3.5" />
+                  <circle cx="80" cy="76" r="3.5" />
+                  <circle cx="70" cy="112" r="3.5" />
+                  <circle cx="90" cy="112" r="3.5" />
+                </g>
+              </svg>
+              <span class="hint">{{modes.hint}}</span>
+            </div>
+            <h3>{{modes.webcamTitle}}</h3>
+            <p>{{modes.webcamBody}}</p>
+          </article>
+        </div>
+
+        <div class="privacy-inner">
+          <svg class="stamp" viewBox="0 0 200 200" role="img" aria-labelledby="privacy-stamp-title">
+            <title id="privacy-stamp-title">{{privacy.stampTitle}}</title>
+            <defs>
+              <path id="stamp-ring" d="M100 100 m-74 0 a74 74 0 1 1 148 0 a74 74 0 1 1 -148 0" />
+            </defs>
+            <g class="stamp-ink">
+              <circle cx="100" cy="100" r="92" />
+              <circle cx="100" cy="100" r="56" />
+              <text>
+                <textPath href="#stamp-ring" textLength="452" lengthAdjust="spacing">
+                  {{privacy.stampRing}}
+                </textPath>
+              </text>
+              <text class="stamp-mid" x="100" y="96" text-anchor="middle">
+                {{privacy.stampZero}}
+              </text>
+              <text class="stamp-small" x="100" y="120" text-anchor="middle">
+                {{privacy.stampNetwork}}
+              </text>
+              <text class="stamp-small" x="100" y="134" text-anchor="middle">
+                {{privacy.stampRequests}}
+                <tspan class="stamp-star">*</tspan>
+              </text>
+            </g>
+          </svg>
+          <ul class="privacy-list">
+            <li data-marker="{{privacy.itemMarker}}">{{privacy.item1}}</li>
+            <li data-marker="{{privacy.itemMarker}}">
+              {{privacy.item2}}<span class="footmark" aria-hidden="true">*</span>
+              <small class="footnote"
+                ><span aria-hidden="true">* </span>{{privacy.purchases}}</small
+              >
+            </li>
+            <li data-marker="{{privacy.itemMarker}}">{{privacy.item3}}</li>
+          </ul>
+          <p class="note privacy-verify">
+            <svg viewBox="0 0 60 40" aria-hidden="true">
+              <path d="M56 30 Q34 36 14 16 M12 26 L13 14 L25 15" />
+            </svg>
+            <span>{{privacy.verify}}</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats" aria-labelledby="stats-title">
+        <header class="section-head">
+          <h2 id="stats-title" class="riso">{{stats.title}}</h2>
+        </header>
+
+        <div class="stats-grid">
+          <figure class="chart">
+            <svg viewBox="0 0 280 170" role="img" aria-labelledby="chart-title">
+              <title id="chart-title">{{stats.chartTitle}}</title>
+              <g class="ink">
+                <path d="M24 140 L268 139" />
+                <path class="thin" d="M24 14 L24 140" />
+              </g>
+              <g class="bars">
+                <path d="M40 140 L40 96 L64 95 L64 140" />
+                <path d="M74 140 L74 70 L98 71 L98 140" />
+                <path d="M108 140 L108 110 L132 111 L132 140" />
+                <path d="M142 140 L142 54 L166 53 L166 140" />
+                <path d="M176 140 L176 80 L200 81 L200 140" />
+                <path d="M210 140 L210 128 L234 127 L234 140" />
+                <path d="M244 140 L244 138 L262 138" />
+              </g>
+              <g class="axis">
+                <text x="52" y="158">{{stats.days.mon}}</text>
+                <text x="86" y="158">{{stats.days.tue}}</text>
+                <text x="120" y="158">{{stats.days.wed}}</text>
+                <text x="154" y="158">{{stats.days.thu}}</text>
+                <text x="188" y="158">{{stats.days.fri}}</text>
+                <text x="222" y="158">{{stats.days.sat}}</text>
+                <text x="253" y="158">{{stats.days.sun}}</text>
+              </g>
+              <text class="note" x="140" y="34">{{stats.bestDay}}</text>
+              <path class="thin pink-line" d="M170 38 Q180 42 166 50" />
+            </svg>
+            <figcaption class="note">{{stats.caption}}</figcaption>
+            <aside class="suggestion-note">
+              <span class="tape tape-e" aria-hidden="true"></span>
+              <p>{{stats.suggestion}}</p>
+              <span class="suggestion-apply" aria-hidden="true">{{stats.suggestionApply}}</span>
+            </aside>
+          </figure>
+
+          <div class="stats-copy">
+            <p class="streak"><span class="circled">{{stats.streak}}</span></p>
+            <p class="note streak-freeze">{{stats.freeze}}</p>
+            <div class="stickers">
+              <span class="tape tape-c" aria-hidden="true"></span>
+              <p class="label">{{stats.stickersLabel}}</p>
+              <ul class="sticker-sheet">
+                <li class="sticker sticker-pink sticker-circle" style="--tilt: -6deg">
+                  <span class="sticker-mark" aria-hidden="true">✶</span>
+                  <span class="sticker-name">{{stats.stickers.firstBreak}}</span>
+                </li>
+                <li class="sticker sticker-teal sticker-seal" style="--tilt: 5deg">
+                  <span class="sticker-mark" aria-hidden="true">7</span>
+                  <span class="sticker-name">{{stats.stickers.weekStreak}}</span>
+                </li>
+                <li class="sticker sticker-next sticker-circle" style="--tilt: 7deg">
+                  <span class="sticker-mark" aria-hidden="true">30</span>
+                  <span class="sticker-name">{{stats.stickers.monthStreak}}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="faq" id="faq" aria-labelledby="faq-title">
+        <header class="section-head">
+          <h2 id="faq-title" class="riso">{{faq.title}}</h2>
+        </header>
+        <div class="faq-list">
+          <details>
+            <summary data-marker="{{faq.marker}}">{{faq.scheduleQuestion}}</summary>
+            <p>{{faq.scheduleAnswer}}</p>
+          </details>
+          <details>
+            <summary data-marker="{{faq.marker}}">{{faq.countingQuestion}}</summary>
+            <p>{{faq.countingAnswer}}</p>
+          </details>
+          <details>
+            <summary data-marker="{{faq.marker}}">{{faq.officeQuestion}}</summary>
+            <p>{{faq.officeAnswer}}</p>
+          </details>
+          <details>
+            <summary data-marker="{{faq.marker}}">{{faq.callQuestion}}</summary>
+            <p>{{faq.callAnswer}}</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="get" id="get" aria-labelledby="get-title">
+        <h2 id="get-title">{{cta.title}}</h2>
+        <div class="get-deal">
+          <div class="receipt-wrap">
+            <span class="tape tape-d" aria-hidden="true"></span>
+            <div class="receipt" role="group" aria-labelledby="receipt-title">
+              <p class="receipt-shop" aria-hidden="true">mybackhurts</p>
+              <h3 id="receipt-title" class="receipt-title">{{receipt.title}}</h3>
+              <dl>
+                <div>
+                  <dt>{{receipt.reminders}}</dt>
+                  <dd>{{receipt.free}}</dd>
+                </div>
+                <div>
+                  <dt>{{receipt.moves}}</dt>
+                  <dd>{{receipt.free}}</dd>
+                </div>
+                <div>
+                  <dt>{{receipt.webcam}}</dt>
+                  <dd>{{receipt.free}}</dd>
+                </div>
+                <div>
+                  <dt>{{receipt.stats}}</dt>
+                  <dd>{{receipt.free}}</dd>
+                </div>
+                <div>
+                  <dt>{{receipt.subscription}}</dt>
+                  <dd>{{receipt.none}}</dd>
+                </div>
+                <div>
+                  <dt>{{receipt.account}}</dt>
+                  <dd>{{receipt.none}}</dd>
+                </div>
+                <div class="receipt-supporter">
+                  <dt>
+                    <button type="button" class="receipt-theme" aria-pressed="false">
+                      <span class="swatch" aria-hidden="true"></span>{{receipt.supporter}}
+                    </button>
+                  </dt>
+                  <dd>
+                    {{receipt.once}}
+                    <span class="note receipt-coffee"
+                      ><svg viewBox="0 0 60 40" aria-hidden="true">
+                        <path d="M56 30 Q34 36 14 16 M12 26 L13 14 L25 15" /></svg
+                      ><span>{{receipt.coffee}}</span></span
+                    >
+                  </dd>
+                  <dd class="receipt-detail">{{receipt.supporterDetails}}</dd>
+                </div>
+                <div class="receipt-total">
+                  <dt>{{receipt.total}}</dt>
+                  <dd>{{receipt.totalValue}}</dd>
+                </div>
+              </dl>
+              <p class="receipt-barcode" aria-hidden="true"></p>
+              <p class="note receipt-thanks">{{receipt.thanks}}</p>
+            </div>
+          </div>
+          <div class="get-action">
+            <p>{{cta.body}}</p>
+            <div class="store-buttons">
+              <a class="button button-big" data-store="mac" href="{{appStoreUrl}}"
+                ><svg
+                  class="store-icon store-icon-apple"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
+                  /></svg
+                ><span>{{store.mac}}</span></a
+              >
+              <a class="button button-big" data-store="windows" href="{{microsoftStoreUrl}}"
+                ><svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <g fill="currentColor">
+                    <rect x="1" y="1" width="10.5" height="10.5" />
+                    <rect x="12.5" y="1" width="10.5" height="10.5" />
+                    <rect x="1" y="12.5" width="10.5" height="10.5" />
+                    <rect x="12.5" y="12.5" width="10.5" height="10.5" />
+                  </g></svg
+                ><span>{{store.windows}}</span></a
+              >
+            </div>
+            <p class="small">{{cta.small}}</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>{{footer.copyright}}</span>
+      <span>{{footer.medical}}</span>
+      <span class="footer-links">
+        <a href="{{legalPrivacyUrl}}">{{footer.privacy}}</a>
+        <a href="{{legalTermsUrl}}">{{footer.terms}}</a>
+        <a href="mailto:hello@mybackhurts.app" title="{{footer.contact}}">hello@mybackhurts.app</a>
+        <a href="https://github.com/vmihalachi/mybackhurts.app">{{footer.openSource}}</a>
+      </span>
+    </footer>
+
+    <script type="application/json" id="i18n">
+      {{runtimeJson}}
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

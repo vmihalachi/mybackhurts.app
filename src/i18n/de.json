@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "de"
+  },
+  "meta": {
+    "title": "mybackhurts: eine kleine App, die dich vom Stuhl holt",
+    "description": "mybackhurts ist eine kleine App für Mac und Windows, die dich alle 45 Minuten ans Aufstehen erinnert und dich durch zwei oder drei kurze Übungen führt. Sie kann deine Wiederholungen mit der Webcam zählen – auf dem Gerät. Kostenlos, ohne Konto.",
+    "ogTitle": "mybackhurts: dein Rücken will ein Wörtchen reden",
+    "ogDescription": "Eine kleine App für Mac und Windows, die dich alle 45 Minuten vom Stuhl holt. Wiederholungen werden auf dem Gerät gezählt. Kein Video verlässt deinen Computer. Kostenlos, ohne Konto.",
+    "url": "https://mybackhurts.app/de/",
+    "ogImageAlt": "mybackhurts: „Dein Rücken will ein Wörtchen reden.“ Ein Strichmännchen hängt krumm über einem Laptop am Schreibtisch und sagt „aua.“"
+  },
+  "og": {
+    "tape": "PAUSE MACHEN",
+    "headline1": "Dein Rücken ruft.",
+    "headline2": "Er will reden.",
+    "tagline1": "Eine kleine App für Mac und Windows, die dich",
+    "tagline2": "alle 45 Minuten vom Stuhl holt.",
+    "footerNote": "Wiederholungen auf dem Gerät gezählt. Kein Video verlässt deinen Computer.",
+    "noteOw": "aua."
+  },
+  "a11y": {
+    "skipLink": "Zum Inhalt springen"
+  },
+  "nav": {
+    "ariaLabel": "Hauptnavigation",
+    "wordmarkAria": "mybackhurts Startseite",
+    "how": "So geht’s",
+    "moves": "Übungen",
+    "privacy": "Datenschutz",
+    "cta": "Holen",
+    "languageLabel": "Sprache",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "Dein Rücken ruft.<br />Er will ein <span class=\"scribble\">Wörtchen.</span>",
+    "lede": "<strong>mybackhurts</strong> sitzt in deiner Menüleiste oder dem Infobereich, stupst dich alle 45 Minuten an und führt dich durch ein paar kurze Übungen. Deine Webcam bleibt ausgeschaltet, es sei denn, du möchtest die Wiederholungen zählen lassen.",
+    "secondaryCta": "oder sieh dir die Übungen an ↓",
+    "figureTitle": "Ein Strichmännchen hängt krumm über einem Laptop, richtet sich auf, dehnt sich und sackt wieder zusammen.",
+    "noteOw": "aua.",
+    "noteBetter": "besser."
+  },
+  "notification": {
+    "ariaLabel": "Eine Erinnerung von mybackhurts",
+    "appLine": "mybackhurts · jetzt",
+    "title": "Zeit, dich zu bewegen",
+    "body": "Stuhl-Kniebeuge, Armkreisen, Seitliche Nackendehnung.",
+    "start": "Starten",
+    "snooze": "In 10 Min. starten",
+    "afterCall": "Nach dem nächsten Anruf starten",
+    "skip": "Überspringen"
+  },
+  "tapeStrip": "steh auf ✶ roll die Schultern ✶ entspann den Kiefer ✶ trink etwas Wasser ✶ schau in die Ferne ✶ steh auf ✶ roll die Schultern ✶ entspann den Kiefer ✶ trink etwas Wasser ✶ schau in die Ferne ✶",
+  "how": {
+    "title": "Die ganze Routine,<br />in drei Bildern.",
+    "panel1Title": "Alle 45 Minuten",
+    "panel1Body": "Nur zu deinen Arbeitszeiten. Nie mitten im Call.",
+    "panel3Title": "Zwei oder drei Übungen",
+    "panel3Body": "Für dich ausgesucht. Tausch, was dir nicht passt.",
+    "panel4Doodle": "gleich zurück",
+    "panel4Title": "Weggelaufen? Zählt.",
+    "panel4Body": "5 Minuten weg von der Tastatur zählen als Pause."
+  },
+  "menu": {
+    "ariaLabel": "Das Menü in der Menüleiste",
+    "dayTime": "Fr 14:02",
+    "nextReminder": "Nächste Erinnerung um 14:45",
+    "goal": "2 von 4 Pausen heute",
+    "startNow": "Jetzt starten",
+    "snooze": "In 10 Min. starten",
+    "pause": "Pausieren",
+    "library": "Übungsbibliothek",
+    "stats": "Statistik",
+    "help": "Hilfe",
+    "settings": "Einstellungen …",
+    "quit": "Beenden",
+    "note": "wohnt hier oben. kein Dock-Symbol."
+  },
+  "moves": {
+    "title": "Übungen, die du direkt neben deinem Schreibtisch machen kannst.",
+    "subtitle": "Bürokleidung und Kopfhörer erlaubt.",
+    "posture": {
+      "label": "Stehende oder sitzende Übungen anzeigen",
+      "standing": "Stehend",
+      "seated": "Sitzend"
+    },
+    "camera": "Von der Kamera gezählt",
+    "squat": {
+      "name": "Stuhl-Kniebeuge",
+      "counter": "/ 10 Wdh.",
+      "figureTitle": "Ein Strichmännchen macht eine Stuhl-Kniebeuge.",
+      "description": "Nach hinten setzen, Stuhl antippen, aufrichten."
+    },
+    "calf": {
+      "name": "Wadenheben im Stand",
+      "counter": "/ 15 Wdh.",
+      "figureTitle": "Ein Strichmännchen hebt sich für Wadenheben auf die Zehen.",
+      "description": "Auf die Zehenspitzen, dann langsam runter."
+    },
+    "seatedCalf": {
+      "name": "Wadenheben im Sitzen",
+      "counter": "/ 45 s",
+      "figureTitle": "Eine Strichfigur auf einem Hocker hebt die Fersen.",
+      "description": "Fersen hoch, Fersen runter, ohne vom Stuhl aufzustehen."
+    },
+    "march": {
+      "name": "Marschieren im Stand",
+      "counter": "/ 20 Wdh.",
+      "figureTitle": "Eine Strichfigur marschiert auf der Stelle und hebt die Knie hoch.",
+      "description": "Knie hoch, Arme schwingen, eine Seite nach der anderen."
+    },
+    "seatedMarch": {
+      "name": "Marschieren im Sitzen",
+      "counter": "/ 45 s",
+      "figureTitle": "Eine Strichfigur auf einem Hocker hebt ein Knie, dann das andere.",
+      "description": "Sitz aufrecht und heb ein Knie, dann das andere."
+    },
+    "arms": {
+      "name": "Armkreisen",
+      "counter": "/ 10 Wdh.",
+      "figureTitle": "Ein Strichmännchen zeichnet mit beiden Armen Kreise.",
+      "description": "Arme zur Seite, kleine Kreise, jedes Mal etwas größer."
+    },
+    "chest": {
+      "name": "Brustöffner",
+      "counter": "/ 20 s",
+      "figureTitle": "Eine Strichfigur hebt die Arme wie einen Torpfosten.",
+      "description": "Arme hoch wie ein Torpfosten, Schulterblätter zusammendrücken, 20 Sekunden halten."
+    },
+    "shrugs": {
+      "name": "Schulterheben",
+      "counter": "/ 12 Wdh.",
+      "figureTitle": "Ein Strichmännchen hebt und senkt beide Schultern.",
+      "description": "Schultern zu den Ohren, dann fallen lassen."
+    },
+    "neck": {
+      "name": "Seitliche Nackendehnung",
+      "counter": "s <span>links</span>",
+      "figureTitle": "Ein Strichmännchen neigt den Kopf für eine seitliche Nackendehnung.",
+      "description": "Ohr zur Schulter, 15 Sekunden pro Seite."
+    },
+    "wrist": {
+      "name": "Handgelenk- & Unterarmdehnung",
+      "counter": "s <span>übrig</span>",
+      "figureTitle": "Eine Strichfigur streckt einen Arm aus und zieht die Finger sanft zurück.",
+      "description": "Arm raus, Finger hoch, mit der anderen Hand sanft zurückziehen. 15 Sekunden pro Seite."
+    },
+    "eye": {
+      "name": "20-20-20-Augenpause",
+      "counter": "/ 20 s",
+      "figureTitle": "Eine Strichfigur auf einem Hocker schaut aus einem fernen Fenster.",
+      "description": "Schau 20 Sekunden lang auf etwas weit Entferntes. Blinzeln ist erlaubt."
+    },
+    "pack": {
+      "title": "+3 Übungen",
+      "label": "im Unterstützer-Paket",
+      "move1": "Wirbelsäulendrehung im Sitzen",
+      "move2": "Oberschenkeldehnung im Stehen",
+      "move3": "Seitdehnung über Kopf"
+    },
+    "more": "Alle Übungen anzeigen",
+    "poster": {
+      "cut": "hier ausschneiden",
+      "link": "Spickzettel ausdrucken",
+      "meta": "PDF · eine Seite"
+    }
+  },
+  "modes": {
+    "title": "Zähl selbst, oder lass die Kamera zählen.",
+    "simpleLabel": "Einfach · Standard",
+    "spaceKey": "Leertaste",
+    "simpleTitle": "Du zählst. Es hält die Zeit.",
+    "simpleBody": "Ein Timer und eine Taste <b>+1 Wdh.</b> (oder Leertaste). Die Kamera bleibt immer aus.",
+    "webcamLabel": "Webcam · freiwillig",
+    "hint": "tritt etwas zurück",
+    "webcamTitle": "Es zählt. Du bewegst dich.",
+    "webcamBody": "Ein Pose-Modell auf dem Gerät verfolgt deine Gelenke, um Wiederholungen und Haltezeiten zu zählen, mit Formtipps.",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "Kein Video gespeichert, kein Video gesendet, auf dem Gerät, null Netzwerkanfragen.",
+    "stampRing": "KEIN VIDEO GESPEICHERT ✶ KEIN VIDEO GESENDET ✶ AUF DEM GERÄT ✶",
+    "stampZero": "0",
+    "stampNetwork": "NETZWERK",
+    "stampRequests": "ANFRAGEN",
+    "item1": "Bilder werden im Arbeitsspeicher analysiert und dann verworfen.",
+    "item2": "Keine eigenen Netzwerkanfragen.",
+    "purchases": "Käufe laufen über den App Store oder Microsoft Store.",
+    "item3": "Deine Statistiken bleiben auf deinem Computer, außer du exportierst eine CSV.",
+    "verify": "glaubst du uns nicht? prüf's mit <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> oder <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "Ein Beleg für jedes Mal, dass du aufgestanden bist.",
+    "chartTitle": "Ein Beispieldiagramm der Bewegungsminuten pro Tag über eine Woche.",
+    "days": {
+      "mon": "M",
+      "tue": "D",
+      "wed": "M",
+      "thu": "D",
+      "fri": "F",
+      "sat": "S",
+      "sun": "S"
+    },
+    "bestDay": "bester Tag!",
+    "caption": "bewegte Minuten, letzte 7 Tage",
+    "suggestion": "Du überspringst die meisten Erinnerungen um 15 Uhr. Diese Stunde pausieren?",
+    "suggestionApply": "Anwenden",
+    "streak": "5 Tage in Folge",
+    "freeze": "einen Tag verpasst? ein Serienschutz pro Woche.",
+    "stickersLabel": "Sticker fürs Durchhalten",
+    "stickers": {
+      "firstBreak": "Erste Pause",
+      "weekStreak": "Woche am Stück",
+      "monthStreak": "Monat am Stück"
+    }
+  },
+  "faq": {
+    "title": "Dinge, die Leute<br />meistens fragen.",
+    "scheduleQuestion": "Nervt es mich sonntags um 23 Uhr?",
+    "scheduleAnswer": "Nur wenn du sagst, dass du dann arbeitest. Du wählst Zeiten, Tage und Intervall.",
+    "countingQuestion": "Wie gut zählt es Wiederholungen?",
+    "countingAnswer": "Ordentlich, nicht magisch. Licht und Kameraposition zählen, und Wadenheben wechselt oft zum Timer. Verliert dich die Kamera, zählst du mit einem Klick selbst.",
+    "officeQuestion": "Ich sitze im Großraumbüro. Sehe ich dann komisch aus?",
+    "officeAnswer": "Ein bisschen. Stell die Haltung auf Sitzend, dann klappt jede Pause vom Stuhl aus.",
+    "callQuestion": "Woher weiß es, dass ich in einem Anruf bin?",
+    "callAnswer": "Es prüft, ob eine andere App deine Kamera oder dein Mikrofon benutzt oder im Vollbildmodus läuft. Es öffnet beides selbst nie, daher fragt es nie um Erlaubnis.",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "Steh auf.<br /><span>Ernsthaft, jetzt.</span>",
+    "body": "Dann hol dir die App, damit dich keine Webseite nerven muss.",
+    "small": "Kostenlos · kein Konto · 17 Sprachen"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "Deine Quittung",
+    "reminders": "Erinnerungen",
+    "moves": "Die Grundübungen",
+    "webcam": "Webcam-Zählung",
+    "stats": "Statistik + Sticker",
+    "subscription": "Abo",
+    "account": "Konto",
+    "free": "Gratis",
+    "none": "Keins",
+    "once": "Einmal",
+    "supporter": "Unterstützer (optional)",
+    "supporterDetails": "3 Extra-Übungen, Farbe Petrol, eine Dankesfigur, dein Jahr in Kästchen, jedes künftige Paket",
+    "total": "Summe",
+    "totalValue": "0,00",
+    "coffee": "weniger als ein Kaffee",
+    "thanks": "danke fürs Aufstehen"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts, <span class=\"credit\">gemacht von <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "Kein medizinischer Rat. Bewege dich sanft, hör auf, wenn etwas wehtut.",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "contact": "Kontakt",
+    "openSource": "Diese Website ist Open Source"
+  },
+  "notFound": {
+    "metaTitle": "Seite nicht gefunden · mybackhurts",
+    "title": "Diese Seite<br />hat Rücken.",
+    "body": "Hier ist nichts. Steh auf, streck dich und geh dann zurück zum Anfang.",
+    "home": "Zurück zum Anfang"
+  },
+  "poster": {
+    "title": "Steh auf. Mach die hier.",
+    "subtitle": "Übungen für den Platz neben deinem Schreibtisch. Kleb das an deinen Bildschirm.",
+    "neckDose": "15 s pro Seite",
+    "handNote": "ja, jetzt gleich."
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "Na gut. 10 Minuten. Wir zählen mit.",
+      "afterCall": "Geh ruhig. Wir warten.",
+      "skip": "Notiert. Dein Rücken wird sich erinnern."
+    },
+    "themeNames": {
+      "system": "System",
+      "light": "Hell",
+      "dark": "Dunkel"
+    },
+    "themeAriaTemplate": "Design: {current}. Zu {next} wechseln",
+    "themeTitleTemplate": "Design: {current}",
+    "themeLabels": {
+      "systemAria": "Design: System. Zu Hell wechseln",
+      "systemTitle": "Design: System"
+    },
+    "holdSides": {
+      "left": "links",
+      "right": "rechts"
+    }
+  },
+  "preview": {
+    "title": "Schau dir in 24 Sekunden an.",
+    "note": "Kein Ton. Es ist ein Büro.",
+    "label": "App-Vorschau: Eine Webcam-Sitzung zählt Stuhl-Kniebeugen, dann einen Nackenstretch, die Sitzungszusammenfassung und die wöchentlichen Statistiken.",
+    "play": "Video abspielen",
+    "pause": "Video pausieren"
+  }
+}

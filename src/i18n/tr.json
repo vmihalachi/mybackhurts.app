@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "tr"
+  },
+  "meta": {
+    "title": "mybackhurts: seni sandalyeden kaldıran minik bir masa uygulaması",
+    "description": "mybackhurts, Mac ve Windows için minik bir uygulama: her 45 dakikada bir ayağa kalkmanı hatırlatır ve iki üç kısa egzersizde sana eşlik eder. Tekrarlarını web kamerasıyla, cihaz üzerinde sayabilir. Ücretsiz, hesap yok.",
+    "ogTitle": "mybackhurts: sırtın aradı, seninle konuşmak istiyor",
+    "ogDescription": "Mac ve Windows için, seni her 45 dakikada bir sandalyeden kaldıran minik bir uygulama. Tekrarlar cihaz üzerinde sayılır. Hiçbir video bilgisayarından çıkmaz. Ücretsiz, hesap yok.",
+    "url": "https://mybackhurts.app/tr/",
+    "ogImageAlt": "mybackhurts: “Sırtın aradı. Seninle konuşmak istiyor.” Masadaki dizüstü bilgisayarın üstüne çökmüş bir çöp adam “of” diyor."
+  },
+  "og": {
+    "tape": "MOLA VER",
+    "headline1": "Sırtın aradı.",
+    "headline2": "Seninle konuşmak istiyor.",
+    "tagline1": "Mac ve Windows için, seni her 45 dakikada bir",
+    "tagline2": "sandalyeden kaldıran minik bir uygulama.",
+    "footerNote": "tekrarlar cihaz üzerinde sayılır. hiçbir video bilgisayarından çıkmaz.",
+    "noteOw": "of."
+  },
+  "a11y": {
+    "skipLink": "İçeriğe geç"
+  },
+  "nav": {
+    "ariaLabel": "Ana",
+    "wordmarkAria": "mybackhurts ana sayfa",
+    "how": "Nasıl",
+    "moves": "Hareketler",
+    "privacy": "Gizlilik",
+    "cta": "İndir",
+    "languageLabel": "Dil",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "Sırtın aradı.<br />Seninle <span class=\"scribble\">konuşmak istiyor.</span>",
+    "lede": "<strong>mybackhurts</strong> menü çubuğunda ya da sistem tepsisinde yaşar, seni her 45 dakikada bir dürter ve birkaç hızlı harekette sana eşlik eder. Tekrarlarını saymasını istemedikçe kamera kapalı kalır.",
+    "secondaryCta": "ya da hareketlere göz at ↓",
+    "figureTitle": "Dizüstü bilgisayarın üstüne çökmüş, sonra doğrulup gerinen, sonra yine çöken bir çöp adam.",
+    "noteOw": "of.",
+    "noteBetter": "daha iyi."
+  },
+  "notification": {
+    "ariaLabel": "mybackhurts'ten bir hatırlatıcı",
+    "appLine": "mybackhurts · şimdi",
+    "title": "Hareket zamanı",
+    "body": "Sandalyeli Çömelme, Kol Daireleri, Yana Boyun Esnetme.",
+    "start": "Başlat",
+    "snooze": "10 dk sonra başla",
+    "afterCall": "Bir sonraki görüşmemden sonra başla",
+    "skip": "Atla"
+  },
+  "tapeStrip": "ayağa kalk ✶ omuzlarını çevir ✶ çeneni gevşet ✶ biraz su iç ✶ uzaktaki bir şeye bak ✶ ayağa kalk ✶ omuzlarını çevir ✶ çeneni gevşet ✶ biraz su iç ✶ uzaktaki bir şeye bak ✶",
+  "preview": {
+    "title": "24 saniyede gör.",
+    "note": "ses yok. burası bir ofis.",
+    "label": "Uygulama önizlemesi: bir webcam seansı sandalyeli çömelmeleri, ardından bir boyun esnetme beklemesini, seans özetini ve haftalık istatistikleri sayıyor.",
+    "play": "Videoyu oynat",
+    "pause": "Videoyu duraklat"
+  },
+  "how": {
+    "title": "Bütün rutin,<br />üç karede.",
+    "panel1Title": "Her 45 dakikada bir",
+    "panel1Body": "Yalnızca çalışma saatlerinde. Görüşmenin ortasında asla.",
+    "panel3Title": "İki üç hareket",
+    "panel3Body": "Senin için seçilir. Sevmediğin hareketi değiştir.",
+    "panel4Doodle": "birazdan dönerim",
+    "panel4Title": "Uzaklaştın mı? Sayılır.",
+    "panel4Body": "Klavyeden 5 dakika uzak kalmak mola sayılır."
+  },
+  "menu": {
+    "ariaLabel": "Menü çubuğu menüsü",
+    "dayTime": "Cum 14:02",
+    "nextReminder": "Sonraki hatırlatıcı: 14:45",
+    "goal": "Bugün 4 moladan 2'si",
+    "startNow": "Şimdi başla",
+    "snooze": "10 dk sonra başla",
+    "pause": "Duraklat",
+    "library": "Egzersiz Kitaplığı",
+    "stats": "İstatistikler",
+    "help": "Yardım",
+    "settings": "Ayarlar…",
+    "quit": "Çık",
+    "note": "burada yaşar. Dock simgesi yok."
+  },
+  "moves": {
+    "title": "Masanın yanında yapabileceğin hareketler.",
+    "subtitle": "Ofis kıyafetleri ve kulaklıklar serbest.",
+    "posture": {
+      "label": "Ayakta ya da oturarak hareketleri göster",
+      "standing": "Ayakta",
+      "seated": "Oturarak"
+    },
+    "camera": "Kamera sayar",
+    "squat": {
+      "name": "Sandalyeli Çömelme",
+      "counter": "/ 10 tekrar",
+      "figureTitle": "Sandalyeli çömelme yapan bir çöp adam.",
+      "description": "Geriye otur, sandalyeye dokun, dik dur."
+    },
+    "calf": {
+      "name": "Ayakta Baldır Kaldırma",
+      "counter": "/ 15 tekrar",
+      "figureTitle": "Baldır kaldırma için parmak uçlarına yükselen bir çöp adam.",
+      "description": "Parmak uçlarına yüksel, sonra yavaşça in."
+    },
+    "seatedCalf": {
+      "name": "Oturarak Baldır Kaldırma",
+      "counter": "/ 45 sn",
+      "figureTitle": "Tabureye oturmuş, topuklarını kaldıran bir çöp adam.",
+      "description": "Topuklar yukarı, topuklar aşağı, sandalyenden kalkmadan."
+    },
+    "march": {
+      "name": "Ayakta Yürüyüş",
+      "counter": "/ 20 tekrar",
+      "figureTitle": "Dizlerini yükseğe kaldırarak olduğu yerde yürüyen bir çöp adam.",
+      "description": "Dizler yukarı, kollar sallanıyor, önce bir yan sonra öteki."
+    },
+    "seatedMarch": {
+      "name": "Oturarak Yürüyüş",
+      "counter": "/ 45 sn",
+      "figureTitle": "Tabureye oturmuş, önce bir dizini sonra ötekini kaldıran bir çöp adam.",
+      "description": "Dik otur ve bir dizini kaldır, sonra ötekini."
+    },
+    "arms": {
+      "name": "Kol Daireleri",
+      "counter": "/ 10 tekrar",
+      "figureTitle": "İki koluyla daireler çizen bir çöp adam.",
+      "description": "Kollar yanlarda, küçük daireler, her seferinde biraz daha büyük."
+    },
+    "chest": {
+      "name": "Göğüs Açıcı",
+      "counter": "/ 20 sn",
+      "figureTitle": "Kollarını kale direği gibi kaldıran bir çöp adam.",
+      "description": "Kollar kale direği gibi yukarıda, kürek kemiklerini sık, 20 saniye bekle."
+    },
+    "shrugs": {
+      "name": "Omuz Silkme",
+      "counter": "/ 12 tekrar",
+      "figureTitle": "İki omzunu kaldırıp indiren bir çöp adam.",
+      "description": "Omuzlar kulaklara, sonra bırak."
+    },
+    "neck": {
+      "name": "Yana Boyun Esnetme",
+      "counter": "sn <span>kaldı</span>",
+      "figureTitle": "Yana boyun esnetmesi için başını eğen bir çöp adam.",
+      "description": "Kulak omuza, her yana 15 saniye."
+    },
+    "wrist": {
+      "name": "Bilek ve Ön Kol Esnetme",
+      "counter": "sn <span>kaldı</span>",
+      "figureTitle": "Bir kolunu uzatıp parmaklarını nazikçe geri çeken bir çöp adam.",
+      "description": "Kol uzakta, parmaklar yukarı, öbür elinle nazikçe geri çek. Her yana 15 saniye."
+    },
+    "eye": {
+      "name": "20-20-20 Göz Molası",
+      "counter": "/ 20 sn",
+      "figureTitle": "Tabureye oturmuş, uzaktaki bir pencereden dışarı bakan bir çöp adam.",
+      "description": "20 saniye uzaktaki bir şeye bak. Göz kırpmak serbest."
+    },
+    "pack": {
+      "title": "+3 hareket",
+      "label": "Destekçi paketinde",
+      "move1": "Oturarak Omurga Bükme",
+      "move2": "Ayakta Ön Uyluk Esnetme",
+      "move3": "Başın Üstünden Yana Uzanma"
+    },
+    "more": "Tüm hareketleri göster",
+    "poster": {
+      "cut": "buradan kes",
+      "link": "Kopya kâğıdını yazdır",
+      "meta": "PDF · tek sayfa"
+    }
+  },
+  "modes": {
+    "title": "Tekrarlarını kendin say, ya da kamera saysın.",
+    "simpleLabel": "Basit · varsayılan",
+    "spaceKey": "boşluk",
+    "simpleTitle": "Sen sayarsın. O zamanı tutar.",
+    "simpleBody": "Bir zamanlayıcı ve bir <b>+1 tekrar</b> düğmesi (ya da Boşluk). Kamera asla açılmaz.",
+    "webcamLabel": "Webcam · isteğe bağlı",
+    "hint": "biraz geri çekil",
+    "webcamTitle": "O sayar. Sen sadece hareket et.",
+    "webcamBody": "Cihaz üzerinde çalışan bir poz modeli, eklemlerini izleyerek tekrarları ve beklemeleri sayar, form ipuçları da verir.",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "Video saklanmaz, video gönderilmez, cihaz üzerinde, sıfır ağ isteği.",
+    "stampRing": "VİDEO SAKLANMAZ ✶ VİDEO GÖNDERİLMEZ ✶ CİHAZ ÜZERİNDE ✶",
+    "stampZero": "0",
+    "stampNetwork": "AĞ",
+    "stampRequests": "İSTEĞİ",
+    "item1": "Kareler bellekte analiz edilir, sonra atılır.",
+    "item2": "Kendi başına hiçbir ağ isteği yapmaz.",
+    "purchases": "Satın alımlar App Store ya da Microsoft Store üzerinden yapılır.",
+    "item3": "İstatistiklerin, CSV dışa aktarmadıkça bilgisayarında kalır.",
+    "verify": "bize güvenmiyor musun? <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> ya da <a href=\"https://www.glasswire.com/\">GlassWire</a> ile kontrol et.",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "Ayağa kalktığın her anın kaydı.",
+    "chartTitle": "Bir hafta boyunca günlük hareket edilen dakikaları gösteren örnek bir grafik.",
+    "days": {
+      "mon": "P",
+      "tue": "S",
+      "wed": "Ç",
+      "thu": "P",
+      "fri": "C",
+      "sat": "C",
+      "sun": "P"
+    },
+    "bestDay": "en iyi gün!",
+    "caption": "dakika hareket, son 7 gün",
+    "suggestion": "Saat 15:00 hatırlatıcılarının çoğunu atlıyorsun. Bu saat duraklatılsın mı?",
+    "suggestionApply": "Uygula",
+    "streak": "5 günlük seri",
+    "freeze": "bir gün mü kaçırdın? haftada bir dondurma hakkın var.",
+    "stickersLabel": "Düzenli geldiğin için çıkartmalar",
+    "stickers": {
+      "firstBreak": "İlk mola",
+      "weekStreak": "Haftalık seri",
+      "monthStreak": "Aylık seri"
+    }
+  },
+  "faq": {
+    "title": "İnsanların<br />sık sorduğu şeyler.",
+    "scheduleQuestion": "Pazar gecesi saat 11'de beni rahatsız eder mi?",
+    "scheduleAnswer": "Yalnızca o saatte çalıştığını söylersen. Saatleri, günleri ve aralığı sen seçersin.",
+    "countingQuestion": "Tekrar sayımı ne kadar iyi?",
+    "countingAnswer": "İyi, ama sihir değil. Işık ve kamera konumu önemli, baldır kaldırmalar da çoğu zaman zamanlayıcıya düşer. Kamera seni kaybederse tek tıkla kendin sayabilirsin.",
+    "officeQuestion": "Açık ofisteyim. Garip görünür müyüm?",
+    "officeAnswer": "Biraz. Duruşu Oturarak yap, her mola sandalyenden yapılır.",
+    "callQuestion": "Görüşmede olduğumu nereden biliyor?",
+    "callAnswer": "Başka bir uygulamanın kameranı ya da mikrofonunu kullanıp kullanmadığına veya tam ekran olup olmadığına bakar. İkisini de kendisi asla açmaz, bu yüzden hiç izin istemez.",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "Ayağa kalk.<br /><span>Şaka yok, şimdi.</span>",
+    "body": "Sonra uygulamayı indir ki bir web sayfası seni dırdır etmek zorunda kalmasın.",
+    "small": "Ücretsiz · hesap yok · 17 dil"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "Fişin",
+    "reminders": "Hatırlatıcılar",
+    "moves": "Temel hareketler",
+    "webcam": "Webcam ile sayım",
+    "stats": "İstatistikler + çıkartmalar",
+    "subscription": "Abonelik",
+    "account": "Hesap",
+    "free": "Ücretsiz",
+    "none": "Yok",
+    "once": "Bir kez",
+    "supporter": "Destekçi (isteğe bağlı)",
+    "supporterDetails": "3 ekstra hareket, turkuaz mürekkep, bir teşekkür figürü, karelerle yılın, gelecekteki her paket",
+    "total": "Toplam",
+    "totalValue": "0,00",
+    "coffee": "bir kahveden ucuz",
+    "thanks": "ayağa kalktığın için teşekkürler"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts, <span class=\"credit\">yapan: <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "Tıbbi tavsiye değildir. Nazikçe hareket et, bir yerin ağrırsa dur.",
+    "privacy": "Gizlilik politikası",
+    "terms": "Kullanım şartları",
+    "contact": "İletişim",
+    "openSource": "Bu site açık kaynaklıdır"
+  },
+  "notFound": {
+    "metaTitle": "Sayfa bulunamadı · mybackhurts",
+    "title": "Bu sayfanın<br />beli tutuldu.",
+    "body": "Burada bir şey yok. Ayağa kalk, gerin, sonra başa dön.",
+    "home": "Başa dön"
+  },
+  "poster": {
+    "title": "Ayağa kalk. Bunları yap.",
+    "subtitle": "Masanın yanındaki alan için hareketler. Bunu monitörüne yapıştır.",
+    "neckDose": "her yana 15 sn",
+    "handNote": "evet, şu an."
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "Tamam. 10 dakika. Sayıyoruz.",
+      "afterCall": "Git. Bekleriz.",
+      "skip": "Not edildi. Sırtın bunu hatırlayacak."
+    },
+    "themeNames": {
+      "system": "sistem",
+      "light": "açık",
+      "dark": "koyu"
+    },
+    "themeAriaTemplate": "Tema: {current}. {next} temasına geç",
+    "themeTitleTemplate": "Tema: {current}",
+    "themeLabels": {
+      "systemAria": "Tema: sistem. Açık temaya geç",
+      "systemTitle": "Tema: sistem"
+    },
+    "holdSides": {
+      "left": "sol",
+      "right": "sağ"
+    }
+  }
+}

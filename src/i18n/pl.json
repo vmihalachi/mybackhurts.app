@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "pl"
+  },
+  "meta": {
+    "title": "mybackhurts: malutka aplikacja, która zrywa cię z krzesła",
+    "description": "mybackhurts to malutka aplikacja na Maca i Windowsa, która co 45 minut przypomina ci, żeby wstać, i prowadzi cię przez dwa lub trzy krótkie ćwiczenia. Potrafi zliczać twoje powtórzenia kamerą, na urządzeniu. Za darmo, bez konta.",
+    "ogTitle": "mybackhurts: dzwonią twoje plecy, chcą pogadać",
+    "ogDescription": "Malutka aplikacja na Maca i Windowsa, która co 45 minut zrywa cię z krzesła. Powtórzenia zliczane na urządzeniu. Żaden obraz nie opuszcza twojego komputera. Za darmo, bez konta.",
+    "url": "https://mybackhurts.app/pl/",
+    "ogImageAlt": "mybackhurts: „Dzwonią twoje plecy. Chcą pogadać.” Ludzik z kresek zgarbiony nad laptopem przy biurku mówi „au”."
+  },
+  "og": {
+    "tape": "ZRÓB PRZERWĘ",
+    "headline1": "Dzwonią twoje plecy.",
+    "headline2": "Chcą pogadać.",
+    "tagline1": "Malutka aplikacja na Maca i Windowsa, która",
+    "tagline2": "co 45 minut zrywa cię z krzesła.",
+    "footerNote": "powtórzenia zliczane na urządzeniu. żaden obraz nie opuszcza twojego komputera.",
+    "noteOw": "au."
+  },
+  "a11y": {
+    "skipLink": "Przejdź do treści"
+  },
+  "nav": {
+    "ariaLabel": "Główna",
+    "wordmarkAria": "mybackhurts, strona główna",
+    "how": "Jak",
+    "moves": "Ruchy",
+    "privacy": "Prywatność",
+    "cta": "Pobierz",
+    "languageLabel": "Język",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "Dzwonią twoje plecy.<br />Chcą <span class=\"scribble\">pogadać.</span>",
+    "lede": "<strong>mybackhurts</strong> mieszka na pasku menu lub w zasobniku systemowym, szturcha cię co 45 minut i prowadzi przez kilka szybkich ruchów. Kamera zostaje wyłączona, dopóki sam nie poprosisz jej o liczenie powtórzeń.",
+    "secondaryCta": "albo zobacz ruchy ↓",
+    "figureTitle": "Ludzik z kresek zgarbiony nad laptopem, który prostuje się i przeciąga, a potem znów się garbi.",
+    "noteOw": "au.",
+    "noteBetter": "lepiej."
+  },
+  "notification": {
+    "ariaLabel": "Przypomnienie od mybackhurts",
+    "appLine": "mybackhurts · teraz",
+    "title": "Czas się ruszyć",
+    "body": "Przysiad z krzesłem, Krążenia ramion, Rozciąganie szyi w bok.",
+    "start": "Start",
+    "snooze": "Start za 10 min",
+    "afterCall": "Start po mojej następnej rozmowie",
+    "skip": "Pomiń"
+  },
+  "tapeStrip": "wstań ✶ porusz barkami ✶ rozluźnij szczękę ✶ napij się wody ✶ spójrz w dal ✶ wstań ✶ porusz barkami ✶ rozluźnij szczękę ✶ napij się wody ✶ spójrz w dal ✶",
+  "preview": {
+    "title": "Zobacz to w 24 sekundy.",
+    "note": "bez dźwięku. to biuro.",
+    "label": "Podgląd aplikacji: sesja z kamerą zlicza przysiady z krzesłem, potem wytrzymanie rozciągania szyi, podsumowanie sesji i tygodniowe statystyki.",
+    "play": "Odtwórz wideo",
+    "pause": "Wstrzymaj wideo"
+  },
+  "how": {
+    "title": "Cała rutyna<br />w trzech kadrach.",
+    "panel1Title": "Co 45 minut",
+    "panel1Body": "Tylko w godzinach pracy. Nigdy w trakcie rozmowy.",
+    "panel3Title": "Dwa lub trzy ruchy",
+    "panel3Body": "Wybrane za ciebie. Wymień te, których nie lubisz.",
+    "panel4Doodle": "zaraz wracam",
+    "panel4Title": "Odszedłeś? Liczy się.",
+    "panel4Body": "5 minut z dala od klawiatury liczy się jako przerwa."
+  },
+  "menu": {
+    "ariaLabel": "Menu na pasku menu",
+    "dayTime": "Pt 14:02",
+    "nextReminder": "Następne przypomnienie o 14:45",
+    "goal": "2 z 4 przerw dziś",
+    "startNow": "Zacznij teraz",
+    "snooze": "Start za 10 min",
+    "pause": "Wstrzymaj",
+    "library": "Biblioteka ćwiczeń",
+    "stats": "Statystyki",
+    "help": "Pomoc",
+    "settings": "Ustawienia…",
+    "quit": "Zakończ",
+    "note": "mieszka tu na górze. bez ikony w Docku."
+  },
+  "moves": {
+    "title": "Ruchy do zrobienia obok biurka.",
+    "subtitle": "Biurowe ubranie i słuchawki mile widziane.",
+    "posture": {
+      "label": "Pokaż ruchy na stojąco lub na siedząco",
+      "standing": "Na stojąco",
+      "seated": "Na siedząco"
+    },
+    "camera": "Zliczane kamerą",
+    "squat": {
+      "name": "Przysiad z krzesłem",
+      "counter": "/ 10 powt.",
+      "figureTitle": "Ludzik z kresek robiący przysiad z krzesłem.",
+      "description": "Usiądź, dotknij krzesła, wyprostuj się."
+    },
+    "calf": {
+      "name": "Wspięcia na palce na stojąco",
+      "counter": "/ 15 powt.",
+      "figureTitle": "Ludzik z kresek wspinający się na palce przy wspięciach.",
+      "description": "Wspiń się na palce, potem opuść się powoli."
+    },
+    "seatedCalf": {
+      "name": "Wspięcia na palce na siedząco",
+      "counter": "/ 45 s",
+      "figureTitle": "Ludzik z kresek na stołku unoszący pięty.",
+      "description": "Pięty w górę, pięty w dół, bez wstawania z krzesła."
+    },
+    "march": {
+      "name": "Marsz na stojąco",
+      "counter": "/ 20 powt.",
+      "figureTitle": "Ludzik z kresek maszerujący w miejscu z wysoko uniesionymi kolanami.",
+      "description": "Kolana wysoko, ręce w ruchu, raz jedna strona, raz druga."
+    },
+    "seatedMarch": {
+      "name": "Marsz na siedząco",
+      "counter": "/ 45 s",
+      "figureTitle": "Ludzik z kresek na stołku unoszący jedno kolano, potem drugie.",
+      "description": "Usiądź prosto i unieś jedno kolano, potem drugie."
+    },
+    "arms": {
+      "name": "Krążenia ramion",
+      "counter": "/ 10 powt.",
+      "figureTitle": "Ludzik z kresek rysujący kółka obiema rękami.",
+      "description": "Ręce na boki, małe kółka, za każdym razem trochę większe."
+    },
+    "chest": {
+      "name": "Otwarcie klatki piersiowej",
+      "counter": "/ 20 s",
+      "figureTitle": "Ludzik z kresek unoszący ręce jak słupki bramki.",
+      "description": "Ręce w górę jak słupki bramki, ściągnij łopatki, wytrzymaj 20 sekund."
+    },
+    "shrugs": {
+      "name": "Wzruszanie ramionami",
+      "counter": "/ 12 powt.",
+      "figureTitle": "Ludzik z kresek unoszący i opuszczający oba barki.",
+      "description": "Barki do uszu, potem pozwól im opaść."
+    },
+    "neck": {
+      "name": "Rozciąganie szyi w bok",
+      "counter": "s <span>lewa</span>",
+      "figureTitle": "Ludzik z kresek przechylający głowę przy rozciąganiu szyi w bok.",
+      "description": "Ucho do barku, 15 sekund na każdą stronę."
+    },
+    "wrist": {
+      "name": "Rozciąganie nadgarstka i przedramienia",
+      "counter": "s <span>lewa</span>",
+      "figureTitle": "Ludzik z kresek wyciągający jedną rękę i delikatnie odciągający palce do tyłu.",
+      "description": "Ręka przed siebie, palce w górę, odciągnij je drugą ręką. 15 sekund na stronę."
+    },
+    "eye": {
+      "name": "Przerwa dla oczu 20-20-20",
+      "counter": "/ 20 s",
+      "figureTitle": "Ludzik z kresek na stołku patrzący przez odległe okno.",
+      "description": "Patrz na coś daleko przez 20 sekund. Mruganie dozwolone."
+    },
+    "pack": {
+      "title": "+3 ruchy",
+      "label": "w pakiecie wspierającego",
+      "move1": "Skręt kręgosłupa na siedząco",
+      "move2": "Rozciąganie uda na stojąco",
+      "move3": "Skłon w bok z ręką w górze"
+    },
+    "more": "Pokaż wszystkie ruchy",
+    "poster": {
+      "cut": "wytnij tutaj",
+      "link": "Wydrukuj ściągawkę",
+      "meta": "PDF · jedna strona"
+    }
+  },
+  "modes": {
+    "title": "Licz powtórzenia sam albo pozwól liczyć kamerze.",
+    "simpleLabel": "Prosty · domyślny",
+    "spaceKey": "spacja",
+    "simpleTitle": "Ty liczysz. Ona pilnuje czasu.",
+    "simpleBody": "Timer i przycisk <b>+1 powtórzenie</b> (albo Spacja). Kamera nigdy się nie włącza.",
+    "webcamLabel": "Kamera · na życzenie",
+    "hint": "cofnij się trochę",
+    "webcamTitle": "Ona liczy. Ty się tylko ruszasz.",
+    "webcamBody": "Model pozy działający na urządzeniu śledzi twoje stawy, żeby zliczać powtórzenia i wytrzymania, i podpowiada, jak poprawić formę.",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "Żaden obraz nie jest zapisywany ani wysyłany, wszystko na urządzeniu, zero zapytań sieciowych.",
+    "stampRing": "OBRAZ NIE JEST ZAPISYWANY ✶ OBRAZ NIE JEST WYSYŁANY ✶ NA URZĄDZENIU ✶",
+    "stampZero": "0",
+    "stampNetwork": "ZAPYTAŃ",
+    "stampRequests": "SIECIOWYCH",
+    "item1": "Klatki są analizowane w pamięci, a potem wyrzucane.",
+    "item2": "Żadnych własnych zapytań sieciowych.",
+    "purchases": "Zakupy idą przez App Store lub Microsoft Store.",
+    "item3": "Twoje statystyki zostają na twoim komputerze, chyba że wyeksportujesz CSV.",
+    "verify": "nie ufasz nam? sprawdź w <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> albo <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "Zapis każdego razu, gdy wstałeś.",
+    "chartTitle": "Przykładowy wykres minut w ruchu na dzień w ciągu jednego tygodnia.",
+    "days": {
+      "mon": "P",
+      "tue": "W",
+      "wed": "Ś",
+      "thu": "C",
+      "fri": "P",
+      "sat": "S",
+      "sun": "N"
+    },
+    "bestDay": "najlepszy dzień!",
+    "caption": "minuty w ruchu, ostatnie 7 dni",
+    "suggestion": "Pomijasz większość przypomnień o 15:00. Wstrzymać tę godzinę?",
+    "suggestionApply": "Zastosuj",
+    "streak": "5 dni z rzędu",
+    "freeze": "opuściłeś dzień? jedno zamrożenie na tydzień.",
+    "stickersLabel": "Naklejki za pojawianie się",
+    "stickers": {
+      "firstBreak": "Pierwsza przerwa",
+      "weekStreak": "Tydzień z rzędu",
+      "monthStreak": "Miesiąc z rzędu"
+    }
+  },
+  "faq": {
+    "title": "Rzeczy, o które<br />zwykle pytają.",
+    "scheduleQuestion": "Czy będzie mnie męczyć o 23 w niedzielę?",
+    "scheduleAnswer": "Tylko jeśli powiesz, że wtedy pracujesz. Sam wybierasz godziny, dni i odstęp.",
+    "countingQuestion": "Jak dobre jest zliczanie powtórzeń?",
+    "countingAnswer": "Przyzwoite, nie magiczne. Światło i ustawienie kamery mają znaczenie, a wspięcia na palce często wracają do timera. Jeśli kamera cię zgubi, jedno kliknięcie pozwala liczyć samemu.",
+    "officeQuestion": "Siedzę w open space. Czy będę wyglądać dziwnie?",
+    "officeAnswer": "Trochę. Ustaw postawę na Na siedząco i każda przerwa działa z krzesła.",
+    "callQuestion": "Skąd wie, że jestem na rozmowie?",
+    "callAnswer": "Sprawdza, czy inna aplikacja używa kamery lub mikrofonu albo działa na pełnym ekranie. Sama nigdy nie włącza żadnego z nich, więc nigdy nie prosi o uprawnienia.",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "Wstań.<br /><span>Serio, teraz.</span>",
+    "body": "Potem pobierz aplikację, żeby strona internetowa nie musiała cię męczyć.",
+    "small": "Za darmo · bez konta · 17 języków"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "Twój paragon",
+    "reminders": "Przypomnienia",
+    "moves": "Podstawowe ruchy",
+    "webcam": "Zliczanie kamerą",
+    "stats": "Statystyki + naklejki",
+    "subscription": "Subskrypcja",
+    "account": "Konto",
+    "free": "Za darmo",
+    "none": "Brak",
+    "once": "Raz",
+    "supporter": "Wspierający (opcjonalnie)",
+    "supporterDetails": "3 dodatkowe ruchy, turkusowy tusz, figurka z podziękowaniem, twój rok w kwadracikach, każdy przyszły pakiet",
+    "total": "Razem",
+    "totalValue": "0,00",
+    "coffee": "mniej niż kawa",
+    "thanks": "dzięki, że wstałeś"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts, <span class=\"credit\">zrobił <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "To nie porada medyczna. Ruszaj się delikatnie, przestań, jeśli cokolwiek zaboli.",
+    "privacy": "Polityka prywatności",
+    "terms": "Warunki użytkowania",
+    "contact": "Kontakt",
+    "openSource": "Ta strona jest open source"
+  },
+  "notFound": {
+    "metaTitle": "Nie znaleziono strony · mybackhurts",
+    "title": "Tej stronie<br />wysiadł kręgosłup.",
+    "body": "Nic tu nie ma. Wstań, przeciągnij się i wróć na początek.",
+    "home": "Wróć na początek"
+  },
+  "poster": {
+    "title": "Wstań. Zrób to.",
+    "subtitle": "Ruchy na miejsce obok biurka. Przyklej to do monitora.",
+    "neckDose": "15 s na stronę",
+    "handNote": "tak, właśnie teraz."
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "No dobra. 10 minut. Liczymy.",
+      "afterCall": "Idź. Poczekamy.",
+      "skip": "Zapisane. Twoje plecy to zapamiętają."
+    },
+    "themeNames": {
+      "system": "systemowy",
+      "light": "jasny",
+      "dark": "ciemny"
+    },
+    "themeAriaTemplate": "Motyw: {current}. Przełącz na {next}",
+    "themeTitleTemplate": "Motyw: {current}",
+    "themeLabels": {
+      "systemAria": "Motyw: systemowy. Przełącz na jasny",
+      "systemTitle": "Motyw: systemowy"
+    },
+    "holdSides": {
+      "left": "lewa",
+      "right": "prawa"
+    }
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "cs"
+  },
+  "meta": {
+    "title": "mybackhurts: malá aplikace, která tě zvedne ze židle",
+    "description": "mybackhurts je malá aplikace pro Mac a Windows, která ti každých 45 minut připomene, ať vstaneš, a provede tě dvěma nebo třemi krátkými cviky. Opakování umí počítat webkamerou přímo v zařízení. Zdarma, bez účtu.",
+    "ogTitle": "mybackhurts: volají ti záda, chtějí si promluvit",
+    "ogDescription": "Malá aplikace pro Mac a Windows, která tě každých 45 minut zvedne ze židle. Opakování se počítají v zařízení. Žádné video neopustí tvůj počítač. Zdarma, bez účtu.",
+    "url": "https://mybackhurts.app/cs/",
+    "ogImageAlt": "mybackhurts: „Volají ti záda. Chtějí si promluvit.“ Panáček shrbený nad notebookem u stolu říká „au“."
+  },
+  "og": {
+    "tape": "DEJ SI PAUZU",
+    "headline1": "Volají ti záda.",
+    "headline2": "Chtějí si promluvit.",
+    "tagline1": "Malá aplikace pro Mac a Windows, která tě",
+    "tagline2": "každých 45 minut zvedne ze židle.",
+    "footerNote": "opakování se počítají v zařízení. žádné video neopouští tvůj počítač.",
+    "noteOw": "au."
+  },
+  "a11y": {
+    "skipLink": "Přejít na obsah"
+  },
+  "nav": {
+    "ariaLabel": "Hlavní",
+    "wordmarkAria": "mybackhurts, domů",
+    "how": "Jak",
+    "moves": "Cviky",
+    "privacy": "Soukromí",
+    "cta": "Stáhnout",
+    "languageLabel": "Jazyk",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "Volají ti záda.<br />Chtějí <span class=\"scribble\">si promluvit.</span>",
+    "lede": "<strong>mybackhurts</strong> žije v řádku nabídek nebo v oznamovací oblasti, každých 45 minut tě postrčí a provede pár rychlými cviky. Kamera zůstává vypnutá, dokud jí neřekneš, aby počítala opakování.",
+    "secondaryCta": "nebo se podívej na cviky ↓",
+    "figureTitle": "Panáček shrbený nad notebookem, který se narovná a protáhne, a pak se zase shrbí.",
+    "noteOw": "au.",
+    "noteBetter": "líp."
+  },
+  "notification": {
+    "ariaLabel": "Připomínka od mybackhurts",
+    "appLine": "mybackhurts · teď",
+    "title": "Čas se pohnout",
+    "body": "Dřep u židle, Kroužení pažemi, Protažení krku do strany.",
+    "start": "Začít",
+    "snooze": "Spustit za 10 min",
+    "afterCall": "Spustit po mém dalším hovoru",
+    "skip": "Přeskočit"
+  },
+  "tapeStrip": "vstaň ✶ zakrouži rameny ✶ uvolni čelist ✶ napij se vody ✶ podívej se do dálky ✶ vstaň ✶ zakrouži rameny ✶ uvolni čelist ✶ napij se vody ✶ podívej se do dálky ✶",
+  "preview": {
+    "title": "Podívej se za 24 sekund.",
+    "note": "bez zvuku. je to kancelář.",
+    "label": "Ukázka aplikace: webkamerové cvičení počítá dřepy u židle, pak výdrž protažení krku, shrnutí a týdenní statistiky.",
+    "play": "Přehrát video",
+    "pause": "Pozastavit video"
+  },
+  "how": {
+    "title": "Celá rutina<br />ve třech panelech.",
+    "panel1Title": "Každých 45 minut",
+    "panel1Body": "Jen v pracovní době. Nikdy uprostřed hovoru.",
+    "panel3Title": "Dva nebo tři cviky",
+    "panel3Body": "Vybrané za tebe. Co se ti nelíbí, vyměň.",
+    "panel4Doodle": "hned jsem zpět",
+    "panel4Title": "Pryč od stolu? Počítá se.",
+    "panel4Body": "5 minut pryč od klávesnice se počítá jako pauza."
+  },
+  "menu": {
+    "ariaLabel": "Nabídka v řádku nabídek",
+    "dayTime": "pá 14:02",
+    "nextReminder": "Další připomínka v 14:45",
+    "goal": "2 ze 4 pauz dnes",
+    "startNow": "Spustit teď",
+    "snooze": "Spustit za 10 min",
+    "pause": "Pozastavit",
+    "library": "Knihovna cviků",
+    "stats": "Statistiky",
+    "help": "Nápověda",
+    "settings": "Nastavení…",
+    "quit": "Ukončit",
+    "note": "bydlí tady nahoře. žádná ikona v Docku."
+  },
+  "moves": {
+    "title": "Cviky, které zvládneš vedle stolu.",
+    "subtitle": "Kancelářské oblečení a sluchátka vítány.",
+    "posture": {
+      "label": "Zobrazit cviky ve stoje nebo vsedě",
+      "standing": "Ve stoje",
+      "seated": "Vsedě"
+    },
+    "camera": "Počítá kamera",
+    "squat": {
+      "name": "Dřep u židle",
+      "counter": "/ 10 opak.",
+      "figureTitle": "Panáček dělá dřep u židle.",
+      "description": "Sedni si dozadu, dotkni se židle, narovnej se."
+    },
+    "calf": {
+      "name": "Výpony ve stoje",
+      "counter": "/ 15 opak.",
+      "figureTitle": "Panáček se zvedá na špičky při výponu.",
+      "description": "Zvedni se na špičky a pomalu se spusť."
+    },
+    "seatedCalf": {
+      "name": "Výpony vsedě",
+      "counter": "/ 45 s",
+      "figureTitle": "Panáček na stoličce zvedá paty.",
+      "description": "Paty nahoru, paty dolů, bez opuštění židle."
+    },
+    "march": {
+      "name": "Pochod ve stoje",
+      "counter": "/ 20 opak.",
+      "figureTitle": "Panáček pochoduje na místě s koleny vysoko.",
+      "description": "Kolena vysoko, paže se pohupují, jedna strana, pak druhá."
+    },
+    "seatedMarch": {
+      "name": "Pochod vsedě",
+      "counter": "/ 45 s",
+      "figureTitle": "Panáček na stoličce zvedá jedno koleno, pak druhé.",
+      "description": "Seď zpříma a zvedej jedno koleno, pak druhé."
+    },
+    "arms": {
+      "name": "Kroužení pažemi",
+      "counter": "/ 10 opak.",
+      "figureTitle": "Panáček kreslí kruhy oběma pažemi.",
+      "description": "Paže do stran, malá kolečka, pokaždé o trochu větší."
+    },
+    "chest": {
+      "name": "Otevření hrudníku",
+      "counter": "/ 20 s",
+      "figureTitle": "Panáček zvedá paže do tvaru brankové tyče.",
+      "description": "Paže nahoru jako branková tyč, semkni lopatky, vydrž 20 sekund."
+    },
+    "shrugs": {
+      "name": "Krčení ramen",
+      "counter": "/ 12 opak.",
+      "figureTitle": "Panáček zvedá a spouští obě ramena.",
+      "description": "Ramena až k uším, pak je nech klesnout."
+    },
+    "neck": {
+      "name": "Protažení krku do strany",
+      "counter": "s <span>vlevo</span>",
+      "figureTitle": "Panáček nakláněním hlavy protahuje krk do strany.",
+      "description": "Ucho k rameni, 15 sekund na každou stranu."
+    },
+    "wrist": {
+      "name": "Protažení zápěstí a předloktí",
+      "counter": "s <span>vlevo</span>",
+      "figureTitle": "Panáček natahuje jednu paži a jemně si přitahuje prsty zpět.",
+      "description": "Paže natažená, prsty nahoru, druhou rukou je jemně přitáhni. 15 sekund na stranu."
+    },
+    "eye": {
+      "name": "Oční pauza 20-20-20",
+      "counter": "/ 20 s",
+      "figureTitle": "Panáček na stoličce se dívá z okna do dálky.",
+      "description": "Dívej se 20 sekund na něco daleko. Mrkat se smí."
+    },
+    "pack": {
+      "title": "+3 cviky",
+      "label": "v balíčku pro podporovatele",
+      "move1": "Rotace páteře vsedě",
+      "move2": "Protažení stehna ve stoje",
+      "move3": "Úklon s paží nad hlavou"
+    },
+    "more": "Zobrazit všechny cviky",
+    "poster": {
+      "cut": "střihni zde",
+      "link": "Vytisknout taháček",
+      "meta": "PDF · jedna strana"
+    }
+  },
+  "modes": {
+    "title": "Počítej si sám, nebo nech počítat kameru.",
+    "simpleLabel": "Jednoduchý · výchozí",
+    "spaceKey": "mezerník",
+    "simpleTitle": "Ty počítáš. Aplikace hlídá čas.",
+    "simpleBody": "Časovač a tlačítko <b>+1 opakování</b> (nebo mezerník). Kamera se nikdy nezapne.",
+    "webcamLabel": "Webkamera · dobrovolně",
+    "hint": "ustup trochu",
+    "webcamTitle": "Ona počítá. Ty se jen hýbeš.",
+    "webcamBody": "Model pózy přímo v zařízení sleduje tvoje klouby, počítá opakování a výdrže a radí s provedením.",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "Žádné video se neukládá, žádné se neposílá, vše v zařízení, nula síťových požadavků.",
+    "stampRing": "ŽÁDNÉ VIDEO NEUKLÁDÁNO ✶ ŽÁDNÉ VIDEO NEPOSÍLÁNO ✶ V ZAŘÍZENÍ ✶",
+    "stampZero": "0",
+    "stampNetwork": "SÍŤOVÝCH",
+    "stampRequests": "POŽADAVKŮ",
+    "item1": "Snímky se analyzují v paměti a pak se zahodí.",
+    "item2": "Žádné vlastní síťové požadavky.",
+    "purchases": "Nákupy probíhají přes App Store nebo Microsoft Store.",
+    "item3": "Tvoje statistiky zůstávají v tvém počítači, pokud neexportuješ CSV.",
+    "verify": "nevěříš nám? zkontroluj to pomocí <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> nebo <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "Záznam každého vstání od stolu.",
+    "chartTitle": "Ukázkový graf minut pohybu za den během jednoho týdne.",
+    "days": {
+      "mon": "P",
+      "tue": "Ú",
+      "wed": "S",
+      "thu": "Č",
+      "fri": "P",
+      "sat": "S",
+      "sun": "N"
+    },
+    "bestDay": "nejlepší den!",
+    "caption": "minut pohybu za posledních 7 dní",
+    "suggestion": "Většinu připomínek ve 15:00 přeskakuješ. Pozastavit tuto hodinu?",
+    "suggestionApply": "Použít",
+    "streak": "Série 5 dní",
+    "freeze": "vynechaný den? jedno zmrazení týdně.",
+    "stickersLabel": "Samolepky za to, že se ukážeš",
+    "stickers": {
+      "firstBreak": "První pauza",
+      "weekStreak": "Týdenní série",
+      "monthStreak": "Měsíční série"
+    }
+  },
+  "faq": {
+    "title": "Na co se lidi<br />obvykle ptají.",
+    "scheduleQuestion": "Bude mě otravovat v neděli ve 23:00?",
+    "scheduleAnswer": "Jen pokud řekneš, že tehdy pracuješ. Hodiny, dny i interval si vybíráš ty.",
+    "countingQuestion": "Jak dobře počítá opakování?",
+    "countingAnswer": "Slušně, ne zázračně. Záleží na světle a poloze kamery a u výponů se často přepne na časovač. Pokud tě kamera ztratí, jedním kliknutím počítáš sám.",
+    "officeQuestion": "Sedím v open space. Budu vypadat divně?",
+    "officeAnswer": "Trochu. Nastav postoj na Vsedě a každá pauza funguje z židle.",
+    "callQuestion": "Jak pozná, že mám hovor?",
+    "callAnswer": "Zjišťuje, jestli kameru nebo mikrofon používá jiná aplikace, nebo jestli je nějaká na celou obrazovku. Ani jedno sama nikdy neotevírá, takže se na nic neptá o oprávnění.",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "Vstaň.<br /><span>Vážně, hned.</span>",
+    "body": "Pak si stáhni aplikaci, ať tě nemusí otravovat webová stránka.",
+    "small": "Zdarma · bez účtu · 17 jazyků"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "Tvoje účtenka",
+    "reminders": "Připomínky",
+    "moves": "Základní cviky",
+    "webcam": "Počítání webkamerou",
+    "stats": "Statistiky + samolepky",
+    "subscription": "Předplatné",
+    "account": "Účet",
+    "free": "Zdarma",
+    "none": "Žádný",
+    "once": "Jednou",
+    "supporter": "Podporovatel (volitelné)",
+    "supporterDetails": "3 další cviky, tyrkysový inkoust, figurka na poděkování, tvůj rok ve čtverečcích, každý budoucí balíček",
+    "total": "Celkem",
+    "totalValue": "0,00",
+    "coffee": "méně než káva",
+    "thanks": "díky za zvednutí zadku"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts, <span class=\"credit\">vytvořil <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "Není to lékařská rada. Hýbej se jemně, přestaň, pokud něco bolí.",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Podmínky použití",
+    "contact": "Kontakt",
+    "openSource": "Tento web je open source"
+  },
+  "notFound": {
+    "metaTitle": "Stránka nenalezena · mybackhurts",
+    "title": "Tahle stránka<br />si vyhodila záda.",
+    "body": "Tady nic není. Vstaň, protáhni se a vrať se na začátek.",
+    "home": "Zpět na začátek"
+  },
+  "poster": {
+    "title": "Vstaň. Dělej tohle.",
+    "subtitle": "Cviky na místo vedle stolu. Přilep si to na monitor.",
+    "neckDose": "15 s na stranu",
+    "handNote": "ano, právě teď."
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "Dobře. 10 minut. Počítáme.",
+      "afterCall": "Běž. Počkáme.",
+      "skip": "Zapsáno. Tvoje záda si to budou pamatovat."
+    },
+    "themeNames": {
+      "system": "systémový",
+      "light": "světlý",
+      "dark": "tmavý"
+    },
+    "themeAriaTemplate": "Motiv: {current}. Přepnout na {next}",
+    "themeTitleTemplate": "Motiv: {current}",
+    "themeLabels": {
+      "systemAria": "Motiv: systémový. Přepnout na světlý",
+      "systemTitle": "Motiv: systémový"
+    },
+    "holdSides": {
+      "left": "vlevo",
+      "right": "vpravo"
+    }
+  }
+}

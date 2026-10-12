@@ -1,0 +1,306 @@
+{
+  "locale": {
+    "lang": "it"
+  },
+  "meta": {
+    "title": "mybackhurts: l'app che ti stacca dalla sedia",
+    "description": "mybackhurts è una piccola app per Mac e Windows che ti ricorda di alzarti ogni 45 minuti e ti guida in due o tre esercizi brevi. Conta le ripetizioni con la webcam, tutto sul dispositivo. Gratis, senza account.",
+    "ogTitle": "mybackhurts: la tua schiena vuole fare due parole",
+    "ogDescription": "Una piccola app per Mac e Windows che ti stacca dalla sedia ogni 45 minuti. Ripetizioni contate sul dispositivo. Nessun video lascia il computer. Gratis, senza account.",
+    "url": "https://mybackhurts.app/it/",
+    "ogImageAlt": "mybackhurts: “La tua schiena vuole parlarti.” Un omino stilizzato curvo su un portatile alla scrivania dice “ahia.”"
+  },
+  "og": {
+    "tape": "FAI UNA PAUSA",
+    "headline1": "La tua schiena",
+    "headline2": "vuole parlarti.",
+    "tagline1": "Una piccola app per Mac e Windows che ti stacca",
+    "tagline2": "dalla sedia ogni 45 minuti.",
+    "footerNote": "ripetizioni contate sul dispositivo. nessun video esce dal computer.",
+    "noteOw": "ahia."
+  },
+  "a11y": {
+    "skipLink": "Salta al contenuto"
+  },
+  "nav": {
+    "ariaLabel": "Principale",
+    "wordmarkAria": "home di mybackhurts",
+    "how": "Come",
+    "moves": "Mosse",
+    "privacy": "Privacy",
+    "cta": "Scarica",
+    "languageLabel": "Lingua",
+    "wordmark": "my<span>back</span>hurts"
+  },
+  "hero": {
+    "title": "La tua schiena chiama.<br />Vuole <span class=\"scribble\">parlarti.</span>",
+    "lede": "<strong>mybackhurts</strong> vive nella barra dei menu o nell'area di notifica, ti dà un colpetto ogni 45 minuti e ti guida in qualche esercizio veloce. La webcam rimane spenta a meno che non le chiedi tu di contare le ripetizioni.",
+    "secondaryCta": "oppure guarda le mosse ↓",
+    "figureTitle": "Un omino stilizzato curvo su un portatile: si raddrizza, si stiracchia e poi si accascia di nuovo.",
+    "noteOw": "ahia.",
+    "noteBetter": "meglio."
+  },
+  "notification": {
+    "ariaLabel": "Un promemoria da mybackhurts",
+    "appLine": "mybackhurts · ora",
+    "title": "È ora di muoversi",
+    "body": "Squat sulla sedia, Cerchi con le braccia, Stretching laterale del collo.",
+    "start": "Inizia",
+    "snooze": "Inizia tra 10 min",
+    "afterCall": "Inizia dopo la prossima chiamata",
+    "skip": "Salta"
+  },
+  "tapeStrip": "alzati ✶ sciogli le spalle ✶ molla la mascella ✶ bevi un sorso d'acqua ✶ guarda qualcosa di lontano ✶ alzati ✶ sciogli le spalle ✶ molla la mascella ✶ bevi un sorso d'acqua ✶ guarda qualcosa di lontano ✶",
+  "how": {
+    "title": "L'intera routine,<br />in tre pannelli.",
+    "panel1Title": "Ogni 45 minuti",
+    "panel1Body": "Solo negli orari di lavoro. Mai durante una call.",
+    "panel3Title": "Due o tre mosse",
+    "panel3Body": "Scelte per te. Cambia quelle che non ti vanno.",
+    "panel4Doodle": "torno",
+    "panel4Title": "Ti sei alzato? Vale.",
+    "panel4Body": "5 minuti lontano dalla tastiera contano come pausa."
+  },
+  "menu": {
+    "ariaLabel": "Il menu nella barra dei menu",
+    "dayTime": "Ven 14:02",
+    "nextReminder": "Prossimo promemoria alle 14:45",
+    "goal": "2 di 4 pause oggi",
+    "startNow": "Inizia ora",
+    "snooze": "Inizia tra 10 min",
+    "pause": "Pausa",
+    "library": "Libreria esercizi",
+    "stats": "Statistiche",
+    "help": "Aiuto",
+    "settings": "Impostazioni",
+    "quit": "Esci",
+    "note": "sta quassù. niente icona nel Dock."
+  },
+  "moves": {
+    "title": "Esercizi da fare accanto alla scrivania.",
+    "subtitle": "Anche in abiti da ufficio e con le cuffie.",
+    "posture": {
+      "label": "Mostra gli esercizi in piedi o da seduto",
+      "standing": "In piedi",
+      "seated": "Da seduto"
+    },
+    "camera": "Contati dalla videocamera",
+    "squat": {
+      "name": "Squat sulla sedia",
+      "counter": "/ 10 rip.",
+      "figureTitle": "Un omino stilizzato fa uno squat sulla sedia.",
+      "description": "Siediti indietro, sfiora la sedia, torna dritto."
+    },
+    "calf": {
+      "name": "Sollevamento sui polpacci",
+      "counter": "/ 15 rip.",
+      "figureTitle": "Un omino stilizzato si solleva sulle punte per allenare i polpacci.",
+      "description": "Sali sulle punte, poi scendi piano."
+    },
+    "seatedCalf": {
+      "name": "Sollevamento sui polpacci da seduto",
+      "counter": "/ 45 s",
+      "figureTitle": "Una figura stilizzata su uno sgabello che solleva i talloni.",
+      "description": "Talloni su, talloni giù, senza lasciare la sedia."
+    },
+    "march": {
+      "name": "Marcia in piedi",
+      "counter": "/ 20 rip.",
+      "figureTitle": "Una figura stilizzata che marcia sul posto con le ginocchia alte.",
+      "description": "Ginocchia alte, braccia che oscillano, un lato e poi l'altro."
+    },
+    "seatedMarch": {
+      "name": "Marcia da seduto",
+      "counter": "/ 45 s",
+      "figureTitle": "Una figura stilizzata su uno sgabello che solleva un ginocchio e poi l'altro.",
+      "description": "Siediti dritto e solleva un ginocchio, poi l'altro."
+    },
+    "arms": {
+      "name": "Cerchi con le braccia",
+      "counter": "/ 10 rip.",
+      "figureTitle": "Un omino stilizzato disegna cerchi con entrambe le braccia.",
+      "description": "Braccia aperte, piccoli cerchi, ogni volta un po' più grandi."
+    },
+    "chest": {
+      "name": "Apertura del petto",
+      "counter": "/ 20 s",
+      "figureTitle": "Una figura stilizzata che solleva le braccia come una porta da calcio.",
+      "description": "Braccia su come una porta da calcio, scapole strette, tieni 20 secondi."
+    },
+    "shrugs": {
+      "name": "Alzate di spalle",
+      "counter": "/ 12 rip.",
+      "figureTitle": "Un omino stilizzato alza e abbassa le spalle.",
+      "description": "Spalle verso le orecchie, poi lasciale cadere."
+    },
+    "neck": {
+      "name": "Stretching laterale del collo",
+      "counter": "s <span>sinistra</span>",
+      "figureTitle": "Un omino stilizzato inclina la testa per uno stretching laterale del collo.",
+      "description": "Orecchio verso la spalla, 15 secondi per lato."
+    },
+    "wrist": {
+      "name": "Stretching di polsi e avambracci",
+      "counter": "s <span>rimasti</span>",
+      "figureTitle": "Una figura stilizzata che allunga un braccio e tira delicatamente indietro le dita.",
+      "description": "Braccio in fuori, dita in su, tirale piano indietro con l'altra mano. 15 secondi per lato."
+    },
+    "eye": {
+      "name": "Pausa occhi 20-20-20",
+      "counter": "/ 20 s",
+      "figureTitle": "Una figura stilizzata su uno sgabello che guarda fuori verso una finestra lontana.",
+      "description": "Guarda qualcosa di lontano per 20 secondi. Sbattere le palpebre è consentito."
+    },
+    "pack": {
+      "title": "+3 mosse",
+      "label": "nel pacchetto Sostenitore",
+      "move1": "Torsione della colonna da seduto",
+      "move2": "Allungamento del quadricipite in piedi",
+      "move3": "Allungamento laterale sopra la testa"
+    },
+    "more": "Mostra tutti gli esercizi",
+    "poster": {
+      "cut": "taglia qui",
+      "link": "Stampa il promemoria",
+      "meta": "PDF · una pagina"
+    }
+  },
+  "modes": {
+    "title": "Conta tu, oppure lascia contare la camera.",
+    "simpleLabel": "Semplice · predefinita",
+    "spaceKey": "spazio",
+    "simpleTitle": "Tu conti. Lui tiene il tempo.",
+    "simpleBody": "Un timer e un pulsante <b>+1 rip.</b> (o Spazio). La camera non si accende mai.",
+    "webcamLabel": "Webcam · se vuoi",
+    "hint": "fai un passo indietro",
+    "webcamTitle": "Lui conta. Tu ti muovi.",
+    "webcamBody": "Un modello di pose on-device segue le articolazioni per contare ripetizioni e tenute, con suggerimenti sulla forma.",
+    "keycapPop": "+1"
+  },
+  "privacy": {
+    "stampTitle": "Nessun video salvato, nessun video inviato, tutto sul dispositivo, zero richieste di rete.",
+    "stampRing": "NESSUN VIDEO SALVATO ✶ NESSUN VIDEO INVIATO ✶ SUL DISPOSITIVO ✶",
+    "stampZero": "0",
+    "stampNetwork": "RICHIESTE",
+    "stampRequests": "DI RETE",
+    "item1": "I fotogrammi vengono analizzati in memoria e poi buttati via.",
+    "item2": "Nessuna richiesta di rete propria.",
+    "purchases": "Gli acquisti li gestisce l’App Store o il Microsoft Store.",
+    "item3": "Le statistiche restano sul computer, a meno che tu non esporti un CSV.",
+    "verify": "non ti fidi? controlla con <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> o <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
+    "itemMarker": "✓"
+  },
+  "stats": {
+    "title": "La prova di ogni volta che ti sei alzato.",
+    "chartTitle": "Un grafico di esempio dei minuti in movimento al giorno nell'ultima settimana.",
+    "days": {
+      "mon": "L",
+      "tue": "M",
+      "wed": "M",
+      "thu": "G",
+      "fri": "V",
+      "sat": "S",
+      "sun": "D"
+    },
+    "bestDay": "giorno top!",
+    "caption": "minuti in movimento, ultimi 7 giorni",
+    "suggestion": "Salti quasi tutti i promemoria delle 15. Metto in pausa quell'ora?",
+    "suggestionApply": "Applica",
+    "streak": "serie di 5 giorni",
+    "freeze": "hai saltato un giorno? un jolly a settimana.",
+    "stickersLabel": "Figurine per le presenze",
+    "stickers": {
+      "firstBreak": "Primo passo",
+      "weekStreak": "Striscia da una settimana",
+      "monthStreak": "Striscia da un mese"
+    }
+  },
+  "faq": {
+    "title": "Cose che chiedono<br />di solito.",
+    "scheduleQuestion": "Mi disturberà alle 23 di domenica?",
+    "scheduleAnswer": "Solo se gli dici che lavori a quell'ora. Scegli tu orari, giorni e intervallo.",
+    "countingQuestion": "Quanto è bravo a contare le ripetizioni?",
+    "countingAnswer": "Abbastanza, non è magia. Luci e posizione della camera contano, e i sollevamenti sui polpacci spesso passano a timer. Se la fotocamera ti perde, con un clic conti tu.",
+    "officeQuestion": "Lavoro in open space. Sembrerò strano?",
+    "officeAnswer": "Un po'. Imposta la postura su Seduto e ogni pausa si fa dalla sedia.",
+    "callQuestion": "Come fa a sapere che sono in una chiamata?",
+    "callAnswer": "Controlla se un'altra app sta usando la webcam o il microfono, o è a schermo intero. Non li apre mai, quindi non ti chiede mai il permesso.",
+    "marker": "+"
+  },
+  "cta": {
+    "title": "Alzati.<br /><span>Sì, adesso.</span>",
+    "body": "Poi prendi l'app, così non deve ricordartelo una pagina web.",
+    "small": "Gratis · niente account · 17 lingue"
+  },
+  "store": {
+    "mac": "Mac App Store",
+    "windows": "Microsoft Store"
+  },
+  "receipt": {
+    "title": "Il tuo scontrino",
+    "reminders": "Promemoria",
+    "moves": "Le mosse di base",
+    "webcam": "Conteggio webcam",
+    "stats": "Statistiche + figurine",
+    "subscription": "Abbonamento",
+    "account": "Account",
+    "free": "Gratis",
+    "none": "Nessuno",
+    "once": "Una volta",
+    "supporter": "Sostenitore (facoltativo)",
+    "supporterDetails": "3 mosse in più, inchiostro verde acqua, un omino che ringrazia, l'anno a quadretti, ogni pacchetto futuro",
+    "total": "Totale",
+    "totalValue": "0,00",
+    "coffee": "meno di un caffè",
+    "thanks": "grazie per esserti alzato"
+  },
+  "footer": {
+    "copyright": "© <span id=\"year\">2026</span> mybackhurts, <span class=\"credit\">fatto da <a href=\"https://vmihalachi.com\">Vlad Mihalachi</a></span>",
+    "medical": "Non è un consiglio medico. Muoviti piano, fermati se qualcosa fa male.",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di utilizzo",
+    "contact": "Contatti",
+    "openSource": "Questo sito è open source"
+  },
+  "notFound": {
+    "metaTitle": "Pagina non trovata · mybackhurts",
+    "title": "Questa pagina<br />ha il colpo della strega.",
+    "body": "Qui non c'è niente. Alzati, fai stretching e torna all'inizio.",
+    "home": "Torna all'inizio"
+  },
+  "poster": {
+    "title": "Alzati. Fai queste.",
+    "subtitle": "Esercizi per lo spazio accanto alla scrivania. Attaccalo al monitor.",
+    "neckDose": "15 s per lato",
+    "handNote": "sì, adesso."
+  },
+  "runtime": {
+    "notificationReplies": {
+      "snooze": "Va bene. 10 minuti. Li contiamo.",
+      "afterCall": "Vai pure. Aspettiamo.",
+      "skip": "Segnato. La tua schiena se lo ricorderà."
+    },
+    "themeNames": {
+      "system": "sistema",
+      "light": "chiaro",
+      "dark": "scuro"
+    },
+    "themeAriaTemplate": "Tema: {current}. Passa a {next}",
+    "themeTitleTemplate": "Tema: {current}",
+    "themeLabels": {
+      "systemAria": "Tema: sistema. Passa a chiaro",
+      "systemTitle": "Tema: sistema"
+    },
+    "holdSides": {
+      "left": "sinistra",
+      "right": "destra"
+    }
+  },
+  "preview": {
+    "title": "Guarda in 24 secondi.",
+    "note": "senza audio. è un ufficio.",
+    "label": "Anteprima dell'app: una sessione con webcam conta gli Squat sulla sedia, poi una posizione di Stretching laterale del collo, il riepilogo della sessione e le statistiche settimanali.",
+    "play": "Riproduci video",
+    "pause": "Pausa video"
+  }
+}
