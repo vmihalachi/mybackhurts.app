@@ -40,16 +40,6 @@
     "noteOw": "아야.",
     "noteBetter": "개운해."
   },
-  "notification": {
-    "ariaLabel": "mybackhurts 알림",
-    "appLine": "mybackhurts · 지금",
-    "title": "움직일 시간이에요",
-    "body": "의자 스쿼트, 팔 돌리기, 목 옆 스트레칭.",
-    "start": "시작",
-    "snooze": "10분 후 시작",
-    "afterCall": "다음 통화 후 시작",
-    "skip": "건너뛰기"
-  },
   "tapeStrip": "일어나기 ✶ 어깨 돌리기 ✶ 턱 힘 풀기 ✶ 물 마시기 ✶ 먼 곳 바라보기 ✶ 일어나기 ✶ 어깨 돌리기 ✶ 턱 힘 풀기 ✶ 물 마시기 ✶ 먼 곳 바라보기 ✶",
   "preview": {
     "title": "24초 만에 보기.",
@@ -282,11 +272,6 @@
     "handNote": "네, 지금 바로요."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "좋아요. 10분이에요. 세고 있을게요.",
-      "afterCall": "다녀오세요. 기다릴게요.",
-      "skip": "알겠어요. 허리가 기억할 거예요."
-    },
     "themeNames": {
       "system": "시스템",
       "light": "라이트",

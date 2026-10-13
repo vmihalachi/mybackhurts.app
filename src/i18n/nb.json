@@ -40,16 +40,6 @@
     "noteOw": "au.",
     "noteBetter": "bedre."
   },
-  "notification": {
-    "ariaLabel": "En påminnelse fra mybackhurts",
-    "appLine": "mybackhurts · nå",
-    "title": "På tide å bevege deg",
-    "body": "Stolknebøy, Armsirkler, Nakkestrekk til siden.",
-    "start": "Start",
-    "snooze": "Start om 10 min",
-    "afterCall": "Start etter neste samtale",
-    "skip": "Hopp over"
-  },
   "tapeStrip": "reis deg ✶ rull skuldrene ✶ slipp opp kjeven ✶ drikk litt vann ✶ se på noe langt unna ✶ reis deg ✶ rull skuldrene ✶ slipp opp kjeven ✶ drikk litt vann ✶ se på noe langt unna ✶",
   "preview": {
     "title": "Se det på 24 sekunder.",
@@ -282,11 +272,6 @@
     "handNote": "ja, akkurat nå."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Greit. 10 minutter. Vi teller.",
-      "afterCall": "Kjør på. Vi venter.",
-      "skip": "Notert. Ryggen din kommer til å huske dette."
-    },
     "themeNames": {
       "system": "system",
       "light": "lys",

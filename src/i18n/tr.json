@@ -40,16 +40,6 @@
     "noteOw": "of.",
     "noteBetter": "daha iyi."
   },
-  "notification": {
-    "ariaLabel": "mybackhurts'ten bir hatırlatıcı",
-    "appLine": "mybackhurts · şimdi",
-    "title": "Hareket zamanı",
-    "body": "Sandalyeli Çömelme, Kol Daireleri, Yana Boyun Esnetme.",
-    "start": "Başlat",
-    "snooze": "10 dk sonra başla",
-    "afterCall": "Bir sonraki görüşmemden sonra başla",
-    "skip": "Atla"
-  },
   "tapeStrip": "ayağa kalk ✶ omuzlarını çevir ✶ çeneni gevşet ✶ biraz su iç ✶ uzaktaki bir şeye bak ✶ ayağa kalk ✶ omuzlarını çevir ✶ çeneni gevşet ✶ biraz su iç ✶ uzaktaki bir şeye bak ✶",
   "preview": {
     "title": "24 saniyede gör.",
@@ -282,11 +272,6 @@
     "handNote": "evet, şu an."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Tamam. 10 dakika. Sayıyoruz.",
-      "afterCall": "Git. Bekleriz.",
-      "skip": "Not edildi. Sırtın bunu hatırlayacak."
-    },
     "themeNames": {
       "system": "sistem",
       "light": "açık",

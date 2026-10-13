@@ -40,16 +40,6 @@
     "noteOw": "au.",
     "noteBetter": "líp."
   },
-  "notification": {
-    "ariaLabel": "Připomínka od mybackhurts",
-    "appLine": "mybackhurts · teď",
-    "title": "Čas se pohnout",
-    "body": "Dřep u židle, Kroužení pažemi, Protažení krku do strany.",
-    "start": "Začít",
-    "snooze": "Spustit za 10 min",
-    "afterCall": "Spustit po mém dalším hovoru",
-    "skip": "Přeskočit"
-  },
   "tapeStrip": "vstaň ✶ zakrouži rameny ✶ uvolni čelist ✶ napij se vody ✶ podívej se do dálky ✶ vstaň ✶ zakrouži rameny ✶ uvolni čelist ✶ napij se vody ✶ podívej se do dálky ✶",
   "preview": {
     "title": "Podívej se za 24 sekund.",
@@ -282,11 +272,6 @@
     "handNote": "ano, právě teď."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Dobře. 10 minut. Počítáme.",
-      "afterCall": "Běž. Počkáme.",
-      "skip": "Zapsáno. Tvoje záda si to budou pamatovat."
-    },
     "themeNames": {
       "system": "systémový",
       "light": "světlý",

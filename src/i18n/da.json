@@ -40,16 +40,6 @@
     "noteOw": "av.",
     "noteBetter": "bedre."
   },
-  "notification": {
-    "ariaLabel": "En påmindelse fra mybackhurts",
-    "appLine": "mybackhurts · nu",
-    "title": "Tid til at bevæge sig",
-    "body": "Stolesquat, Armcirkler, Nakkestræk til siden.",
-    "start": "Start",
-    "snooze": "Start om 10 min",
-    "afterCall": "Start efter mit næste opkald",
-    "skip": "Spring over"
-  },
   "tapeStrip": "rejs dig ✶ rul skuldrene ✶ slap af i kæben ✶ drik noget vand ✶ kig på noget langt væk ✶ rejs dig ✶ rul skuldrene ✶ slap af i kæben ✶ drik noget vand ✶ kig på noget langt væk ✶",
   "preview": {
     "title": "Se det på 24 sekunder.",
@@ -282,11 +272,6 @@
     "handNote": "ja, lige nu."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Fint. 10 minutter. Vi tæller.",
-      "afterCall": "Af sted. Vi venter.",
-      "skip": "Noteret. Din ryg husker det her."
-    },
     "themeNames": {
       "system": "system",
       "light": "lys",

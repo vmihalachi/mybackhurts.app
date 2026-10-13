@@ -96,27 +96,6 @@ if (heroTitle) {
   }).observe(heroTitle.parentElement);
 }
 
-// Notification buttons in the hero.
-const replies = runtimeI18n.notificationReplies ?? {
-  snooze: "Fine. 10 minutes. We're counting.",
-  afterCall: "Go. We'll wait.",
-  skip: "Noted. Your back will remember this.",
-};
-const reply = document.querySelector(".notif-reply");
-document.querySelectorAll("[data-notif]").forEach((button) => {
-  button.addEventListener("click", () => {
-    const action = button.dataset.notif;
-    if (action === "start") {
-      reply.textContent = "";
-      document
-        .querySelector("#moves")
-        .scrollIntoView({ behavior: reducedMotion.matches ? "auto" : "smooth" });
-      return;
-    }
-    reply.textContent = replies[action];
-  });
-});
-
 // Rep and hold counters, driven by each card's own CSS animation clock.
 const counters = [...document.querySelectorAll(".move")]
   .map((card) => ({

@@ -40,16 +40,6 @@
     "noteOw": "哎哟。",
     "noteBetter": "好多了。"
   },
-  "notification": {
-    "ariaLabel": "来自 mybackhurts 的一条提醒",
-    "appLine": "mybackhurts · 现在",
-    "title": "该动一动了",
-    "body": "椅子深蹲、手臂画圈、颈部侧拉伸。",
-    "start": "开始",
-    "snooze": "10 分钟后开始",
-    "afterCall": "下次通话后开始",
-    "skip": "跳过"
-  },
   "tapeStrip": "站起来 ✶ 活动肩膀 ✶ 放松下巴 ✶ 喝点水 ✶ 看看远处 ✶ 站起来 ✶ 活动肩膀 ✶ 放松下巴 ✶ 喝点水 ✶ 看看远处 ✶",
   "preview": {
     "title": "24 秒看完。",
@@ -282,11 +272,6 @@
     "handNote": "对，就是现在。"
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "好吧。10 分钟。我们在计时。",
-      "afterCall": "走吧。我们等你。",
-      "skip": "记下了。你的后背会记住这笔账。"
-    },
     "themeNames": {
       "system": "系统",
       "light": "浅色",

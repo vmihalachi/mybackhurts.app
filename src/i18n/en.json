@@ -40,16 +40,6 @@
     "noteOw": "ow.",
     "noteBetter": "better."
   },
-  "notification": {
-    "ariaLabel": "A reminder from mybackhurts",
-    "appLine": "mybackhurts · now",
-    "title": "Time to move",
-    "body": "Chair Squat, Arm Circles, Neck Side Stretch.",
-    "start": "Start",
-    "snooze": "Start in 10 min",
-    "afterCall": "Start after my next call",
-    "skip": "Skip"
-  },
   "tapeStrip": "stand up ✶ roll your shoulders ✶ unclench your jaw ✶ drink some water ✶ look at something far away ✶ stand up ✶ roll your shoulders ✶ unclench your jaw ✶ drink some water ✶ look at something far away ✶",
   "preview": {
     "title": "See it in 24 seconds.",
@@ -282,11 +272,6 @@
     "handNote": "yes, right now."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Fine. 10 minutes. We're counting.",
-      "afterCall": "Go. We'll wait.",
-      "skip": "Noted. Your back will remember this."
-    },
     "themeNames": {
       "system": "system",
       "light": "light",

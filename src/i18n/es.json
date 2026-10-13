@@ -40,16 +40,6 @@
     "noteOw": "ay.",
     "noteBetter": "mejor."
   },
-  "notification": {
-    "ariaLabel": "Un recordatorio de mybackhurts",
-    "appLine": "mybackhurts · ahora",
-    "title": "Hora de moverte",
-    "body": "Sentadilla con silla, Círculos con los brazos, Estiramiento lateral del cuello.",
-    "start": "Empezar",
-    "snooze": "Empezar en 10 min",
-    "afterCall": "Empezar tras mi próxima llamada",
-    "skip": "Omitir"
-  },
   "tapeStrip": "levántate ✶ gira los hombros ✶ afloja la mandíbula ✶ bebe agua ✶ mira algo lejano ✶ levántate ✶ gira los hombros ✶ afloja la mandíbula ✶ bebe agua ✶ mira algo lejano ✶",
   "how": {
     "title": "Toda la rutina,<br />en tres viñetas.",
@@ -275,11 +265,6 @@
     "handNote": "sí, ahora mismo."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Vale. 10 minutos. Los contamos.",
-      "afterCall": "Ve. Te esperamos.",
-      "skip": "Anotado. Tu espalda se acordará de esto."
-    },
     "themeNames": {
       "system": "sistema",
       "light": "claro",

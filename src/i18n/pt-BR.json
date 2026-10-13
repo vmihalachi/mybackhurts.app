@@ -40,16 +40,6 @@
     "noteOw": "ai.",
     "noteBetter": "melhor."
   },
-  "notification": {
-    "ariaLabel": "Um lembrete do mybackhurts",
-    "appLine": "mybackhurts · agora",
-    "title": "Hora de se mexer",
-    "body": "Agachamento na cadeira, Círculos com os braços, Alongamento lateral do pescoço.",
-    "start": "Começar",
-    "snooze": "Começar em 10 min",
-    "afterCall": "Começar após minha próxima chamada",
-    "skip": "Pular"
-  },
   "tapeStrip": "levante ✶ solte os ombros ✶ desencoste a mandíbula ✶ beba água ✶ olhe para algo distante ✶ levante ✶ solte os ombros ✶ desencoste a mandíbula ✶ beba água ✶ olhe para algo distante ✶",
   "how": {
     "title": "A rotina inteira,<br />em três painéis.",
@@ -275,11 +265,6 @@
     "handNote": "sim, agora mesmo."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Tá bom. 10 minutos. Estamos contando.",
-      "afterCall": "Pode ir. A gente espera.",
-      "skip": "Anotado. Suas costas vão se lembrar disso."
-    },
     "themeNames": {
       "system": "sistema",
       "light": "claro",

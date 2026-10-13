@@ -40,16 +40,6 @@
     "noteOw": "いてて。",
     "noteBetter": "すっきり。"
   },
-  "notification": {
-    "ariaLabel": "mybackhurtsからのリマインダー",
-    "appLine": "mybackhurts · 今",
-    "title": "体を動かす時間です",
-    "body": "チェアスクワット、腕回し、首のサイドストレッチ。",
-    "start": "開始",
-    "snooze": "10分後に開始",
-    "afterCall": "次の通話のあとに開始",
-    "skip": "スキップ"
-  },
   "tapeStrip": "立ち上がる ✶ 肩を回す ✶ あごの力を抜く ✶ お水を飲む ✶ 遠くを見る ✶ 立ち上がる ✶ 肩を回す ✶ あごの力を抜く ✶ お水を飲む ✶ 遠くを見る ✶",
   "preview": {
     "title": "24秒で見られます。",
@@ -282,11 +272,6 @@
     "handNote": "そう、今すぐ。"
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "しかたないですね。10分だけですよ。数えてますからね。",
-      "afterCall": "どうぞ。待ってます。",
-      "skip": "了解。背中はちゃんと覚えてますからね。"
-    },
     "themeNames": {
       "system": "システム",
       "light": "ライト",

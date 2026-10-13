@@ -40,16 +40,6 @@
     "noteOw": "ahia.",
     "noteBetter": "meglio."
   },
-  "notification": {
-    "ariaLabel": "Un promemoria da mybackhurts",
-    "appLine": "mybackhurts · ora",
-    "title": "È ora di muoversi",
-    "body": "Squat sulla sedia, Cerchi con le braccia, Stretching laterale del collo.",
-    "start": "Inizia",
-    "snooze": "Inizia tra 10 min",
-    "afterCall": "Inizia dopo la prossima chiamata",
-    "skip": "Salta"
-  },
   "tapeStrip": "alzati ✶ sciogli le spalle ✶ molla la mascella ✶ bevi un sorso d'acqua ✶ guarda qualcosa di lontano ✶ alzati ✶ sciogli le spalle ✶ molla la mascella ✶ bevi un sorso d'acqua ✶ guarda qualcosa di lontano ✶",
   "how": {
     "title": "L'intera routine,<br />in tre pannelli.",
@@ -275,11 +265,6 @@
     "handNote": "sì, adesso."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Va bene. 10 minuti. Li contiamo.",
-      "afterCall": "Vai pure. Aspettiamo.",
-      "skip": "Segnato. La tua schiena se lo ricorderà."
-    },
     "themeNames": {
       "system": "sistema",
       "light": "chiaro",

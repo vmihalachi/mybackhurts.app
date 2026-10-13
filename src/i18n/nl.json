@@ -40,16 +40,6 @@
     "noteOw": "au.",
     "noteBetter": "beter."
   },
-  "notification": {
-    "ariaLabel": "Een herinnering van mybackhurts",
-    "appLine": "mybackhurts · nu",
-    "title": "Tijd om te bewegen",
-    "body": "Stoelsquat, Armcirkels, Nek zijwaarts rekken.",
-    "start": "Start",
-    "snooze": "Start over 10 min",
-    "afterCall": "Start na mijn volgende gesprek",
-    "skip": "Sla over"
-  },
   "tapeStrip": "sta op ✶ rol je schouders ✶ ontspan je kaak ✶ drink wat water ✶ kijk naar iets in de verte ✶ sta op ✶ rol je schouders ✶ ontspan je kaak ✶ drink wat water ✶ kijk naar iets in de verte ✶",
   "preview": {
     "title": "Zie het in 24 seconden.",
@@ -282,11 +272,6 @@
     "handNote": "ja, nu meteen."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Vooruit. 10 minuten. We tellen mee.",
-      "afterCall": "Ga maar. We wachten.",
-      "skip": "Genoteerd. Je rug onthoudt dit."
-    },
     "themeNames": {
       "system": "systeem",
       "light": "licht",

@@ -40,16 +40,6 @@
     "noteOw": "aj.",
     "noteBetter": "bättre."
   },
-  "notification": {
-    "ariaLabel": "En påminnelse från mybackhurts",
-    "appLine": "mybackhurts · nu",
-    "title": "Dags att röra på sig",
-    "body": "Knäböj med stol, Armcirklar, Nackstretch åt sidan.",
-    "start": "Starta",
-    "snooze": "Starta om 10 min",
-    "afterCall": "Starta efter mitt nästa samtal",
-    "skip": "Hoppa över"
-  },
   "tapeStrip": "res dig upp ✶ rulla axlarna ✶ slappna av i käken ✶ drick lite vatten ✶ titta på något långt bort ✶ res dig upp ✶ rulla axlarna ✶ slappna av i käken ✶ drick lite vatten ✶ titta på något långt bort ✶",
   "preview": {
     "title": "Se det på 24 sekunder.",
@@ -282,11 +272,6 @@
     "handNote": "ja, just nu."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Okej. 10 minuter. Vi räknar.",
-      "afterCall": "Kör. Vi väntar.",
-      "skip": "Noterat. Din rygg kommer ihåg det här."
-    },
     "themeNames": {
       "system": "system",
       "light": "ljust",

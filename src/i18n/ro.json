@@ -40,16 +40,6 @@
     "noteOw": "au.",
     "noteBetter": "mai bine."
   },
-  "notification": {
-    "ariaLabel": "Un memento de la mybackhurts",
-    "appLine": "mybackhurts · acum",
-    "title": "E timpul să te miști",
-    "body": "Genuflexiune la scaun, Cercuri cu brațele, Întindere laterală a gâtului.",
-    "start": "Începe",
-    "snooze": "Începe în 10 min",
-    "afterCall": "Începe după următorul apel",
-    "skip": "Omite"
-  },
   "tapeStrip": "ridică-te ✶ rotește umerii ✶ relaxează maxilarul ✶ bea niște apă ✶ uită-te la ceva îndepărtat ✶ ridică-te ✶ rotește umerii ✶ relaxează maxilarul ✶ bea niște apă ✶ uită-te la ceva îndepărtat ✶",
   "how": {
     "title": "Toată rutina,<br />în trei panouri.",
@@ -275,11 +265,6 @@
     "handNote": "da, chiar acum."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Bine. 10 minute. Le punem la socoteală.",
-      "afterCall": "Du-te. Te așteptăm.",
-      "skip": "Notat. Spatele tău o să țină minte."
-    },
     "themeNames": {
       "system": "sistem",
       "light": "luminos",

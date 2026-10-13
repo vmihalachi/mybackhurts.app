@@ -40,16 +40,6 @@
     "noteOw": "aua.",
     "noteBetter": "besser."
   },
-  "notification": {
-    "ariaLabel": "Eine Erinnerung von mybackhurts",
-    "appLine": "mybackhurts · jetzt",
-    "title": "Zeit, dich zu bewegen",
-    "body": "Stuhl-Kniebeuge, Armkreisen, Seitliche Nackendehnung.",
-    "start": "Starten",
-    "snooze": "In 10 Min. starten",
-    "afterCall": "Nach dem nächsten Anruf starten",
-    "skip": "Überspringen"
-  },
   "tapeStrip": "steh auf ✶ roll die Schultern ✶ entspann den Kiefer ✶ trink etwas Wasser ✶ schau in die Ferne ✶ steh auf ✶ roll die Schultern ✶ entspann den Kiefer ✶ trink etwas Wasser ✶ schau in die Ferne ✶",
   "how": {
     "title": "Die ganze Routine,<br />in drei Bildern.",
@@ -275,11 +265,6 @@
     "handNote": "ja, jetzt gleich."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Na gut. 10 Minuten. Wir zählen mit.",
-      "afterCall": "Geh ruhig. Wir warten.",
-      "skip": "Notiert. Dein Rücken wird sich erinnern."
-    },
     "themeNames": {
       "system": "System",
       "light": "Hell",

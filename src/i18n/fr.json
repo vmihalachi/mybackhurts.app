@@ -40,16 +40,6 @@
     "noteOw": "aïe.",
     "noteBetter": "mieux."
   },
-  "notification": {
-    "ariaLabel": "Un rappel de mybackhurts",
-    "appLine": "mybackhurts · maintenant",
-    "title": "C’est l’heure de bouger",
-    "body": "Squat sur chaise, Cercles de bras, Étirement latéral du cou.",
-    "start": "Commencer",
-    "snooze": "Commencer dans 10 min",
-    "afterCall": "Commencer après mon prochain appel",
-    "skip": "Ignorer"
-  },
   "tapeStrip": "lève-toi ✶ roule les épaules ✶ desserre la mâchoire ✶ bois un peu d’eau ✶ regarde au loin ✶ lève-toi ✶ roule les épaules ✶ desserre la mâchoire ✶ bois un peu d’eau ✶ regarde au loin ✶",
   "how": {
     "title": "Toute la routine,<br />en trois vignettes.",
@@ -275,11 +265,6 @@
     "handNote": "oui, maintenant."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "Très bien. 10 minutes. On compte.",
-      "afterCall": "Vas-y. On attend.",
-      "skip": "Noté. Ton dos s’en souviendra."
-    },
     "themeNames": {
       "system": "système",
       "light": "clair",

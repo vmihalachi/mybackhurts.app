@@ -40,16 +40,6 @@
     "noteOw": "au.",
     "noteBetter": "lepiej."
   },
-  "notification": {
-    "ariaLabel": "Przypomnienie od mybackhurts",
-    "appLine": "mybackhurts · teraz",
-    "title": "Czas się ruszyć",
-    "body": "Przysiad z krzesłem, Krążenia ramion, Rozciąganie szyi w bok.",
-    "start": "Start",
-    "snooze": "Start za 10 min",
-    "afterCall": "Start po mojej następnej rozmowie",
-    "skip": "Pomiń"
-  },
   "tapeStrip": "wstań ✶ porusz barkami ✶ rozluźnij szczękę ✶ napij się wody ✶ spójrz w dal ✶ wstań ✶ porusz barkami ✶ rozluźnij szczękę ✶ napij się wody ✶ spójrz w dal ✶",
   "preview": {
     "title": "Zobacz to w 24 sekundy.",
@@ -282,11 +272,6 @@
     "handNote": "tak, właśnie teraz."
   },
   "runtime": {
-    "notificationReplies": {
-      "snooze": "No dobra. 10 minut. Liczymy.",
-      "afterCall": "Idź. Poczekamy.",
-      "skip": "Zapisane. Twoje plecy to zapamiętają."
-    },
     "themeNames": {
       "system": "systemowy",
       "light": "jasny",
