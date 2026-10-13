@@ -16,8 +16,11 @@ vp check    # format, lint, type check
 vp build    # dist/
 ```
 
-- `index.html` is a template: `{{key}}` placeholders are filled from `src/i18n/<language>.json`
-  (`vite.config.ts`), and the build fails when a language is missing a key.
+- `index.html` is a template: `{{key}}` placeholders are filled from `src/i18n/<language>.json`, and the
+  build fails when a language is missing a key. The plumbing (a page per language, the legal pages' links,
+  the sitemap, `_headers` with the CSP) is [`@deskling/landing`](https://www.npmjs.com/package/@deskling/landing);
+  `vite.config.ts` gives it this page's data: languages, URLs, store links, the preview video and poster,
+  and the social cards and posters `og/render.ts` draws.
 - `app-data/app.json` is what the page knows about the app: the exercises, their goals and translated
   names, and the default reminder interval. `app-sync.ts` fails the build when a move card disagrees with
   it. In the app repository this repo is mounted at `landing/`, and a build there rewrites the snapshot
