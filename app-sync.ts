@@ -90,7 +90,7 @@ function readAppData(landingRoot: string): AppData {
 
   const catalog = readCatalog(repoRoot);
   const strings = JSON.parse(
-    readFileSync(resolve(repoRoot, "macos/MyBackHurts/Resources/Localizable.xcstrings"), "utf8"),
+    readFileSync(resolve(repoRoot, "apple/Shared/Resources/Localizable.xcstrings"), "utf8"),
   ).strings as Record<
     string,
     { localizations?: Record<string, { stringUnit?: { value?: string } }> }

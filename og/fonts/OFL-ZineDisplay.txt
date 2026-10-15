@@ -1,5 +1,5 @@
 Zine Display is a Modified Version of Bowlby One, renamed as required by its Reserved Font Names.
-Changes: added Ă and ă, rebuilt Ș ș Ț ț. See macos/scripts/patch-fonts.py.
+Changes: added Ă and ă, rebuilt Ș ș Ț ț. See apple/scripts/patch-fonts.py.
 
 Copyright (c) 2011 by vernon adams (vern@newtypography.co.uk),
 with Reserved Font Names "Bowlby" "Bowlby One" and "Bowlby One SC"

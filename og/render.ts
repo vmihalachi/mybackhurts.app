@@ -86,7 +86,7 @@ export function createRenderer(ogDir: string) {
     if (missing.size) {
       throw new Error(
         `${what} (${lang}) uses characters no font in og/fonts can draw: ${[...missing].join(" ")}. ` +
-          "Rephrase the copy or add them to the fonts (macos/scripts/patch-fonts.py).",
+          "Rephrase the copy or add them to the fonts (apple/scripts/patch-fonts.py).",
       );
     }
   }

@@ -1,4 +1,4 @@
-/* Self-hosted so every language gets the full glyph set (built by macos/scripts/patch-fonts.py). */
+/* Self-hosted so every language gets the full glyph set (built by apple/scripts/patch-fonts.py). */
 @font-face {
   font-family: "Zine Display";
   src: url("./fonts/ZineDisplay-Regular.woff2") format("woff2");
