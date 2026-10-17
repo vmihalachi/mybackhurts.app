@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { companionLanding, scriptJson } from "@deskling/landing";
+import { companionLanding, scriptJson } from "@laching/landing";
 import { defineConfig } from "vite-plus";
 import { assertLandingMatchesApp } from "./app-sync";
 import { socialAssetsPlugin } from "./og/render";
@@ -22,7 +22,7 @@ const microsoftStoreUrl = "https://apps.microsoft.com/detail/9NT3SV8SQ3KD";
 
 /**
  * The page's plumbing (every language's home page from `index.html`, the legal pages' links, the sitemap, the
- * `_headers` with its CSP) is Deskling's (`@deskling/landing`); what's here is mybackhurts' data: its languages and
+ * `_headers` with its CSP) is Laching's (`@laching/landing`); what's here is mybackhurts' data: its languages and
  * URLs, the store buttons' links, the preview video and poster, and its own social cards (`og/render.ts`, which
  * also renders the printable posters).
  */
