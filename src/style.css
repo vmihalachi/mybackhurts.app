@@ -721,6 +721,14 @@ svg .note {
   opacity: 0;
   animation: show-upright 9s ease-in-out infinite;
 }
+/* Join the loop a third of the way in, so the sit-up comes about a second after load. */
+.hero-torso,
+.hero-head,
+.hero-arm,
+.note-ow,
+.note-better {
+  animation-delay: -3s;
+}
 .steam {
   animation: steam 3s ease-in-out infinite;
 }
