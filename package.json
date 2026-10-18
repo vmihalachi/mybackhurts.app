@@ -8,7 +8,7 @@
     "preview": "vp preview"
   },
   "devDependencies": {
-    "@laching/landing": "0.14.0",
+    "@laching/landing": "0.16.0",
     "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^26.6.4",
     "vite": "npm:@voidzero-dev/vite-plus-core@1.0.0",
