@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: 의자에서 일으켜 세워 주는 작은 데스크 앱",
-    "description": "mybackhurts는 45분마다 일어나라고 알려 주고 짧은 운동 두세 가지를 안내해 주는 Mac, Windows용 작은 앱이에요. 웹캠으로 횟수도 기기 안에서 세어 줘요. 무료, 계정 필요 없음.",
+    "description": "mybackhurts는 45분마다 일어나라고 알려 주고 짧은 운동 두세 가지를 안내해 주는 Mac, Windows, iPhone, iPad용 작은 앱이에요. 웹캠으로 횟수도 기기 안에서 세어 줘요. 무료, 계정 필요 없음.",
     "ogTitle": "mybackhurts: 허리가 전화했어요, 할 말이 있대요",
-    "ogDescription": "45분마다 의자에서 일으켜 세워 주는 Mac, Windows용 작은 앱. 횟수는 기기 안에서 세요. 영상은 컴퓨터 밖으로 나가지 않아요. 무료, 계정 필요 없음.",
+    "ogDescription": "45분마다 의자에서 일으켜 세워 주는 Mac, Windows, iPhone, iPad용 작은 앱. 횟수는 기기 안에서 세요. 영상은 기기 밖으로 나가지 않아요. 무료, 계정 필요 없음.",
     "url": "https://mybackhurts.app/ko/",
     "ogImageAlt": "mybackhurts: “허리가 전화했어요. 할 말이 있대요.” 책상 위 노트북에 푹 엎드린 막대 인간이 “아야.”라고 말해요."
   },
@@ -15,8 +15,8 @@
     "headline1": "허리가 전화했어요.",
     "headline2": "할 말이 있대요.",
     "tagline1": "45분마다 의자에서 일으켜 세워 주는",
-    "tagline2": "Mac, Windows용 작은 앱.",
-    "footerNote": "횟수는 기기 안에서 세요. 영상은 컴퓨터 밖으로 나가지 않아요.",
+    "tagline2": "Mac, Windows, iPhone용 작은 앱.",
+    "footerNote": "횟수는 기기 안에서 세요. 영상은 기기 밖으로 나가지 않아요.",
     "noteOw": "아야."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "허리가 전화했어요.<br />할 말이 <span class=\"scribble\">있대요.</span>",
-    "lede": "<strong>mybackhurts</strong>는 메뉴 막대나 시스템 트레이에 살면서 45분마다 슬쩍 알려 주고 간단한 동작 몇 가지를 안내해요. 횟수를 세 달라고 하기 전에는 카메라가 꺼져 있어요.",
+    "lede": "<strong>mybackhurts</strong>는 메뉴 막대나 시스템 트레이, 주머니 속에 살면서 45분마다 슬쩍 알려 주고 간단한 동작 몇 가지를 안내해요. 횟수를 세 달라고 하기 전에는 카메라가 꺼져 있어요.",
     "secondaryCta": "또는 동작 보기 ↓",
+    "platformNote": "이제 iPhone, iPad에서도! Android는 곧 출시.",
     "figureTitle": "노트북에 푹 엎드려 있다가 몸을 일으켜 스트레칭하고, 다시 엎드리는 막대 인간.",
     "noteOw": "아야.",
     "noteBetter": "개운해."
@@ -183,7 +184,7 @@
     "item1": "프레임은 메모리에서 분석한 뒤 바로 버려요.",
     "item2": "앱이 직접 보내는 네트워크 요청은 없어요.",
     "purchases": "구입은 App Store 또는 Microsoft Store를 통해 이루어져요.",
-    "item3": "CSV로 내보내지 않는 한 통계는 내 컴퓨터에만 있어요.",
+    "item3": "CSV로 내보내지 않는 한 통계는 내 기기에만 있어요.",
     "verify": "못 믿겠다고요? <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a>, <a href=\"https://www.glasswire.com/\">GlassWire</a>로 직접 확인해 보세요.",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "일어나세요.<br /><span>진짜로, 지금.</span>",
     "body": "그다음 앱을 받으세요. 웹페이지가 잔소리하지 않아도 되게요.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android 곧 출시",
     "small": "무료 · 계정 필요 없음 · 17개 언어"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

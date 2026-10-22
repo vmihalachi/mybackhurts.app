@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: o mică aplicație de birou care te ridică de pe scaun",
-    "description": "mybackhurts este o mică aplicație Mac și Windows care îți amintește la fiecare 45 de minute să te ridici și te ghidează prin două sau trei exerciții scurte. Poate număra repetările cu webcamul, pe dispozitiv. Gratuită, fără cont.",
+    "description": "mybackhurts este o mică aplicație pentru Mac, Windows, iPhone și iPad care îți amintește la fiecare 45 de minute să te ridici și te ghidează prin două sau trei exerciții scurte. Poate număra repetările cu webcamul, pe dispozitiv. Gratuită, fără cont.",
     "ogTitle": "mybackhurts: te-a sunat spatele, vrea să-ți spună ceva",
-    "ogDescription": "O mică aplicație Mac și Windows care te ridică de pe scaun la fiecare 45 de minute. Repetări numărate pe dispozitiv. Niciun video nu pleacă de pe computer. Gratuită, fără cont.",
+    "ogDescription": "O mică aplicație pentru Mac, Windows, iPhone și iPad care te ridică de pe scaun la fiecare 45 de minute. Repetări numărate pe dispozitiv. Niciun video nu pleacă de pe dispozitivul tău. Gratuită, fără cont.",
     "url": "https://mybackhurts.app/ro/",
     "ogImageAlt": "mybackhurts: „Te-a sunat spatele. Vrea să-ți spună ceva.” O siluetă aplecată peste un laptop, la birou, spune „au.”"
   },
@@ -14,9 +14,9 @@
     "tape": "IA O PAUZĂ",
     "headline1": "Te-a sunat",
     "headline2": "spatele.",
-    "tagline1": "O mică aplicație Mac și Windows care te ridică",
+    "tagline1": "O mică aplicație pentru Mac, Windows și iPhone care te ridică",
     "tagline2": "de pe scaun la fiecare 45 de minute.",
-    "footerNote": "repetări pe dispozitiv. niciun video nu pleacă de pe computer.",
+    "footerNote": "repetări numărate pe dispozitiv. niciun video nu pleacă de pe dispozitivul tău.",
     "noteOw": "au."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Te-a sunat spatele.<br />Vrea să-ți spună <span class=\"scribble\">ceva.</span>",
-    "lede": "<strong>mybackhurts</strong> stă în bara de meniu sau în zona de notificare, îți dă semn la fiecare 45 de minute și te ghidează prin câteva mișcări rapide. Camera rămâne închisă, decât dacă o ceri să numere repetările.",
+    "lede": "<strong>mybackhurts</strong> stă în bara de meniu, în zona de notificare sau direct în buzunarul tău, îți dă semn la fiecare 45 de minute și te ghidează prin câteva mișcări rapide. Camera rămâne oprită până îi ceri tu să numere repetările.",
     "secondaryCta": "sau vezi mișcările ↓",
+    "platformNote": "acum și pe iPhone și iPad! Android: în curând",
     "figureTitle": "O siluetă aplecată peste un laptop, care se îndreaptă, se întinde, apoi se lasă iar în jos.",
     "noteOw": "au.",
     "noteBetter": "mai bine."
@@ -176,7 +177,7 @@
     "item1": "Cadrele sunt analizate în memorie, apoi aruncate.",
     "item2": "Nicio cerere de rețea proprie.",
     "purchases": "Achizițiile sunt gestionate de App Store sau Microsoft Store.",
-    "item3": "Statisticile rămân pe computer, dacă nu exporți un CSV.",
+    "item3": "Statisticile tale rămân pe dispozitiv, dacă nu exporți un CSV.",
     "verify": "nu ne crezi? verifică cu <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> sau <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -220,10 +221,11 @@
   "cta": {
     "title": "Ridică-te.<br /><span>Serios, acum.</span>",
     "body": "Apoi ia aplicația, ca să nu trebuiască să te bată la cap o pagină web.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android în curând",
     "small": "Gratuit · fără cont · 17 limbi"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

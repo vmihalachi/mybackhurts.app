@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: malá aplikace, která tě zvedne ze židle",
-    "description": "mybackhurts je malá aplikace pro Mac a Windows, která ti každých 45 minut připomene, ať vstaneš, a provede tě dvěma nebo třemi krátkými cviky. Opakování umí počítat webkamerou přímo v zařízení. Zdarma, bez účtu.",
+    "description": "mybackhurts je malá aplikace pro Mac, Windows, iPhone a iPad, která ti každých 45 minut připomene, ať vstaneš, a provede tě dvěma nebo třemi krátkými cviky. Opakování umí počítat webkamerou přímo v zařízení. Zdarma, bez účtu.",
     "ogTitle": "mybackhurts: volají ti záda, chtějí si promluvit",
-    "ogDescription": "Malá aplikace pro Mac a Windows, která tě každých 45 minut zvedne ze židle. Opakování se počítají v zařízení. Žádné video neopustí tvůj počítač. Zdarma, bez účtu.",
+    "ogDescription": "Malá aplikace pro Mac, Windows, iPhone a iPad, která tě každých 45 minut zvedne ze židle. Opakování se počítají přímo v zařízení. Žádné video neopustí tvoje zařízení. Zdarma, bez účtu.",
     "url": "https://mybackhurts.app/cs/",
     "ogImageAlt": "mybackhurts: „Volají ti záda. Chtějí si promluvit.“ Panáček shrbený nad notebookem u stolu říká „au“."
   },
@@ -14,9 +14,9 @@
     "tape": "DEJ SI PAUZU",
     "headline1": "Volají ti záda.",
     "headline2": "Chtějí si promluvit.",
-    "tagline1": "Malá aplikace pro Mac a Windows, která tě",
+    "tagline1": "Malá aplikace pro Mac, Windows a iPhone, která tě",
     "tagline2": "každých 45 minut zvedne ze židle.",
-    "footerNote": "opakování se počítají v zařízení. žádné video neopouští tvůj počítač.",
+    "footerNote": "opakování se počítají v zařízení. žádné video neopouští tvoje zařízení.",
     "noteOw": "au."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Volají ti záda.<br />Chtějí <span class=\"scribble\">si promluvit.</span>",
-    "lede": "<strong>mybackhurts</strong> žije v řádku nabídek nebo v oznamovací oblasti, každých 45 minut tě postrčí a provede pár rychlými cviky. Kamera zůstává vypnutá, dokud jí neřekneš, aby počítala opakování.",
+    "lede": "<strong>mybackhurts</strong> žije v liště nabídek, v oznamovací oblasti nebo v kapse, každých 45 minut tě postrčí a provede tě pár rychlými cviky. Kamera zůstává vypnutá, dokud jí neřekneš, aby počítala opakování.",
     "secondaryCta": "nebo se podívej na cviky ↓",
+    "platformNote": "Teď i na iPhonu a iPadu! Android brzy.",
     "figureTitle": "Panáček shrbený nad notebookem, který se narovná a protáhne, a pak se zase shrbí.",
     "noteOw": "au.",
     "noteBetter": "líp."
@@ -183,7 +184,7 @@
     "item1": "Snímky se analyzují v paměti a pak se zahodí.",
     "item2": "Žádné vlastní síťové požadavky.",
     "purchases": "Nákupy probíhají přes App Store nebo Microsoft Store.",
-    "item3": "Tvoje statistiky zůstávají v tvém počítači, pokud neexportuješ CSV.",
+    "item3": "Tvoje statistiky zůstávají v tvém zařízení, pokud neexportuješ CSV.",
     "verify": "nevěříš nám? zkontroluj to pomocí <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> nebo <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "Vstaň.<br /><span>Vážně, hned.</span>",
     "body": "Pak si stáhni aplikaci, ať tě nemusí otravovat webová stránka.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android brzy",
     "small": "Zdarma · bez účtu · 17 jazyků"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: malutka aplikacja, która zrywa cię z krzesła",
-    "description": "mybackhurts to malutka aplikacja na Maca i Windowsa, która co 45 minut przypomina ci, żeby wstać, i prowadzi cię przez dwa lub trzy krótkie ćwiczenia. Potrafi zliczać twoje powtórzenia kamerą, na urządzeniu. Za darmo, bez konta.",
+    "description": "mybackhurts to malutka aplikacja na Maca, Windowsa, iPhone'a i iPada, która co 45 minut przypomina ci, żeby wstać, i prowadzi przez dwa lub trzy krótkie ćwiczenia. Potrafi zliczać powtórzenia kamerą, na urządzeniu. Za darmo, bez konta.",
     "ogTitle": "mybackhurts: dzwonią twoje plecy, chcą pogadać",
-    "ogDescription": "Malutka aplikacja na Maca i Windowsa, która co 45 minut zrywa cię z krzesła. Powtórzenia zliczane na urządzeniu. Żaden obraz nie opuszcza twojego komputera. Za darmo, bez konta.",
+    "ogDescription": "Malutka aplikacja na Maca, Windowsa, iPhone'a i iPada, która co 45 minut zrywa cię z krzesła. Powtórzenia zliczane na urządzeniu. Żaden obraz nie opuszcza twojego urządzenia. Za darmo, bez konta.",
     "url": "https://mybackhurts.app/pl/",
     "ogImageAlt": "mybackhurts: „Dzwonią twoje plecy. Chcą pogadać.” Ludzik z kresek zgarbiony nad laptopem przy biurku mówi „au”."
   },
@@ -14,9 +14,9 @@
     "tape": "ZRÓB PRZERWĘ",
     "headline1": "Dzwonią twoje plecy.",
     "headline2": "Chcą pogadać.",
-    "tagline1": "Malutka aplikacja na Maca i Windowsa, która",
+    "tagline1": "Malutka aplikacja na Maca, Windowsa i iPhone'a, która",
     "tagline2": "co 45 minut zrywa cię z krzesła.",
-    "footerNote": "powtórzenia zliczane na urządzeniu. żaden obraz nie opuszcza twojego komputera.",
+    "footerNote": "powtórzenia zliczane na urządzeniu. żaden obraz nie opuszcza twojego urządzenia.",
     "noteOw": "au."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Dzwonią twoje plecy.<br />Chcą <span class=\"scribble\">pogadać.</span>",
-    "lede": "<strong>mybackhurts</strong> mieszka na pasku menu lub w zasobniku systemowym, szturcha cię co 45 minut i prowadzi przez kilka szybkich ruchów. Kamera zostaje wyłączona, dopóki sam nie poprosisz jej o liczenie powtórzeń.",
+    "lede": "<strong>mybackhurts</strong> mieszka na pasku menu, w zasobniku systemowym albo w kieszeni, szturcha cię co 45 minut i prowadzi przez kilka szybkich ruchów. Kamera pozostaje wyłączona, dopóki nie włączysz liczenia powtórzeń.",
     "secondaryCta": "albo zobacz ruchy ↓",
+    "platformNote": "teraz też na iPhone'ach i iPadach! android: wkrótce",
     "figureTitle": "Ludzik z kresek zgarbiony nad laptopem, który prostuje się i przeciąga, a potem znów się garbi.",
     "noteOw": "au.",
     "noteBetter": "lepiej."
@@ -183,7 +184,7 @@
     "item1": "Klatki są analizowane w pamięci, a potem wyrzucane.",
     "item2": "Żadnych własnych zapytań sieciowych.",
     "purchases": "Zakupy idą przez App Store lub Microsoft Store.",
-    "item3": "Twoje statystyki zostają na twoim komputerze, chyba że wyeksportujesz CSV.",
+    "item3": "Twoje statystyki zostają na twoim urządzeniu, chyba że wyeksportujesz CSV.",
     "verify": "nie ufasz nam? sprawdź w <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> albo <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "Wstań.<br /><span>Serio, teraz.</span>",
     "body": "Potem pobierz aplikację, żeby strona internetowa nie musiała cię męczyć.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android wkrótce",
     "small": "Za darmo · bez konta · 17 języków"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

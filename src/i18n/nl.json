@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: een klein bureau-appje dat je van je stoel haalt",
-    "description": "mybackhurts is een kleine app voor Mac en Windows die je elke 45 minuten eraan herinnert op te staan en je door twee of drie korte oefeningen leidt. Hij kan je herhalingen tellen met de webcam, op je apparaat. Gratis, geen account.",
+    "description": "mybackhurts is een kleine app voor Mac, Windows, iPhone en iPad die je elke 45 minuten eraan herinnert om op te staan en je door twee of drie korte oefeningen loodst. Hij kan je herhalingen tellen met de webcam, op je apparaat. Gratis, geen account.",
     "ogTitle": "mybackhurts: je rug belde, hij wil even praten",
-    "ogDescription": "Een kleine app voor Mac en Windows die je elke 45 minuten van je stoel haalt. Herhalingen worden op je apparaat geteld. Geen video verlaat je computer. Gratis, geen account.",
+    "ogDescription": "Een kleine app voor Mac, Windows, iPhone en iPad die je elke 45 minuten uit je stoel haalt. Herhalingen worden op je apparaat geteld. Geen video verlaat je apparaat. Gratis, geen account.",
     "url": "https://mybackhurts.app/nl/",
     "ogImageAlt": "mybackhurts: „Je rug belde. Hij wil even praten.” Een stokfiguurtje hangt voorovergebogen over een laptop aan een bureau en zegt „au.”"
   },
@@ -14,9 +14,9 @@
     "tape": "NEEM PAUZE",
     "headline1": "Je rug belde.",
     "headline2": "Hij wil even praten.",
-    "tagline1": "Een kleine app voor Mac en Windows die je",
+    "tagline1": "Een kleine app voor Mac, Windows en iPhone die je",
     "tagline2": "elke 45 minuten van je stoel haalt.",
-    "footerNote": "herhalingen geteld op je apparaat. geen video verlaat je computer.",
+    "footerNote": "herhalingen geteld op je apparaat. geen video verlaat je apparaat.",
     "noteOw": "au."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Je rug belde.<br />Hij wil <span class=\"scribble\">even praten.</span>",
-    "lede": "<strong>mybackhurts</strong> woont in je menubalk of systeemvak, port je elke 45 minuten aan en loodst je door een paar snelle oefeningen. De camera blijft uit tenzij jij hem vraagt je herhalingen te tellen.",
+    "lede": "<strong>mybackhurts</strong> woont in je menubalk, in het systeemvak of in je zak, port je elke 45 minuten aan en loodst je door een paar snelle bewegingen. De camera blijft uit tenzij jij hem vraagt je herhalingen te tellen.",
     "secondaryCta": "of bekijk de oefeningen ↓",
+    "platformNote": "nu ook op iPhone + iPad! android: binnenkort",
     "figureTitle": "Een stokfiguurtje hangt voorovergebogen over een laptop, zit rechtop en rekt zich uit, en zakt dan weer in.",
     "noteOw": "au.",
     "noteBetter": "beter."
@@ -183,7 +184,7 @@
     "item1": "Beelden worden in het geheugen geanalyseerd en daarna weggegooid.",
     "item2": "Geen eigen netwerkverzoeken.",
     "purchases": "Aankopen lopen via de App Store of Microsoft Store.",
-    "item3": "Je statistieken blijven op je computer, tenzij je een CSV exporteert.",
+    "item3": "Je statistieken blijven op je apparaat, tenzij je een CSV exporteert.",
     "verify": "vertrouw je ons niet? controleer het met <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> of <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "Sta op.<br /><span>Serieus, nu.</span>",
     "body": "Pak dan de app, zodat een webpagina je niet hoeft op te jagen.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android binnenkort",
     "small": "Gratis · geen account · 17 talen"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

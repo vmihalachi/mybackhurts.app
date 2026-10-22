@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: a tiny desk app that gets you off your chair",
-    "description": "mybackhurts is a tiny app for Mac and Windows that reminds you to get up every 45 minutes and walks you through two or three short exercises. It can count your reps with the webcam, on-device. Free, no account.",
+    "description": "mybackhurts is a tiny app for Mac, Windows, iPhone and iPad that reminds you to get up every 45 minutes and walks you through two or three short exercises. It can count your reps with the webcam, on-device. Free, no account.",
     "ogTitle": "mybackhurts: your back called, it wants a word",
-    "ogDescription": "A tiny app for Mac and Windows that gets you off your chair every 45 minutes. Reps counted on-device. No video leaves your computer. Free, no account.",
+    "ogDescription": "A tiny app for Mac, Windows, iPhone and iPad that gets you off your chair every 45 minutes. Reps counted on-device. No video leaves your device. Free, no account.",
     "url": "https://mybackhurts.app/",
     "ogImageAlt": "mybackhurts: “Your back called. It wants a word.” A stick figure slumped over a laptop at a desk says “ow.”"
   },
@@ -14,9 +14,9 @@
     "tape": "TAKE A BREAK",
     "headline1": "Your back called.",
     "headline2": "It wants a word.",
-    "tagline1": "A tiny app for Mac and Windows that gets you",
+    "tagline1": "A tiny app for Mac, Windows and iPhone that gets you",
     "tagline2": "off your chair every 45 minutes.",
-    "footerNote": "reps counted on-device. no video leaves your computer.",
+    "footerNote": "reps counted on-device. no video leaves your device.",
     "noteOw": "ow."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Your back called.<br />It wants <span class=\"scribble\">a word.</span>",
-    "lede": "<strong>mybackhurts</strong> lives in your menu bar or system tray, nudges you every 45 minutes and walks you through a few quick moves. The camera stays off unless you ask it to count your reps.",
+    "lede": "<strong>mybackhurts</strong> lives in your menu bar, system tray or pocket, nudges you every 45 minutes and walks you through a few quick moves. The camera stays off unless you ask it to count your reps.",
     "secondaryCta": "or see the moves ↓",
+    "platformNote": "now on iPhone + iPad too! android: soon",
     "figureTitle": "A stick figure slumped over a laptop, who sits up and stretches, then slumps again.",
     "noteOw": "ow.",
     "noteBetter": "better."
@@ -183,7 +184,7 @@
     "item1": "Frames are analyzed in memory, then thrown away.",
     "item2": "No network requests of its own.",
     "purchases": "Purchases go through the App Store or Microsoft Store.",
-    "item3": "Your stats stay on your computer, unless you export a CSV.",
+    "item3": "Your stats stay on your device, unless you export a CSV.",
     "verify": "don't trust us? check with <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> or <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "Stand up.<br /><span>Seriously, now.</span>",
     "body": "Then grab the app, so a web page doesn't have to nag you.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android soon",
     "small": "Free · no account · 17 languages"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

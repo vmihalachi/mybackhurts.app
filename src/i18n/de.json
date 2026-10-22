@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: eine kleine App, die dich vom Stuhl holt",
-    "description": "mybackhurts ist eine kleine App für Mac und Windows, die dich alle 45 Minuten ans Aufstehen erinnert und dich durch zwei oder drei kurze Übungen führt. Sie kann deine Wiederholungen mit der Webcam zählen – auf dem Gerät. Kostenlos, ohne Konto.",
+    "description": "mybackhurts ist eine winzige App für Mac, Windows, iPhone und iPad. Sie erinnert dich alle 45 Minuten ans Aufstehen und führt dich durch zwei oder drei kurze Übungen. Die Wiederholungen zählt sie auf Wunsch per Webcam, direkt auf dem Gerät. Kostenlos, ohne Konto.",
     "ogTitle": "mybackhurts: dein Rücken will ein Wörtchen reden",
-    "ogDescription": "Eine kleine App für Mac und Windows, die dich alle 45 Minuten vom Stuhl holt. Wiederholungen werden auf dem Gerät gezählt. Kein Video verlässt deinen Computer. Kostenlos, ohne Konto.",
+    "ogDescription": "Eine winzige App für Mac, Windows, iPhone und iPad, die dich alle 45 Minuten vom Stuhl holt. Wiederholungen werden auf dem Gerät gezählt. Kein Video verlässt dein Gerät. Kostenlos, ohne Konto.",
     "url": "https://mybackhurts.app/de/",
     "ogImageAlt": "mybackhurts: „Dein Rücken will ein Wörtchen reden.“ Ein Strichmännchen hängt krumm über einem Laptop am Schreibtisch und sagt „aua.“"
   },
@@ -14,9 +14,9 @@
     "tape": "PAUSE MACHEN",
     "headline1": "Dein Rücken ruft.",
     "headline2": "Er will reden.",
-    "tagline1": "Eine kleine App für Mac und Windows, die dich",
+    "tagline1": "Eine winzige App für Mac, Windows und iPhone, die dich",
     "tagline2": "alle 45 Minuten vom Stuhl holt.",
-    "footerNote": "Wiederholungen auf dem Gerät gezählt. Kein Video verlässt deinen Computer.",
+    "footerNote": "Wiederholungen auf dem Gerät gezählt. Kein Video verlässt dein Gerät.",
     "noteOw": "aua."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Dein Rücken ruft.<br />Er will ein <span class=\"scribble\">Wörtchen.</span>",
-    "lede": "<strong>mybackhurts</strong> sitzt in deiner Menüleiste oder dem Infobereich, stupst dich alle 45 Minuten an und führt dich durch ein paar kurze Übungen. Deine Webcam bleibt ausgeschaltet, es sei denn, du möchtest die Wiederholungen zählen lassen.",
+    "lede": "<strong>mybackhurts</strong> wohnt in deiner Menüleiste, im Infobereich oder in der Hosentasche, stupst dich alle 45 Minuten an und zeigt dir ein paar schnelle Bewegungen. Die Kamera bleibt aus, solange du sie nicht zum Zählen deiner Wiederholungen einschaltest.",
     "secondaryCta": "oder sieh dir die Übungen an ↓",
+    "platformNote": "jetzt auch auf iPhone + iPad! android: bald",
     "figureTitle": "Ein Strichmännchen hängt krumm über einem Laptop, richtet sich auf, dehnt sich und sackt wieder zusammen.",
     "noteOw": "aua.",
     "noteBetter": "besser."
@@ -176,7 +177,7 @@
     "item1": "Bilder werden im Arbeitsspeicher analysiert und dann verworfen.",
     "item2": "Keine eigenen Netzwerkanfragen.",
     "purchases": "Käufe laufen über den App Store oder Microsoft Store.",
-    "item3": "Deine Statistiken bleiben auf deinem Computer, außer du exportierst eine CSV.",
+    "item3": "Deine Statistiken bleiben auf deinem Gerät, es sei denn, du exportierst eine CSV-Datei.",
     "verify": "glaubst du uns nicht? prüf's mit <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> oder <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -220,10 +221,11 @@
   "cta": {
     "title": "Steh auf.<br /><span>Ernsthaft, jetzt.</span>",
     "body": "Dann hol dir die App, damit dich keine Webseite nerven muss.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android bald",
     "small": "Kostenlos · kein Konto · 17 Sprachen"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

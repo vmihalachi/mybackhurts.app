@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: en liten skrivbordsapp som får dig av stolen",
-    "description": "mybackhurts är en liten app för Mac och Windows som påminner dig om att resa dig var 45:e minut och guidar dig genom två eller tre korta övningar. Den kan räkna dina rep med webbkameran, på enheten. Gratis, inget konto.",
+    "description": "mybackhurts är en liten app för Mac, Windows, iPhone och iPad som påminner dig om att resa dig var 45:e minut och guidar dig genom två eller tre korta övningar. Den kan räkna dina rep med webbkameran, på enheten. Gratis, inget konto.",
     "ogTitle": "mybackhurts: din rygg ringde, den vill ha ett ord",
-    "ogDescription": "En liten app för Mac och Windows som får dig av stolen var 45:e minut. Rep räknas på enheten. Ingen video lämnar din dator. Gratis, inget konto.",
+    "ogDescription": "En liten app för Mac, Windows, iPhone och iPad som får dig ur stolen var 45:e minut. Rep räknas på enheten. Ingen video lämnar din enhet. Gratis, inget konto.",
     "url": "https://mybackhurts.app/sv/",
     "ogImageAlt": "mybackhurts: ”Din rygg ringde. Den vill ha ett ord.” En hopsjunken streckgubbe vid en laptop säger ”aj.”"
   },
@@ -14,9 +14,9 @@
     "tape": "TA EN PAUS",
     "headline1": "Din rygg ringde.",
     "headline2": "Den vill ha ett ord.",
-    "tagline1": "En liten app för Mac och Windows som får dig",
+    "tagline1": "En liten app för Mac, Windows och iPhone som får dig",
     "tagline2": "av stolen var 45:e minut.",
-    "footerNote": "rep räknas på enheten. ingen video lämnar din dator.",
+    "footerNote": "rep räknas på enheten. ingen video lämnar din enhet.",
     "noteOw": "aj."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Din rygg ringde.<br />Den vill ha <span class=\"scribble\">ett ord.</span>",
-    "lede": "<strong>mybackhurts</strong> bor i din menyrad eller ditt meddelandefält, puttar på dig var 45:e minut och guidar dig genom några snabba rörelser. Kameran förblir av om du inte ber den räkna dina rep.",
+    "lede": "<strong>mybackhurts</strong> bor i din menyrad, i meddelandefältet eller i fickan, puttar på dig var 45:e minut och guidar dig genom några snabba rörelser. Kameran är av tills du ber den räkna dina rep.",
     "secondaryCta": "eller se rörelserna ↓",
+    "platformNote": "nu även på iPhone + iPad! android: snart",
     "figureTitle": "En streckgubbe som sitter hopsjunken över en laptop, rätar på sig och sträcker sig, och sedan sjunker ihop igen.",
     "noteOw": "aj.",
     "noteBetter": "bättre."
@@ -183,7 +184,7 @@
     "item1": "Bilder analyseras i minnet och slängs sedan.",
     "item2": "Inga egna nätverksanrop.",
     "purchases": "Köp går via App Store eller Microsoft Store.",
-    "item3": "Din statistik stannar på din dator, om du inte exporterar en CSV.",
+    "item3": "Din statistik stannar på din enhet, om du inte exporterar en CSV.",
     "verify": "litar du inte på oss? kolla med <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> eller <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "Res dig upp.<br /><span>På allvar, nu.</span>",
     "body": "Hämta sedan appen, så att en webbsida slipper tjata på dig.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android snart",
     "small": "Gratis · inget konto · 17 språk"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

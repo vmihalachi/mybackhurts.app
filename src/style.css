@@ -2090,6 +2090,36 @@ svg .note {
 .hero-actions .store-buttons {
   justify-content: flex-start;
 }
+/* A hand-written aside over the buttons, its arrow curling down to the App Store one. */
+.platform-note {
+  flex-basis: 100%;
+  min-width: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3rem;
+  margin: 0 0 -1rem;
+  padding-left: 2.6rem;
+  font-size: 1.75rem;
+  transform: rotate(-2deg);
+  transform-origin: left;
+}
+/* Japanese keeps whole phrases together; a phrase wider than a phone may still break. */
+.platform-note span {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.platform-note svg {
+  flex: none;
+  order: -1;
+  width: 44px;
+  height: 30px;
+  margin-top: 0.6rem;
+  fill: none;
+  stroke: var(--pink);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 /* The CTA column is narrow: stack the two big buttons at one width. */
 .get-action .store-buttons {
   flex-direction: column;
@@ -2186,6 +2216,9 @@ details p {
 }
 .get-action p {
   margin: 0;
+}
+.get-action .small {
+  text-wrap: balance;
 }
 
 /* The pricing table is a till receipt: everything free, one optional line. */

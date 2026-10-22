@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: um pequeno app que tira você da cadeira",
-    "description": "mybackhurts é um pequeno app para Mac e Windows que lembra você de levantar a cada 45 minutos e guia você por dois ou três exercícios curtos. Ele pode contar suas repetições com a webcam, no dispositivo. Grátis, sem conta.",
+    "description": "mybackhurts é um pequeno app para Mac, Windows, iPhone e iPad que lembra você de levantar a cada 45 minutos e guia você por dois ou três exercícios curtos. Ele conta suas repetições com a webcam, no próprio dispositivo. Grátis, sem conta.",
     "ogTitle": "mybackhurts: suas costas ligaram e querem conversar",
-    "ogDescription": "Um pequeno app para Mac e Windows que tira você da cadeira a cada 45 minutos. Repetições contadas no dispositivo. Nenhum vídeo sai do seu computador. Grátis, sem conta.",
+    "ogDescription": "Um pequeno app para Mac, Windows, iPhone e iPad que tira você da cadeira a cada 45 minutos. Repetições contadas no dispositivo. Nenhum vídeo sai do seu dispositivo. Grátis, sem conta.",
     "url": "https://mybackhurts.app/pt-br/",
     "ogImageAlt": "mybackhurts: “Suas costas ligaram. Querem conversar.” Um boneco palito curvado sobre um laptop na mesa diz “ai.”"
   },
@@ -14,9 +14,9 @@
     "tape": "FAÇA UMA PAUSA",
     "headline1": "Suas costas",
     "headline2": "querem papo.",
-    "tagline1": "Um pequeno app para Mac e Windows que tira você",
+    "tagline1": "Um pequeno app para Mac, Windows e iPhone que tira você",
     "tagline2": "da cadeira a cada 45 minutos.",
-    "footerNote": "reps contadas no dispositivo. nenhum vídeo sai do seu computador.",
+    "footerNote": "repetições contadas no dispositivo. nenhum vídeo sai do seu dispositivo.",
     "noteOw": "ai."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Suas costas ligaram.<br />Querem <span class=\"scribble\">um papo.</span>",
-    "lede": "<strong>mybackhurts</strong> fica na barra de menus ou na bandeja do sistema, dá um cutucão a cada 45 minutos e guia você por alguns exercícios rápidos. A câmera fica desligada, a menos que você peça para contar suas repetições.",
+    "lede": "<strong>mybackhurts</strong> fica na barra de menus, na bandeja do sistema ou no seu bolso, dá um cutucão a cada 45 minutos e guia você por alguns movimentos rápidos. A câmera fica desligada, a menos que você peça para contar suas repetições.",
     "secondaryCta": "ou veja os movimentos ↓",
+    "platformNote": "agora também no iPhone e no iPad! Android: em breve",
     "figureTitle": "Um boneco palito curvado sobre um laptop, que se endireita, se alonga e depois se curva de novo.",
     "noteOw": "ai.",
     "noteBetter": "melhor."
@@ -176,7 +177,7 @@
     "item1": "Os quadros são analisados na memória e depois descartados.",
     "item2": "Nenhuma requisição de rede própria.",
     "purchases": "As compras passam pela App Store ou Microsoft Store.",
-    "item3": "Suas estatísticas ficam no seu computador, a menos que você exporte um CSV.",
+    "item3": "Suas estatísticas ficam no seu dispositivo, a menos que você exporte um CSV.",
     "verify": "não confia? confira com o <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> ou <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -220,10 +221,11 @@
   "cta": {
     "title": "Levante.<br /><span>Sério, agora.</span>",
     "body": "Depois baixe o app, para uma página da web não precisar ficar insistindo.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android em breve",
     "small": "Gratuito · sem conta · 17 idiomas"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: en liten skrivebordsapp som får deg opp av stolen",
-    "description": "mybackhurts er en liten app for Mac og Windows som minner deg på å reise deg hvert 45. minutt og guider deg gjennom to eller tre korte øvelser. Den kan telle repsene dine med webkameraet, på enheten. Gratis, ingen konto.",
+    "description": "mybackhurts er en liten app for Mac, Windows, iPhone og iPad som minner deg på å komme opp av stolen hvert 45. minutt og leder deg gjennom to eller tre korte øvelser. Den kan telle repsene dine med webkameraet, på enheten. Gratis, ingen konto.",
     "ogTitle": "mybackhurts: ryggen din ringte, den vil ha et ord med deg",
-    "ogDescription": "En liten app for Mac og Windows som får deg opp av stolen hvert 45. minutt. Reps telles på enheten. Ingen video forlater datamaskinen din. Gratis, ingen konto.",
+    "ogDescription": "En liten app for Mac, Windows, iPhone og iPad som får deg opp av stolen hvert 45. minutt. Reps telles på enheten. Ingen video forlater enheten din. Gratis, ingen konto.",
     "url": "https://mybackhurts.app/nb/",
     "ogImageAlt": "mybackhurts: «Ryggen din ringte. Den vil ha et ord med deg.» En strekfigur som henger over en bærbar PC ved et skrivebord sier «au.»"
   },
@@ -14,9 +14,9 @@
     "tape": "TA EN PAUSE",
     "headline1": "Ryggen din ringte.",
     "headline2": "Den vil ha et ord med deg.",
-    "tagline1": "En liten app for Mac og Windows som får deg",
+    "tagline1": "En liten app for Mac, Windows og iPhone som får deg",
     "tagline2": "opp av stolen hvert 45. minutt.",
-    "footerNote": "reps telt på enheten. ingen video forlater datamaskinen din.",
+    "footerNote": "reps telt på enheten. ingen video forlater enheten din.",
     "noteOw": "au."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Ryggen din ringte.<br />Den vil ha <span class=\"scribble\">et ord.</span>",
-    "lede": "<strong>mybackhurts</strong> bor i menylinjen eller varslingsområdet, dytter deg hvert 45. minutt og guider deg gjennom noen raske øvelser. Kameraet forblir av med mindre du ber det telle repsene dine.",
+    "lede": "<strong>mybackhurts</strong> holder til i menylinjen, i varslingsområdet eller i lomma, dytter deg hvert 45. minutt og viser deg noen raske øvelser. Kameraet holder seg av til du ber det telle repsene dine.",
     "secondaryCta": "eller se øvelsene ↓",
+    "platformNote": "nå også på iPhone + iPad! Android: snart",
     "figureTitle": "En strekfigur som henger over en bærbar PC, setter seg opp og strekker seg, og så henger igjen.",
     "noteOw": "au.",
     "noteBetter": "bedre."
@@ -183,7 +184,7 @@
     "item1": "Bildene analyseres i minnet, og kastes så.",
     "item2": "Ingen nettverksforespørsler av seg selv.",
     "purchases": "Kjøp går via App Store eller Microsoft Store.",
-    "item3": "Statistikken din blir på datamaskinen din, med mindre du eksporterer en CSV.",
+    "item3": "Statistikken din blir på enheten din, med mindre du eksporterer en CSV-fil.",
     "verify": "tror du ikke på oss? sjekk med <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> eller <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "Reis deg.<br /><span>Seriøst, nå.</span>",
     "body": "Hent så appen, så en nettside slipper å mase på deg.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android snart",
     "small": "Gratis · ingen konto · 17 språk"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

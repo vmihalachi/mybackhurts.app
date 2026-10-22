@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts：イスから立ち上がらせてくれる、小さなデスクアプリ",
-    "description": "mybackhurtsは、MacとWindowsで使える小さなアプリです。45分ごとに立ち上がるよう知らせて、2〜3個の短いエクササイズを案内します。Webカメラで回数をデバイス上でカウントすることもできます。無料、アカウント不要。",
+    "description": "mybackhurtsは、Mac・Windows・iPhone・iPadで使える小さなアプリ。45分ごとに立ち上がるよう知らせて、短いエクササイズを2〜3個ガイドします。Webカメラでの回数カウントも、すべて端末の中で。無料、アカウント不要。",
     "ogTitle": "mybackhurts：背中から電話です。話があるそうです",
-    "ogDescription": "45分ごとにイスから立ち上がらせてくれる、MacとWindows用の小さなアプリ。回数はデバイス上でカウント。映像はコンピュータの外に出ません。無料、アカウント不要。",
+    "ogDescription": "45分ごとにイスから立ち上がらせる、Mac・Windows・iPhone・iPad用の小さなアプリ。回数は端末の中でカウント。映像は端末の外に出ません。無料、アカウント不要。",
     "url": "https://mybackhurts.app/ja/",
     "ogImageAlt": "mybackhurts：「背中から電話です。話があるそうです。」ノートパソコンの前で机に突っ伏した棒人間が「いてて」と言っています。"
   },
@@ -14,9 +14,9 @@
     "tape": "休憩しよう",
     "headline1": "背中から電話です。",
     "headline2": "話があるそうです。",
-    "tagline1": "MacとWindowsの小さなアプリが",
+    "tagline1": "Mac・Windows・iPhoneの小さなアプリが",
     "tagline2": "45分ごとにイスから立たせます。",
-    "footerNote": "回数はデバイス上でカウント。映像はコンピュータの外に出ません。",
+    "footerNote": "回数は端末の中でカウント。映像は端末の外に出ません。",
     "noteOw": "いてて。"
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "背中から電話です。<br />ちょっと<span class=\"scribble\">お話</span>があるそうです。",
-    "lede": "<strong>mybackhurts</strong>はメニューバーやシステムトレイに住んで、45分ごとにそっと声をかけ、短い動きを案内します。回数を数えてもらいたいと頼まない限り、カメラはオフのままです。",
+    "lede": "<strong>mybackhurts</strong>はメニューバーやシステムトレイ、手元の端末に住みついて、45分ごとにそっと声をかけ、ささっとできる動きを案内します。回数を数えてほしいと頼まない限り、カメラはオフのまま。",
     "secondaryCta": "または動きを見る ↓",
+    "platformNote": "iPhone・iPadでも使えるようになったよ！Androidは近日公開",
     "figureTitle": "ノートパソコンの前で突っ伏していた棒人間が、起き上がって伸びをして、またぐったりします。",
     "noteOw": "いてて。",
     "noteBetter": "すっきり。"
@@ -183,7 +184,7 @@
     "item1": "フレームはメモリ内で解析して、すぐに破棄します。",
     "item2": "アプリ自身のネットワーク通信はありません。",
     "purchases": "購入はApp StoreまたはMicrosoft Storeを通して行われます。",
-    "item3": "統計はコンピュータの中だけに残ります。CSVを書き出さない限り。",
+    "item3": "統計は端末の中だけに。CSVに書き出さない限りは。",
     "verify": "信じられない？<a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>、<a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a>、<a href=\"https://www.glasswire.com/\">GlassWire</a>で確かめてみてください。",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "立ち上がって。<br /><span>いますぐ、本気で。</span>",
     "body": "それからアプリを入手しましょう。ウェブページにガミガミ言わせないために。",
+    "platforms": "Mac · iPhone · iPad · Windows · Androidは近日公開",
     "small": "無料 · アカウント不要 · 17言語"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

@@ -15,7 +15,7 @@ const locales = Object.fromEntries(
 ) as Record<LanguageCode, any>;
 
 const siteUrl = "https://mybackhurts.app";
-/** The Mac App Store listing. */
+/** The App Store listing (Mac, iPhone and iPad). */
 const appStoreUrl = "https://apps.apple.com/app/id6817265333";
 /** The Microsoft Store listing (Partner Center product 9NT3SV8SQ3KD). */
 const microsoftStoreUrl = "https://apps.microsoft.com/detail/9NT3SV8SQ3KD";
@@ -64,7 +64,7 @@ const landing = companionLanding({
     name: "mybackhurts",
     description: locale.meta.description,
     applicationCategory: "HealthApplication",
-    operatingSystem: "macOS, Windows",
+    operatingSystem: "macOS, iOS, iPadOS, Windows",
     inLanguage: language.code,
     url: `${siteUrl}${language.path}`,
     image: `${siteUrl}/og-${language.code}.png`,

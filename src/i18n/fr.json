@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts&nbsp;: l’app qui te décolle de ta chaise",
-    "description": "mybackhurts est une petite app pour Mac et Windows&nbsp;: toutes les 45 minutes, elle te rappelle de te lever et te guide dans deux ou trois exercices courts. Elle peut compter tes répétitions avec la webcam, sur l’appareil. Gratuite, sans compte.",
+    "description": "mybackhurts est une petite app pour Mac, Windows, iPhone et iPad&nbsp;: toutes les 45 minutes, elle te rappelle de te lever et te guide dans deux ou trois exercices courts. Elle peut compter tes répétitions avec la webcam, sur l’appareil. Gratuite, sans compte.",
     "ogTitle": "mybackhurts&nbsp;: ton dos veut te parler",
-    "ogDescription": "Une petite app Mac et Windows qui te décolle de ta chaise toutes les 45 minutes. Répétitions comptées sur l’appareil. Aucune vidéo ne quitte ton ordinateur. Gratuite, sans compte.",
+    "ogDescription": "Une petite app pour Mac, Windows, iPhone et iPad qui te décolle de ta chaise toutes les 45 minutes. Répétitions comptées sur l’appareil. Aucune vidéo ne quitte ton appareil. Gratuite, sans compte.",
     "url": "https://mybackhurts.app/fr/",
     "ogImageAlt": "mybackhurts&nbsp;: «&nbsp;Ton dos appelle. Il veut te parler.&nbsp;» Un bonhomme bâton affalé sur un ordinateur portable à un bureau dit «&nbsp;aïe.&nbsp;»"
   },
@@ -14,9 +14,9 @@
     "tape": "FAIS UNE PAUSE",
     "headline1": "Ton dos appelle.",
     "headline2": "Il veut parler.",
-    "tagline1": "Une petite app Mac et Windows qui te décolle",
+    "tagline1": "Une petite app pour Mac, Windows et iPhone qui te décolle",
     "tagline2": "de ta chaise toutes les 45 minutes.",
-    "footerNote": "répétitions comptées sur l'appareil. aucune vidéo ne quitte ton ordinateur.",
+    "footerNote": "répétitions comptées sur l’appareil. aucune vidéo ne quitte ton appareil.",
     "noteOw": "aïe."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Ton dos appelle.<br />Il veut <span class=\"scribble\">te parler.</span>",
-    "lede": "<strong>mybackhurts</strong> vit dans ta barre des menus ou ta barre d'état système, te fait signe toutes les 45 minutes et te guide dans quelques exercices rapides. La webcam reste désactivée sauf si tu lui demandes de compter tes répétitions.",
+    "lede": "<strong>mybackhurts</strong> vit dans ta barre des menus, dans ta barre d’état système ou dans ta poche, te fait signe toutes les 45 minutes et te guide dans quelques mouvements rapides. La webcam reste désactivée, sauf si tu lui demandes de compter tes répétitions.",
     "secondaryCta": "ou regarde les mouvements ↓",
+    "platformNote": "désormais aussi sur iPhone et iPad ! android : bientôt",
     "figureTitle": "Un bonhomme bâton affalé sur un ordinateur portable&nbsp;: il se redresse, s’étire, puis s’affale à nouveau.",
     "noteOw": "aïe.",
     "noteBetter": "mieux."
@@ -176,7 +177,7 @@
     "item1": "Les images sont analysées en mémoire, puis jetées.",
     "item2": "Aucune requête réseau de sa part.",
     "purchases": "Les achats passent par l’App Store ou le Microsoft Store.",
-    "item3": "Tes stats restent sur ton ordinateur, sauf si tu exportes un CSV.",
+    "item3": "Tes stats restent sur ton appareil, sauf si tu exportes un CSV.",
     "verify": "pas confiance&nbsp;? vérifie avec <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> ou <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -220,10 +221,11 @@
   "cta": {
     "title": "Lève-toi.<br /><span>Oui, maintenant.</span>",
     "body": "Puis prends l’app, pour qu’aucune page web n’ait à te le rappeler.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android bientôt",
     "small": "Gratuit · pas de compte · 17 langues"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: una app diminuta que te levanta de la silla",
-    "description": "mybackhurts es una app diminuta para Mac y Windows que te recuerda levantarte cada 45 minutos y te guía por dos o tres ejercicios breves. Puede contar tus repeticiones con la webcam, en el dispositivo. Gratis y sin cuenta.",
+    "description": "mybackhurts es una app diminuta para Mac, Windows, iPhone y iPad que te recuerda levantarte cada 45 minutos y te guía por dos o tres ejercicios breves. Puede contar tus repeticiones con la webcam, en el dispositivo. Gratis y sin cuenta.",
     "ogTitle": "mybackhurts: tu espalda llamó, quiere hablar contigo",
-    "ogDescription": "Una app diminuta para Mac y Windows que te levanta de la silla cada 45 minutos. Repeticiones contadas en el dispositivo. Ningún vídeo sale de tu equipo. Gratis y sin cuenta.",
+    "ogDescription": "Una app diminuta para Mac, Windows, iPhone y iPad que te saca de la silla cada 45 minutos. Repeticiones contadas en el dispositivo. Ningún vídeo sale de tu dispositivo. Gratis y sin cuenta.",
     "url": "https://mybackhurts.app/es/",
     "ogImageAlt": "mybackhurts: “Tu espalda llamó. Quiere hablar contigo.” Una figura de palitos encorvada sobre un portátil en un escritorio dice “ay”."
   },
@@ -14,9 +14,9 @@
     "tape": "HAZ UNA PAUSA",
     "headline1": "Tu espalda llamó.",
     "headline2": "Quiere hablar.",
-    "tagline1": "Una app diminuta para Mac y Windows que te",
+    "tagline1": "Una app diminuta para Mac, Windows e iPhone",
     "tagline2": "que te levanta cada 45 minutos.",
-    "footerNote": "reps en el dispositivo. ningún vídeo sale de tu equipo.",
+    "footerNote": "reps contadas en el dispositivo. ningún vídeo sale de tu dispositivo.",
     "noteOw": "ay."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Tu espalda llamó.<br />Quiere <span class=\"scribble\">hablar.</span>",
-    "lede": "<strong>mybackhurts</strong> vive en la barra de menús o en la bandeja del sistema, te da un toque cada 45 minutos y te guía por unos ejercicios rápidos. La cámara se mantiene apagada a menos que le pidas que cuente tus repeticiones.",
+    "lede": "<strong>mybackhurts</strong> vive en la barra de menús, en la bandeja del sistema o en tu bolsillo, te da un toque cada 45 minutos y te guía por unos cuantos movimientos rápidos. La cámara se queda apagada a menos que le pidas que cuente tus repeticiones.",
     "secondaryCta": "o mira los ejercicios ↓",
+    "platformNote": "ahora también en iPhone y iPad. android: pronto",
     "figureTitle": "Una figura de palitos encorvada sobre un portátil, que se endereza y se estira, y luego se encorva otra vez.",
     "noteOw": "ay.",
     "noteBetter": "mejor."
@@ -176,7 +177,7 @@
     "item1": "Los fotogramas se analizan en memoria y luego se descartan.",
     "item2": "Ninguna petición de red propia.",
     "purchases": "Las compras las gestiona el App Store o Microsoft Store.",
-    "item3": "Tus estadísticas se quedan en tu equipo, salvo que exportes un CSV.",
+    "item3": "Tus estadísticas se quedan en tu dispositivo, salvo que exportes un CSV.",
     "verify": "¿no te fías? compruébalo con <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> o <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -220,10 +221,11 @@
   "cta": {
     "title": "Levántate.<br /><span>En serio, ahora.</span>",
     "body": "Luego descarga la app, para que no tenga que insistirte una página web.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android pronto",
     "small": "Gratis · sin cuenta · 17 idiomas"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

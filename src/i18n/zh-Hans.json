@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts：一个让你离开椅子的桌面小应用",
-    "description": "mybackhurts 是一款 Mac 和 Windows 小应用，每 45 分钟提醒你起身，并带你做两三个简短的动作。它可以用摄像头在本机上为你数次数。免费，无需账号。",
+    "description": "mybackhurts 是一款小应用，支持 Mac、Windows、iPhone 和 iPad。每 45 分钟提醒你起来活动一下，带你做两三个简短的动作。它可以用摄像头在本机上为你数次数。免费，无需账号。",
     "ogTitle": "mybackhurts：你的后背来电了，想跟你聊聊",
-    "ogDescription": "一款 Mac 和 Windows 小应用，每 45 分钟让你离开椅子。次数在本机统计，视频不会离开你的电脑。免费，无需账号。",
+    "ogDescription": "一款小应用，支持 Mac、Windows、iPhone 和 iPad，每 45 分钟让你离开椅子动一动。次数在本机统计，视频不会离开你的设备。免费，无需账号。",
     "url": "https://mybackhurts.app/zh-hans/",
     "ogImageAlt": "mybackhurts：“你的后背来电了。它想跟你聊聊。”一个火柴人趴在桌上的笔记本电脑前，喊着“哎哟”。"
   },
@@ -14,9 +14,9 @@
     "tape": "休息一下",
     "headline1": "你的后背来电了。",
     "headline2": "它想跟你聊聊。",
-    "tagline1": "一款 Mac 和 Windows 小应用，每 45 分钟",
+    "tagline1": "一款 Mac、Windows 和 iPhone 小应用，每 45 分钟",
     "tagline2": "让你离开椅子。",
-    "footerNote": "次数在本机统计。视频不会离开你的电脑。",
+    "footerNote": "次数在本机统计。视频不会离开你的设备。",
     "noteOw": "哎哟。"
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "你的后背来电了。<br />它想<span class=\"scribble\">聊聊。</span>",
-    "lede": "<strong>mybackhurts</strong> 住在你的菜单栏或系统托盘里，每 45 分钟提醒你一次，带你做几个简短的动作。除非你让它数次数，否则摄像头一直关着。",
+    "lede": "<strong>mybackhurts</strong> 待在你的菜单栏、系统托盘或口袋里，每 45 分钟轻轻提醒你一次，带你做几个快速小动作。摄像头默认关闭，除非你让它帮忙数次数。",
     "secondaryCta": "或者先看看动作 ↓",
+    "platformNote": "iPhone 和 iPad 版也上线啦！安卓版快来了",
     "figureTitle": "一个火柴人趴在笔记本电脑前，然后坐直、伸了个懒腰，接着又趴了下去。",
     "noteOw": "哎哟。",
     "noteBetter": "好多了。"
@@ -183,7 +184,7 @@
     "item1": "画面在内存中分析，然后丢弃。",
     "item2": "自身不发起任何网络请求。",
     "purchases": "购买通过 App Store 或 Microsoft Store 完成。",
-    "item3": "你的统计数据留在你的电脑上，除非你导出 CSV。",
+    "item3": "你的统计数据只留在你的设备上，除非你导出 CSV。",
     "verify": "不信我们？可以用 <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>、<a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> 或 <a href=\"https://www.glasswire.com/\">GlassWire</a> 查证。",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "站起来。<br /><span>说真的，现在。</span>",
     "body": "然后下载应用，这样就不用网页来催你了。",
+    "platforms": "Mac · iPhone · iPad · Windows · 安卓即将推出",
     "small": "免费 · 无需账号 · 17 种语言"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

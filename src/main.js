@@ -220,7 +220,11 @@ if (movesMore && moveGrid) {
 
 // Store buttons: the visitor's own platform leads, the other one steps back to an outline.
 const platform = navigator.userAgentData?.platform ?? navigator.platform ?? "";
-const ownStore = /^win/i.test(platform) ? "windows" : /^mac/i.test(platform) ? "mac" : null;
+const ownStore = /^win/i.test(platform)
+  ? "windows"
+  : /^(mac|iphone|ipad|ipod)/i.test(platform)
+    ? "apple"
+    : null;
 if (ownStore) {
   document.querySelectorAll(".store-buttons").forEach((group) => {
     const own = group.querySelector(`[data-store="${ownStore}"]`);
@@ -230,6 +234,8 @@ if (ownStore) {
       .querySelectorAll(`[data-store]:not([data-store="${ownStore}"])`)
       .forEach((other) => other.classList.add("is-alt"));
   });
+  // The iPhone note's arrow points at the first button, which on Windows is no longer the App Store.
+  if (ownStore === "windows") document.querySelector(".platform-note")?.remove();
 }
 
 // App preview: plays muted while on screen. With Reduce Motion it waits for the play button; a

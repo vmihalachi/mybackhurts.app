@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: seni sandalyeden kaldıran minik bir masa uygulaması",
-    "description": "mybackhurts, Mac ve Windows için minik bir uygulama: her 45 dakikada bir ayağa kalkmanı hatırlatır ve iki üç kısa egzersizde sana eşlik eder. Tekrarlarını web kamerasıyla, cihaz üzerinde sayabilir. Ücretsiz, hesap yok.",
+    "description": "mybackhurts, Mac, Windows, iPhone ve iPad için minik bir uygulama. Her 45 dakikada bir ayağa kalkmanı hatırlatır ve iki üç kısa egzersizde sana eşlik eder. Tekrarlarını web kamerasıyla, cihaz üzerinde sayabilir. Ücretsiz, hesap yok.",
     "ogTitle": "mybackhurts: sırtın aradı, seninle konuşmak istiyor",
-    "ogDescription": "Mac ve Windows için, seni her 45 dakikada bir sandalyeden kaldıran minik bir uygulama. Tekrarlar cihaz üzerinde sayılır. Hiçbir video bilgisayarından çıkmaz. Ücretsiz, hesap yok.",
+    "ogDescription": "Mac, Windows, iPhone ve iPad için, seni her 45 dakikada bir sandalyenden kaldıran minik bir uygulama. Tekrarlar cihaz üzerinde sayılır. Hiçbir video cihazından çıkmaz. Ücretsiz, hesap yok.",
     "url": "https://mybackhurts.app/tr/",
     "ogImageAlt": "mybackhurts: “Sırtın aradı. Seninle konuşmak istiyor.” Masadaki dizüstü bilgisayarın üstüne çökmüş bir çöp adam “of” diyor."
   },
@@ -14,9 +14,9 @@
     "tape": "MOLA VER",
     "headline1": "Sırtın aradı.",
     "headline2": "Seninle konuşmak istiyor.",
-    "tagline1": "Mac ve Windows için, seni her 45 dakikada bir",
+    "tagline1": "Mac, Windows ve iPhone için, seni her 45 dakikada bir",
     "tagline2": "sandalyeden kaldıran minik bir uygulama.",
-    "footerNote": "tekrarlar cihaz üzerinde sayılır. hiçbir video bilgisayarından çıkmaz.",
+    "footerNote": "tekrarlar cihaz üzerinde sayılır. hiçbir video cihazından çıkmaz.",
     "noteOw": "of."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "Sırtın aradı.<br />Seninle <span class=\"scribble\">konuşmak istiyor.</span>",
-    "lede": "<strong>mybackhurts</strong> menü çubuğunda ya da sistem tepsisinde yaşar, seni her 45 dakikada bir dürter ve birkaç hızlı harekette sana eşlik eder. Tekrarlarını saymasını istemedikçe kamera kapalı kalır.",
+    "lede": "<strong>mybackhurts</strong> menü çubuğunda, sistem tepsisinde ya da cebinde yaşar; her 45 dakikada bir seni dürter ve birkaç hızlı hareketi adım adım gösterir. Tekrarlarını saymasını istemezsen kamera kapalı kalır.",
     "secondaryCta": "ya da hareketlere göz at ↓",
+    "platformNote": "artık iPhone ve iPad'de de! android: yakında",
     "figureTitle": "Dizüstü bilgisayarın üstüne çökmüş, sonra doğrulup gerinen, sonra yine çöken bir çöp adam.",
     "noteOw": "of.",
     "noteBetter": "daha iyi."
@@ -183,7 +184,7 @@
     "item1": "Kareler bellekte analiz edilir, sonra atılır.",
     "item2": "Kendi başına hiçbir ağ isteği yapmaz.",
     "purchases": "Satın alımlar App Store ya da Microsoft Store üzerinden yapılır.",
-    "item3": "İstatistiklerin, CSV dışa aktarmadıkça bilgisayarında kalır.",
+    "item3": "İstatistiklerin, CSV dışa aktarmadıkça cihazında kalır.",
     "verify": "bize güvenmiyor musun? <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> ya da <a href=\"https://www.glasswire.com/\">GlassWire</a> ile kontrol et.",
     "itemMarker": "✓"
   },
@@ -227,10 +228,11 @@
   "cta": {
     "title": "Ayağa kalk.<br /><span>Şaka yok, şimdi.</span>",
     "body": "Sonra uygulamayı indir ki bir web sayfası seni dırdır etmek zorunda kalmasın.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android yakında",
     "small": "Ücretsiz · hesap yok · 17 dil"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {

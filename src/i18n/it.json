@@ -4,9 +4,9 @@
   },
   "meta": {
     "title": "mybackhurts: l'app che ti stacca dalla sedia",
-    "description": "mybackhurts è una piccola app per Mac e Windows che ti ricorda di alzarti ogni 45 minuti e ti guida in due o tre esercizi brevi. Conta le ripetizioni con la webcam, tutto sul dispositivo. Gratis, senza account.",
+    "description": "mybackhurts è una piccola app per Mac, Windows, iPhone e iPad che ti ricorda di alzarti ogni 45 minuti e ti guida in due o tre esercizi brevi. Conta le ripetizioni con la webcam, tutto sul dispositivo. Gratis, senza account.",
     "ogTitle": "mybackhurts: la tua schiena vuole fare due parole",
-    "ogDescription": "Una piccola app per Mac e Windows che ti stacca dalla sedia ogni 45 minuti. Ripetizioni contate sul dispositivo. Nessun video lascia il computer. Gratis, senza account.",
+    "ogDescription": "Una piccola app per Mac, Windows, iPhone e iPad che ti stacca dalla sedia ogni 45 minuti. Ripetizioni contate sul dispositivo. Nessun video esce dal dispositivo. Gratis, senza account.",
     "url": "https://mybackhurts.app/it/",
     "ogImageAlt": "mybackhurts: “La tua schiena vuole parlarti.” Un omino stilizzato curvo su un portatile alla scrivania dice “ahia.”"
   },
@@ -14,9 +14,9 @@
     "tape": "FAI UNA PAUSA",
     "headline1": "La tua schiena",
     "headline2": "vuole parlarti.",
-    "tagline1": "Una piccola app per Mac e Windows che ti stacca",
+    "tagline1": "Una piccola app per Mac, Windows e iPhone che ti stacca",
     "tagline2": "dalla sedia ogni 45 minuti.",
-    "footerNote": "ripetizioni contate sul dispositivo. nessun video esce dal computer.",
+    "footerNote": "ripetizioni contate sul dispositivo. nessun video esce dal dispositivo.",
     "noteOw": "ahia."
   },
   "a11y": {
@@ -34,8 +34,9 @@
   },
   "hero": {
     "title": "La tua schiena chiama.<br />Vuole <span class=\"scribble\">parlarti.</span>",
-    "lede": "<strong>mybackhurts</strong> vive nella barra dei menu o nell'area di notifica, ti dà un colpetto ogni 45 minuti e ti guida in qualche esercizio veloce. La webcam rimane spenta a meno che non le chiedi tu di contare le ripetizioni.",
+    "lede": "<strong>mybackhurts</strong> vive nella barra dei menu, nell'area di notifica o in tasca, ti dà un colpetto ogni 45 minuti e ti guida in qualche esercizio veloce. La webcam resta spenta finché non le chiedi di contare le ripetizioni.",
     "secondaryCta": "oppure guarda le mosse ↓",
+    "platformNote": "ora anche su iPhone + iPad! Android: presto",
     "figureTitle": "Un omino stilizzato curvo su un portatile: si raddrizza, si stiracchia e poi si accascia di nuovo.",
     "noteOw": "ahia.",
     "noteBetter": "meglio."
@@ -176,7 +177,7 @@
     "item1": "I fotogrammi vengono analizzati in memoria e poi buttati via.",
     "item2": "Nessuna richiesta di rete propria.",
     "purchases": "Gli acquisti li gestisce l’App Store o il Microsoft Store.",
-    "item3": "Le statistiche restano sul computer, a meno che tu non esporti un CSV.",
+    "item3": "Le tue statistiche restano sul dispositivo, a meno che tu non esporti un CSV.",
     "verify": "non ti fidi? controlla con <a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>, <a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a> o <a href=\"https://www.glasswire.com/\">GlassWire</a>.",
     "itemMarker": "✓"
   },
@@ -220,10 +221,11 @@
   "cta": {
     "title": "Alzati.<br /><span>Sì, adesso.</span>",
     "body": "Poi prendi l'app, così non deve ricordartelo una pagina web.",
+    "platforms": "Mac · iPhone · iPad · Windows · Android in arrivo",
     "small": "Gratis · niente account · 17 lingue"
   },
   "store": {
-    "mac": "Mac App Store",
+    "apple": "App Store",
     "windows": "Microsoft Store"
   },
   "receipt": {
