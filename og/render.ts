@@ -119,8 +119,8 @@ export function createRenderer(ogDir: string) {
     return widest > maxWidth ? Math.floor((size * maxWidth) / widest) : size;
   }
 
-  /** Renders the 1200×630 social card, filling {{og.*}} placeholders from a locale's `og` object. */
-  function renderOgImage(og: OgCopy, lang = "en") {
+  /** The 1200×630 social card's SVG, filling {{og.*}} placeholders from a locale's `og` object. */
+  function ogSvg(og: OgCopy, lang: string) {
     assertDrawable(og, lang, "The social preview image");
     const template = readFileSync(resolve(ogDir, "og-image.svg"), "utf8");
     // The left column ends where the stick figure's halftone starts.
@@ -138,7 +138,24 @@ export function createRenderer(ogDir: string) {
         }
         return escapeXml(og[key]);
       });
-    return toPng(svg, undefined, lang);
+    return svg;
+  }
+
+  /** Renders the 1200×630 social card. */
+  function renderOgImage(og: OgCopy, lang = "en") {
+    return toPng(ogSvg(og, lang), undefined, lang);
+  }
+
+  /**
+   * Renders Google Play's 1024×500 feature graphic: the social card cropped to Play's 2.048:1 (22 px off the top and
+   * the bottom, where nothing is drawn), without the tagline, which names the other platforms.
+   */
+  function renderFeatureGraphic(og: OgCopy, lang = "en") {
+    const svg = ogSvg({ ...og, tagline1: "", tagline2: "" }, lang).replace(
+      /<svg[^>]*>/,
+      '<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="500" viewBox="0 22 1200 586">',
+    );
+    return toPng(svg, 1024, lang);
   }
 
   /** Renders the square icon at `size`. `padded` insets it on a pink square for iOS/Android masks. */
@@ -172,7 +189,7 @@ export function createRenderer(ogDir: string) {
     return pdfFromPixels(image.pixels, image.width, image.height, title);
   }
 
-  return { renderOgImage, renderIcon, renderPoster };
+  return { renderOgImage, renderFeatureGraphic, renderIcon, renderPoster };
 }
 
 /**
@@ -185,7 +202,9 @@ export function socialAssetsPlugin(options: {
   iconPath: string;
   locales: Record<string, { og: OgCopy } & Record<string, any>>;
 }): Plugin {
-  const { renderOgImage, renderIcon, renderPoster } = createRenderer(options.ogDir);
+  const { renderOgImage, renderFeatureGraphic, renderIcon, renderPoster } = createRenderer(
+    options.ogDir,
+  );
   let assets: Map<string, Buffer> | undefined;
   const posters = new Map<string, Buffer>();
   const posterName = (lang: string) => `poster/${lang}.pdf`;
@@ -202,6 +221,8 @@ export function socialAssetsPlugin(options: {
       ["apple-touch-icon.png", renderIcon(icon, 180, { padded: true })],
       ["icon-192.png", renderIcon(icon, 192, { padded: true })],
       ["icon-512.png", renderIcon(icon, 512, { padded: true })],
+      // Google Play's feature graphic, copied into store-listing/google/ (store-listing/README.md).
+      ["feature-graphic.png", renderFeatureGraphic(options.locales.en.og)],
     ]);
     for (const [lang, locale] of Object.entries(options.locales)) {
       files.set(`og-${lang}.png`, renderOgImage(locale.og, lang));
