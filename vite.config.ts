@@ -19,6 +19,13 @@ const siteUrl = "https://mybackhurts.app";
 const appStoreUrl = "https://apps.apple.com/app/id6817265333";
 /** The Microsoft Store listing (Partner Center product 9NT3SV8SQ3KD). */
 const microsoftStoreUrl = "https://apps.microsoft.com/detail/9NT3SV8SQ3KD";
+/** The FAQ's questions, in `index.html`'s order (`faq.<topic>Question`, `faq.<topic>Answer`). */
+const faqTopics = ["schedule", "counting", "office", "call"];
+
+const entities: Record<string, string> = { nbsp: " ", amp: "&", lt: "<", gt: ">", quot: '"' };
+/** A locale string as text: its tags dropped and its named entities decoded. */
+const plainText = (html: string) =>
+  html.replace(/<[^>]*>/g, "").replace(/&(\w+);/g, (match, name) => entities[name] ?? match);
 
 /**
  * The page's plumbing (every language's home page from `index.html`, the legal pages' links, the sitemap, the
@@ -58,19 +65,42 @@ const landing = companionLanding({
         return undefined;
     }
   },
+  // The site's name for search results, the app with its store listings, and the FAQ as it reads on the page.
   jsonLd: (language, locale) => ({
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "mybackhurts",
-    description: locale.meta.description,
-    applicationCategory: "HealthApplication",
-    operatingSystem: "macOS, iOS, iPadOS, Windows",
-    inLanguage: language.code,
-    url: `${siteUrl}${language.path}`,
-    image: `${siteUrl}/og-${language.code}.png`,
-    installUrl: appStoreUrl,
-    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-    author: { "@type": "Person", name: "Vlad Mihalachi", url: "https://vmihalachi.com" },
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${siteUrl}/#website`,
+        name: "mybackhurts",
+        url: `${siteUrl}/`,
+        inLanguage: language.code,
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": `${siteUrl}/#app`,
+        name: "mybackhurts",
+        description: locale.meta.description,
+        applicationCategory: "HealthApplication",
+        operatingSystem: "macOS, iOS, iPadOS, Windows",
+        inLanguage: language.code,
+        url: `${siteUrl}${language.path}`,
+        image: `${siteUrl}/og-${language.code}.png`,
+        installUrl: appStoreUrl,
+        sameAs: [appStoreUrl, microsoftStoreUrl],
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+        author: { "@type": "Person", name: "Vlad Mihalachi", url: "https://vmihalachi.com" },
+      },
+      {
+        "@type": "FAQPage",
+        inLanguage: language.code,
+        mainEntity: faqTopics.map((topic) => ({
+          "@type": "Question",
+          name: plainText(locale.faq[`${topic}Question`]),
+          acceptedAnswer: { "@type": "Answer", text: plainText(locale.faq[`${topic}Answer`]) },
+        })),
+      },
+    ],
   }),
   // The preview videos, same origin.
   csp: { mediaSrc: "'self'" },
