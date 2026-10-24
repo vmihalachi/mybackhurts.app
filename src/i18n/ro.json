@@ -285,9 +285,12 @@
   },
   "preview": {
     "title": "Revin. Mă mișc puțin.",
-    "note": "fără sunet. e pe birou.",
+    "note": "În mod normal, e liniște. Pune muzică dacă ai chef.",
     "label": "Un omuleț desenat ia o scurtă pauză de la treabă. Aplicația numără trei genuflexiuni la scaun, apoi omulețul se întoarce la lucru.",
     "play": "Redă video",
-    "pause": "Pauză video"
+    "pause": "Pauză video",
+    "sound": "Sunetul videoclipului",
+    "soundOff": "Sunet oprit",
+    "soundOn": "Sunet pornit"
   }
 }

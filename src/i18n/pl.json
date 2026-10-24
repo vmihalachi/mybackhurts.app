@@ -44,10 +44,13 @@
   "tapeStrip": "wstań ✶ porusz barkami ✶ rozluźnij szczękę ✶ napij się wody ✶ spójrz w dal ✶ wstań ✶ porusz barkami ✶ rozluźnij szczękę ✶ napij się wody ✶ spójrz w dal ✶",
   "preview": {
     "title": "Zaraz wracam. Czas się ruszyć.",
-    "note": "bez dźwięku. to biuro.",
+    "note": "Domyślnie cisza. Muzyka, jeśli masz ochotę.",
     "label": "Ludzik z rysunku robi sobie krótką przerwę od biurka. Aplikacja zlicza trzy przysiady z krzesłem, a ludzik wraca do pracy.",
     "play": "Odtwórz wideo",
-    "pause": "Wstrzymaj wideo"
+    "pause": "Wstrzymaj wideo",
+    "sound": "Dźwięk wideo",
+    "soundOff": "Dźwięk wyłączony",
+    "soundOn": "Dźwięk włączony"
   },
   "how": {
     "title": "Cała rutyna<br />w trzech kadrach.",

@@ -44,10 +44,13 @@
   "tapeStrip": "reis deg ✶ rull skuldrene ✶ slipp opp kjeven ✶ drikk litt vann ✶ se på noe langt unna ✶ reis deg ✶ rull skuldrene ✶ slipp opp kjeven ✶ drikk litt vann ✶ se på noe langt unna ✶",
   "preview": {
     "title": "Straks tilbake. Rører på meg.",
-    "note": "ingen lyd. det er et kontor.",
+    "note": "Stille som standard. Musikk hvis du vil.",
     "label": "En strekfigur tar en kort pause fra skrivebordet. Appen teller tre stolknebøy, så jobber figuren videre.",
     "play": "Spill av video",
-    "pause": "Sett video på pause"
+    "pause": "Sett video på pause",
+    "sound": "Videolyd",
+    "soundOff": "Lyd av",
+    "soundOn": "Lyd på"
   },
   "how": {
     "title": "Hele rutinen,<br />i tre ruter.",

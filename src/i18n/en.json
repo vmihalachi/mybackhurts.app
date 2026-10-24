@@ -44,10 +44,13 @@
   "tapeStrip": "stand up ✶ roll your shoulders ✶ unclench your jaw ✶ drink some water ✶ look at something far away ✶ stand up ✶ roll your shoulders ✶ unclench your jaw ✶ drink some water ✶ look at something far away ✶",
   "preview": {
     "title": "BRB. Moving.",
-    "note": "no sound. it's an office.",
+    "note": "quiet by default. music if you fancy.",
     "label": "A doodle takes a short desk break. The app counts three chair squats, then the doodle returns to work.",
     "play": "Play video",
-    "pause": "Pause video"
+    "pause": "Pause video",
+    "sound": "Video sound",
+    "soundOff": "Sound off",
+    "soundOn": "Sound on"
   },
   "how": {
     "title": "The whole routine,<br />in three panels.",

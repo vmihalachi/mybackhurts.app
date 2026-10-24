@@ -238,13 +238,16 @@ if (ownStore) {
   if (ownStore === "windows") document.querySelector(".platform-note")?.remove();
 }
 
-// App preview: plays muted while on screen. With Reduce Motion it waits for the play button; a
-// visitor's own pause sticks until they press play again.
+// Start quietly. Sound needs a visitor's click; playback stops offscreen or in a hidden tab.
+// With Reduce Motion, wait for the play button. A visitor's own pause sticks.
 const previewVideo = document.querySelector(".preview-frame video");
 const previewToggle = document.querySelector(".preview-toggle");
-if (previewVideo && previewToggle) {
+const previewSound = document.querySelector(".preview-sound");
+const previewControls = document.querySelector(".preview-controls");
+if (previewVideo && previewToggle && previewSound && previewControls) {
   let pausedByVisitor = reducedMotion.matches;
   let previewOnScreen = false;
+  previewVideo.muted = true;
 
   const syncToggle = () => {
     const playing = !previewVideo.paused;
@@ -253,6 +256,9 @@ if (previewVideo && previewToggle) {
       "aria-label",
       playing ? previewToggle.dataset.pause : previewToggle.dataset.play,
     );
+  };
+  const syncSound = () => {
+    previewSound.setAttribute("aria-pressed", String(!previewVideo.muted));
   };
   const updatePreview = () => {
     if (previewOnScreen && !document.hidden && !pausedByVisitor) {
@@ -267,18 +273,30 @@ if (previewVideo && previewToggle) {
     if (pausedByVisitor) previewVideo.pause();
     else previewVideo.play().catch(() => {});
   });
+  previewSound.addEventListener("click", () => {
+    previewVideo.muted = !previewVideo.muted;
+    syncSound();
+  });
   previewVideo.addEventListener("play", syncToggle);
   previewVideo.addEventListener("pause", syncToggle);
+  previewVideo.addEventListener("volumechange", syncSound);
   new IntersectionObserver(
     ([entry]) => {
-      previewOnScreen = entry.isIntersecting;
+      previewOnScreen = entry.isIntersecting && entry.intersectionRatio >= 0.35;
       updatePreview();
     },
     { threshold: 0.35 },
   ).observe(previewVideo);
   document.addEventListener("visibilitychange", updatePreview);
-  previewToggle.hidden = false;
+  reducedMotion.addEventListener("change", () => {
+    if (reducedMotion.matches) {
+      pausedByVisitor = true;
+      updatePreview();
+    }
+  });
+  previewControls.hidden = false;
   syncToggle();
+  syncSound();
 }
 
 // Reveal sections as they scroll in.

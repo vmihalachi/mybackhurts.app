@@ -285,9 +285,12 @@
   },
   "preview": {
     "title": "Já volto. Fui me mexer.",
-    "note": "sem som. é um escritório.",
+    "note": "Por padrão, silêncio. Música se você quiser.",
     "label": "Um bonequinho faz uma pausa rápida no trabalho. O app conta três agachamentos na cadeira. Depois, ele volta ao trabalho.",
     "play": "Reproduzir vídeo",
-    "pause": "Pausar vídeo"
+    "pause": "Pausar vídeo",
+    "sound": "Som do vídeo",
+    "soundOff": "Som desligado",
+    "soundOn": "Som ligado"
   }
 }

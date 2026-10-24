@@ -44,10 +44,13 @@
   "tapeStrip": "rejs dig ✶ rul skuldrene ✶ slap af i kæben ✶ drik noget vand ✶ kig på noget langt væk ✶ rejs dig ✶ rul skuldrene ✶ slap af i kæben ✶ drik noget vand ✶ kig på noget langt væk ✶",
   "preview": {
     "title": "2 sek. Skal lige røre mig.",
-    "note": "ingen lyd. det er et kontor.",
+    "note": "Lydløs som standard. Musik, hvis du har lyst.",
     "label": "En lille tegnet figur holder en kort pause fra arbejdet. Appen tæller tre gentagelser af Stolesquat, og så arbejder figuren videre.",
     "play": "Afspil video",
-    "pause": "Sæt video på pause"
+    "pause": "Sæt video på pause",
+    "sound": "Videolyd",
+    "soundOff": "Lyd fra",
+    "soundOn": "Lyd til"
   },
   "how": {
     "title": "Hele rutinen,<br />i tre ruder.",

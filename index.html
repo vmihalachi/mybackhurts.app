@@ -215,21 +215,36 @@
           >
             <source src="{{previewVideo}}" type="video/mp4" />
           </video>
-          <button
-            type="button"
-            class="preview-toggle"
-            data-play="{{preview.play}}"
-            data-pause="{{preview.pause}}"
-            aria-label="{{preview.play}}"
-            hidden
-          >
-            <svg data-icon="play" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8 5.5v13l10.5-6.5Z" />
-            </svg>
-            <svg data-icon="pause" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M8 5.5v13M16 5.5v13" />
-            </svg>
-          </button>
+          <div class="preview-controls" hidden>
+            <button
+              type="button"
+              class="preview-sound"
+              aria-label="{{preview.sound}}"
+              aria-pressed="false"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M11 4 5.5 8.5H2v7h3.5L11 20Z" />
+                <path data-sound="off" d="m16 9 6 6m0-6-6 6" />
+                <path data-sound="on" d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14" />
+              </svg>
+              <span data-sound="off" aria-hidden="true">{{preview.soundOff}}</span>
+              <span data-sound="on" aria-hidden="true">{{preview.soundOn}}</span>
+            </button>
+            <button
+              type="button"
+              class="preview-toggle"
+              data-play="{{preview.play}}"
+              data-pause="{{preview.pause}}"
+              aria-label="{{preview.play}}"
+            >
+              <svg data-icon="play" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5.5v13l10.5-6.5Z" />
+              </svg>
+              <svg data-icon="pause" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5.5v13M16 5.5v13" />
+              </svg>
+            </button>
+          </div>
         </figure>
       </section>
 

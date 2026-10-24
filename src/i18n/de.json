@@ -285,9 +285,12 @@
   },
   "preview": {
     "title": "Bis gleich. Kurz bewegen.",
-    "note": "Kein Ton. Es ist ein Büro.",
+    "note": "Standardmäßig still. Musik, wenn du magst.",
     "label": "Eine gezeichnete Figur macht kurz Schreibtischpause. Die App zählt drei Stuhl-Kniebeugen mit, dann geht’s zurück an die Arbeit.",
     "play": "Video abspielen",
-    "pause": "Video pausieren"
+    "pause": "Video pausieren",
+    "sound": "Videoton",
+    "soundOff": "Ton aus",
+    "soundOn": "Ton an"
   }
 }

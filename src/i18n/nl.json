@@ -44,10 +44,13 @@
   "tapeStrip": "sta op ✶ rol je schouders ✶ ontspan je kaak ✶ drink wat water ✶ kijk naar iets in de verte ✶ sta op ✶ rol je schouders ✶ ontspan je kaak ✶ drink wat water ✶ kijk naar iets in de verte ✶",
   "preview": {
     "title": "Zo terug. Even bewegen.",
-    "note": "geen geluid. het is een kantoor.",
+    "note": "Standaard lekker stil. Muziekje erbij? Als je wilt.",
     "label": "Een getekend poppetje neemt een korte beweegpauze. De app telt drie stoelsquats. Daarna gaat het poppetje weer aan het werk.",
     "play": "Video afspelen",
-    "pause": "Video pauzeren"
+    "pause": "Video pauzeren",
+    "sound": "Videogeluid",
+    "soundOff": "Geluid uit",
+    "soundOn": "Geluid aan"
   },
   "how": {
     "title": "De hele routine,<br />in drie panelen.",

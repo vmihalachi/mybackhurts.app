@@ -285,9 +285,12 @@
   },
   "preview": {
     "title": "À toute. Je bouge.",
-    "note": "sans son. c'est un bureau.",
+    "note": "Le son est coupé par défaut. Un peu de musique, si ça te dit.",
     "label": "Un petit personnage fait une pause pour bouger. L’app compte trois squats sur chaise, puis il se remet au travail.",
     "play": "Lancer la vidéo",
-    "pause": "Mettre en pause"
+    "pause": "Mettre en pause",
+    "sound": "Son de la vidéo",
+    "soundOff": "Son coupé",
+    "soundOn": "Son activé"
   }
 }

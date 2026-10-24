@@ -285,9 +285,12 @@
   },
   "preview": {
     "title": "Torno subito. Mi sgranchisco.",
-    "note": "senza audio. è un ufficio.",
+    "note": "Di base, silenzio. La musica? Se ti va.",
     "label": "Un omino disegnato si prende una breve pausa dalla scrivania. L’app conta tre Squat sulla sedia, poi l’omino torna al lavoro.",
     "play": "Riproduci video",
-    "pause": "Pausa video"
+    "pause": "Pausa video",
+    "sound": "Audio del video",
+    "soundOff": "Audio disattivato",
+    "soundOn": "Audio attivato"
   }
 }

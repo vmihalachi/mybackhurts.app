@@ -44,10 +44,13 @@
   "tapeStrip": "vstaň ✶ zakrouži rameny ✶ uvolni čelist ✶ napij se vody ✶ podívej se do dálky ✶ vstaň ✶ zakrouži rameny ✶ uvolni čelist ✶ napij se vody ✶ podívej se do dálky ✶",
   "preview": {
     "title": "Hned jsem tu. Jdu se hýbat.",
-    "note": "bez zvuku. je to kancelář.",
+    "note": "Ve výchozím stavu potichu. Hudbu si pusť, jestli chceš.",
     "label": "Kreslená postavička si dá krátkou pauzu od práce. Aplikace spočítá tři dřepy u židle, pak se postavička vrátí k práci.",
     "play": "Přehrát video",
-    "pause": "Pozastavit video"
+    "pause": "Pozastavit video",
+    "sound": "Zvuk videa",
+    "soundOff": "Zvuk vypnutý",
+    "soundOn": "Zvuk zapnutý"
   },
   "how": {
     "title": "Celá rutina<br />ve třech panelech.",

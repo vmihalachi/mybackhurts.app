@@ -44,10 +44,13 @@
   "tapeStrip": "res dig upp ✶ rulla axlarna ✶ slappna av i käken ✶ drick lite vatten ✶ titta på något långt bort ✶ res dig upp ✶ rulla axlarna ✶ slappna av i käken ✶ drick lite vatten ✶ titta på något långt bort ✶",
   "preview": {
     "title": "Strax tillbaka. Rör på mig.",
-    "note": "inget ljud. det är ett kontor.",
+    "note": "Tyst som standard. Musik om du känner för det.",
     "label": "En liten tecknad figur tar en kort paus från skrivbordsjobbet. Appen räknar tre repetitioner av övningen Knäböj med stol, sedan jobbar figuren vidare.",
     "play": "Spela upp video",
-    "pause": "Pausa video"
+    "pause": "Pausa video",
+    "sound": "Ljud i videon",
+    "soundOff": "Ljud av",
+    "soundOn": "Ljud på"
   },
   "how": {
     "title": "Hela rutinen,<br />i tre rutor.",

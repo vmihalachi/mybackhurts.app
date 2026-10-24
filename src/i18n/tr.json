@@ -44,10 +44,13 @@
   "tapeStrip": "ayağa kalk ✶ omuzlarını çevir ✶ çeneni gevşet ✶ biraz su iç ✶ uzaktaki bir şeye bak ✶ ayağa kalk ✶ omuzlarını çevir ✶ çeneni gevşet ✶ biraz su iç ✶ uzaktaki bir şeye bak ✶",
   "preview": {
     "title": "Hemen dönerim. Biraz kıpırdanayım.",
-    "note": "ses yok. burası bir ofis.",
+    "note": "Varsayılan sessiz. İstersen müzik aç.",
     "label": "Bir çöp adam işine kısa bir mola veriyor. Uygulama, “Sandalyeli Çömelme” hareketinin üç tekrarını sayıyor; ardından çöp adam işine dönüyor.",
     "play": "Videoyu oynat",
-    "pause": "Videoyu duraklat"
+    "pause": "Videoyu duraklat",
+    "sound": "Video sesi",
+    "soundOff": "Ses kapalı",
+    "soundOn": "Ses açık"
   },
   "how": {
     "title": "Bütün rutin,<br />üç karede.",
