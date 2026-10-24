@@ -40,6 +40,8 @@ const landing = companionLanding({
   languages,
   defaultLanguageCode,
   locales,
+  // Written in English first; translated once Search Console shows it bringing visitors.
+  pages: [{ page: "break-reminder-apps", languages: ["en"] }],
   placeholders: (key, language) => {
     switch (key) {
       case "appStoreUrl":
