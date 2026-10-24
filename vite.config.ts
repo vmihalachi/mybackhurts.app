@@ -41,7 +41,7 @@ const landing = companionLanding({
         return microsoftStoreUrl;
       case "posterUrl":
         return `/poster/${language.code}.pdf`;
-      // Made by apple/scripts/app-preview-web.sh; Vite hashes them into /assets.
+      // Made by apple/scripts/landing-film-web.sh; Vite hashes them into /assets.
       case "previewVideo":
         return `/src/preview/${language.code}.mp4`;
       case "previewPoster":

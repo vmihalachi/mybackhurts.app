@@ -284,9 +284,9 @@
     }
   },
   "preview": {
-    "title": "Schau dir in 24 Sekunden an.",
+    "title": "Bis gleich. Kurz bewegen.",
     "note": "Kein Ton. Es ist ein Büro.",
-    "label": "App-Vorschau: Eine Webcam-Sitzung zählt Stuhl-Kniebeugen, dann einen Nackenstretch, die Sitzungszusammenfassung und die wöchentlichen Statistiken.",
+    "label": "Eine gezeichnete Figur macht kurz Schreibtischpause. Die App zählt drei Stuhl-Kniebeugen mit, dann geht’s zurück an die Arbeit.",
     "play": "Video abspielen",
     "pause": "Video pausieren"
   }
