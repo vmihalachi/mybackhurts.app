@@ -106,9 +106,17 @@ const landing = companionLanding({
   }),
   // The preview videos, same origin.
   csp: { mediaSrc: "'self'" },
-  // Browsers' built-in PDF viewers are blocked by the page CSP, so the posters get their own.
+  // Browsers' built-in PDF viewers are blocked by the page CSP, so the posters get their own. The posters are
+  // kept out of search: each language's reads alike to Google, which flagged them as duplicates of one another.
   headers: [
-    ["/poster/*", ["! Content-Security-Policy", "Content-Security-Policy: frame-ancestors 'none'"]],
+    [
+      "/poster/*",
+      [
+        "! Content-Security-Policy",
+        "Content-Security-Policy: frame-ancestors 'none'",
+        "X-Robots-Tag: noindex",
+      ],
+    ],
   ],
   extraPlugins: [
     socialAssetsPlugin({
