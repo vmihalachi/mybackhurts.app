@@ -194,7 +194,7 @@
         <p>{{tapeStrip}}</p>
       </div>
 
-      <!-- LANDING FILM (apple/scripts/landing-film-web.sh) -->
+      <!-- LANDING FILM (apple/scripts/landing-film-web.sh, which checks the poster is the frame at data-poster-time) -->
       <section class="preview" aria-labelledby="preview-title">
         <header class="section-head preview-head">
           <h2 id="preview-title" class="riso">{{preview.title}}</h2>
@@ -211,6 +211,7 @@
             width="1920"
             height="1080"
             poster="{{previewPoster}}"
+            data-poster-time="8.5"
             aria-label="{{preview.label}}"
           >
             <source src="{{previewVideo}}" type="video/mp4" />

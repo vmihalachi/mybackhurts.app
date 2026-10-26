@@ -248,6 +248,14 @@ if (previewVideo && previewToggle && previewSound && previewControls) {
   let pausedByVisitor = reducedMotion.matches;
   let previewOnScreen = false;
   previewVideo.muted = true;
+  // The poster is a frame from mid-film: begin there so the first frame doesn't cut away from it. The loop then starts at 0.
+  previewVideo.addEventListener(
+    "loadedmetadata",
+    () => {
+      previewVideo.currentTime = Number(previewVideo.dataset.posterTime) || 0;
+    },
+    { once: true },
+  );
 
   const syncToggle = () => {
     const playing = !previewVideo.paused;
