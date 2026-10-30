@@ -8,7 +8,7 @@
     <title>Privacy policy · mybackhurts</title>
     <meta
       name="description"
-      content="mybackhurts is an app for macOS and Windows by Vlad Mihalachi. This policy explains what the app does with your information."
+      content="mybackhurts is an app for Mac, iPhone and iPad, Windows and Android by Vlad Mihalachi. This policy explains what the app and this website do with your information."
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,42 +18,59 @@
       <header>
         <a class="legal-back" href="/">← mybackhurts</a>
         <h1>Privacy policy</h1>
-        <p>Last updated: October 10, 2026</p>
+        <p>Last updated: October 30, 2026</p>
       </header>
       <p>
-        mybackhurts is an app for macOS and Windows by Vlad Mihalachi. This policy explains what the
-        app does with your information.
+        mybackhurts is an app for Mac, iPhone and iPad, Windows and Android by Vlad Mihalachi. This
+        policy explains what the app and this website do with your information.
+      </p>
+      <p>
+        The Mac app comes from the Mac App Store, the iPhone and iPad app from the App Store, the
+        Windows app from the Microsoft Store, and the Android app from Google Play.
       </p>
       <h2>What the app processes</h2>
       <p>
         When you choose Webcam mode, the app uses your camera to detect body poses and count
-        exercise repetitions. On Mac, it uses Apple’s Vision framework. On Windows, it uses a pose
-        model that runs on your PC through Windows ML. On both, video frames and pose data are
-        processed in memory on your device and immediately discarded. The app does not record,
-        upload, or store images or video. Webcam mode is optional; in Simple mode, the camera stays
-        off unless you ask for it.
+        exercise repetitions. On Mac, iPhone and iPad, it uses Apple’s Vision framework. On Windows,
+        it uses a pose model that runs on your PC through Windows ML. On Android, it uses a pose
+        model that is part of the app and runs on your device with ONNX Runtime, reading the camera
+        through Android’s CameraX. On every platform, video frames and pose data are processed in
+        memory on your device and immediately discarded. The app does not record, upload, or store
+        images or video. Webcam mode is optional; in Simple mode, the camera stays off unless you
+        ask for it.
       </p>
       <p>
-        So that reminders don’t interrupt you, the app checks how long it has been since you last
-        used the keyboard or mouse, whether another app is using the camera or microphone (for
-        example, during a call), and whether a full-screen app is open. It only reads this status
-        from the operating system. It never turns on the camera or microphone, and it does not keep
-        this information.
+        On Mac and Windows, so that reminders don’t interrupt you, the app checks how long it has
+        been since you last used the keyboard or mouse, whether another app is using the camera or
+        microphone (for example, during a call), and whether a full-screen app is open. It only
+        reads this status from the operating system. It never turns on the camera or microphone, and
+        it does not keep this information. On Android, during a Webcam mode break, the app reads
+        from the phone’s audio mode whether a call is in progress, and pauses the break while it is;
+        it does not keep this either. The iPhone and iPad app makes none of these checks.
       </p>
       <h2>What the app stores</h2>
       <p>
         The app stores settings and exercise results such as exercise names, repetitions, durations,
         and dates locally on your device. It does not require an account and does not collect your
-        name, email address, location, contacts, or browsing activity.
+        name, email address, location, contacts, or browsing activity. Each device keeps its own
+        history: the app does not sync it between your devices.
       </p>
       <h2>Sharing and network access</h2>
       <p>
         mybackhurts does not operate analytics, advertising, tracking, or backend services, and does
         not make network requests of its own. If you make a Supporter purchase or tip, the store you
-        got the app from processes that transaction: Apple through StoreKit on Mac, under Apple’s
-        terms and privacy policy, and Microsoft through the Microsoft Store on Windows, under
-        Microsoft’s terms and privacy statement. The Windows version is also installed and updated
-        through the Microsoft Store.
+        got the app from processes that transaction: Apple through StoreKit on Mac, iPhone and iPad,
+        under Apple’s terms and privacy policy; Microsoft through the Microsoft Store on Windows,
+        under Microsoft’s terms and privacy statement; and Google through Google Play Billing on
+        Android, under Google’s terms and privacy policy. The Windows version is also installed and
+        updated through the Microsoft Store.
+      </p>
+      <p>
+        After you have used the app for a while, it may ask you once to rate it, through the store’s
+        own rating prompt: Apple’s on Mac, iPhone and iPad, the Microsoft Store’s on Windows, and
+        Google Play’s in-app review on Android. The store decides whether to show it. A rating or
+        review you leave goes to that store, under its terms; the app does not record whether you
+        left one.
       </p>
       <h2>Retention and deletion</h2>
       <p>
@@ -61,10 +78,36 @@
         the app’s controls, remove the app’s data, or uninstall the app. You can contact us for
         privacy questions at <a href="mailto:hello@mybackhurts.app">hello@mybackhurts.app</a>.
       </p>
+      <h2>This website</h2>
+      <p>
+        This website, mybackhurts.app, is a set of static pages hosted by Cloudflare. Cloudflare
+        handles each request, including your IP address, to deliver the site, under Cloudflare’s
+        privacy policy, and asks your browser to report to it when the site fails to load. The
+        site’s own request logs, traces, and log exports are turned off in its hosting
+        configuration.
+      </p>
+      <ul>
+        <li>The site sets no cookies and runs no analytics, advertising, or tracking scripts.</li>
+        <li>
+          Its fonts, images, and videos are served from mybackhurts.app itself. Its content security
+          policy lets the pages load files only from mybackhurts.app and make no connections of
+          their own, and its permissions policy keeps them from using your camera, microphone, or
+          location.
+        </li>
+        <li>
+          To show the page in your language and put your device’s store first, the page reads your
+          browser’s preferred language and platform, in your browser. If you choose a theme or a
+          language, your browser remembers the choice in its local storage; it is not sent to us.
+        </li>
+        <li>
+          Links to other sites, such as the stores, open only when you follow them, and the site
+          asks your browser not to tell those sites which page you came from.
+        </li>
+      </ul>
       <h2>Changes</h2>
       <p>
-        We may update this policy when the app or applicable requirements change. The date above
-        shows when it was last revised.
+        We may update this policy when the app, this website, or applicable requirements change. The
+        date above shows when it was last revised.
       </p>
     </main>
   </body>
