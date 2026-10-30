@@ -11,10 +11,10 @@
     "@laching/landing": "0.20.6",
     "@resvg/resvg-js": "^2.6.2",
     "@types/node": "^26.6.4",
-    "vite": "npm:@voidzero-dev/vite-plus-core@1.0.0",
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0",
     "vite-plus": "1.4.0"
   },
   "overrides": {
-    "vite": "npm:@voidzero-dev/vite-plus-core@1.0.0"
+    "vite": "npm:@voidzero-dev/vite-plus-core@1.4.0"
   }
 }
