@@ -23,9 +23,19 @@ const microsoftStoreUrl = "https://apps.microsoft.com/detail/9NT3SV8SQ3KD";
 const faqTopics = ["schedule", "counting", "office", "call"];
 
 const entities: Record<string, string> = { nbsp: " ", amp: "&", lt: "<", gt: ">", quot: '"' };
-/** A locale string as text: its tags dropped and its named entities decoded. */
-const plainText = (html: string) =>
-  html.replace(/<[^>]*>/g, "").replace(/&(\w+);/g, (match, name) => entities[name] ?? match);
+/**
+ * A locale string as text: its tags dropped (again until none is left, so a removal can't join a new one) and its
+ * named entities decoded.
+ */
+const plainText = (html: string) => {
+  let text = html;
+  let previous;
+  do {
+    previous = text;
+    text = text.replace(/<[^>]*>/g, "");
+  } while (text !== previous);
+  return text.replace(/&(\w+);/g, (match, name) => entities[name] ?? match);
+};
 
 /**
  * The page's plumbing (every language's home page from `index.html`, the legal pages' links, the sitemap, the
@@ -59,9 +69,7 @@ const landing = companionLanding({
         return scriptJson(locales[language.code as LanguageCode].runtime);
       case "notFoundJson":
         return scriptJson(
-          Object.fromEntries(
-            languages.map(({ code, path }) => [code, { ...locales[code].notFound, path }]),
-          ),
+          Object.fromEntries(languages.map(({ code }) => [code, locales[code].notFound])),
         );
       default:
         return undefined;

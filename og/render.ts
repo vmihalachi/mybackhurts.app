@@ -54,9 +54,20 @@ function coverage(file: string) {
   return points;
 }
 
+/** `html` with its tags removed, again until none is left (one pass over `<a<b>>` leaves `<a>`). */
+function withoutTags(html: string): string {
+  let text = html;
+  let previous;
+  do {
+    previous = text;
+    text = text.replace(/<[^>]+>/g, "");
+  } while (text !== previous);
+  return text;
+}
+
 /** Every string in `value` (an object of copy), with HTML tags removed. */
 function strings(value: unknown): string[] {
-  if (typeof value === "string") return [value.replace(/<[^>]+>/g, "")];
+  if (typeof value === "string") return [withoutTags(value)];
   if (value && typeof value === "object") return Object.values(value).flatMap(strings);
   return [];
 }

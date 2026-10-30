@@ -1,19 +1,20 @@
+import { languages } from "./i18n/languages";
+
 // The host serves this one page for every missing URL, so pick the visitor's language here.
 const locales = JSON.parse(document.querySelector("#not-found-i18n")?.textContent ?? "{}");
 
 function pickLanguage() {
-  const codes = Object.keys(locales);
   const find = (wanted) => {
     const lower = wanted.toLowerCase();
     const base = lower.split("-")[0];
     return (
-      codes.find((code) => code.toLowerCase() === lower) ??
-      codes.find((code) => code.toLowerCase().split("-")[0] === base)
+      languages.find(({ code }) => code.toLowerCase() === lower) ??
+      languages.find(({ code }) => code.toLowerCase().split("-")[0] === base)
     );
   };
   const path = location.pathname.toLowerCase();
-  const fromPath = codes.find(
-    (code) => locales[code].path !== "/" && path.startsWith(locales[code].path),
+  const fromPath = languages.find(
+    (language) => language.path !== "/" && path.startsWith(language.path),
   );
   let saved = null;
   try {
@@ -26,15 +27,23 @@ function pickLanguage() {
   );
 }
 
-const code = pickLanguage();
-const locale = locales[code];
+const language = pickLanguage();
+const locale = language && locales[language.code];
 if (locale) {
-  document.documentElement.lang = code;
+  document.documentElement.lang = language.code;
   document.title = locale.metaTitle;
-  document.querySelector('[data-not-found="title"]').innerHTML = locale.title;
+  // The title's one tag is a line break: built as text and <br>, never parsed as HTML.
+  document
+    .querySelector('[data-not-found="title"]')
+    .replaceChildren(
+      ...locale.title
+        .split(/<br\s*\/?>/)
+        .flatMap((line, i) => (i ? [document.createElement("br"), line] : [line])),
+    );
   document.querySelector('[data-not-found="body"]').textContent = locale.body;
   const home = document.querySelector('[data-not-found="home"]');
   home.textContent = locale.home;
-  home.href = locale.path;
-  document.querySelector(".wordmark")?.setAttribute("href", locale.path);
+  // The links come from the build's own list, not from text on the page.
+  home.href = language.path;
+  document.querySelector(".wordmark")?.setAttribute("href", language.path);
 }
