@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import { Resvg } from "@resvg/resvg-js";
+import { icoFromPngs } from "@laching/landing";
 import type { Plugin } from "vite-plus";
 import { pdfFromPixels, posterRenderWidth, posterSvg, textWidth } from "./poster";
 
@@ -204,7 +205,7 @@ export function createRenderer(ogDir: string) {
 }
 
 /**
- * Renders link-preview images, PNG icons and the printable poster PDFs (`poster/<lang>.pdf`) from SVG
+ * Renders link-preview images, the icons (PNGs and `favicon.ico`) and the printable poster PDFs (`poster/<lang>.pdf`) from SVG
  * sources. They are emitted into the build output and served from memory by the dev server, so nothing
  * generated is committed.
  */
@@ -228,6 +229,11 @@ export function socialAssetsPlugin(options: {
   const render = () => {
     const icon = readFileSync(options.iconPath, "utf8");
     const files = new Map<string, Buffer>([
+      // Crawlers probe /favicon.ico whatever the page's icon links say.
+      [
+        "favicon.ico",
+        icoFromPngs([16, 32, 48].map((size) => ({ size, png: renderIcon(icon, size) }))),
+      ],
       ["favicon-32.png", renderIcon(icon, 32)],
       ["apple-touch-icon.png", renderIcon(icon, 180, { padded: true })],
       ["icon-192.png", renderIcon(icon, 192, { padded: true })],
@@ -252,11 +258,16 @@ export function socialAssetsPlugin(options: {
           res.end(poster(lang));
           return;
         }
-        if (!name?.endsWith(".png")) return next();
+        const contentType = name?.endsWith(".png")
+          ? "image/png"
+          : name?.endsWith(".ico")
+            ? "image/x-icon"
+            : undefined;
+        if (!name || !contentType) return next();
         assets ??= render();
         const file = assets.get(name);
         if (!file) return next();
-        res.setHeader("Content-Type", "image/png");
+        res.setHeader("Content-Type", contentType);
         res.end(file);
       });
     },
