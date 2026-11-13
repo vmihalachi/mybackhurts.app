@@ -97,7 +97,7 @@
       "id": "overhead-side-reach",
       "name": "Overhead Side Reach",
       "goal": 15,
-      "cameraTracked": false,
+      "cameraTracked": true,
       "supporter": true
     }
   ],
