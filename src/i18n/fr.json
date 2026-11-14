@@ -132,7 +132,7 @@
     },
     "wrist": {
       "name": "Étirement poignets et avant-bras",
-      "counter": "s <span>restantes</span>",
+      "counter": "s <span>gauche</span>",
       "figureTitle": "Un bonhomme bâton qui tend un bras et tire doucement ses doigts vers lui.",
       "description": "Bras tendu, doigts vers le haut, ramène-les doucement avec l’autre main. 15 secondes par côté."
     },
@@ -154,6 +154,36 @@
       "cut": "découper ici",
       "link": "Imprime l’antisèche",
       "meta": "PDF · une page"
+    },
+    "backExtension": {
+      "name": "Cambrure debout",
+      "counter": "/ 40 s",
+      "figureTitle": "Un bonhomme bâton, les mains dans le bas du dos, penché doucement en arrière.",
+      "description": "Mains dans le bas du dos, penche-toi doucement en arrière. Le contraire de rester assis."
+    },
+    "hipFlexor": {
+      "name": "Étirement des fléchisseurs de hanche debout",
+      "counter": "s <span>gauche</span>",
+      "figureTitle": "Un bonhomme bâton qui tient le bureau, un pied reculé, le bassin rentré.",
+      "description": "Tiens le bureau, recule un pied, rentre le bassin. 20 secondes par côté."
+    },
+    "figureFour": {
+      "name": "Étirement du quatre assis",
+      "counter": "s <span>gauche</span>",
+      "figureTitle": "Un bonhomme bâton sur un tabouret, une cheville posée sur l’autre genou.",
+      "description": "Cheville sur l’autre genou, dos droit, penche-toi un peu en avant. 20 secondes par côté."
+    },
+    "chinTuck": {
+      "name": "Rentrer le menton",
+      "counter": "/ 40 s",
+      "figureTitle": "Un bonhomme bâton sur un tabouret qui recule la tête tout droit.",
+      "description": "Recule le menton tout droit, regard à l’horizontale. Oui, un double menton."
+    },
+    "wristCircles": {
+      "name": "Cercles de poignets",
+      "counter": "/ 30 s",
+      "figureTitle": "Un bonhomme bâton qui dessine de petits cercles avec les deux poings.",
+      "description": "Poings détendus, cercles lents, puis dans l’autre sens."
     }
   },
   "modes": {
@@ -265,6 +295,10 @@
     "title": "Lève-toi. Fais ceux-là.",
     "subtitle": "Des mouvements pour l’espace à côté de ton bureau. Colle ça sur ton écran.",
     "neckDose": "15 s de chaque côté",
+    "hipDose": "20 s de chaque côté",
+    "backExtensionDose": "8 répétitions",
+    "chinTuckDose": "10 répétitions",
+    "wristCirclesDose": "10 répétitions",
     "handNote": "oui, maintenant."
   },
   "runtime": {

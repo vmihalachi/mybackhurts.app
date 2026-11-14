@@ -170,18 +170,61 @@ const poses: Record<string, string> = {
     <circle class="head" cx="34" cy="44" r="11" />
     <path class="thin" d="M39 39 L39.6 42.7" />
     <path class="thin pink dashed" d="M50 38 L96 28" />`,
+  backExtension: `
+    <path d="M4 161 L136 160" />
+    <path d="M80 158 L70 158 L74 100 L46.8 48.8" />
+    <path d="M53.3 61.2 L49.5 88.1 L67.6 94.3" />
+    <circle class="head" cx="39.7" cy="39.1" r="11" />
+    <path class="thin pink dashed" d="M28.2 56.4 Q27.7 72.5 40.5 83.8" />`,
+  hipFlexor: `
+    <path d="M4 161 L136 160" />
+    <path class="thin" d="M100 82 L136 82 M130 82 L130 160" />
+    <path d="M35 157 L26 150 L50.6 132.8 L64 106 L85.2 127.2 L82 157 L92 157" />
+    <path d="M104 81 L79.4 76.5 L62 60 L70 86 L72 102" />
+    <path d="M64 106 L64 48" />
+    <circle class="head" cx="64" cy="36" r="11" />
+    <path class="thin pink dashed" d="M66.7 114 L57.3 132.8" />`,
+  figureFour: `
+    <path d="M4 161 L136 160" />
+    <path class="thin" d="M38 118 L102 118 M42 118 L40 160 M98 118 L100 160" />
+    <path d="M70 112 L70 58" />
+    <path d="M70 112 L84 120 L84 158 M70 112 L32 134 L86 117 L98 113" />
+    <path d="M52 71 L38 99 L34 128 M88 71 L98 95 L90 113 M52 71 L88 71" />
+    <circle class="head" cx="70" cy="53.5" r="11" />
+    <path class="thin pink dashed" d="M22 128 Q20 112 34 106" />`,
+  chinTuck: `
+    <path d="M4 161 L136 160" />
+    <path class="thin" d="M30 112 L62 112 M34 112 L32 160 M58 112 L60 160" />
+    <path d="M46 60 L46 108 M46 108 L82 108 M82 108 L82 157 L92 157 M46 66 L50 90 L58 110" />
+    <path d="M46 62 L43.6 50.2" />
+    <circle class="head" cx="45" cy="44" r="11" />
+    <path class="thin pink" d="M78 44 L64 44 M64 44 L68 40 M64 44 L68 48" />`,
+  wristCircles: `
+    <path d="M4 161 L136 160" />
+    <circle class="head" cx="70" cy="30" r="11" />
+    <path d="M70 42 L70 100 M52 54 L88 54 M70 100 L58 158 M70 100 L82 158" />
+    <path d="M52 54 L38 90 L54.8 78.8 M88 54 L102 90 L85.2 78.8" />
+    <circle class="thin pink dashed" cx="52" cy="76" r="10" />
+    <circle class="thin pink dashed" cx="88" cy="76" r="10" />
+    <circle class="head" cx="54.8" cy="78.8" r="5" />
+    <circle class="head" cx="85.2" cy="78.8" r="5" />`,
 };
 
 // Two columns, read top to bottom: the standing moves, then the ones for the desk and chair.
 const columns = [
-  ["squat", "calf", "march", "arms", "chest", "shrugs"],
-  ["neck", "wrist", "eye", "seatedCalf", "seatedMarch"],
+  ["squat", "calf", "march", "backExtension", "hipFlexor", "arms", "chest", "shrugs"],
+  ["neck", "chinTuck", "wrist", "wristCircles", "eye", "seatedCalf", "seatedMarch", "figureFour"],
 ] as const;
 const weekdays = ["mon", "tue", "wed", "thu", "fri"] as const;
 
 function doseFor(moves: Copy, poster: Copy, key: string) {
   if (key === "neck" || key === "wrist") return poster.neckDose as string;
-  // The seated versions run on a timer in the app, but the sheet gives their reps.
+  if (key === "hipFlexor" || key === "figureFour") return poster.hipDose as string;
+  // These run on a timer in the app (their cards count seconds), but the sheet gives their reps.
+  if (key === "backExtension" || key === "chinTuck" || key === "wristCircles") {
+    return poster[`${key}Dose`] as string;
+  }
+  // So do the seated versions, whose reps are their standing versions'.
   const source = { seatedCalf: "calf", seatedMarch: "march" }[key] ?? key;
   return String(moves[source].counter).replace(/^\/\s*/, "");
 }
@@ -195,13 +238,17 @@ export function posterSvg(locale: Copy, lang: string) {
     .filter(Boolean)
     .map(upper);
 
-  const rowTop = 520;
-  const rowHeight = 182;
+  // Eight rows a column: the title, the rows and the tick boxes are sized to fit them on one page.
+  const titleTop = 222;
+  const titleStep = 84;
+  const rowTop = 470;
+  const rowHeight = 144;
+  const rowCount = Math.max(...columns.map((keys) => keys.length));
   const gap = 44;
   const columnWidth = (width - 2 * margin - gap) / 2;
-  const figureWidth = 138;
+  const figureWidth = 112;
   const textWidth = columnWidth - figureWidth;
-  const boxStep = 24;
+  const boxStep = 20;
 
   const rows = columns
     .flatMap((keys, column) =>
@@ -209,46 +256,49 @@ export function posterSvg(locale: Copy, lang: string) {
         const x = margin + column * (columnWidth + gap);
         const y = rowTop + index * rowHeight;
         const textX = x + figureWidth;
-        let bodySize = 20;
+        let bodySize = 18;
         let lines = wrap(moves[key].description, bodySize, textWidth);
         if (lines.length > 3) {
-          bodySize = 17;
+          bodySize = 16;
           lines = wrap(moves[key].description, bodySize, textWidth);
         }
         const description = lines
           .map(
             (line, i) =>
-              `<tspan x="${textX}" dy="${i === 0 ? 0 : Math.round(bodySize * 1.3)}">${escapeXml(line)}</tspan>`,
+              `<tspan x="${textX}" dy="${i === 0 ? 0 : Math.round(bodySize * 1.22)}">${escapeXml(line)}</tspan>`,
           )
           .join("");
         const boxes = weekdays
           .map((day, i) => {
             const bx = x + 2 + i * boxStep;
-            return `<rect x="${bx}" y="${y + 150}" width="19" height="19" rx="2" />
-            <text class="day" x="${bx + 9.5}" y="${y + 145}">${escapeXml(stats.days[day])}</text>`;
+            return `<rect x="${bx}" y="${y + 121}" width="16" height="16" rx="2" />
+            <text class="day" x="${bx + 8}" y="${y + 117}">${escapeXml(stats.days[day])}</text>`;
           })
           .join("");
         const separator =
           index < keys.length - 1
             ? `<path class="dash" d="M${x} ${y + rowHeight - 3} L${x + columnWidth} ${y + rowHeight - 3}" />`
             : "";
+        // The hidden rect gives every figure the same bounding box, so the wobble filter's region
+        // doesn't follow the pose: resvg panics on some regions (the hip flexor's, at this size).
         return `
-        <g transform="translate(${x + 4} ${y + 2}) scale(0.76)">
+        <g transform="translate(${x + 4} ${y + 4}) scale(0.6)">
           <circle cx="70" cy="92" r="70" fill="url(#halftone)" />
           <g class="fig">
+            <rect width="140" height="170" visibility="hidden" />
             <g class="shadow" transform="translate(2 1.5)">${poses[key]}</g>
             <g>${poses[key]}</g>
           </g>
         </g>
-        <text class="name" x="${textX}" y="${y + 36}" font-size="${fitMono(upper(moves[key].name), 27, textWidth, 1)}">${escapeXml(upper(moves[key].name))}</text>
-        <text class="dose" x="${textX}" y="${y + 72}">${escapeXml(upper(doseFor(moves, poster, key)))}</text>
-        <text class="body" x="${textX}" y="${y + 104}" font-size="${bodySize}">${description}</text>
+        <text class="name" x="${textX}" y="${y + 28}" font-size="${fitMono(upper(moves[key].name), 25, textWidth, 1)}">${escapeXml(upper(moves[key].name))}</text>
+        <text class="dose" x="${textX}" y="${y + 58}">${escapeXml(upper(doseFor(moves, poster, key)))}</text>
+        <text class="body" x="${textX}" y="${y + 84}" font-size="${bodySize}">${description}</text>
         <g class="boxes">${boxes}</g>
         ${separator}`;
       }),
     )
     .join("");
-  const columnRule = `<path class="dash" d="M${width / 2} ${rowTop} L${width / 2} ${rowTop + 6 * rowHeight - 12}" />`;
+  const columnRule = `<path class="dash" d="M${width / 2} ${rowTop} L${width / 2} ${rowTop + rowCount * rowHeight - 12}" />`;
 
   const subtitle = wrap(poster.subtitle, 27, width - 2 * margin)
     .map((line, i) => `<tspan x="${margin}" dy="${i === 0 ? 0 : 38}">${escapeXml(line)}</tspan>`)
@@ -258,7 +308,7 @@ export function posterSvg(locale: Copy, lang: string) {
     titleLines
       .map(
         (line, i) =>
-          `<text x="${margin + dx}" y="${250 + i * 96 + dy}" fill="${fill}">${escapeXml(line)}</text>`,
+          `<text x="${margin + dx}" y="${titleTop + i * titleStep + dy}" fill="${fill}">${escapeXml(line)}</text>`,
       )
       .join("");
 
@@ -280,10 +330,10 @@ export function posterSvg(locale: Copy, lang: string) {
       .fig .shadow, .fig .shadow .pink { stroke: ${pinkSoft}; }
       .fig .shadow .head { fill: none; }
       .name { font-family: "Courier Prime"; font-weight: 700; letter-spacing: 1px; fill: ${ink}; }
-      .dose { font-family: "Zine Display"; font-size: 25px; fill: ${pinkText}; }
+      .dose { font-family: "Zine Display"; font-size: 23px; fill: ${pinkText}; }
       .body { font-family: "Courier Prime"; fill: ${ink}; }
       .boxes rect { fill: none; stroke: ${ink}; stroke-width: 2.5; }
-      .day { font-family: "Courier Prime"; font-weight: 700; font-size: 13px; fill: ${inkSoft}; text-anchor: middle; }
+      .day { font-family: "Courier Prime"; font-weight: 700; font-size: 12px; fill: ${inkSoft}; text-anchor: middle; }
       .dash { stroke: ${ink}; stroke-width: 2; stroke-dasharray: 6 8; opacity: 0.45; }
     </style>
   </defs>
@@ -294,21 +344,21 @@ export function posterSvg(locale: Copy, lang: string) {
     <text x="${margin + 12}" y="108" font-family="Courier Prime" font-weight="700" font-size="24" letter-spacing="4" fill="${ink}">MYBACKHURTS.APP</text>
   </g>
 
-  <g font-family="Zine Display" font-size="84">
+  <g font-family="Zine Display" font-size="76">
     ${title(pink, 6, 5)}
     ${title(ink)}
   </g>
   <text x="${width - margin}" y="118" text-anchor="end" font-family="Reenie Beanie" font-size="64" fill="${pinkText}" transform="rotate(-5 ${width - margin} 118)">${escapeXml(poster.handNote)}</text>
 
-  <text font-family="Courier Prime" font-size="27" fill="${ink}" y="${250 + titleLines.length * 96}">${subtitle}</text>
-  <path d="M${margin} ${rowTop - 30} L${width - margin} ${rowTop - 32}" stroke="${ink}" stroke-width="4" stroke-linecap="round" />
+  <text font-family="Courier Prime" font-size="27" fill="${ink}" y="${titleTop + titleLines.length * titleStep}">${subtitle}</text>
+  <path d="M${margin} ${rowTop - 26} L${width - margin} ${rowTop - 28}" stroke="${ink}" stroke-width="4" stroke-linecap="round" />
 
   ${rows}
   ${columnRule}
 
-  <path d="M${margin} ${height - 120} L${width - margin} ${height - 122}" stroke="${ink}" stroke-width="3" stroke-linecap="round" />
-  <text x="${margin}" y="${height - 76}" font-family="Courier Prime" font-size="${fitMono(footer.medical, 21, width - 2 * margin - 260)}" fill="${inkSoft}">${escapeXml(footer.medical)}</text>
-  <text x="${width - margin}" y="${height - 76}" text-anchor="end" font-family="Courier Prime" font-weight="700" font-size="22" fill="${ink}">mybackhurts.app</text>
+  <path d="M${margin} ${height - 110} L${width - margin} ${height - 112}" stroke="${ink}" stroke-width="3" stroke-linecap="round" />
+  <text x="${margin}" y="${height - 68}" font-family="Courier Prime" font-size="${fitMono(footer.medical, 21, width - 2 * margin - 260)}" fill="${inkSoft}">${escapeXml(footer.medical)}</text>
+  <text x="${width - margin}" y="${height - 68}" text-anchor="end" font-family="Courier Prime" font-weight="700" font-size="22" fill="${ink}">mybackhurts.app</text>
 </svg>`;
 }
 

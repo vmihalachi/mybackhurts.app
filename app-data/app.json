@@ -99,6 +99,44 @@
       "goal": 15,
       "cameraTracked": true,
       "supporter": true
+    },
+    {
+      "id": "chin-tuck",
+      "name": "Chin Tuck",
+      "goal": 10,
+      "timerSeconds": 40,
+      "cameraTracked": false,
+      "supporter": false
+    },
+    {
+      "id": "standing-back-extension",
+      "name": "Standing Back Extension",
+      "goal": 8,
+      "timerSeconds": 40,
+      "cameraTracked": false,
+      "supporter": false
+    },
+    {
+      "id": "seated-figure-four",
+      "name": "Seated Figure-Four Stretch",
+      "goal": 20,
+      "cameraTracked": false,
+      "supporter": false
+    },
+    {
+      "id": "standing-hip-flexor-stretch",
+      "name": "Standing Hip Flexor Stretch",
+      "goal": 20,
+      "cameraTracked": false,
+      "supporter": false
+    },
+    {
+      "id": "wrist-circles",
+      "name": "Wrist Circles",
+      "goal": 10,
+      "timerSeconds": 30,
+      "cameraTracked": false,
+      "supporter": false
     }
   ],
   "defaultIntervalMinutes": 45,
@@ -117,7 +155,12 @@
       "20-20-20 Eye Break": "Oční pauza 20-20-20",
       "Seated Spinal Twist": "Rotace páteře vsedě",
       "Standing Quad Stretch": "Protažení stehna ve stoje",
-      "Overhead Side Reach": "Úklon s paží nad hlavou"
+      "Overhead Side Reach": "Úklon s paží nad hlavou",
+      "Chin Tuck": "Zasunutí brady",
+      "Standing Back Extension": "Záklon ve stoje",
+      "Seated Figure-Four Stretch": "Protažení boku vsedě",
+      "Standing Hip Flexor Stretch": "Protažení kyčelního ohýbače ve stoje",
+      "Wrist Circles": "Kroužení zápěstími"
     },
     "da": {
       "Chair Squat": "Stolesquat",
@@ -133,7 +176,12 @@
       "20-20-20 Eye Break": "20-20-20 øjenpause",
       "Seated Spinal Twist": "Siddende rygvrid",
       "Standing Quad Stretch": "Stående forlårsstræk",
-      "Overhead Side Reach": "Sidestræk over hovedet"
+      "Overhead Side Reach": "Sidestræk over hovedet",
+      "Chin Tuck": "Hageindtræk",
+      "Standing Back Extension": "Stående rygstræk bagud",
+      "Seated Figure-Four Stretch": "Siddende hoftestræk",
+      "Standing Hip Flexor Stretch": "Stående hoftebøjerstræk",
+      "Wrist Circles": "Håndledscirkler"
     },
     "de": {
       "Chair Squat": "Stuhl-Kniebeuge",
@@ -149,7 +197,12 @@
       "20-20-20 Eye Break": "20-20-20-Augenpause",
       "Seated Spinal Twist": "Wirbelsäulendrehung im Sitzen",
       "Standing Quad Stretch": "Oberschenkeldehnung im Stehen",
-      "Overhead Side Reach": "Seitdehnung über Kopf"
+      "Overhead Side Reach": "Seitdehnung über Kopf",
+      "Chin Tuck": "Kinn einziehen",
+      "Standing Back Extension": "Rückbeuge im Stehen",
+      "Seated Figure-Four Stretch": "Hüftdehnung im Sitzen",
+      "Standing Hip Flexor Stretch": "Hüftbeuger-Dehnung im Stehen",
+      "Wrist Circles": "Handgelenke kreisen"
     },
     "es": {
       "Chair Squat": "Sentadilla con silla",
@@ -165,7 +218,12 @@
       "20-20-20 Eye Break": "Descanso visual 20-20-20",
       "Seated Spinal Twist": "Torsión de columna sentado",
       "Standing Quad Stretch": "Estiramiento de cuádriceps de pie",
-      "Overhead Side Reach": "Estiramiento lateral con brazo arriba"
+      "Overhead Side Reach": "Estiramiento lateral con brazo arriba",
+      "Chin Tuck": "Retracción de barbilla",
+      "Standing Back Extension": "Extensión de espalda de pie",
+      "Seated Figure-Four Stretch": "Estiramiento de cadera sentado",
+      "Standing Hip Flexor Stretch": "Estiramiento de flexores de cadera de pie",
+      "Wrist Circles": "Círculos de muñeca"
     },
     "fr": {
       "Chair Squat": "Squat sur chaise",
@@ -181,7 +239,12 @@
       "20-20-20 Eye Break": "Pause yeux 20-20-20",
       "Seated Spinal Twist": "Torsion du dos assis",
       "Standing Quad Stretch": "Étirement des quadriceps debout",
-      "Overhead Side Reach": "Étirement latéral bras levé"
+      "Overhead Side Reach": "Étirement latéral bras levé",
+      "Chin Tuck": "Rentrer le menton",
+      "Standing Back Extension": "Cambrure debout",
+      "Seated Figure-Four Stretch": "Étirement du quatre assis",
+      "Standing Hip Flexor Stretch": "Étirement des fléchisseurs de hanche debout",
+      "Wrist Circles": "Cercles de poignets"
     },
     "it": {
       "Chair Squat": "Squat sulla sedia",
@@ -197,7 +260,12 @@
       "20-20-20 Eye Break": "Pausa occhi 20-20-20",
       "Seated Spinal Twist": "Torsione della colonna da seduto",
       "Standing Quad Stretch": "Allungamento del quadricipite in piedi",
-      "Overhead Side Reach": "Allungamento laterale sopra la testa"
+      "Overhead Side Reach": "Allungamento laterale sopra la testa",
+      "Chin Tuck": "Mento indietro",
+      "Standing Back Extension": "Estensione della schiena in piedi",
+      "Seated Figure-Four Stretch": "Allungamento a figura di quattro da seduto",
+      "Standing Hip Flexor Stretch": "Allungamento dei flessori dell'anca in piedi",
+      "Wrist Circles": "Cerchi con i polsi"
     },
     "ja": {
       "Chair Squat": "チェアスクワット",
@@ -213,7 +281,12 @@
       "20-20-20 Eye Break": "20-20-20 目の休憩",
       "Seated Spinal Twist": "座りツイスト",
       "Standing Quad Stretch": "立ち前ももストレッチ",
-      "Overhead Side Reach": "頭上サイドリーチ"
+      "Overhead Side Reach": "頭上サイドリーチ",
+      "Chin Tuck": "あご引き",
+      "Standing Back Extension": "立ち背反らし",
+      "Seated Figure-Four Stretch": "座って4の字ストレッチ",
+      "Standing Hip Flexor Stretch": "立ち股関節の前ストレッチ",
+      "Wrist Circles": "手首回し"
     },
     "ko": {
       "Chair Squat": "의자 스쿼트",
@@ -229,7 +302,12 @@
       "20-20-20 Eye Break": "20-20-20 눈 휴식",
       "Seated Spinal Twist": "앉아서 척추 비틀기",
       "Standing Quad Stretch": "서서 허벅지 앞쪽 스트레칭",
-      "Overhead Side Reach": "머리 위 옆구리 늘이기"
+      "Overhead Side Reach": "머리 위 옆구리 늘이기",
+      "Chin Tuck": "턱 당기기",
+      "Standing Back Extension": "서서 허리 젖히기",
+      "Seated Figure-Four Stretch": "앉아서 4자 스트레칭",
+      "Standing Hip Flexor Stretch": "서서 엉덩이 앞쪽 스트레칭",
+      "Wrist Circles": "손목 돌리기"
     },
     "nb": {
       "Chair Squat": "Stolknebøy",
@@ -245,7 +323,12 @@
       "20-20-20 Eye Break": "20-20-20 øyepause",
       "Seated Spinal Twist": "Sittende ryggvridning",
       "Standing Quad Stretch": "Stående lårstrekk",
-      "Overhead Side Reach": "Sidestrekk over hodet"
+      "Overhead Side Reach": "Sidestrekk over hodet",
+      "Chin Tuck": "Haketrekk",
+      "Standing Back Extension": "Stående ryggbøy",
+      "Seated Figure-Four Stretch": "Sittende figur-4-strekk",
+      "Standing Hip Flexor Stretch": "Stående hoftebøyerstrekk",
+      "Wrist Circles": "Håndleddsirkler"
     },
     "nl": {
       "Chair Squat": "Stoelsquat",
@@ -261,7 +344,12 @@
       "20-20-20 Eye Break": "20-20-20 oogpauze",
       "Seated Spinal Twist": "Zittende rugdraai",
       "Standing Quad Stretch": "Staande quadricepsstrek",
-      "Overhead Side Reach": "Zijwaartse strek boven het hoofd"
+      "Overhead Side Reach": "Zijwaartse strek boven het hoofd",
+      "Chin Tuck": "Kin intrekken",
+      "Standing Back Extension": "Staande rugbuiging",
+      "Seated Figure-Four Stretch": "Zittende vier-rek",
+      "Standing Hip Flexor Stretch": "Staande heupbuigerrek",
+      "Wrist Circles": "Polscirkels"
     },
     "pl": {
       "Chair Squat": "Przysiad z krzesłem",
@@ -277,7 +365,12 @@
       "20-20-20 Eye Break": "Przerwa dla oczu 20-20-20",
       "Seated Spinal Twist": "Skręt kręgosłupa na siedząco",
       "Standing Quad Stretch": "Rozciąganie uda na stojąco",
-      "Overhead Side Reach": "Skłon w bok z ręką w górze"
+      "Overhead Side Reach": "Skłon w bok z ręką w górze",
+      "Chin Tuck": "Cofnięcie brody",
+      "Standing Back Extension": "Wyprost pleców na stojąco",
+      "Seated Figure-Four Stretch": "Rozciąganie „czwórka” na siedząco",
+      "Standing Hip Flexor Stretch": "Rozciąganie bioder na stojąco",
+      "Wrist Circles": "Krążenia nadgarstków"
     },
     "pt-BR": {
       "Chair Squat": "Agachamento na cadeira",
@@ -293,7 +386,12 @@
       "20-20-20 Eye Break": "Pausa 20-20-20 para os olhos",
       "Seated Spinal Twist": "Torção da coluna sentado",
       "Standing Quad Stretch": "Alongamento de quadríceps em pé",
-      "Overhead Side Reach": "Alongamento lateral com braço acima"
+      "Overhead Side Reach": "Alongamento lateral com braço acima",
+      "Chin Tuck": "Recuo do queixo",
+      "Standing Back Extension": "Extensão de costas em pé",
+      "Seated Figure-Four Stretch": "Alongamento em figura 4 sentado",
+      "Standing Hip Flexor Stretch": "Alongamento do quadril em pé",
+      "Wrist Circles": "Círculos com os punhos"
     },
     "ro": {
       "Chair Squat": "Genuflexiune la scaun",
@@ -309,7 +407,12 @@
       "20-20-20 Eye Break": "Pauza pentru ochi 20-20-20",
       "Seated Spinal Twist": "Răsucire a coloanei pe scaun",
       "Standing Quad Stretch": "Întinderea cvadricepșilor în picioare",
-      "Overhead Side Reach": "Întindere laterală cu brațul sus"
+      "Overhead Side Reach": "Întindere laterală cu brațul sus",
+      "Chin Tuck": "Retragerea bărbiei",
+      "Standing Back Extension": "Extensie de spate în picioare",
+      "Seated Figure-Four Stretch": "Întindere în figura 4 pe scaun",
+      "Standing Hip Flexor Stretch": "Întinderea flexorilor șoldului",
+      "Wrist Circles": "Cercuri cu încheieturile"
     },
     "sv": {
       "Chair Squat": "Knäböj med stol",
@@ -325,7 +428,12 @@
       "20-20-20 Eye Break": "20-20-20-ögonpaus",
       "Seated Spinal Twist": "Sittande ryggvridning",
       "Standing Quad Stretch": "Stående lårstretch",
-      "Overhead Side Reach": "Sidoräck över huvudet"
+      "Overhead Side Reach": "Sidoräck över huvudet",
+      "Chin Tuck": "Hakindragning",
+      "Standing Back Extension": "Ryggextension stående",
+      "Seated Figure-Four Stretch": "Figur fyra-stretch sittande",
+      "Standing Hip Flexor Stretch": "Höftböjarstretch stående",
+      "Wrist Circles": "Handledscirklar"
     },
     "tr": {
       "Chair Squat": "Sandalyeli Çömelme",
@@ -341,7 +449,12 @@
       "20-20-20 Eye Break": "20-20-20 Göz Molası",
       "Seated Spinal Twist": "Oturarak Omurga Bükme",
       "Standing Quad Stretch": "Ayakta Ön Uyluk Esnetme",
-      "Overhead Side Reach": "Başın Üstünden Yana Uzanma"
+      "Overhead Side Reach": "Başın Üstünden Yana Uzanma",
+      "Chin Tuck": "Çene Geri Çekme",
+      "Standing Back Extension": "Ayakta Bel Geriye Esneme",
+      "Seated Figure-Four Stretch": "Oturarak 4 Esnetmesi",
+      "Standing Hip Flexor Stretch": "Ayakta Kalça Önü Esnetme",
+      "Wrist Circles": "Bilek Çevirme"
     },
     "zh-Hans": {
       "Chair Squat": "椅子深蹲",
@@ -357,7 +470,12 @@
       "20-20-20 Eye Break": "20-20-20 护眼休息",
       "Seated Spinal Twist": "坐姿脊柱扭转",
       "Standing Quad Stretch": "站姿股四头肌拉伸",
-      "Overhead Side Reach": "举臂侧伸展"
+      "Overhead Side Reach": "举臂侧伸展",
+      "Chin Tuck": "收下巴",
+      "Standing Back Extension": "站姿后伸",
+      "Seated Figure-Four Stretch": "坐姿4字拉伸",
+      "Standing Hip Flexor Stretch": "站姿髋屈肌拉伸",
+      "Wrist Circles": "手腕绕圈"
     }
   }
 }

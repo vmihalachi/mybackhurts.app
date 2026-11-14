@@ -164,6 +164,36 @@
       "cut": "여기를 자르세요",
       "link": "요약 포스터 인쇄하기",
       "meta": "PDF · 한 페이지"
+    },
+    "backExtension": {
+      "name": "서서 허리 젖히기",
+      "counter": "/ 40초",
+      "figureTitle": "두 손을 허리에 대고 살살 뒤로 젖히는 막대 인간.",
+      "description": "두 손을 허리에 대고 살살 뒤로 젖혀 보세요. 앉아 있는 자세의 반대예요."
+    },
+    "hipFlexor": {
+      "name": "서서 엉덩이 앞쪽 스트레칭",
+      "counter": "초 <span>왼쪽</span>",
+      "figureTitle": "책상을 잡고 한 발을 뒤로 빼 골반을 만 막대 인간.",
+      "description": "책상을 잡고 한 발을 뒤로 빼고 골반을 말아요. 한쪽당 20초."
+    },
+    "figureFour": {
+      "name": "앉아서 4자 스트레칭",
+      "counter": "초 <span>왼쪽</span>",
+      "figureTitle": "스툴에 앉아 한쪽 발목을 반대쪽 무릎에 올린 막대 인간.",
+      "description": "발목을 반대쪽 무릎에 올리고 허리를 편 채 살짝 앞으로 숙여요. 한쪽당 20초."
+    },
+    "chinTuck": {
+      "name": "턱 당기기",
+      "counter": "/ 40초",
+      "figureTitle": "스툴에 앉아 머리를 곧게 뒤로 당기는 막대 인간.",
+      "description": "턱을 곧게 뒤로, 시선은 정면. 네, 이중턱 맞아요."
+    },
+    "wristCircles": {
+      "name": "손목 돌리기",
+      "counter": "/ 30초",
+      "figureTitle": "두 주먹으로 작은 원을 그리는 막대 인간.",
+      "description": "주먹을 느슨하게 쥐고 천천히 돌리고, 반대 방향으로도 돌려요."
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "일어나세요. 이거 하세요.",
     "subtitle": "책상 옆 공간에서 할 수 있는 동작들. 모니터에 붙여 두세요.",
     "neckDose": "한쪽당 15초",
+    "hipDose": "한쪽당 20초",
+    "backExtensionDose": "8회",
+    "chinTuckDose": "10회",
+    "wristCirclesDose": "10회",
     "handNote": "네, 지금 바로요."
   },
   "runtime": {

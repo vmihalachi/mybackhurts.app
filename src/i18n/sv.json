@@ -142,7 +142,7 @@
     },
     "wrist": {
       "name": "Handleds- och underarmsstretch",
-      "counter": "s <span>kvar</span>",
+      "counter": "s <span>vänster</span>",
       "figureTitle": "En streckgubbe som sträcker ut en arm och försiktigt drar tillbaka fingrarna.",
       "description": "Armen ut, fingrarna upp, lirka dem bakåt med andra handen. 15 sekunder per sida."
     },
@@ -164,6 +164,36 @@
       "cut": "klipp här",
       "link": "Skriv ut fusklappen",
       "meta": "PDF · en sida"
+    },
+    "backExtension": {
+      "name": "Ryggextension stående",
+      "counter": "/ 40 s",
+      "figureTitle": "En pinngubbe med händerna på nedre ryggen som lutar sig försiktigt bakåt.",
+      "description": "Händerna på nedre ryggen, luta dig försiktigt bakåt. Raka motsatsen till att sitta."
+    },
+    "hipFlexor": {
+      "name": "Höftböjarstretch stående",
+      "counter": "s <span>vänster</span>",
+      "figureTitle": "En pinngubbe som håller i skrivbordet med ena foten bakåt och bäckenet under sig.",
+      "description": "Håll i skrivbordet, kliv bakåt, rulla bäckenet under dig. 20 sekunder per sida."
+    },
+    "figureFour": {
+      "name": "Figur fyra-stretch sittande",
+      "counter": "s <span>vänster</span>",
+      "figureTitle": "En pinngubbe på en pall med ena fotleden vilande på det andra knät.",
+      "description": "Fotleden på andra knät, sitt rak, luta dig lite framåt. 20 sekunder per sida."
+    },
+    "chinTuck": {
+      "name": "Hakindragning",
+      "counter": "/ 40 s",
+      "figureTitle": "En pinngubbe på en pall som drar huvudet rakt bakåt.",
+      "description": "Dra hakan rakt bakåt, blicken rakt fram. Ja, det blir dubbelhaka."
+    },
+    "wristCircles": {
+      "name": "Handledscirklar",
+      "counter": "/ 30 s",
+      "figureTitle": "En pinngubbe som ritar små cirklar med båda knytnävarna.",
+      "description": "Lösa nävar, långsamma cirklar, sedan åt andra hållet."
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "Res dig upp. Gör det här.",
     "subtitle": "Rörelser för utrymmet bredvid skrivbordet. Tejpa upp den här på skärmen.",
     "neckDose": "15 s per sida",
+    "hipDose": "20 s per sida",
+    "backExtensionDose": "8 repetitioner",
+    "chinTuckDose": "10 repetitioner",
+    "wristCirclesDose": "10 repetitioner",
     "handNote": "ja, just nu."
   },
   "runtime": {

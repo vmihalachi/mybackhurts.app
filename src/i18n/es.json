@@ -132,7 +132,7 @@
     },
     "wrist": {
       "name": "Estiramiento de muñeca y antebrazo",
-      "counter": "s <span>restantes</span>",
+      "counter": "s <span>izquierda</span>",
       "figureTitle": "Una figura de palitos estirando un brazo y tirando suavemente de los dedos hacia atrás.",
       "description": "Brazo estirado, dedos arriba, llévalos suavemente atrás con la otra mano. 15 segundos por lado."
     },
@@ -154,6 +154,36 @@
       "cut": "recorta aquí",
       "link": "Imprime la chuleta",
       "meta": "PDF · una página"
+    },
+    "backExtension": {
+      "name": "Extensión de espalda de pie",
+      "counter": "/ 40 s",
+      "figureTitle": "Un monigote con las manos en la zona lumbar se inclina hacia atrás con suavidad.",
+      "description": "Manos en la zona lumbar, inclínate hacia atrás con suavidad. Lo contrario de estar sentado."
+    },
+    "hipFlexor": {
+      "name": "Estiramiento de flexores de cadera de pie",
+      "counter": "s <span>izquierda</span>",
+      "figureTitle": "Un monigote agarrado al escritorio, con un pie atrás y la pelvis metida.",
+      "description": "Agárrate al escritorio, da un paso atrás, mete la pelvis. 20 segundos por lado."
+    },
+    "figureFour": {
+      "name": "Estiramiento de cadera sentado",
+      "counter": "s <span>izquierda</span>",
+      "figureTitle": "Un monigote en un taburete con un tobillo apoyado en la rodilla contraria.",
+      "description": "Tobillo en la otra rodilla, espalda recta, inclínate un poco hacia delante. 20 segundos por lado."
+    },
+    "chinTuck": {
+      "name": "Retracción de barbilla",
+      "counter": "/ 40 s",
+      "figureTitle": "Un monigote en un taburete desliza la cabeza recto hacia atrás.",
+      "description": "Desliza la barbilla recto hacia atrás, mirada al frente. Sí, papada."
+    },
+    "wristCircles": {
+      "name": "Círculos de muñeca",
+      "counter": "/ 30 s",
+      "figureTitle": "Un monigote dibuja círculos pequeños con los dos puños.",
+      "description": "Puños sueltos, círculos lentos y luego al revés."
     }
   },
   "modes": {
@@ -265,6 +295,10 @@
     "title": "Levántate. Haz estos.",
     "subtitle": "Movimientos para el hueco junto a tu escritorio. Pégalos en tu monitor.",
     "neckDose": "15 s por lado",
+    "hipDose": "20 s por lado",
+    "backExtensionDose": "8 reps",
+    "chinTuckDose": "10 reps",
+    "wristCirclesDose": "10 reps",
     "handNote": "sí, ahora mismo."
   },
   "runtime": {

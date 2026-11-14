@@ -136,13 +136,13 @@
     },
     "neck": {
       "name": "首のサイドストレッチ",
-      "counter": "秒 <span>残り</span>",
+      "counter": "秒 <span>左</span>",
       "figureTitle": "首のサイドストレッチで頭を倒す棒人間。",
       "description": "耳を肩へ、片側15秒ずつ。"
     },
     "wrist": {
       "name": "手首と前腕のストレッチ",
-      "counter": "秒 <span>残り</span>",
+      "counter": "秒 <span>左</span>",
       "figureTitle": "片腕を伸ばして、指をそっと手前に引く棒人間。",
       "description": "腕を伸ばして、指を上に向けて、反対の手でそっと引きます。片側15秒。"
     },
@@ -164,6 +164,36 @@
       "cut": "ここで切る",
       "link": "早見表を印刷",
       "meta": "PDF · 1ページ"
+    },
+    "backExtension": {
+      "name": "立ち背反らし",
+      "counter": "/ 40秒",
+      "figureTitle": "両手を腰に当てて、そっと後ろに反らす棒人間。",
+      "description": "両手を腰に当てて、そっと後ろへ反らします。座りっぱなしの反対です。"
+    },
+    "hipFlexor": {
+      "name": "立ち股関節の前ストレッチ",
+      "counter": "秒 <span>左</span>",
+      "figureTitle": "机につかまって、片足を後ろに引き、骨盤を丸めた棒人間。",
+      "description": "机につかまって、片足を後ろに引いて、骨盤を丸めます。片側20秒。"
+    },
+    "figureFour": {
+      "name": "座って4の字ストレッチ",
+      "counter": "秒 <span>左</span>",
+      "figureTitle": "スツールに座って、片方の足首を反対のひざにのせた棒人間。",
+      "description": "足首を反対のひざにのせて、背すじを伸ばして、少し前に倒します。片側20秒。"
+    },
+    "chinTuck": {
+      "name": "あご引き",
+      "counter": "/ 40秒",
+      "figureTitle": "スツールに座って、頭をまっすぐ後ろに引く棒人間。",
+      "description": "あごをまっすぐ後ろへ、目線は水平に。そう、二重あごです。"
+    },
+    "wristCircles": {
+      "name": "手首回し",
+      "counter": "/ 30秒",
+      "figureTitle": "両方のこぶしで小さな円を描く棒人間。",
+      "description": "軽く握って、ゆっくり回して、次は逆回しで。"
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "立ち上がって。これをやろう。",
     "subtitle": "デスクの横のスペースでできる動き。モニターに貼ってください。",
     "neckDose": "片側15秒",
+    "hipDose": "片側20秒",
+    "backExtensionDose": "8回",
+    "chinTuckDose": "10回",
+    "wristCirclesDose": "10回",
     "handNote": "そう、今すぐ。"
   },
   "runtime": {

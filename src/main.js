@@ -187,7 +187,7 @@ const figureObserver = new IntersectionObserver((entries) =>
 );
 document.querySelectorAll(".move").forEach((card) => figureObserver.observe(card));
 
-// Standing / Seated: swaps the moves that have a seated version.
+// Standing / Seated: swaps the moves that have a seated version (or are only done one way).
 const postureToggle = document.querySelector(".posture-toggle");
 if (postureToggle && moveGrid) {
   const chips = [...postureToggle.querySelectorAll(".chip")];

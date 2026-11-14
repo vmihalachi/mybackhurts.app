@@ -164,6 +164,36 @@
       "cut": "střihni zde",
       "link": "Vytisknout taháček",
       "meta": "PDF · jedna strana"
+    },
+    "backExtension": {
+      "name": "Záklon ve stoje",
+      "counter": "/ 40 s",
+      "figureTitle": "Panáček s rukama na dolních zádech se jemně zaklání.",
+      "description": "Ruce na dolní záda, jemně se zakloň. Pravý opak sezení."
+    },
+    "hipFlexor": {
+      "name": "Protažení kyčelního ohýbače ve stoje",
+      "counter": "s <span>vlevo</span>",
+      "figureTitle": "Panáček se drží stolu, jednu nohu má vzadu a pánev podsazenou.",
+      "description": "Chyť se stolu, udělej krok vzad, podsaď pánev. 20 sekund na stranu."
+    },
+    "figureFour": {
+      "name": "Protažení boku vsedě",
+      "counter": "s <span>vlevo</span>",
+      "figureTitle": "Panáček na stoličce s jedním kotníkem položeným na druhém kolenu.",
+      "description": "Kotník na druhé koleno, seď zpříma, mírně se předkloň. 20 sekund na stranu."
+    },
+    "chinTuck": {
+      "name": "Zasunutí brady",
+      "counter": "/ 40 s",
+      "figureTitle": "Panáček na stoličce zasouvá hlavu rovně dozadu.",
+      "description": "Zasuň bradu rovně dozadu, oči dívej před sebe. Jo, dvojitá brada."
+    },
+    "wristCircles": {
+      "name": "Kroužení zápěstími",
+      "counter": "/ 30 s",
+      "figureTitle": "Panáček kreslí oběma pěstmi malé kruhy.",
+      "description": "Volné pěsti, pomalé kruhy a pak na druhou stranu."
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "Vstaň. Dělej tohle.",
     "subtitle": "Cviky na místo vedle stolu. Přilep si to na monitor.",
     "neckDose": "15 s na stranu",
+    "hipDose": "20 s na stranu",
+    "backExtensionDose": "8 opak.",
+    "chinTuckDose": "10 opak.",
+    "wristCirclesDose": "10 opak.",
     "handNote": "ano, právě teď."
   },
   "runtime": {

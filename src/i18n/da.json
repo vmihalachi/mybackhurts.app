@@ -164,6 +164,36 @@
       "cut": "klip her",
       "link": "Print snydearket",
       "meta": "PDF · én side"
+    },
+    "backExtension": {
+      "name": "Stående rygstræk bagud",
+      "counter": "/ 40 s",
+      "figureTitle": "En stregmand med hænderne på lænden læner sig forsigtigt tilbage.",
+      "description": "Hænderne på lænden, læn dig forsigtigt tilbage. Det modsatte af at sidde."
+    },
+    "hipFlexor": {
+      "name": "Stående hoftebøjerstræk",
+      "counter": "s <span>venstre</span>",
+      "figureTitle": "En stregmand holder fast i skrivebordet med den ene fod bagud og bækkenet tippet ind.",
+      "description": "Hold fast i skrivebordet, træd en fod bagud, tip bækkenet ind. 20 sekunder pr. side."
+    },
+    "figureFour": {
+      "name": "Siddende hoftestræk",
+      "counter": "s <span>venstre</span>",
+      "figureTitle": "En stregmand på en skammel med den ene ankel hvilende på det modsatte knæ.",
+      "description": "Ankel på det modsatte knæ, sid rank, læn dig lidt frem. 20 sekunder pr. side."
+    },
+    "chinTuck": {
+      "name": "Hageindtræk",
+      "counter": "/ 40 s",
+      "figureTitle": "En stregmand på en skammel skubber hovedet lige bagud.",
+      "description": "Skub hagen lige bagud, blikket frem. Ja, en dobbelthage."
+    },
+    "wristCircles": {
+      "name": "Håndledscirkler",
+      "counter": "/ 30 s",
+      "figureTitle": "En stregmand tegner små cirkler med begge næver.",
+      "description": "Løse næver, langsomme cirkler, og så den anden vej rundt."
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "Rejs dig. Lav de her.",
     "subtitle": "Øvelser til pladsen ved siden af dit skrivebord. Tape den op på din skærm.",
     "neckDose": "15 s pr. side",
+    "hipDose": "20 s pr. side",
+    "backExtensionDose": "8 gent.",
+    "chinTuckDose": "10 gent.",
+    "wristCirclesDose": "10 gent.",
     "handNote": "ja, lige nu."
   },
   "runtime": {

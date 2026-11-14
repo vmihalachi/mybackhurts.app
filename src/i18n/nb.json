@@ -142,7 +142,7 @@
     },
     "wrist": {
       "name": "Strekk for håndledd og underarm",
-      "counter": "s <span>igjen</span>",
+      "counter": "s <span>venstre</span>",
       "figureTitle": "En strekfigur som strekker en arm ut og forsiktig drar fingrene tilbake.",
       "description": "Armen ut, fingrene opp, dra dem forsiktig tilbake med den andre hånden. 15 sekunder per side."
     },
@@ -164,6 +164,36 @@
       "cut": "klipp her",
       "link": "Skriv ut jukselappen",
       "meta": "PDF · én side"
+    },
+    "backExtension": {
+      "name": "Stående ryggbøy",
+      "counter": "/ 40 s",
+      "figureTitle": "En strekfigur med hendene på korsryggen som lener seg forsiktig bakover.",
+      "description": "Hendene på korsryggen, len deg forsiktig bakover. Det motsatte av å sitte."
+    },
+    "hipFlexor": {
+      "name": "Stående hoftebøyerstrekk",
+      "counter": "s <span>venstre</span>",
+      "figureTitle": "En strekfigur som holder i pulten, med ett skritt bakover og bekkenet tippet under.",
+      "description": "Hold i pulten, ta ett skritt bakover, tipp bekkenet under deg. 20 sekunder per side."
+    },
+    "figureFour": {
+      "name": "Sittende figur-4-strekk",
+      "counter": "s <span>venstre</span>",
+      "figureTitle": "En strekfigur på en krakk med én ankel hvilende på det andre kneet.",
+      "description": "Ankelen på det andre kneet, sitt rak, len deg litt fremover. 20 sekunder per side."
+    },
+    "chinTuck": {
+      "name": "Haketrekk",
+      "counter": "/ 40 s",
+      "figureTitle": "En strekfigur på en krakk som skyver hodet rett bakover.",
+      "description": "Skyv haken rett bakover, blikket rett frem. Ja, en dobbelthake."
+    },
+    "wristCircles": {
+      "name": "Håndleddsirkler",
+      "counter": "/ 30 s",
+      "figureTitle": "En strekfigur som tegner små sirkler med begge never.",
+      "description": "Løse never, langsomme sirkler, så andre veien."
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "Reis deg. Gjør disse.",
     "subtitle": "Øvelser for plassen ved skrivebordet. Teip denne på skjermen din.",
     "neckDose": "15 s per side",
+    "hipDose": "20 s per side",
+    "backExtensionDose": "8 repetisjoner",
+    "chinTuckDose": "10 repetisjoner",
+    "wristCirclesDose": "10 repetisjoner",
     "handNote": "ja, akkurat nå."
   },
   "runtime": {

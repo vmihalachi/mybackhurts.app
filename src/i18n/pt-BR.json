@@ -132,7 +132,7 @@
     },
     "wrist": {
       "name": "Alongamento de punhos e antebraços",
-      "counter": "s <span>restantes</span>",
+      "counter": "s <span>esquerda</span>",
       "figureTitle": "Um boneco palito estendendo um braço e puxando suavemente os dedos para trás.",
       "description": "Braço estendido, dedos para cima, puxe-os de leve com a outra mão. 15 segundos de cada lado."
     },
@@ -154,6 +154,36 @@
       "cut": "recorte aqui",
       "link": "Imprima a colinha",
       "meta": "PDF · uma página"
+    },
+    "backExtension": {
+      "name": "Extensão de costas em pé",
+      "counter": "/ 40 s",
+      "figureTitle": "Um boneco de palitos com as mãos na lombar, inclinando-se para trás com suavidade.",
+      "description": "Mãos na lombar, incline-se para trás com suavidade. O oposto de ficar sentado."
+    },
+    "hipFlexor": {
+      "name": "Alongamento do quadril em pé",
+      "counter": "s <span>esquerda</span>",
+      "figureTitle": "Um boneco de palitos apoiado na mesa, com um pé para trás e o quadril encaixado.",
+      "description": "Apoie-se na mesa, dê um passo para trás, encaixe o quadril. 20 segundos de cada lado."
+    },
+    "figureFour": {
+      "name": "Alongamento em figura 4 sentado",
+      "counter": "s <span>esquerda</span>",
+      "figureTitle": "Um boneco de palitos num banquinho com um tornozelo apoiado no outro joelho.",
+      "description": "Tornozelo no outro joelho, coluna ereta, incline-se um pouco para a frente. 20 segundos de cada lado."
+    },
+    "chinTuck": {
+      "name": "Recuo do queixo",
+      "counter": "/ 40 s",
+      "figureTitle": "Um boneco de palitos num banquinho, deslizando a cabeça para trás.",
+      "description": "Deslize o queixo para trás, olhar reto. Sim, é uma papada."
+    },
+    "wristCircles": {
+      "name": "Círculos com os punhos",
+      "counter": "/ 30 s",
+      "figureTitle": "Um boneco de palitos desenhando pequenos círculos com os dois punhos.",
+      "description": "Punhos soltos, círculos lentos, depois no sentido contrário."
     }
   },
   "modes": {
@@ -265,6 +295,10 @@
     "title": "Levanta. Faz esses.",
     "subtitle": "Movimentos para o espaço ao lado da mesa. Cole isto no monitor.",
     "neckDose": "15 s de cada lado",
+    "hipDose": "20 s de cada lado",
+    "backExtensionDose": "8 repetições",
+    "chinTuckDose": "10 repetições",
+    "wristCirclesDose": "10 repetições",
     "handNote": "sim, agora mesmo."
   },
   "runtime": {

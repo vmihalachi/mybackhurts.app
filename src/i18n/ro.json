@@ -132,7 +132,7 @@
     },
     "wrist": {
       "name": "Întindere pentru încheietură și antebraț",
-      "counter": "s <span>rămase</span>",
+      "counter": "s <span>stânga</span>",
       "figureTitle": "Un omuleț întinde un braț și își trage ușor degetele înapoi.",
       "description": "Brațul întins, degetele sus, trage-le ușor înapoi cu cealaltă mână. 15 secunde pe fiecare parte."
     },
@@ -154,6 +154,36 @@
       "cut": "decupează aici",
       "link": "Printează fițuica",
       "meta": "PDF · o pagină"
+    },
+    "backExtension": {
+      "name": "Extensie de spate în picioare",
+      "counter": "/ 40 s",
+      "figureTitle": "Un om-băț cu mâinile pe spatele de jos, aplecat ușor pe spate.",
+      "description": "Mâinile pe spatele de jos, apleacă-te ușor pe spate. Opusul statului pe scaun."
+    },
+    "hipFlexor": {
+      "name": "Întinderea flexorilor șoldului",
+      "counter": "s <span>stânga</span>",
+      "figureTitle": "Un om-băț ținându-se de birou, cu un picior în spate și bazinul rotit.",
+      "description": "Ține-te de birou, fă un pas în spate, rotește bazinul. 20 de secunde pe parte."
+    },
+    "figureFour": {
+      "name": "Întindere în figura 4 pe scaun",
+      "counter": "s <span>stânga</span>",
+      "figureTitle": "Un om-băț pe un taburet, cu o gleznă sprijinită pe celălalt genunchi.",
+      "description": "Glezna pe celălalt genunchi, stai drept, apleacă-te puțin în față. 20 de secunde pe parte."
+    },
+    "chinTuck": {
+      "name": "Retragerea bărbiei",
+      "counter": "/ 40 s",
+      "figureTitle": "Un om-băț pe un taburet, cu capul tras drept înapoi.",
+      "description": "Trage bărbia drept înapoi, privirea dreaptă. Da, bărbie dublă."
+    },
+    "wristCircles": {
+      "name": "Cercuri cu încheieturile",
+      "counter": "/ 30 s",
+      "figureTitle": "Un om-băț care desenează cercuri mici cu ambii pumni.",
+      "description": "Pumni relaxați, cercuri lente, apoi în sens invers."
     }
   },
   "modes": {
@@ -265,6 +295,10 @@
     "title": "Ridică-te. Fă-le pe astea.",
     "subtitle": "Mișcări pentru spațiul de lângă birou. Lipește asta pe monitor.",
     "neckDose": "15 s pe fiecare parte",
+    "hipDose": "20 s pe parte",
+    "backExtensionDose": "8 repetări",
+    "chinTuckDose": "10 repetări",
+    "wristCirclesDose": "10 repetări",
     "handNote": "da, chiar acum."
   },
   "runtime": {

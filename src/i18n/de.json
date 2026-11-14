@@ -132,7 +132,7 @@
     },
     "wrist": {
       "name": "Handgelenk- & Unterarmdehnung",
-      "counter": "s <span>übrig</span>",
+      "counter": "s <span>links</span>",
       "figureTitle": "Eine Strichfigur streckt einen Arm aus und zieht die Finger sanft zurück.",
       "description": "Arm raus, Finger hoch, mit der anderen Hand sanft zurückziehen. 15 Sekunden pro Seite."
     },
@@ -154,6 +154,36 @@
       "cut": "hier ausschneiden",
       "link": "Spickzettel ausdrucken",
       "meta": "PDF · eine Seite"
+    },
+    "backExtension": {
+      "name": "Rückbeuge im Stehen",
+      "counter": "/ 40 s",
+      "figureTitle": "Ein Strichmännchen mit den Händen am unteren Rücken lehnt sich sanft zurück.",
+      "description": "Hände auf den unteren Rücken, sanft zurücklehnen. Das Gegenteil von Sitzen."
+    },
+    "hipFlexor": {
+      "name": "Hüftbeuger-Dehnung im Stehen",
+      "counter": "s <span>links</span>",
+      "figureTitle": "Ein Strichmännchen hält sich am Schreibtisch fest, ein Fuß zurück, Becken eingekippt.",
+      "description": "Am Schreibtisch festhalten, einen Fuß zurück, Becken einkippen. 20 Sekunden pro Seite."
+    },
+    "figureFour": {
+      "name": "Hüftdehnung im Sitzen",
+      "counter": "s <span>links</span>",
+      "figureTitle": "Ein Strichmännchen auf einem Hocker, ein Knöchel liegt auf dem anderen Knie.",
+      "description": "Knöchel aufs andere Knie, aufrecht sitzen, leicht vorlehnen. 20 Sekunden pro Seite."
+    },
+    "chinTuck": {
+      "name": "Kinn einziehen",
+      "counter": "/ 40 s",
+      "figureTitle": "Ein Strichmännchen auf einem Hocker schiebt den Kopf gerade nach hinten.",
+      "description": "Kinn gerade nach hinten schieben, Blick geradeaus. Ja, ein Doppelkinn."
+    },
+    "wristCircles": {
+      "name": "Handgelenke kreisen",
+      "counter": "/ 30 s",
+      "figureTitle": "Ein Strichmännchen malt mit beiden Fäusten kleine Kreise.",
+      "description": "Lockere Fäuste, langsame Kreise, dann andersherum."
     }
   },
   "modes": {
@@ -265,6 +295,10 @@
     "title": "Steh auf. Mach die hier.",
     "subtitle": "Übungen für den Platz neben deinem Schreibtisch. Kleb das an deinen Bildschirm.",
     "neckDose": "15 s pro Seite",
+    "hipDose": "20 s pro Seite",
+    "backExtensionDose": "8 Wdh.",
+    "chinTuckDose": "10 Wdh.",
+    "wristCirclesDose": "10 Wdh.",
     "handNote": "ja, jetzt gleich."
   },
   "runtime": {

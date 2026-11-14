@@ -164,6 +164,36 @@
       "cut": "wytnij tutaj",
       "link": "Wydrukuj ściągawkę",
       "meta": "PDF · jedna strona"
+    },
+    "backExtension": {
+      "name": "Wyprost pleców na stojąco",
+      "counter": "/ 40 s",
+      "figureTitle": "Ludzik z kresek z rękami na dolnym odcinku pleców, delikatnie odchylony do tyłu.",
+      "description": "Dłonie na dolnym odcinku pleców, odchyl się delikatnie do tyłu. Przeciwieństwo siedzenia."
+    },
+    "hipFlexor": {
+      "name": "Rozciąganie bioder na stojąco",
+      "counter": "s <span>lewa</span>",
+      "figureTitle": "Ludzik z kresek trzymający się biurka, z jedną nogą w tyle i podwiniętą miednicą.",
+      "description": "Złap się biurka, zrób krok w tył, podwiń miednicę. 20 sekund na stronę."
+    },
+    "figureFour": {
+      "name": "Rozciąganie „czwórka” na siedząco",
+      "counter": "s <span>lewa</span>",
+      "figureTitle": "Ludzik z kresek na stołku z jedną kostką opartą na drugim kolanie.",
+      "description": "Kostka na drugim kolanie, usiądź prosto, pochyl się lekko do przodu. 20 sekund na stronę."
+    },
+    "chinTuck": {
+      "name": "Cofnięcie brody",
+      "counter": "/ 40 s",
+      "figureTitle": "Ludzik z kresek na stołku, który cofa głowę prosto do tyłu.",
+      "description": "Cofnij brodę prosto do tyłu, wzrok prosto. Tak, to podwójny podbródek."
+    },
+    "wristCircles": {
+      "name": "Krążenia nadgarstków",
+      "counter": "/ 30 s",
+      "figureTitle": "Ludzik z kresek rysujący małe kółka obiema pięściami.",
+      "description": "Luźne pięści, powolne kółka, a potem w drugą stronę."
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "Wstań. Zrób to.",
     "subtitle": "Ruchy na miejsce obok biurka. Przyklej to do monitora.",
     "neckDose": "15 s na stronę",
+    "hipDose": "20 s na stronę",
+    "backExtensionDose": "8 powtórzeń",
+    "chinTuckDose": "10 powtórzeń",
+    "wristCirclesDose": "10 powtórzeń",
     "handNote": "tak, właśnie teraz."
   },
   "runtime": {

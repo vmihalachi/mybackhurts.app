@@ -24,8 +24,13 @@ const cards = {
   arms: "arm-circles",
   chest: "chest-opener",
   shrugs: "shoulder-shrugs",
+  backExtension: "standing-back-extension",
+  hipFlexor: "standing-hip-flexor-stretch",
+  figureFour: "seated-figure-four",
   neck: "neck-stretch",
+  chinTuck: "chin-tuck",
   wrist: "wrist-forearm-stretch",
+  wristCircles: "wrist-circles",
   eye: "eye-break",
 } as const;
 

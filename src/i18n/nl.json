@@ -164,6 +164,36 @@
       "cut": "hier knippen",
       "link": "Print het spiekbriefje",
       "meta": "PDF · één pagina"
+    },
+    "backExtension": {
+      "name": "Staande rugbuiging",
+      "counter": "/ 40 s",
+      "figureTitle": "Een streepjesfiguurtje met zijn handen op de onderrug dat voorzichtig achterover leunt.",
+      "description": "Handen op je onderrug, leun voorzichtig achterover. Het tegenovergestelde van zitten."
+    },
+    "hipFlexor": {
+      "name": "Staande heupbuigerrek",
+      "counter": "s <span>links</span>",
+      "figureTitle": "Een streepjesfiguurtje dat zich aan het bureau vasthoudt, één voet naar achteren, bekken gekanteld.",
+      "description": "Houd je bureau vast, zet één voet naar achteren, kantel je bekken. 20 seconden per kant."
+    },
+    "figureFour": {
+      "name": "Zittende vier-rek",
+      "counter": "s <span>links</span>",
+      "figureTitle": "Een streepjesfiguurtje op een kruk met één enkel op de andere knie.",
+      "description": "Enkel op de andere knie, zit rechtop, leun een beetje naar voren. 20 seconden per kant."
+    },
+    "chinTuck": {
+      "name": "Kin intrekken",
+      "counter": "/ 40 s",
+      "figureTitle": "Een streepjesfiguurtje op een kruk dat zijn hoofd recht naar achteren schuift.",
+      "description": "Schuif je kin recht naar achteren, blik recht vooruit. Ja, een onderkin."
+    },
+    "wristCircles": {
+      "name": "Polscirkels",
+      "counter": "/ 30 s",
+      "figureTitle": "Een streepjesfiguurtje dat kleine cirkels tekent met beide vuisten.",
+      "description": "Losse vuisten, langzame cirkels, dan de andere kant op."
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "Sta op. Doe dit.",
     "subtitle": "Oefeningen voor de ruimte naast je bureau. Plak dit op je monitor.",
     "neckDose": "15 s per kant",
+    "hipDose": "20 s per kant",
+    "backExtensionDose": "8 herhalingen",
+    "chinTuckDose": "10 herhalingen",
+    "wristCirclesDose": "10 herhalingen",
     "handNote": "ja, nu meteen."
   },
   "runtime": {

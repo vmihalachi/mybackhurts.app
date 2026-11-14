@@ -134,17 +134,47 @@
       "figureTitle": "A stick figure lifting and lowering both shoulders.",
       "description": "Shoulders up to your ears, then let them drop."
     },
+    "backExtension": {
+      "name": "Standing Back Extension",
+      "counter": "/ 40 s",
+      "figureTitle": "A stick figure with its hands on its lower back, leaning back gently.",
+      "description": "Hands on your lower back, lean back gently. The opposite of sitting."
+    },
+    "hipFlexor": {
+      "name": "Standing Hip Flexor Stretch",
+      "counter": "s <span>left</span>",
+      "figureTitle": "A stick figure holding the desk, one foot stepped back, hips tucked.",
+      "description": "Hold the desk, step one foot back, tuck your hips. 20 seconds a side."
+    },
+    "figureFour": {
+      "name": "Seated Figure-Four Stretch",
+      "counter": "s <span>left</span>",
+      "figureTitle": "A stick figure on a stool with one ankle resting on the other knee.",
+      "description": "Ankle on the other knee, sit tall, lean forward a little. 20 seconds a side."
+    },
     "neck": {
       "name": "Neck Side Stretch",
       "counter": "s <span>left</span>",
       "figureTitle": "A stick figure tilting its head for a neck side stretch.",
       "description": "Ear to shoulder, 15 seconds each side."
     },
+    "chinTuck": {
+      "name": "Chin Tuck",
+      "counter": "/ 40 s",
+      "figureTitle": "A stick figure on a stool sliding its head straight back.",
+      "description": "Slide your chin straight back, eyes level. Yes, a double chin."
+    },
     "wrist": {
       "name": "Wrist & Forearm Stretch",
       "counter": "s <span>left</span>",
       "figureTitle": "A stick figure reaching one arm out and gently pulling its fingers back.",
       "description": "Arm out, fingers up, ease them back with the other hand. 15 seconds a side."
+    },
+    "wristCircles": {
+      "name": "Wrist Circles",
+      "counter": "/ 30 s",
+      "figureTitle": "A stick figure drawing small circles with both fists.",
+      "description": "Loose fists, slow circles, then the other way round."
     },
     "eye": {
       "name": "20-20-20 Eye Break",
@@ -275,6 +305,10 @@
     "title": "Stand up. Do these.",
     "subtitle": "Moves for the space next to your desk. Tape this to your monitor.",
     "neckDose": "15 s per side",
+    "hipDose": "20 s per side",
+    "backExtensionDose": "8 reps",
+    "chinTuckDose": "10 reps",
+    "wristCirclesDose": "10 reps",
     "handNote": "yes, right now."
   },
   "runtime": {

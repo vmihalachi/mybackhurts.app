@@ -136,13 +136,13 @@
     },
     "neck": {
       "name": "Yana Boyun Esnetme",
-      "counter": "sn <span>kaldı</span>",
+      "counter": "sn <span>sol</span>",
       "figureTitle": "Yana boyun esnetmesi için başını eğen bir çöp adam.",
       "description": "Kulak omuza, her yana 15 saniye."
     },
     "wrist": {
       "name": "Bilek ve Ön Kol Esnetme",
-      "counter": "sn <span>kaldı</span>",
+      "counter": "sn <span>sol</span>",
       "figureTitle": "Bir kolunu uzatıp parmaklarını nazikçe geri çeken bir çöp adam.",
       "description": "Kol uzakta, parmaklar yukarı, öbür elinle nazikçe geri çek. Her yana 15 saniye."
     },
@@ -164,6 +164,36 @@
       "cut": "buradan kes",
       "link": "Kopya kâğıdını yazdır",
       "meta": "PDF · tek sayfa"
+    },
+    "backExtension": {
+      "name": "Ayakta Bel Geriye Esneme",
+      "counter": "/ 40 sn",
+      "figureTitle": "Elleri belinde, nazikçe geriye yaslanan bir çöp adam.",
+      "description": "Elleri belinde, nazikçe geriye yaslan. Oturmanın tam tersi."
+    },
+    "hipFlexor": {
+      "name": "Ayakta Kalça Önü Esnetme",
+      "counter": "sn <span>sol</span>",
+      "figureTitle": "Masaya tutunan, bir ayağı geride, leğeni içeride bir çöp adam.",
+      "description": "Masaya tutun, bir ayağınla geri adım at, leğenini içeri al. Her yana 20 saniye."
+    },
+    "figureFour": {
+      "name": "Oturarak 4 Esnetmesi",
+      "counter": "sn <span>sol</span>",
+      "figureTitle": "Tabureye oturmuş, bir ayak bileği diğer dizinin üstünde bir çöp adam.",
+      "description": "Ayak bileği diğer dizinde, dik otur, biraz öne eğil. Her yana 20 saniye."
+    },
+    "chinTuck": {
+      "name": "Çene Geri Çekme",
+      "counter": "/ 40 sn",
+      "figureTitle": "Tabureye oturmuş, başını dümdüz geriye kaydıran bir çöp adam.",
+      "description": "Çeneni dümdüz geriye kaydır, gözler karşıda. Evet, çift çene."
+    },
+    "wristCircles": {
+      "name": "Bilek Çevirme",
+      "counter": "/ 30 sn",
+      "figureTitle": "İki yumruğuyla küçük daireler çizen bir çöp adam.",
+      "description": "Gevşek yumruklar, yavaş daireler, sonra ters yöne."
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "Ayağa kalk. Bunları yap.",
     "subtitle": "Masanın yanındaki alan için hareketler. Bunu monitörüne yapıştır.",
     "neckDose": "her yana 15 sn",
+    "hipDose": "Her yana 20 sn",
+    "backExtensionDose": "8 tekrar",
+    "chinTuckDose": "10 tekrar",
+    "wristCirclesDose": "10 tekrar",
     "handNote": "evet, şu an."
   },
   "runtime": {

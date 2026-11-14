@@ -1107,7 +1107,8 @@ svg .note {
 .move:hover {
   transform: rotate(0deg) translateY(-4px);
 }
-/* Standing / Seated: swaps calf raise and march for their seated versions. */
+/* Standing / Seated: swaps calf raise and march for their seated versions, and the hip flexor stretch
+   for the figure-four. */
 .posture-toggle {
   display: flex;
   gap: 0.5rem;
@@ -1232,14 +1233,16 @@ svg .note {
   gap: 0.5rem;
   background: radial-gradient(var(--pink-soft) 1.3px, transparent 1.6px) 0 0 / 9px 9px var(--card);
 }
-/* On three columns the envelope takes its own row, laid out sideways. */
+/* On three columns the envelope shares the last row with one move, laid out sideways: the envelope,
+   then the title, the label and the list stacked beside it. */
 @media (min-width: 981px) {
   .pack {
-    grid-column: 1 / -1;
-    grid-template-columns: auto auto 1fr;
+    grid-column: span 2;
+    grid-template-columns: auto 1fr;
     grid-template-areas:
-      "envelope title list"
-      "envelope label list";
+      "envelope title"
+      "envelope label"
+      "envelope list";
     justify-items: start;
     align-items: center;
     text-align: left;
@@ -1262,10 +1265,6 @@ svg .note {
   .pack .pack-list {
     grid-area: list;
     justify-self: stretch;
-    margin: 0;
-    padding: 0 0 0 clamp(1.4rem, 3vw, 2.6rem);
-    border-top: 0;
-    border-left: 1px dashed var(--ink);
   }
 }
 .envelope {
@@ -1756,6 +1755,279 @@ svg .note {
   7%,
   84% {
     opacity: 1;
+  }
+}
+
+/* Standing back extension: hands on the lower back, a gentle lean back and up again. */
+.be-leg {
+  transform-origin: 70px 158px;
+  transform: rotate(3.9deg);
+  animation: be-leg 3.2s ease-in-out infinite;
+}
+.be-upper {
+  transform-origin: 70px 100px;
+  transform: translateX(4px) rotate(-28deg);
+  animation: be-upper 3.2s ease-in-out infinite;
+}
+.be-head {
+  transform-origin: 70px 42px;
+  transform: rotate(-8deg);
+  animation: be-head 3.2s ease-in-out infinite;
+}
+.be-arc {
+  animation: be-arc 3.2s ease-in-out infinite;
+}
+@keyframes be-leg {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  35%,
+  60% {
+    transform: rotate(3.9deg);
+  }
+}
+@keyframes be-upper {
+  0%,
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+  35%,
+  60% {
+    transform: translateX(4px) rotate(-28deg);
+  }
+}
+@keyframes be-head {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  35%,
+  60% {
+    transform: rotate(-8deg);
+  }
+}
+@keyframes be-arc {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  35%,
+  60% {
+    opacity: 1;
+  }
+}
+
+/* Chin tuck: the head slides straight back, eyes level, then forward again. */
+.ct-neck {
+  transform-origin: 46px 62px;
+  animation: ct-neck 4s ease-in-out infinite;
+}
+.ct-head {
+  animation: ct-head 4s ease-in-out infinite;
+}
+.ct-arrow {
+  animation: ct-arrow 4s ease-in-out infinite;
+}
+@keyframes ct-neck {
+  0%,
+  90%,
+  100% {
+    transform: rotate(52.94deg);
+  }
+  20%,
+  70% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes ct-head {
+  0%,
+  90%,
+  100% {
+    transform: translate(10px, 1px);
+  }
+  20%,
+  70% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes ct-arrow {
+  0%,
+  80%,
+  100% {
+    opacity: 0;
+  }
+  15%,
+  70% {
+    opacity: 1;
+  }
+}
+
+/*
+ * Seated figure-four and standing hip flexor stretch: 20 s a side; the figure turns round for the
+ * other leg. Each limb eases from its rest pose (`--rest`) into the hold drawn in the markup.
+ */
+.ff-side,
+.hf-side {
+  transform-origin: 70px 0;
+  animation: sides-turn 44s ease-in-out infinite;
+}
+.ff-drop,
+.ff-arm-a,
+.ff-arm-b,
+.hf-back-shin,
+.hf-back-thigh,
+.hf-front-shin,
+.hf-front-thigh,
+.hf-desk-forearm,
+.hf-desk-upper,
+.hf-arm-upper,
+.hf-arm,
+.hf-body {
+  animation: sides-hold 44s ease-in-out infinite;
+}
+.ff-pull,
+.hf-pull {
+  animation: sides-pull 44s ease-in-out infinite;
+}
+.ff-drop {
+  --rest: translateY(-7px);
+}
+.ff-arm-a {
+  transform-origin: 34px 128px;
+  --rest: scaleY(1.123);
+}
+.ff-arm-b {
+  transform-origin: 90px 113px;
+  --rest: scaleY(1.167);
+}
+.hf-back-shin {
+  transform-origin: 26px 150px;
+  --rest: rotate(-21.44deg) scale(1.043);
+}
+.hf-back-thigh {
+  transform-origin: 50.6px 132.8px;
+  --rest: rotate(28.62deg) scale(0.959);
+}
+.hf-front-shin {
+  transform-origin: 82px 157px;
+  --rest: rotate(-26.99deg) scale(1.068);
+}
+.hf-front-thigh {
+  transform-origin: 85.2px 127.2px;
+  --rest: rotate(51.32deg) scale(0.937);
+}
+.hf-desk-forearm {
+  transform-origin: 104px 81px;
+  --rest: rotate(22.16deg) scale(1.126);
+}
+.hf-desk-upper {
+  transform-origin: 79.4px 76.5px;
+  --rest: rotate(-33.21deg) scale(0.888);
+}
+.hf-arm-upper {
+  transform-origin: 70px 86px;
+  --rest: translate(-4px, -7px) rotate(4.11deg) scale(0.981);
+}
+.hf-arm,
+.hf-body {
+  --rest: translate(-4px, -7px);
+}
+@keyframes sides-turn {
+  0%,
+  49%,
+  100% {
+    transform: scaleX(1);
+  }
+  51%,
+  98.5% {
+    transform: scaleX(-1);
+  }
+}
+@keyframes sides-hold {
+  0%,
+  50%,
+  100% {
+    transform: var(--rest);
+  }
+  2.5%,
+  48%,
+  52.5%,
+  98% {
+    transform: none;
+  }
+}
+@keyframes sides-pull {
+  0%,
+  50%,
+  100% {
+    opacity: 0;
+  }
+  2.5%,
+  48%,
+  52.5%,
+  98% {
+    opacity: 1;
+  }
+}
+
+/* Wrist circles: each fist draws a small circle at the wrist and the forearm follows it. */
+.wc-fist {
+  transform-origin: 52px 76px;
+  transform: rotate(45deg) translateX(4px);
+  animation: wc-fist 2.4s linear infinite;
+}
+.wc-forearm {
+  transform-origin: 38px 90px;
+  transform: rotate(-33.58deg) scaleX(1.01);
+  animation: wc-forearm 2.4s linear infinite;
+}
+@keyframes wc-fist {
+  from {
+    transform: rotate(0deg) translateX(4px);
+  }
+  to {
+    transform: rotate(360deg) translateX(4px);
+  }
+}
+/* The forearm's angle and length every 30° of the fist's circle. */
+@keyframes wc-forearm {
+  0%,
+  100% {
+    transform: rotate(-37.87deg) scaleX(1.14);
+  }
+  8.333% {
+    transform: rotate(-34.49deg) scaleX(1.059);
+  }
+  16.667% {
+    transform: rotate(-33.36deg) scaleX(0.958);
+  }
+  25% {
+    transform: rotate(-35.54deg) scaleX(0.86);
+  }
+  33.333% {
+    transform: rotate(-41.28deg) scaleX(0.798);
+  }
+  41.667% {
+    transform: rotate(-48.72deg) scaleX(0.798);
+  }
+  50% {
+    transform: rotate(-54.46deg) scaleX(0.86);
+  }
+  58.333% {
+    transform: rotate(-56.64deg) scaleX(0.958);
+  }
+  66.667% {
+    transform: rotate(-55.51deg) scaleX(1.059);
+  }
+  75% {
+    transform: rotate(-52.13deg) scaleX(1.14);
+  }
+  83.333% {
+    transform: rotate(-47.51deg) scaleX(1.184);
+  }
+  91.667% {
+    transform: rotate(-42.49deg) scaleX(1.184);
   }
 }
 

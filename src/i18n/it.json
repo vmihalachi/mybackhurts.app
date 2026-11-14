@@ -132,7 +132,7 @@
     },
     "wrist": {
       "name": "Stretching di polsi e avambracci",
-      "counter": "s <span>rimasti</span>",
+      "counter": "s <span>sinistra</span>",
       "figureTitle": "Una figura stilizzata che allunga un braccio e tira delicatamente indietro le dita.",
       "description": "Braccio in fuori, dita in su, tirale piano indietro con l'altra mano. 15 secondi per lato."
     },
@@ -154,6 +154,36 @@
       "cut": "taglia qui",
       "link": "Stampa il promemoria",
       "meta": "PDF · una pagina"
+    },
+    "backExtension": {
+      "name": "Estensione della schiena in piedi",
+      "counter": "/ 40 s",
+      "figureTitle": "Un omino stilizzato con le mani sulla zona lombare, inclinato piano all'indietro.",
+      "description": "Mani sulla zona lombare, inclinati piano all'indietro. L'opposto dello stare seduti."
+    },
+    "hipFlexor": {
+      "name": "Allungamento dei flessori dell'anca in piedi",
+      "counter": "s <span>sinistra</span>",
+      "figureTitle": "Un omino stilizzato che si tiene alla scrivania, un piede indietro e il bacino retroverso.",
+      "description": "Tieniti alla scrivania, porta un piede indietro, retroverti il bacino. 20 secondi per lato."
+    },
+    "figureFour": {
+      "name": "Allungamento a figura di quattro da seduto",
+      "counter": "s <span>sinistra</span>",
+      "figureTitle": "Un omino stilizzato su uno sgabello con una caviglia appoggiata sull'altro ginocchio.",
+      "description": "Caviglia sull'altro ginocchio, stai dritto, inclinati un po' in avanti. 20 secondi per lato."
+    },
+    "chinTuck": {
+      "name": "Mento indietro",
+      "counter": "/ 40 s",
+      "figureTitle": "Un omino stilizzato su uno sgabello che porta la testa dritta indietro.",
+      "description": "Porta il mento dritto indietro, sguardo dritto. Sì, il doppio mento."
+    },
+    "wristCircles": {
+      "name": "Cerchi con i polsi",
+      "counter": "/ 30 s",
+      "figureTitle": "Un omino stilizzato che disegna piccoli cerchi con entrambi i pugni.",
+      "description": "Pugni morbidi, cerchi lenti, poi nell'altro senso."
     }
   },
   "modes": {
@@ -265,6 +295,10 @@
     "title": "Alzati. Fai queste.",
     "subtitle": "Esercizi per lo spazio accanto alla scrivania. Attaccalo al monitor.",
     "neckDose": "15 s per lato",
+    "hipDose": "20 s per lato",
+    "backExtensionDose": "8 rip.",
+    "chinTuckDose": "10 rip.",
+    "wristCirclesDose": "10 rip.",
     "handNote": "sì, adesso."
   },
   "runtime": {

@@ -136,13 +136,13 @@
     },
     "neck": {
       "name": "颈部侧拉伸",
-      "counter": "秒 <span>剩余</span>",
+      "counter": "秒 <span>左</span>",
       "figureTitle": "一个火柴人歪着头做颈部侧拉伸。",
       "description": "耳朵贴肩膀，每侧 15 秒。"
     },
     "wrist": {
       "name": "手腕与前臂拉伸",
-      "counter": "秒 <span>剩余</span>",
+      "counter": "秒 <span>左</span>",
       "figureTitle": "一个火柴人伸出一只手臂，轻轻向后拉手指。",
       "description": "手臂伸出，手指向上，用另一只手轻轻往回带。每侧 15 秒。"
     },
@@ -164,6 +164,36 @@
       "cut": "沿此剪下",
       "link": "打印速查表",
       "meta": "PDF · 一页"
+    },
+    "backExtension": {
+      "name": "站姿后伸",
+      "counter": "/ 40 秒",
+      "figureTitle": "一个火柴人双手放在下背部,轻轻向后仰。",
+      "description": "双手放在下背部,轻轻向后仰。和久坐正好相反。"
+    },
+    "hipFlexor": {
+      "name": "站姿髋屈肌拉伸",
+      "counter": "秒 <span>左</span>",
+      "figureTitle": "一个火柴人扶着桌子,一只脚向后迈,骨盆内收。",
+      "description": "扶住桌子,一只脚后撤,骨盆内收。每侧 20 秒。"
+    },
+    "figureFour": {
+      "name": "坐姿4字拉伸",
+      "counter": "秒 <span>左</span>",
+      "figureTitle": "一个火柴人坐在凳子上,一只脚踝搭在另一侧膝盖上。",
+      "description": "脚踝搭在另一侧膝盖上,坐直,稍微前倾。每侧 20 秒。"
+    },
+    "chinTuck": {
+      "name": "收下巴",
+      "counter": "/ 40 秒",
+      "figureTitle": "一个火柴人坐在凳子上,把头水平向后收。",
+      "description": "下巴水平向后收,目光平视。对,就是双下巴。"
+    },
+    "wristCircles": {
+      "name": "手腕绕圈",
+      "counter": "/ 30 秒",
+      "figureTitle": "一个火柴人用双拳画着小圆圈。",
+      "description": "双拳放松,慢慢画圈,再反方向画。"
     }
   },
   "modes": {
@@ -275,6 +305,10 @@
     "title": "站起来，做这几个。",
     "subtitle": "办公桌边的空地就能做的动作。把它贴在显示器上。",
     "neckDose": "每侧 15 秒",
+    "hipDose": "每侧 20 秒",
+    "backExtensionDose": "8 次",
+    "chinTuckDose": "10 次",
+    "wristCirclesDose": "10 次",
     "handNote": "对，就是现在。"
   },
   "runtime": {
