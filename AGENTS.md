@@ -9,7 +9,7 @@ cover this page). Commit and push here first, then commit the new submodule poin
 - `app-data/app.json` is a snapshot of the app's exercises and default interval. A build inside the app
   repository rewrites it; a standalone build (CI here) reads it. Never edit it by hand.
 - No third-party scripts, fonts or requests: the CSP in the generated `_headers` has `connect-src 'none'`.
-- Before pushing: `vp check && vp build`. `deploy.yml` deploys `master` to Cloudflare.
+- Before pushing: `vp check && vp build`. `deploy.yml` deploys `main` to Cloudflare.
 
 <!--VITE PLUS START-->
 

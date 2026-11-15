@@ -29,7 +29,7 @@ vp build    # dist/
 
 ## Deploy
 
-`.github/workflows/deploy.yml` checks and builds every push and pull request, and deploys `master` to a
+`.github/workflows/deploy.yml` checks and builds every push and pull request, and deploys `main` to a
 Cloudflare Worker serving static assets (`wrangler.json`, with the headers and CSP in the generated
 `_headers`).
 
