@@ -2579,22 +2579,6 @@ details p {
   text-wrap: balance;
 }
 
-/* The link card, taped up below the deal like the film frame. */
-.get-card {
-  position: relative;
-  width: min(100%, 36rem);
-  margin-top: clamp(2.5rem, 6vw, 4.5rem);
-  border: 3px solid var(--ink);
-  background: var(--card);
-  box-shadow: 8px 8px 0 var(--pink);
-  transform: rotate(-1.2deg);
-}
-.get-card img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 /* The pricing table is a till receipt: everything free, one optional line. */
 .receipt-wrap {
   --tilt: -2deg;
