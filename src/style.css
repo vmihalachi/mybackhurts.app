@@ -2917,11 +2917,11 @@ details p {
   color: var(--pink-text);
 }
 /* The owner's other apps and Laching (`{{moreFrom}}`, Laching's markup): a row of its own under the rest, in the
-   footer's type and ink, its links underlined like the footer's others. The label, the apps and Laching each take
-   a line of their own in every language, so a short label never reads as one more app and Laching never as a
-   sibling; only the apps sit side by side, and wrap. A dash sets each app's few words off its name; screen readers
-   skip it, the space before it already parts them. A wider gap above keeps it one group, and where it is the
-   footer's only row (404.html) the footer's own padding is gap enough. */
+   footer's type and ink, its links underlined like the footer's others. The label, each app and Laching take a line
+   of their own in every language: each app's few words go on from its name as one sentence, as on the other two
+   landings, so two side by side would run together. Laching sits a little further down, a note under the list
+   rather than one more app. A wider gap above keeps it one group, and where it is the footer's only row (404.html)
+   the footer's own padding is gap enough. Balanced lines keep a lone word off the last one at phone widths. */
 .more-from {
   flex-basis: 100%;
   margin-top: 0.8rem;
@@ -2934,22 +2934,23 @@ details p {
 .more-from p {
   margin: 0;
 }
+.more-from :is(p, li) {
+  text-wrap: balance;
+}
 .more-from-apps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem 1.25rem;
+  display: grid;
+  gap: 0.8rem;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.more-from .built-on {
+  margin-top: 0.8rem;
 }
 .more-from a {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 0.18em;
-}
-.more-from-tagline::before {
-  content: "– ";
-  content: "– " / "";
 }
 
 /* ---------- Responsive ---------- */
@@ -3216,9 +3217,10 @@ details p {
 
 /* Browsers find phrases in Japanese only, and Safari not even there, so Chinese breaks between any two
    characters, inside words too, and so does Japanese in Safari. The Supporter label, the coffee note
-   beside it, the sticker names and the line above them break only at the zero-width spaces in their
-   translations. */
+   beside it, the sticker names and the line above them, and the footer's words on the other apps break
+   only at the zero-width spaces in their translations. */
 :lang(zh) .receipt-theme span,
-:is(:lang(ja), :lang(zh)) :is(.receipt-coffee span, .stickers > .note, .sticker-name) {
+:is(:lang(ja), :lang(zh))
+  :is(.receipt-coffee span, .stickers > .note, .sticker-name, .more-from-tagline) {
   word-break: keep-all;
 }
