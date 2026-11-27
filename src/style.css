@@ -2917,16 +2917,16 @@ details p {
   color: var(--pink-text);
 }
 /* The owner's other apps and Laching (`{{moreFrom}}`, Laching's markup): a row of its own under the rest, in the
-   footer's type and ink, its links underlined like the footer's others. A dash sets each app's few words off its
-   name; screen readers skip it, the space before it already parts them. A wider gap above keeps it one group, and
-   where it is the footer's only row (404.html) the footer's own padding is gap enough. */
+   footer's type and ink, its links underlined like the footer's others. The label, the apps and Laching each take
+   a line of their own in every language, so a short label never reads as one more app and Laching never as a
+   sibling; only the apps sit side by side, and wrap. A dash sets each app's few words off its name; screen readers
+   skip it, the space before it already parts them. A wider gap above keeps it one group, and where it is the
+   footer's only row (404.html) the footer's own padding is gap enough. */
 .more-from {
   flex-basis: 100%;
   margin-top: 0.8rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.8rem 1.25rem;
+  display: grid;
+  gap: 0.8rem;
 }
 .more-from:first-child {
   margin-top: 0;
