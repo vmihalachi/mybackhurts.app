@@ -8,7 +8,7 @@
     <title>隐私政策 · mybackhurts</title>
     <meta
       name="description"
-      content="mybackhurts 是 Vlad Mihalachi 开发的 macOS 和 Windows 应用。本政策说明应用会如何处理你的信息。"
+      content="mybackhurts 是 Vlad Mihalachi 开发的应用，适用于 Mac、iPhone 和 iPad、Windows 以及 Android。本政策说明应用和本网站会如何处理你的信息。"
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,40 +18,79 @@
       <header>
         <a class="legal-back" href="/zh-hans/">← mybackhurts</a>
         <h1>隐私政策</h1>
-        <p>最后更新：2026年10月10日</p>
+        <p>最后更新：2026年10月30日</p>
       </header>
       <p>
-        mybackhurts 是 Vlad Mihalachi 开发的 macOS 和 Windows
-        应用。本政策说明应用会如何处理你的信息。
+        mybackhurts 是 Vlad Mihalachi 开发的应用，适用于 Mac、iPhone 和 iPad、Windows 以及
+        Android。本政策说明应用和本网站会如何处理你的信息。
+      </p>
+      <p>
+        Mac 版应用通过 Mac App Store 提供，iPhone 和 iPad 版应用通过 App Store 提供，Windows
+        版应用通过 Microsoft Store 提供，Android 版应用通过 Google Play 提供。
       </p>
       <h2>应用会处理什么</h2>
       <p>
-        当你选择摄像头模式时，应用会使用你的摄像头来检测身体姿态并统计动作次数。在 Mac 上，它使用
-        Apple 的 Vision 框架；在 Windows 上，它使用通过 Windows ML
-        在你的电脑上运行的姿态模型。在这两个平台上，视频画面和姿态数据都只在你的设备上于内存中处理，并会立即丢弃。应用不会录制、上传或存储图像或视频。摄像头模式是可选的；在简易模式下，除非你主动要求，摄像头会一直保持关闭。
+        当你选择摄像头模式时，应用会使用你的摄像头来检测身体姿态并统计动作次数。在 Mac、iPhone 和
+        iPad 上，它使用 Apple 的 Vision 框架；在 Windows 上，它使用通过 Windows ML
+        在你的电脑上运行的姿态模型；在 Android 上，它使用内置于应用中的姿态模型，借助 ONNX Runtime
+        在你的设备上运行，并通过 Android 的 CameraX
+        读取摄像头画面。在所有平台上，视频画面和姿态数据都只在你的设备上于内存中处理，并会立即丢弃。应用不会录制、上传或存储图像或视频。摄像头模式是可选的；在简易模式下，除非你主动要求，摄像头会一直保持关闭。
       </p>
       <p>
-        为了不让提醒打扰到你，应用会检查你上次使用键盘或鼠标已过去多久、是否有其他应用正在使用摄像头或麦克风（例如在通话期间），以及是否有全屏应用处于打开状态。它只是从操作系统读取这些状态，从不会打开摄像头或麦克风，也不会保留这些信息。
+        在 Mac 和 Windows
+        上，为了不让提醒打扰到你，应用会检查你上次使用键盘或鼠标已过去多久、是否有其他应用正在使用摄像头或麦克风（例如在通话期间），以及是否有全屏应用处于打开状态。它只是从操作系统读取这些状态，从不会打开摄像头或麦克风，也不会保留这些信息。在
+        Android
+        上，在摄像头模式下休息时，应用会从手机的音频模式中读取当前是否正在通话，并在通话期间暂停休息；这一信息同样不会保留。iPhone
+        和 iPad 版应用不会进行上述任何检查。
       </p>
       <h2>应用会存储什么</h2>
       <p>
-        应用会把设置和练习结果（例如动作名称、次数、时长和日期）存储在你设备本地。它不需要账号，也不会收集你的姓名、电子邮件地址、位置、通讯录或浏览活动。
+        应用会把设置和练习结果（例如动作名称、次数、时长和日期）存储在你设备本地。它不需要账号，也不会收集你的姓名、电子邮件地址、位置、通讯录或浏览活动。每台设备各自保存自己的记录，应用不会在你的设备之间同步这些记录。
       </p>
       <h2>共享与网络访问</h2>
       <p>
         mybackhurts
         不运营分析、广告、追踪或后端服务，自身也不发起任何网络请求。如果你购买支持者解锁或打赏，该交易由你获取本应用的商店处理：在
-        Mac 上，Apple 依照其条款和隐私政策，通过 StoreKit 处理；在 Windows 上，Microsoft
-        依照其条款和隐私声明，通过 Microsoft Store 处理。Windows 版本也通过 Microsoft Store
+        Mac、iPhone 和 iPad 上，Apple 依照其条款和隐私政策，通过 StoreKit 处理；在 Windows
+        上，Microsoft 依照其条款和隐私声明，通过 Microsoft Store 处理；在 Android 上，Google
+        依照其条款和隐私政策，通过 Google Play Billing 处理。Windows 版本也通过 Microsoft Store
         安装和更新。
+      </p>
+      <p>
+        在你使用应用一段时间后，它可能会通过商店自带的评分提示，请你为它评分一次：在 Mac、iPhone 和
+        iPad 上是 Apple 的评分提示，在 Windows 上是 Microsoft Store 的评分提示，在 Android 上是
+        Google Play
+        的应用内评价。是否显示由商店决定。你留下的评分或评价会依照该商店的条款发送给该商店；应用不会记录你是否留下过评分或评价。
       </p>
       <h2>保留与删除</h2>
       <p>
         你的本地设置和练习记录会一直保留在你的设备上，直到你使用应用中的功能删除它们、移除应用数据或卸载应用。如有隐私方面的问题，可以联系
         <a href="mailto:hello@mybackhurts.app">hello@mybackhurts.app</a>。
       </p>
+      <h2>本网站</h2>
+      <p>
+        本网站 mybackhurts.app 是一组由 Cloudflare 托管的静态页面。为了提供网站内容，Cloudflare
+        会依照 Cloudflare 的隐私政策处理每个请求（包括你的 IP
+        地址），并在网站加载失败时请你的浏览器向其报告。本网站自身的请求日志、请求追踪记录和日志导出已在托管配置中关闭。
+      </p>
+      <ul>
+        <li>本网站不设置 Cookie，也不运行任何分析、广告或追踪脚本。</li>
+        <li>
+          网站的字体、图片和视频均由 mybackhurts.app 自身提供。其内容安全策略只允许页面从
+          mybackhurts.app
+          加载文件，且不允许页面自行建立任何连接；其权限策略禁止页面使用你的摄像头、麦克风或位置信息。
+        </li>
+        <li>
+          为了用你的语言显示页面，并把适用于你设备的商店排在前面，页面会在你的浏览器中读取浏览器的首选语言和平台。如果你选择了主题或语言，浏览器会把这一选择保存在其本地存储中，不会发送给我们。
+        </li>
+        <li>
+          指向其他网站（例如各个商店）的链接只有在你点击时才会打开，并且本网站会要求你的浏览器不要告诉这些网站你是从哪个页面过来的。
+        </li>
+      </ul>
       <h2>变更</h2>
-      <p>当应用或适用的要求发生变化时，我们可能会更新本政策。上方的日期表示最近一次修订的时间。</p>
+      <p>
+        当应用、本网站或适用的要求发生变化时，我们可能会更新本政策。上方的日期表示最近一次修订的时间。
+      </p>
     </main>
   </body>
 </html>

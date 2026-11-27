@@ -8,7 +8,7 @@
     <title>Datenschutzerklärung · mybackhurts</title>
     <meta
       name="description"
-      content="mybackhurts ist eine App für macOS und Windows von Vlad Mihalachi. Diese Erklärung beschreibt, wie die App mit deinen Informationen umgeht."
+      content="mybackhurts ist eine App für Mac, iPhone und iPad, Windows und Android von Vlad Mihalachi. Diese Erklärung beschreibt, wie die App und diese Website mit deinen Informationen umgehen."
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,55 +18,107 @@
       <header>
         <a class="legal-back" href="/de/">← mybackhurts</a>
         <h1>Datenschutzerklärung</h1>
-        <p>Letzte Aktualisierung: 10. Oktober 2026</p>
+        <p>Letzte Aktualisierung: 30.&nbsp;Oktober 2026</p>
       </header>
       <p>
-        mybackhurts ist eine App für macOS und Windows von Vlad Mihalachi. Diese Erklärung
-        beschreibt, wie die App mit deinen Informationen umgeht.
+        mybackhurts ist eine App für Mac, iPhone und iPad, Windows und Android von Vlad Mihalachi.
+        Diese Erklärung beschreibt, wie die App und diese Website mit deinen Informationen umgehen.
+      </p>
+      <p>
+        Die Mac-App erhältst du über den Mac App Store, die iPhone- und iPad-App über den App Store,
+        die Windows-App über den Microsoft Store und die Android-App über Google Play.
       </p>
       <h2>Was die App verarbeitet</h2>
       <p>
         Wenn du den Webcam-Modus wählst, verwendet die App deine Kamera, um Körperhaltungen zu
-        erkennen und Wiederholungen zu zählen. Auf dem Mac nutzt sie dafür Apples Vision-Framework,
-        unter Windows ein Posenmodell, das über Windows ML auf deinem PC läuft. Auf beiden Systemen
-        werden Videobilder und Posendaten auf deinem Gerät im Speicher verarbeitet und sofort
-        verworfen. Die App nimmt keine Bilder oder Videos auf, lädt sie nicht hoch und speichert sie
-        nicht. Der Webcam-Modus ist freiwillig; im Modus „Einfach“ bleibt die Kamera aus, solange du
-        sie nicht selbst einschaltest.
+        erkennen und Wiederholungen zu zählen. Auf Mac, iPhone und iPad nutzt sie dafür Apples
+        Vision-Framework, unter Windows ein Posenmodell, das über Windows ML auf deinem PC läuft.
+        Unter Android nutzt sie ein Posenmodell, das Teil der App ist und mit ONNX Runtime auf
+        deinem Gerät läuft; die Kamerabilder liest sie dabei über CameraX von Android aus. Auf allen
+        Plattformen werden Videobilder und Posendaten auf deinem Gerät im Speicher verarbeitet und
+        sofort verworfen. Die App nimmt keine Bilder oder Videos auf, lädt sie nicht hoch und
+        speichert sie nicht. Der Webcam-Modus ist freiwillig; im Modus „Einfach“ bleibt die Kamera
+        aus, solange du sie nicht selbst einschaltest.
       </p>
       <p>
-        Damit Erinnerungen dich nicht stören, prüft die App, wie lange du Tastatur oder Maus nicht
-        benutzt hast, ob eine andere App gerade Kamera oder Mikrofon verwendet (zum Beispiel während
-        eines Anrufs) und ob eine Vollbild-App geöffnet ist. Sie liest dazu nur diesen Status vom
-        Betriebssystem. Sie schaltet Kamera oder Mikrofon nie ein und speichert diese Informationen
-        nicht.
+        Damit Erinnerungen dich nicht stören, prüft die App auf Mac und Windows, wie lange du
+        Tastatur oder Maus nicht benutzt hast, ob eine andere App gerade Kamera oder Mikrofon
+        verwendet (zum Beispiel während eines Anrufs) und ob eine Vollbild-App geöffnet ist. Sie
+        liest dazu nur diesen Status vom Betriebssystem. Sie schaltet Kamera oder Mikrofon nie ein
+        und speichert diese Informationen nicht. Unter Android liest die App während einer Pause im
+        Webcam-Modus am Audiomodus des Smartphones ab, ob gerade ein Anruf läuft, und hält die Pause
+        an, solange er andauert; auch das speichert sie nicht. Die iPhone- und iPad-App führt keine
+        dieser Prüfungen durch.
       </p>
       <h2>Was die App speichert</h2>
       <p>
         Die App speichert Einstellungen und Trainingsergebnisse wie Übungen, Wiederholungen, Dauer
         und Datum lokal auf deinem Gerät. Sie benötigt kein Konto und sammelt weder Name,
-        E-Mail-Adresse, Standort, Kontakte noch Surfaktivität.
+        E-Mail-Adresse, Standort, Kontakte noch Surfaktivität. Jedes Gerät hat seinen eigenen
+        Verlauf: Die App synchronisiert ihn nicht zwischen deinen Geräten.
       </p>
       <h2>Weitergabe und Netzwerkzugriff</h2>
       <p>
         mybackhurts verwendet keine Analyse-, Werbe- oder Tracking-Dienste und betreibt keine
-        Backend-Dienste. Die App selbst stellt keine Netzwerkanfragen. Wenn du einen Supporter-Kauf
-        tätigst oder Trinkgeld gibst, verarbeitet der Store, aus dem du die App hast, die
-        Transaktion: auf dem Mac Apple über StoreKit gemäß den Bedingungen und
-        Datenschutzbestimmungen von Apple, unter Windows Microsoft über den Microsoft Store gemäß
-        den Bedingungen und der Datenschutzerklärung von Microsoft. Die Windows-Version wird
-        außerdem über den Microsoft Store installiert und aktualisiert.
+        Backend-Dienste. Die App selbst stellt keine Netzwerkanfragen. Wenn du einen
+        Unterstützer-Kauf tätigst oder Trinkgeld gibst, verarbeitet der Store, aus dem du die App
+        hast, die Transaktion: auf Mac, iPhone und iPad Apple über StoreKit, gemäß den Bedingungen
+        und Datenschutzbestimmungen von Apple; unter Windows Microsoft über den Microsoft Store,
+        gemäß den Bedingungen und der Datenschutzerklärung von Microsoft; und unter Android Google
+        über Google Play Billing, gemäß den Bedingungen und Datenschutzbestimmungen von Google. Die
+        Windows-Version wird außerdem über den Microsoft Store installiert und aktualisiert.
+      </p>
+      <p>
+        Wenn du die App eine Weile benutzt hast, kann sie dich einmal um eine Bewertung bitten, und
+        zwar über die Bewertungsabfrage des Stores selbst: die von Apple auf Mac, iPhone und iPad,
+        die des Microsoft Store unter Windows und die In-App-Bewertung von Google Play unter
+        Android. Ob die Abfrage erscheint, entscheidet der Store. Eine Bewertung oder Rezension, die
+        du abgibst, geht an diesen Store und unterliegt dessen Bedingungen; die App erfasst nicht,
+        ob du eine abgegeben hast.
       </p>
       <h2>Aufbewahrung und Löschung</h2>
       <p>
-        Deine lokalen Einstellungen und Trainingsdaten bleiben auf deinem Gerät, bis du sie über die
+        Deine lokalen Einstellungen und dein Verlauf bleiben auf deinem Gerät, bis du sie über die
         App löschst, die App-Daten entfernst oder die App deinstallierst. Datenschutzfragen kannst
         du an <a href="mailto:hello@mybackhurts.app">hello@mybackhurts.app</a> senden.
       </p>
+      <h2>Diese Website</h2>
+      <p>
+        Diese Website, mybackhurts.app, besteht aus statischen Seiten, die bei Cloudflare gehostet
+        werden. Cloudflare verarbeitet jede Anfrage, einschließlich deiner IP-Adresse, gemäß der
+        Datenschutzerklärung von Cloudflare, um die Website auszuliefern, und bittet deinen Browser,
+        Cloudflare zu melden, wenn die Website nicht geladen werden kann. Die eigenen
+        Anfrageprotokolle, Traces und Log-Exporte der Website sind in ihrer Hosting-Konfiguration
+        abgeschaltet.
+      </p>
+      <ul>
+        <li>
+          Die Website setzt keine Cookies und führt keine Analyse-, Werbe- oder Tracking-Skripte
+          aus.
+        </li>
+        <li>
+          Ihre Schriften, Bilder und Videos werden von mybackhurts.app selbst ausgeliefert. Ihre
+          Sicherheitsrichtlinie für Inhalte (Content Security Policy) lässt die Seiten Dateien nur
+          von mybackhurts.app laden und keine eigenen Verbindungen aufbauen, und ihre
+          Berechtigungsrichtlinie (Permissions Policy) hindert sie daran, deine Kamera, dein
+          Mikrofon oder deinen Standort zu nutzen.
+        </li>
+        <li>
+          Um die Seite in deiner Sprache anzuzeigen und den Store deines Geräts an die erste Stelle
+          zu setzen, liest die Seite direkt in deinem Browser dessen bevorzugte Sprache und
+          Plattform aus. Wenn du ein Design oder eine Sprache wählst, merkt sich dein Browser die
+          Auswahl in seinem lokalen Speicher; sie wird nicht an uns gesendet.
+        </li>
+        <li>
+          Links zu anderen Websites, etwa zu den Stores, öffnen sich nur, wenn du ihnen folgst, und
+          die Website bittet deinen Browser, diesen Websites nicht mitzuteilen, von welcher Seite du
+          kommst.
+        </li>
+      </ul>
       <h2>Änderungen</h2>
       <p>
-        Wir können diese Erklärung ändern, wenn sich die App oder geltende Anforderungen ändern. Das
-        Datum oben zeigt die letzte Überarbeitung.
+        Wir können diese Erklärung ändern, wenn sich die App, diese Website oder geltende
+        Anforderungen ändern. Das Datum oben zeigt die letzte Überarbeitung.
       </p>
     </main>
   </body>

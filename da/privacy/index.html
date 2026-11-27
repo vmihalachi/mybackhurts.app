@@ -8,7 +8,7 @@
     <title>Privatlivspolitik · mybackhurts</title>
     <meta
       name="description"
-      content="mybackhurts er en app til macOS og Windows fra Vlad Mihalachi. Denne politik forklarer, hvad appen gør med dine oplysninger."
+      content="mybackhurts er en app til Mac, iPhone og iPad, Windows og Android fra Vlad Mihalachi. Denne politik forklarer, hvad appen og dette websted gør med dine oplysninger."
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,42 +18,60 @@
       <header>
         <a class="legal-back" href="/da/">← mybackhurts</a>
         <h1>Privatlivspolitik</h1>
-        <p>Senest opdateret: 10. oktober 2026</p>
+        <p>Senest opdateret: 30.&nbsp;oktober 2026</p>
       </header>
       <p>
-        mybackhurts er en app til macOS og Windows fra Vlad Mihalachi. Denne politik forklarer, hvad
-        appen gør med dine oplysninger.
+        mybackhurts er en app til Mac, iPhone og iPad, Windows og Android fra Vlad Mihalachi. Denne
+        politik forklarer, hvad appen og dette websted gør med dine oplysninger.
+      </p>
+      <p>
+        Mac-appen hentes fra Mac App Store, iPhone- og iPad-appen fra App Store, Windows-appen fra
+        Microsoft Store og Android-appen fra Google Play.
       </p>
       <h2>Hvad appen behandler</h2>
       <p>
         Når du vælger Webcam-tilstand, bruger appen dit kamera til at registrere kropsstillinger og
-        tælle gentagelser af øvelser. På Mac bruger den Apples Vision-framework. På Windows bruger
-        den en positurmodel, der kører på din pc via Windows ML. På begge platforme behandles
-        videobilleder og positurdata i hukommelsen på din enhed og kasseres straks. Appen optager,
-        uploader eller gemmer ikke billeder eller video. Webcam-tilstand er valgfri; i Enkel
-        tilstand forbliver kameraet slukket, medmindre du selv beder om det.
+        tælle gentagelser af øvelser. På Mac, iPhone og iPad bruger den Apples Vision-framework. På
+        Windows bruger den en kropsholdningsmodel, der kører på din pc via Windows ML. På Android
+        bruger den en kropsholdningsmodel, der er en del af appen og kører på din enhed med ONNX
+        Runtime, og den læser kamerabilledet via Androids CameraX. På alle platforme behandles
+        videobilleder og kropsholdningsdata i hukommelsen på din enhed og kasseres straks. Appen
+        optager, uploader eller gemmer ikke billeder eller video. Webcam-tilstand er valgfri; i
+        Enkel tilstand forbliver kameraet slukket, medmindre du selv beder om det.
       </p>
       <p>
-        For at påmindelser ikke afbryder dig, tjekker appen, hvor længe der er gået, siden du sidst
-        brugte tastaturet eller musen, om en anden app bruger kameraet eller mikrofonen (for
-        eksempel under et opkald), og om en fuldskærmsapp er åben. Den aflæser kun denne status fra
-        operativsystemet. Den tænder aldrig kameraet eller mikrofonen, og den gemmer ikke disse
-        oplysninger.
+        For at påmindelser ikke afbryder dig, tjekker appen på Mac og Windows, hvor længe der er
+        gået, siden du sidst brugte tastaturet eller musen, om en anden app bruger kameraet eller
+        mikrofonen (for eksempel under et opkald), og om en fuldskærmsapp er åben. Den aflæser kun
+        denne status fra operativsystemet. Den tænder aldrig kameraet eller mikrofonen, og den
+        gemmer ikke disse oplysninger. På Android aflæser appen under en pause i Webcam-tilstand
+        telefonens lydtilstand for at se, om et opkald er i gang, og sætter pausen i bero, så længe
+        opkaldet står på; den gemmer heller ikke dette. iPhone- og iPad-appen foretager ingen af
+        disse tjek.
       </p>
       <h2>Hvad appen gemmer</h2>
       <p>
         Appen gemmer indstillinger og øvelsesresultater, såsom øvelsesnavne, gentagelser, varigheder
         og datoer, lokalt på din enhed. Den kræver ingen konto og indsamler hverken dit navn, din
-        e-mailadresse, din placering, dine kontakter eller din browseraktivitet.
+        e-mailadresse, din placering, dine kontakter eller din browseraktivitet. Hver enhed har sin
+        egen historik: appen synkroniserer den ikke mellem dine enheder.
       </p>
       <h2>Deling og netværksadgang</h2>
       <p>
         mybackhurts driver ikke analyse-, reklame-, sporings- eller backendtjenester og laver ikke
         netværksanmodninger af egen drift. Hvis du køber Supporter eller giver drikkepenge,
-        behandler den butik, du har hentet appen fra, transaktionen: Apple via StoreKit på Mac i
-        henhold til Apples vilkår og privatlivspolitik og Microsoft via Microsoft Store på Windows i
-        henhold til Microsofts vilkår og erklæring om privatliv. Windows-versionen installeres og
-        opdateres desuden via Microsoft Store.
+        behandler den butik, du har hentet appen fra, transaktionen: Apple via StoreKit på Mac,
+        iPhone og iPad i henhold til Apples vilkår og privatlivspolitik; Microsoft via Microsoft
+        Store på Windows i henhold til Microsofts vilkår og erklæring om privatliv; og Google via
+        Google Play Billing på Android i henhold til Googles vilkår og privatlivspolitik.
+        Windows-versionen installeres og opdateres desuden via Microsoft Store.
+      </p>
+      <p>
+        Når du har brugt appen et stykke tid, kan den én gang bede dig om at bedømme den via
+        butikkens egen bedømmelsesdialog: Apples på Mac, iPhone og iPad, Microsoft Stores på Windows
+        og Google Plays bedømmelse i appen på Android. Det er butikken, der afgør, om dialogen
+        vises. En bedømmelse eller anmeldelse, du giver, går til den pågældende butik og er
+        underlagt dens vilkår; appen registrerer ikke, om du har givet en.
       </p>
       <h2>Opbevaring og sletning</h2>
       <p>
@@ -62,10 +80,39 @@
         kontakte os med spørgsmål om privatliv på
         <a href="mailto:hello@mybackhurts.app">hello@mybackhurts.app</a>.
       </p>
+      <h2>Dette websted</h2>
+      <p>
+        Dette websted, mybackhurts.app, består af statiske sider, der hostes af Cloudflare.
+        Cloudflare håndterer i henhold til sin privatlivspolitik hver anmodning, herunder din
+        IP-adresse, for at levere webstedet og beder din browser om at give Cloudflare besked, når
+        webstedet ikke kan indlæses. Webstedets egne anmodningslogfiler, traces og logeksporter er
+        slået fra i dets hostingkonfiguration.
+      </p>
+      <ul>
+        <li>
+          Webstedet sætter ingen cookies og kører ingen analyse-, reklame- eller sporingsscripts.
+        </li>
+        <li>
+          Webstedets skrifttyper, billeder og videoer leveres fra selve mybackhurts.app. Dets
+          indholdssikkerhedspolitik (Content Security Policy) tillader siderne kun at hente filer
+          fra mybackhurts.app og forbyder dem at oprette egne forbindelser, og dets
+          tilladelsespolitik (Permissions Policy) forhindrer dem i at bruge dit kamera, din mikrofon
+          eller din placering.
+        </li>
+        <li>
+          For at vise siden på dit sprog og placere din enheds butik først, aflæser siden din
+          browsers foretrukne sprog og platform i selve browseren. Hvis du vælger et tema eller et
+          sprog, husker din browser valget i sit lokale lager; det sendes ikke til os.
+        </li>
+        <li>
+          Links til andre websteder, såsom butikkerne, åbnes kun, når du følger dem, og webstedet
+          beder din browser om ikke at fortælle de websteder, hvilken side du kom fra.
+        </li>
+      </ul>
       <h2>Ændringer</h2>
       <p>
-        Vi kan opdatere denne politik, når appen eller gældende krav ændrer sig. Datoen ovenfor
-        viser, hvornår den senest blev revideret.
+        Vi kan opdatere denne politik, når appen, dette websted eller gældende krav ændrer sig.
+        Datoen ovenfor viser, hvornår den senest blev revideret.
       </p>
     </main>
   </body>

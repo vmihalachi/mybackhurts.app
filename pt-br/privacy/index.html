@@ -8,7 +8,7 @@
     <title>Política de privacidade · mybackhurts</title>
     <meta
       name="description"
-      content="O mybackhurts é um app para macOS e Windows de Vlad Mihalachi. Esta política explica o que o app faz com suas informações."
+      content="O mybackhurts é um app para Mac, iPhone e iPad, Windows e Android de Vlad Mihalachi. Esta política explica o que o app e este site fazem com suas informações."
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,42 +18,62 @@
       <header>
         <a class="legal-back" href="/pt-br/">← mybackhurts</a>
         <h1>Política de privacidade</h1>
-        <p>Última atualização: 10 de outubro de 2026</p>
+        <p>Última atualização: 30&nbsp;de&nbsp;outubro de 2026</p>
       </header>
       <p>
-        O mybackhurts é um app para macOS e Windows de Vlad Mihalachi. Esta política explica o que o
-        app faz com suas informações.
+        O mybackhurts é um app para Mac, iPhone e iPad, Windows e Android de Vlad Mihalachi. Esta
+        política explica o que o app e este site fazem com suas informações.
+      </p>
+      <p>
+        O app para Mac vem da Mac App Store; o de iPhone e iPad, da App Store; o de Windows, da
+        Microsoft Store; e o de Android, do Google Play.
       </p>
       <h2>O que o app processa</h2>
       <p>
         Quando você escolhe o modo Webcam, o app usa a sua câmera para detectar poses corporais e
-        contar repetições de exercícios. No Mac, ele usa o framework Vision da Apple. No Windows,
-        usa um modelo de poses que roda no seu PC por meio do Windows ML. Nos dois casos, os quadros
-        de vídeo e os dados das poses são processados na memória do seu dispositivo e descartados
+        contar repetições de exercícios. No Mac, no iPhone e no iPad, ele usa o framework Vision da
+        Apple. No Windows, usa um modelo de poses que roda no seu PC por meio do Windows ML. No
+        Android, usa um modelo de poses que faz parte do app e roda no seu dispositivo com o ONNX
+        Runtime, e acessa a câmera pelo CameraX do Android. Em todas as plataformas, os quadros de
+        vídeo e os dados das poses são processados na memória do seu dispositivo e descartados
         imediatamente. O app não grava, envia nem armazena imagens ou vídeos. O modo Webcam é
         opcional; no modo Simples, a câmera fica desligada, a menos que você peça.
       </p>
       <p>
-        Para que os lembretes não interrompam você, o app verifica há quanto tempo você não usa o
-        teclado ou o mouse, se outro app está usando a câmera ou o microfone (por exemplo, durante
-        uma chamada) e se há um app aberto em tela cheia. Ele apenas lê esse status do sistema
-        operacional. Ele nunca liga a câmera nem o microfone e não guarda essas informações.
+        No Mac e no Windows, para que os lembretes não interrompam você, o app verifica há quanto
+        tempo você não usa o teclado ou o mouse, se outro app está usando a câmera ou o microfone
+        (por exemplo, durante uma chamada) e se há um app aberto em tela cheia. Ele apenas lê esse
+        status do sistema operacional. Ele nunca liga a câmera nem o microfone e não guarda essas
+        informações. No Android, durante um intervalo no modo Webcam, o app consulta o modo de áudio
+        do celular para saber se há uma chamada em andamento e, enquanto ela durar, pausa o
+        intervalo; ele também não guarda essa informação. O app para iPhone e iPad não faz nenhuma
+        dessas verificações.
       </p>
       <h2>O que o app armazena</h2>
       <p>
         O app armazena localmente no seu dispositivo as configurações e os resultados dos
         exercícios, como nomes dos exercícios, repetições, durações e datas. Ele não exige uma conta
         e não coleta seu nome, endereço de e-mail, localização, contatos ou atividade de navegação.
+        Cada dispositivo guarda o próprio histórico: o app não o sincroniza entre os seus
+        dispositivos.
       </p>
       <h2>Compartilhamento e acesso à rede</h2>
       <p>
         O mybackhurts não opera serviços de análise, publicidade, rastreamento ou backend, e não faz
-        suas próprias solicitações de rede. Se você fizer uma compra do Supporter ou der uma
-        gorjeta, a loja em que você obteve o app processará essa transação: a Apple por meio do
-        StoreKit no Mac, de acordo com os termos e a política de privacidade da Apple, e a Microsoft
-        por meio da Microsoft Store no Windows, de acordo com os termos e a declaração de
-        privacidade da Microsoft. A versão para Windows também é instalada e atualizada pela
-        Microsoft Store.
+        suas próprias solicitações de rede. Se você fizer a compra de Apoiador ou der uma gorjeta, a
+        loja em que você obteve o app processará essa transação: a Apple por meio do StoreKit no
+        Mac, no iPhone e no iPad, de acordo com os termos e a política de privacidade da Apple; a
+        Microsoft por meio da Microsoft Store no Windows, de acordo com os termos e a declaração de
+        privacidade da Microsoft; e o Google por meio do Google Play Billing no Android, de acordo
+        com os termos e a política de privacidade do Google. A versão para Windows também é
+        instalada e atualizada pela Microsoft Store.
+      </p>
+      <p>
+        Depois que você usar o app por um tempo, ele poderá pedir uma única vez que você o avalie,
+        pelo aviso de avaliação da própria loja: o da Apple no Mac, no iPhone e no iPad, o da
+        Microsoft Store no Windows e, no Android, a janela de avaliação do Google Play que aparece
+        dentro do app. É a loja que decide se vai exibi-lo. A nota ou avaliação que você deixar vai
+        para essa loja, de acordo com os termos dela; o app não registra se você deixou uma.
       </p>
       <h2>Retenção e exclusão</h2>
       <p>
@@ -62,10 +82,39 @@
         pode entrar em contato conosco para tirar dúvidas sobre privacidade pelo e-mail
         <a href="mailto:hello@mybackhurts.app">hello@mybackhurts.app</a>.
       </p>
+      <h2>Este site</h2>
+      <p>
+        Este site, mybackhurts.app, é um conjunto de páginas estáticas hospedadas pela Cloudflare. A
+        Cloudflare processa cada solicitação, incluindo o seu endereço IP, para entregar o site, de
+        acordo com a política de privacidade da Cloudflare, e pede ao seu navegador que a avise
+        quando o site não carregar. Os registros de solicitações, os rastros de execução e as
+        exportações de registros do próprio site estão desativados na configuração de hospedagem.
+      </p>
+      <ul>
+        <li>
+          O site não usa cookies e não executa scripts de análise, publicidade ou rastreamento.
+        </li>
+        <li>
+          As fontes, imagens e vídeos são servidos pelo próprio mybackhurts.app. A política de
+          segurança de conteúdo do site só permite que as páginas carreguem arquivos do
+          mybackhurts.app e não deixa que elas abram conexões próprias, e a política de permissões
+          impede que usem sua câmera, seu microfone ou sua localização.
+        </li>
+        <li>
+          Para mostrar a página no seu idioma e colocar a loja do seu dispositivo em primeiro lugar,
+          a página lê, no próprio navegador, o idioma preferido e a plataforma informados por ele.
+          Se você escolher um tema ou um idioma, o navegador guarda essa escolha no armazenamento
+          local; ela não é enviada para nós.
+        </li>
+        <li>
+          Os links para outros sites, como as lojas, só abrem quando você clica neles, e o site pede
+          ao seu navegador que não conte a esses sites de qual página você veio.
+        </li>
+      </ul>
       <h2>Alterações</h2>
       <p>
-        Podemos atualizar esta política quando o app ou os requisitos aplicáveis mudarem. A data
-        acima mostra quando ela foi revisada pela última vez.
+        Podemos atualizar esta política quando o app, este site ou os requisitos aplicáveis mudarem.
+        A data acima mostra quando ela foi revisada pela última vez.
       </p>
     </main>
   </body>
