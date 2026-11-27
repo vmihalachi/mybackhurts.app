@@ -3346,11 +3346,11 @@ details p {
 
 /* Underlines. CJK characters have no descenders, but they sit lower than Latin letters and fill the
    line from top to bottom, so an underline placed for Latin text ran into them: the footer links' line
-   touched the characters above it, and the wavy Supporter and privacy-note lines touched the characters
-   on the next line. Here each line sits a few pixels clear of both. The Supporter wave keeps the base 0.3em
-   offset, which clears the characters above it (a smaller one nearly touches them), and the detail line
-   below moves down instead. */
-:is(:lang(ja), :lang(ko), :lang(zh)) :is(.footer-links a, .legal-page a) {
+   (the other apps' and Laching's included) touched the characters above it, and the wavy Supporter and
+   privacy-note lines touched the characters on the next line. Here each line sits a few pixels clear of
+   both. The Supporter wave keeps the base 0.3em offset, which clears the characters above it (a smaller
+   one nearly touches them), and the detail line below moves down instead. */
+:is(:lang(ja), :lang(ko), :lang(zh)) :is(.footer-links a, .more-from a, .legal-page a) {
   text-underline-offset: 0.3em;
 }
 :is(:lang(ja), :lang(ko), :lang(zh)) .receipt-detail {
