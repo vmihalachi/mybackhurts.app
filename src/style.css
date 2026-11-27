@@ -220,8 +220,12 @@ h3 {
 }
 /* Zine Display's capitals fill a 0.95 line, but its accented ones (Å, Ö, Ů, É, Ñ, Č…) stand up to 0.12em
    above it and the pink copy hangs 0.045em below every line, so in a wrapped heading they would touch
-   the line above. Languages with accented capitals get 1.25; Romanian also hangs a comma under Ș and Ț,
-   so 1.45. English and Dutch headings have no accented capitals and stay solid. */
+   the line above. Languages with accented capitals get 1.25. Some of them also hang a mark about 0.26em
+   below the baseline (Turkish Ş, French and Portuguese Ç, Polish Ą and Ę): 1.25 clears those only
+   because no current heading sets one above an accented capital on the next line (Ş over Ü would need
+   about 1.42), so check a new heading's breaks. Romanian's comma under Ș and Ț hangs deeper (0.34em)
+   and its headings do stack it over accented capitals ("Sănătate și / siguranță"), so 1.45. English
+   and Dutch headings have no accented capitals and stay solid. */
 :root:is(
   :lang(cs),
   :lang(da),
@@ -317,12 +321,10 @@ section,
    same lengths. The break-word is a last
    resort for a future title, and no current one needs it. The line height is looser than other
    headings' because the display face's accents stand tall above its capitals (the Czech Ů reaches
-   1.12em, the Danish Å 1.09em): at 1.2 a wrapped title's accents clear the line above. Where a
-   language's display headings open up further (--display-leading), its title takes that instead:
-   Romanian's 1.45 also clears the comma under Ș and Ț. */
+   1.12em, the Danish Å 1.09em): at 1.2 a wrapped title's accents clear the line above. */
 .legal-page h1 {
   margin: 0 0 1rem;
-  font: clamp(2.7rem, 11.5vw, 3.4rem) / max(1.2, var(--display-leading)) var(--display);
+  font: clamp(2.7rem, 11.5vw, 3.4rem) / 1.2 var(--display);
   -webkit-hyphens: auto;
   hyphens: auto;
   -webkit-hyphenate-limit-before: 4;
@@ -3236,8 +3238,9 @@ details p {
    longest unbreakable label still shares its line with its value and three dots at 320px (Swedish
    "Webbkameraräkning", Italian "(facoltativo)" beside "Una volta"). Only if even that runs out, with
    enlarged text, does a value drop under its label, as on a till receipt. The move cards widen and their
-   insides narrow the same way, so the longest tally ("20 / 20 repeticiones") stays on one line inside
-   its card, with the next card still peeking in. This comes after the 720px block it overrides. */
+   insides narrow the same way, so the longest tally ("20 / 20 repeticiones", which never wraps) keeps
+   12px between it and the card's border, with the next card still peeking in; like at 360px it reaches
+   about a pixel into the card's padding. This comes after the 720px block it overrides. */
 @media (max-width: 359px) {
   .receipt {
     --leader-pad: 0.25rem;
