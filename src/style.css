@@ -37,7 +37,9 @@
   --tape-ink: rgba(38, 51, 107, 0.2);
   --dots: rgba(38, 51, 107, 0.12);
   --band: var(--pink);
-  --band-ink: #26336b;
+  /* Ink on the pink band: a deeper navy than --ink, which is only 3.85:1 on the pink plate. This one is
+     5.1:1 on pink and 5.6:1 on the teal plate. */
+  --band-ink: #18204a;
   --teal: #14ada5;
   --blend: multiply;
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.15 0 0 0 0 0.2 0 0 0 0 0.42 0 0 0 0.176 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
@@ -45,6 +47,10 @@
   --display: "Zine Display", "Arial Black", sans-serif;
   --mono: "Courier Prime", "Courier New", monospace;
   --hand: "Reenie Beanie", "Bradley Hand", cursive;
+  /* Every handwritten size is multiplied by this; the CJK pages lower it (see the end of this file). */
+  --hand-scale: 1;
+  /* Display headings set solid. Languages whose headings carry accented capitals open it up below. */
+  --display-leading: 0.95;
   /* The type floor (DESIGN.md → Type): Courier's x-height is small, so nothing outside a drawing goes
      under 17px. --text-meta is the bottom step (labels, chips, buttons, nav, captions, footers, table
      headers); --text-body is running copy, the comparison table's cells included, a step up from 721px. */
@@ -193,7 +199,7 @@ h1,
 h2 {
   font-family: var(--display);
   font-weight: 400;
-  line-height: 0.95;
+  line-height: var(--display-leading);
   letter-spacing: -0.01em;
   text-transform: uppercase;
 }
@@ -212,6 +218,28 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
+/* Zine Display's capitals fill a 0.95 line, but its accented ones (Å, Ö, Ů, É, Ñ, Č…) stand up to 0.12em
+   above it and the pink copy hangs 0.045em below every line, so in a wrapped heading they would touch
+   the line above. Languages with accented capitals get 1.25; Romanian also hangs a comma under Ș and Ț,
+   so 1.45. English and Dutch headings have no accented capitals and stay solid. */
+:root:is(
+  :lang(cs),
+  :lang(da),
+  :lang(de),
+  :lang(es),
+  :lang(fr),
+  :lang(it),
+  :lang(nb),
+  :lang(pl),
+  :lang(pt),
+  :lang(sv),
+  :lang(tr)
+) {
+  --display-leading: 1.25;
+}
+:root:lang(ro) {
+  --display-leading: 1.45;
+}
 /* Two-ink misregistration: the pink plate is slightly off. */
 .riso {
   text-shadow: 0.06em 0.045em 0 var(--pink);
@@ -226,7 +254,7 @@ h3 {
 }
 .note {
   font-family: var(--hand);
-  font-size: 1.6rem;
+  font-size: calc(1.6rem * var(--hand-scale));
   line-height: 1;
   color: var(--pink-text);
 }
@@ -289,10 +317,12 @@ section,
    same lengths. The break-word is a last
    resort for a future title, and no current one needs it. The line height is looser than other
    headings' because the display face's accents stand tall above its capitals (the Czech Ů reaches
-   1.12em, the Danish Å 1.09em): at 1.2 a wrapped title's accents clear the line above. */
+   1.12em, the Danish Å 1.09em): at 1.2 a wrapped title's accents clear the line above. Where a
+   language's display headings open up further (--display-leading), its title takes that instead:
+   Romanian's 1.45 also clears the comma under Ș and Ț. */
 .legal-page h1 {
   margin: 0 0 1rem;
-  font: clamp(2.7rem, 11.5vw, 3.4rem) / 1.2 var(--display);
+  font: clamp(2.7rem, 11.5vw, 3.4rem) / max(1.2, var(--display-leading)) var(--display);
   -webkit-hyphens: auto;
   hyphens: auto;
   -webkit-hyphenate-limit-before: 4;
@@ -303,7 +333,7 @@ section,
 
 .legal-page h2 {
   margin: 2.5rem 0 0.7rem;
-  font: 1.45rem/1.1 var(--display);
+  font: 1.45rem / max(1.1, var(--display-leading)) var(--display);
 }
 
 .legal-page p,
@@ -330,9 +360,10 @@ section,
 }
 
 /* The comparison page's title is English, with no accents to clear, so it keeps the display
-   headings' tight leading rather than the legal titles' looser one. */
+   headings' tight leading (--display-leading, 0.95 in English) rather than the legal titles' looser
+   one. */
 .compare-page h1 {
-  line-height: 0.95;
+  line-height: var(--display-leading);
 }
 
 /* A safety net: if the table ever outgrows the column, it scrolls on its own and the page never does. */
@@ -724,7 +755,7 @@ section {
 }
 .hand-link {
   font-family: var(--hand);
-  font-size: 1.9rem;
+  font-size: calc(1.9rem * var(--hand-scale));
   line-height: 1;
   color: var(--pink-text);
   text-decoration: none;
@@ -834,7 +865,7 @@ svg text {
 }
 svg .note {
   fill: var(--pink-text);
-  font-size: 22px;
+  font-size: calc(22px * var(--hand-scale));
 }
 .figure g,
 .figure path {
@@ -1116,7 +1147,7 @@ svg .note {
   position: absolute;
   top: 0.2rem;
   left: 0.7rem;
-  font-size: 2.2rem;
+  font-size: calc(2.2rem * var(--hand-scale));
   transform: rotate(-6deg);
 }
 .doodle {
@@ -1127,7 +1158,7 @@ svg .note {
   overflow: visible;
 }
 .doodle .note {
-  font-size: 20px;
+  font-size: calc(20px * var(--hand-scale));
 }
 /* A drawing of the menu bar menu, wide enough that its rows keep the live-text size. */
 .menu-cutout {
@@ -1383,13 +1414,13 @@ svg .note {
 }
 .pack-title {
   font:
-    400 clamp(1.9rem, 3.4vw, 2.5rem) / 1 var(--display),
+    400 clamp(1.9rem, 3.4vw, 2.5rem) / max(1, var(--display-leading)) var(--display),
     sans-serif;
   text-transform: uppercase;
   letter-spacing: 0;
 }
 .pack-label {
-  font-size: 1.7rem;
+  font-size: calc(1.7rem * var(--hand-scale));
   transform: rotate(-2deg);
 }
 .pack-list {
@@ -1446,7 +1477,7 @@ svg .note {
 }
 .coupon-title {
   font:
-    400 clamp(1.25rem, 2.4vw, 1.6rem) / 1.1 var(--display),
+    400 clamp(1.25rem, 2.4vw, 1.6rem) / max(1.1, var(--display-leading)) var(--display),
     sans-serif;
   text-transform: uppercase;
   text-shadow: 0.06em 0.045em 0 var(--pink);
@@ -2143,8 +2174,8 @@ svg .note {
   background: radial-gradient(var(--pink-soft) 1.3px, transparent 1.6px) 0 0 / 9px 9px;
 }
 /* Each mode's name on a strip of pink tape, stuck on a little crooked. The tape is laid over
-   paper so the label keeps its contrast on the halftone too. It's --tape over --paper with --ink
-   text, not the --band / --band-ink pair: that one is 3.85:1 in light, too low for text this small. */
+   paper so the label keeps its contrast on the halftone too: --tape over --paper with --ink text,
+   lighter than the full --band plate the tape strip uses. */
 .mode .label {
   justify-self: start;
   padding: 0.35rem 0.7rem;
@@ -2176,7 +2207,7 @@ svg .note {
   right: -2.6rem;
   top: -1.4rem;
   font-family: var(--hand);
-  font-size: 2rem;
+  font-size: calc(2rem * var(--hand-scale));
   color: var(--pink-text);
   animation: plus 1.6s ease-out infinite;
 }
@@ -2235,7 +2266,7 @@ svg .note {
   right: -0.5rem;
   bottom: 1.4rem;
   font-family: var(--hand);
-  font-size: 1.5rem;
+  font-size: calc(1.5rem * var(--hand-scale));
   line-height: 1;
   color: var(--paper);
   background: var(--ink);
@@ -2330,7 +2361,7 @@ svg .note {
   align-items: flex-end;
   gap: 0.5rem;
   margin: 0;
-  font-size: 1.75rem;
+  font-size: calc(1.75rem * var(--hand-scale));
   line-height: 1.05;
   transform: rotate(-1.5deg);
   transform-origin: left center;
@@ -2436,7 +2467,7 @@ svg .note {
 }
 .streak {
   font:
-    400 2.6rem/1 var(--hand),
+    400 calc(2.6rem * var(--hand-scale)) / 1 var(--hand),
     cursive;
 }
 .circled {
@@ -2562,7 +2593,7 @@ svg .note {
   gap: 0.3rem;
   margin: 0 0 -1rem;
   padding-left: 2.6rem;
-  font-size: 1.75rem;
+  font-size: calc(1.75rem * var(--hand-scale));
   transform: rotate(-2deg);
   transform-origin: left;
 }
@@ -2750,7 +2781,9 @@ details p {
   column-gap: 0.4rem;
 }
 /* Dotted leader between label and value, along the label's last line: the words sit on their own card
-   colour, which hides the dots behind them, so a label that wraps keeps its dots on its value's line. */
+   colour, which hides the dots behind them, so a label that wraps keeps its dots on its value's line.
+   The margin after the words keeps at least three dots showing: a label that would crowd its value wraps
+   instead. */
 .receipt dt,
 .receipt-leader {
   background: linear-gradient(90deg, var(--line) 2px, #0000 0) 0 calc(100% - 0.3em) / 4px 2px
@@ -2758,6 +2791,7 @@ details p {
 }
 .receipt dt > span,
 .receipt-leader > span {
+  margin-right: 0.75rem;
   padding-right: 0.4rem;
   background: var(--card);
   -webkit-box-decoration-break: clone;
@@ -2877,7 +2911,7 @@ details p {
   text-align: center;
   text-transform: none;
   letter-spacing: 0;
-  font-size: 1.6rem;
+  font-size: calc(1.6rem * var(--hand-scale));
 }
 /* "less than a coffee", scribbled in the margin next to the Supporter line. */
 .receipt-coffee {
@@ -2893,7 +2927,7 @@ details p {
   text-transform: none;
   letter-spacing: 0;
   font-weight: 400;
-  font-size: 1.65rem;
+  font-size: calc(1.65rem * var(--hand-scale));
   transform: translateY(-65%) rotate(4deg);
 }
 .receipt-coffee svg {
@@ -3024,17 +3058,48 @@ details p {
   .receipt-coffee svg {
     display: none;
   }
+  /* The Supporter value sits beside the label's first line, and the coffee note takes a line of its own
+     under the row, right-aligned: the empty item after the value ends the first line. The label keeps
+     the rest of the width for its later lines, so "(facoltativo)" still fits beside "Una volta" at
+     320px. */
   .receipt dl > .receipt-supporter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: start;
   }
-  /* The value sits at the top of the row here, with the coffee note under it, so the dots follow the
-     label's first line. */
+  .receipt-supporter > dt {
+    flex: 1 1 0;
+  }
+  .receipt-supporter > dd:not(.receipt-detail) {
+    display: contents;
+  }
+  .receipt dl > .receipt-supporter::after {
+    content: "";
+    order: 1;
+    flex-basis: 100%;
+  }
+  .receipt-coffee {
+    order: 2;
+  }
+  .receipt-detail {
+    order: 3;
+    flex-basis: 100%;
+  }
+  /* So the dots follow the label's first line, and the three-dot minimum moves there too: a 1px float at
+     the end of that line only. When even the first word can't fit beside it, the line drops by that 1px
+     rather than a whole line. */
   .receipt-leader {
     background-position-y: calc(1.05em - 2px);
   }
-  .receipt-supporter > dd:not(.receipt-detail) {
-    display: grid;
-    justify-items: end;
+  .receipt-leader > span {
+    margin-right: 0;
+  }
+  .receipt-leader::before {
+    content: "";
+    float: right;
+    width: 0.75rem;
+    height: 1px;
   }
   .hero-art {
     max-width: 560px;
@@ -3098,44 +3163,9 @@ details p {
     font-size: 18px;
   }
   .chart svg .note {
-    font-size: 26px;
+    font-size: calc(26px * var(--hand-scale));
     text-anchor: middle;
     transform: translateY(-5px);
-  }
-}
-/* Under 360px the side margins narrow, and a label and its value share a line only while they fit. When
-   the label's longest word and the value don't (Swedish "Webbkameraräkning", Italian "(facoltativo)"
-   beside "Una volta"), the value drops under the label, as on a till receipt. The coffee note always
-   takes a line of its own under the Supporter value, as wide as the row: the empty item after the value
-   ends that line. */
-@media (max-width: 359px) {
-  .receipt {
-    padding-inline: 1rem;
-  }
-  .receipt dl > div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    column-gap: 0.4rem;
-  }
-  .receipt dl > div > dt {
-    flex: 1 1 0;
-  }
-  .receipt-supporter > dd:not(.receipt-detail) {
-    display: contents;
-  }
-  .receipt dl > .receipt-supporter::after {
-    content: "";
-    order: 1;
-    flex-basis: 100%;
-  }
-  .receipt-coffee {
-    order: 2;
-    max-width: none;
-  }
-  .receipt-detail {
-    order: 3;
-    flex-basis: 100%;
   }
 }
 @media (max-width: 720px) {
@@ -3194,6 +3224,46 @@ details p {
   }
 }
 
+/* Under 360px the side margins, the tracking and the gaps narrow (the type stays the same size), so the
+   longest unbreakable label still shares its line with its value and three dots at 320px (Swedish
+   "Webbkameraräkning", Italian "(facoltativo)" beside "Una volta"). Only if even that runs out, with
+   enlarged text, does a value drop under its label, as on a till receipt. The move cards widen and their
+   insides narrow the same way, so the longest tally ("20 / 20 repeticiones") stays on one line inside
+   its card, with the next card still peeking in. This comes after the 720px block it overrides. */
+@media (max-width: 359px) {
+  .receipt {
+    padding-inline: 0.75rem;
+    letter-spacing: 0;
+  }
+  .receipt dl > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 0.25rem;
+  }
+  .receipt dl > div > dt {
+    flex: 1 1 0;
+  }
+  .receipt dt > span,
+  .receipt-leader > span {
+    padding-right: 0.25rem;
+  }
+  .receipt-coffee {
+    max-width: none;
+  }
+  .move-grid {
+    grid-auto-columns: 88%;
+    gap: 0.75rem;
+  }
+  .move {
+    padding-inline: 0.8rem;
+  }
+  .move .figure {
+    margin-inline: -0.8rem;
+    width: calc(100% + 1.6rem);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -3240,4 +3310,57 @@ details p {
 :is(:lang(ja), :lang(zh))
   :is(.receipt-coffee span, .stickers > .note, .sticker-name, .more-from-tagline) {
   word-break: keep-all;
+}
+
+/* Handwriting. Reenie Beanie draws Latin only, and small for its size, so CJK notes used to fall back to
+   whatever the browser calls cursive and came out twice as big as the English ones. Each language gets
+   installed system faces instead, nothing downloaded: a written or rounded style first where the system
+   has one (Klee or Kaiti on a Mac that has them, UD Digi Kyokasho or KaiTi on Windows, Hiragino Maru on
+   Apple devices), plain sans after. The whole note uses it, Latin words included, so a note keeps one
+   hand. Every handwritten size is scaled so the characters stand as tall as Reenie's capitals; the
+   smallest note stays above 18px. Square glyphs fill the line, so wrapped notes get more leading. */
+:root:lang(ja) {
+  --hand:
+    "Klee", "UD Digi Kyokasho N-R", "Hiragino Maru Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
+  --hand-scale: 0.76;
+}
+:root:lang(ko) {
+  --hand: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --hand-scale: 0.8;
+}
+:root:lang(zh) {
+  --hand:
+    "Kaiti SC", "STKaiti", "KaiTi", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --hand-scale: 0.8;
+}
+:is(:lang(ja), :lang(ko), :lang(zh)) .note {
+  line-height: 1.25;
+}
+
+/* Underlines. CJK characters have no descenders, but they sit lower than Latin letters and fill the
+   line from top to bottom, so an underline placed for Latin text ran into them: the footer links' line
+   touched the characters above it, and the wavy Supporter and privacy-note lines touched the characters
+   on the next line. Here each line sits a few pixels clear of both. */
+:is(:lang(ja), :lang(ko), :lang(zh)) :is(.footer-links a, .legal-page a) {
+  text-underline-offset: 0.3em;
+}
+:is(:lang(ja), :lang(zh)) .receipt-theme {
+  text-underline-offset: 0.22em;
+}
+:is(:lang(ja), :lang(ko), :lang(zh)) .receipt-detail {
+  margin-top: 0.45rem !important;
+}
+:is(:lang(ja), :lang(ko), :lang(zh)) .privacy-verify {
+  line-height: 1.4;
+}
+:is(:lang(ja), :lang(ko), :lang(zh)) .privacy-verify a {
+  text-underline-offset: 3px;
+}
+
+/* "コーヒー1杯より" can't break (see above) and is a little wider than the 9rem the narrow layouts give the
+   coffee note. */
+@media (max-width: 980px) {
+  :lang(ja) .receipt-coffee {
+    max-width: 10rem;
+  }
 }

@@ -108,6 +108,12 @@ const landing = companionLanding({
       // The film's frame at data-poster-time, as a 1280 px WebP (AVIF would need Safari 16; the site supports 15).
       case "previewPoster":
         return `/src/preview/${language.code}.webp`;
+      // Reenie Beanie draws Latin only: the Japanese, Korean and Chinese pages write their notes in system
+      // faces (style.css), so only the other pages preload it.
+      case "handFontPreload":
+        return /^(ja|ko|zh)\b/.test(language.code)
+          ? ""
+          : '<link rel="preload" href="/src/fonts/ReenieBeanie.woff2" as="font" type="font/woff2" crossorigin />';
       case "runtimeJson":
         return scriptJson(locales[language.code as LanguageCode].runtime);
       case "notFoundJson":
