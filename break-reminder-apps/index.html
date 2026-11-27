@@ -44,58 +44,78 @@
 
       <h2>At a glance</h2>
       <div class="compare-scroll" role="region" aria-label="Comparison table" tabindex="0">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th scope="col">App</th>
-              <th scope="col">Runs on</th>
-              <th scope="col">Price</th>
-              <th scope="col">What a break is</th>
-              <th scope="col">Waits for calls</th>
+        <table class="compare-table" role="table">
+          <thead role="rowgroup">
+            <tr role="row">
+              <th scope="col" role="columnheader">App</th>
+              <th scope="col" role="columnheader">Runs on</th>
+              <th scope="col" role="columnheader">Price</th>
+              <th scope="col" role="columnheader">What a break is</th>
+              <th scope="col" role="columnheader">Waits for calls</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">mybackhurts</th>
-              <td>Mac, iPhone, iPad, Windows 11</td>
-              <td>Free; optional one-time Supporter unlock (€0.99)</td>
-              <td>A few guided exercises, with optional webcam rep counting on your device</td>
-              <td>On Mac and Windows, while the camera or microphone is in use</td>
+          <tbody role="rowgroup">
+            <tr role="row">
+              <th scope="row" role="rowheader">mybackhurts</th>
+              <td role="cell" data-label="Runs on">Mac, iPhone, iPad, Windows 11</td>
+              <td role="cell" data-label="Price">
+                Free; optional one-time Supporter unlock (€0.99)
+              </td>
+              <td role="cell" data-label="What a break is">
+                A few guided exercises, with optional webcam rep counting on your device
+              </td>
+              <td role="cell" data-label="Waits for calls">
+                On Mac and Windows, while the camera or microphone is in use
+              </td>
             </tr>
-            <tr>
-              <th scope="row">Stretchly</th>
-              <td>Mac, Windows, Linux</td>
-              <td>Free, open source</td>
-              <td>A window with a break idea: 20-second mini breaks and 5-minute long breaks</td>
-              <td>Pauses in Do Not Disturb</td>
+            <tr role="row">
+              <th scope="row" role="rowheader">Stretchly</th>
+              <td role="cell" data-label="Runs on">Mac, Windows, Linux</td>
+              <td role="cell" data-label="Price">Free, open source</td>
+              <td role="cell" data-label="What a break is">
+                A window with a break idea: 20-second mini breaks and 5-minute long breaks
+              </td>
+              <td role="cell" data-label="Waits for calls">Pauses in Do Not Disturb</td>
             </tr>
-            <tr>
-              <th scope="row">Time Out</th>
-              <td>Mac (macOS 26 for the current version)</td>
-              <td>Free; optional Supporter or Lifetime ($59.99)</td>
-              <td>The screen dims to a break theme: micro and normal breaks</td>
-              <td>Yes, with scripts for FaceTime, Teams, Zoom and others</td>
+            <tr role="row">
+              <th scope="row" role="rowheader">Time Out</th>
+              <td role="cell" data-label="Runs on">Mac (macOS 26 for the current version)</td>
+              <td role="cell" data-label="Price">Free; optional Supporter or Lifetime ($59.99)</td>
+              <td role="cell" data-label="What a break is">
+                The screen dims to a break theme: micro and normal breaks
+              </td>
+              <td role="cell" data-label="Waits for calls">
+                Yes, with scripts for FaceTime, Teams, Zoom and others
+              </td>
             </tr>
-            <tr>
-              <th scope="row">LookAway</th>
-              <td>Mac, with an iPhone and iPad companion</td>
-              <td>From $19, one-time</td>
-              <td>A screen break with a countdown, plus blink and posture nudges</td>
-              <td>Yes, and during screen recording and video</td>
+            <tr role="row">
+              <th scope="row" role="rowheader">LookAway</th>
+              <td role="cell" data-label="Runs on">Mac, with an iPhone and iPad companion</td>
+              <td role="cell" data-label="Price">From $19, one-time</td>
+              <td role="cell" data-label="What a break is">
+                A screen break with a countdown, plus blink and posture nudges
+              </td>
+              <td role="cell" data-label="Waits for calls">
+                Yes, and during screen recording and video
+              </td>
             </tr>
-            <tr>
-              <th scope="row">Workrave</th>
-              <td>Windows, Linux</td>
-              <td>Free, open source</td>
-              <td>Micro-breaks, rest breaks and a daily limit</td>
-              <td>Not mentioned</td>
+            <tr role="row">
+              <th scope="row" role="rowheader">Workrave</th>
+              <td role="cell" data-label="Runs on">Windows, Linux</td>
+              <td role="cell" data-label="Price">Free, open source</td>
+              <td role="cell" data-label="What a break is">
+                Micro-breaks, rest breaks and a daily limit
+              </td>
+              <td role="cell" data-label="Waits for calls">Not mentioned</td>
             </tr>
-            <tr>
-              <th scope="row">BreakTimer</th>
-              <td>Mac, Windows, Linux</td>
-              <td>Free, open source</td>
-              <td>A break with your own colors and message</td>
-              <td>Not mentioned</td>
+            <tr role="row">
+              <th scope="row" role="rowheader">BreakTimer</th>
+              <td role="cell" data-label="Runs on">Mac, Windows, Linux</td>
+              <td role="cell" data-label="Price">Free, open source</td>
+              <td role="cell" data-label="What a break is">
+                A break with your own colors and message
+              </td>
+              <td role="cell" data-label="Waits for calls">Not mentioned</td>
             </tr>
           </tbody>
         </table>

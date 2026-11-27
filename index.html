@@ -942,7 +942,7 @@
             </defs>
             <g class="stamp-ink">
               <circle cx="100" cy="100" r="92" />
-              <circle cx="100" cy="100" r="56" />
+              <circle cx="100" cy="100" r="64" />
               <text>
                 <textPath href="#stamp-ring" textLength="452" lengthAdjust="spacing">
                   {{privacy.stampRing}}
@@ -951,10 +951,10 @@
               <text class="stamp-mid" x="100" y="96" text-anchor="middle">
                 {{privacy.stampZero}}
               </text>
-              <text class="stamp-small" x="100" y="120" text-anchor="middle">
+              <text class="stamp-small" x="100" y="118" text-anchor="middle">
                 {{privacy.stampNetwork}}
               </text>
-              <text class="stamp-small" x="100" y="134" text-anchor="middle">
+              <text class="stamp-small" x="100" y="132" text-anchor="middle">
                 {{privacy.stampRequests}}
                 <tspan class="stamp-star">*</tspan>
               </text>
@@ -1011,8 +1011,8 @@
                 <text x="222" y="158">{{stats.days.sat}}</text>
                 <text x="253" y="158">{{stats.days.sun}}</text>
               </g>
-              <text class="note" x="140" y="34">{{stats.bestDay}}</text>
-              <path class="thin pink-line" d="M170 38 Q180 42 166 50" />
+              <text class="note" x="160" y="34" text-anchor="end">{{stats.bestDay}}</text>
+              <path class="thin pink-line" d="M152 39 Q141 44 146 51" />
             </svg>
             <figcaption class="note">{{stats.caption}}</figcaption>
             <aside class="suggestion-note">
@@ -1083,33 +1083,34 @@
               <h3 id="receipt-title" class="receipt-title">{{receipt.title}}</h3>
               <dl>
                 <div>
-                  <dt>{{receipt.reminders}}</dt>
+                  <dt><span>{{receipt.reminders}}</span></dt>
                   <dd>{{receipt.free}}</dd>
                 </div>
                 <div>
-                  <dt>{{receipt.moves}}</dt>
+                  <dt><span>{{receipt.moves}}</span></dt>
                   <dd>{{receipt.free}}</dd>
                 </div>
                 <div>
-                  <dt>{{receipt.webcam}}</dt>
+                  <dt><span>{{receipt.webcam}}</span></dt>
                   <dd>{{receipt.free}}</dd>
                 </div>
                 <div>
-                  <dt>{{receipt.stats}}</dt>
+                  <dt><span>{{receipt.stats}}</span></dt>
                   <dd>{{receipt.free}}</dd>
                 </div>
                 <div>
-                  <dt>{{receipt.subscription}}</dt>
+                  <dt><span>{{receipt.subscription}}</span></dt>
                   <dd>{{receipt.none}}</dd>
                 </div>
                 <div>
-                  <dt>{{receipt.account}}</dt>
+                  <dt><span>{{receipt.account}}</span></dt>
                   <dd>{{receipt.none}}</dd>
                 </div>
                 <div class="receipt-supporter">
                   <dt>
                     <button type="button" class="receipt-theme" aria-pressed="false">
-                      <span class="swatch" aria-hidden="true"></span>{{receipt.supporter}}
+                      <span class="swatch" aria-hidden="true"></span
+                      ><span class="receipt-leader"><span>{{receipt.supporter}}</span></span>
                     </button>
                   </dt>
                   <dd>
@@ -1123,7 +1124,7 @@
                   <dd class="receipt-detail">{{receipt.supporterDetails}}</dd>
                 </div>
                 <div class="receipt-total">
-                  <dt>{{receipt.total}}</dt>
+                  <dt><span>{{receipt.total}}</span></dt>
                   <dd>{{receipt.totalValue}}</dd>
                 </div>
               </dl>

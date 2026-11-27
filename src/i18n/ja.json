@@ -219,7 +219,7 @@
     "item2": "アプリ自身のネットワーク通信はありません。",
     "purchases": "購入はApp StoreまたはMicrosoft Storeを通して行われます。",
     "item3": "統計は端末の中だけに。CSVに書き出さない限りは。",
-    "verify": "信じられない？<a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>、<a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a>、<a href=\"https://www.glasswire.com/\">GlassWire</a>で確かめてみてください。",
+    "verify": "信じられない？<a href=\"https://objective-see.org/products/lulu.html\">LuLu</a>、<a href=\"https://www.obdev.at/products/littlesnitch/\">Little Snitch</a>、<a href=\"https://www.glasswire.com/\">GlassWire</a>で確かめて​みてください。",
     "itemMarker": "✓"
   },
   "stats": {
@@ -240,9 +240,9 @@
     "suggestionApply": "適用",
     "streak": "5日連続",
     "freeze": "1日休んだ？週に1回はフリーズできます。",
-    "stickersLabel": "続けた人へのステッカー",
+    "stickersLabel": "続けた人への​ステッカー",
     "stickers": {
-      "firstBreak": "初めての休憩",
+      "firstBreak": "初めての​休憩",
       "weekStreak": "1週間連続",
       "monthStreak": "1か月連続"
     }
@@ -284,7 +284,7 @@
     "supporterDetails": "動き3つ追加、ティールのインク、ありがとうの棒人間、1年ぶんのマス目、今後のパックも全部",
     "total": "合計",
     "totalValue": "0.00",
-    "coffee": "コーヒー1杯より安い",
+    "coffee": "コーヒー1杯より​安い",
     "thanks": "立ち上がってくれてありがとう"
   },
   "footer": {

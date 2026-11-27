@@ -242,7 +242,7 @@
     "freeze": "漏了一天？每周一张冻结卡。",
     "stickersLabel": "出勤贴纸",
     "stickers": {
-      "firstBreak": "第一次休息",
+      "firstBreak": "第一次​休息",
       "weekStreak": "连续一周",
       "monthStreak": "连续一个月"
     }
@@ -280,11 +280,11 @@
     "free": "免费",
     "none": "无",
     "once": "一次",
-    "supporter": "支持者（可选）",
+    "supporter": "支持者​（可选）",
     "supporterDetails": "3 个额外动作、青绿色墨水、一个感谢小人、一整年的小方块、以后每个新包",
     "total": "合计",
     "totalValue": "0.00",
-    "coffee": "比一杯咖啡还便宜",
+    "coffee": "比一杯咖啡​还便宜",
     "thanks": "谢谢你站起来"
   },
   "footer": {

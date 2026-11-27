@@ -36,7 +36,7 @@
     "title": "Ton dos appelle.<br />Il veut <span class=\"scribble\">te parler.</span>",
     "lede": "<strong>mybackhurts</strong> vit dans ta barre des menus, dans ta barre d’état système ou dans ta poche, te fait signe toutes les 45 minutes et te guide dans quelques mouvements rapides. La webcam reste désactivée, sauf si tu lui demandes de compter tes répétitions.",
     "secondaryCta": "ou regarde les mouvements ↓",
-    "platformNote": "désormais aussi sur iPhone et iPad ! android : bientôt",
+    "platformNote": "désormais aussi sur iPhone et iPad&nbsp;! android&nbsp;: bientôt",
     "figureTitle": "Un bonhomme bâton affalé sur un ordinateur portable&nbsp;: il se redresse, s’étire, puis s’affale à nouveau.",
     "noteOw": "aïe.",
     "noteBetter": "mieux."
@@ -226,10 +226,10 @@
     },
     "bestDay": "meilleur jour&nbsp;!",
     "caption": "minutes bougées, 7 derniers jours",
-    "suggestion": "Tu ignores la plupart des rappels à 3 h. Mettre en pause cette heure ?",
+    "suggestion": "Tu ignores la plupart des rappels de 15&nbsp;h. Mettre en pause cette heure&nbsp;?",
     "suggestionApply": "Appliquer",
     "streak": "série de 5 jours",
-    "freeze": "un jour manqué ? un joker par semaine.",
+    "freeze": "un jour manqué&nbsp;? un joker par semaine.",
     "stickersLabel": "Des stickers pour ton assiduité",
     "stickers": {
       "firstBreak": "Première pause",
@@ -239,14 +239,14 @@
   },
   "faq": {
     "title": "Ce qu’on demande<br />en général.",
-    "scheduleQuestion": "Ça va m’embêter dimanche à 23 h&nbsp;?",
+    "scheduleQuestion": "Ça va m’embêter dimanche à 23&nbsp;h&nbsp;?",
     "scheduleAnswer": "Seulement si tu lui dis que tu travailles à ce moment-là. Tu choisis les heures, les jours et l’intervalle.",
     "countingQuestion": "Il compte bien les répétitions&nbsp;?",
     "countingAnswer": "Correctement, pas magiquement. La lumière et la position de la caméra comptent, et les montées sur pointes passent souvent au minuteur. Si la caméra te perd, un clic et tu comptes toi-même.",
-    "officeQuestion": "Je suis en open office. Vais-je avoir l'air bizarre ?",
+    "officeQuestion": "Je suis en open office. Vais-je avoir l’air bizarre&nbsp;?",
     "officeAnswer": "Un peu. Mets la Posture en Assis et chaque pause se fait depuis ta chaise.",
-    "callQuestion": "Comment sait-il que je suis en appel ?",
-    "callAnswer": "Il vérifie si une autre app utilise ta caméra ou ton micro, ou est en plein écran. Il n'ouvre jamais aucune des deux lui-même, donc il ne demande jamais la permission.",
+    "callQuestion": "Comment sait-il que je suis en appel&nbsp;?",
+    "callAnswer": "Il vérifie si une autre app utilise ta caméra ou ton micro, ou est en plein écran. Il n’ouvre jamais aucune des deux lui-même, donc il ne demande jamais la permission.",
     "marker": "+"
   },
   "cta": {
@@ -282,7 +282,7 @@
     "medical": "Ce n’est pas un avis médical. Bouge doucement, arrête si quelque chose fait mal.",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d’utilisation",
-    "compare": "Comparatif d'applis de rappel de pauses (en anglais)",
+    "compare": "Comparatif d’applis de rappel de pauses (en anglais)",
     "contact": "Contact",
     "openSource": "Ce site est open source"
   },
