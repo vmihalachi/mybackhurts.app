@@ -8,7 +8,7 @@
     <title>Privacybeleid · mybackhurts</title>
     <meta
       name="description"
-      content="mybackhurts is een app voor macOS en Windows van Vlad Mihalachi. Dit beleid legt uit wat de app met je gegevens doet."
+      content="mybackhurts is een app voor Mac, iPhone en iPad, Windows en Android van Vlad Mihalachi. Dit beleid legt uit wat de app en deze website met je gegevens doen."
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,43 +18,62 @@
       <header>
         <a class="legal-back" href="/nl/">← mybackhurts</a>
         <h1>Privacybeleid</h1>
-        <p>Laatst bijgewerkt: 10 oktober 2026</p>
+        <p>Laatst bijgewerkt: 30&nbsp;oktober 2026</p>
       </header>
       <p>
-        mybackhurts is een app voor macOS en Windows van Vlad Mihalachi. Dit beleid legt uit wat de
-        app met je gegevens doet.
+        mybackhurts is een app voor Mac, iPhone en iPad, Windows en Android van Vlad Mihalachi. Dit
+        beleid legt uit wat de app en deze website met je gegevens doen.
+      </p>
+      <p>
+        Je downloadt de Mac-app via de Mac App Store, de iPhone- en iPad-app via de App Store, de
+        Windows-app via de Microsoft Store en de Android-app via Google Play.
       </p>
       <h2>Wat de app verwerkt</h2>
       <p>
         Als je de Webcammodus kiest, gebruikt de app je camera om lichaamshoudingen te herkennen en
-        oefenherhalingen te tellen. Op de Mac gebruikt de app daarvoor Apples Vision-framework. Op
-        Windows gebruikt ze een houdingsmodel dat via Windows ML op je pc draait. Op beide systemen
-        worden videobeelden en houdingsgegevens op je apparaat in het geheugen verwerkt en meteen
-        weggegooid. De app neemt geen beelden of video op, uploadt ze niet en slaat ze niet op. De
-        Webcammodus is optioneel; in de Eenvoudige modus blijft de camera uit, tenzij je erom
-        vraagt.
+        oefenherhalingen te tellen. Op Mac, iPhone en iPad gebruikt de app daarvoor Apples
+        Vision-framework. Op Windows gebruikt ze een houdingsmodel dat via Windows ML op je pc
+        draait. Op Android gebruikt ze een houdingsmodel dat deel uitmaakt van de app en met ONNX
+        Runtime op je apparaat draait; de camerabeelden leest ze daarbij uit via CameraX van
+        Android. Op elk platform worden videobeelden en houdingsgegevens op je apparaat in het
+        geheugen verwerkt en meteen weggegooid. De app neemt geen beelden of video op, uploadt ze
+        niet en slaat ze niet op. De Webcammodus is optioneel; in de Eenvoudige modus blijft de
+        camera uit, tenzij je erom vraagt.
       </p>
       <p>
-        Zodat herinneringen je niet storen, controleert de app hoelang het geleden is dat je het
-        toetsenbord of de muis gebruikte, of een andere app de camera of microfoon gebruikt
-        (bijvoorbeeld tijdens een gesprek) en of een app op volledig scherm open staat. Ze leest
-        deze status alleen uit het besturingssysteem. Ze zet nooit de camera of microfoon aan en
-        bewaart deze informatie niet.
+        Om te voorkomen dat herinneringen je storen, controleert de app op Mac en Windows hoelang
+        het geleden is dat je het toetsenbord of de muis gebruikte, of een andere app de camera of
+        microfoon gebruikt (bijvoorbeeld tijdens een gesprek) en of een app op volledig scherm open
+        staat. Ze leest deze status alleen uit het besturingssysteem. Ze zet nooit de camera of
+        microfoon aan en bewaart deze informatie niet. Op Android leest de app tijdens een pauze in
+        de Webcammodus via de audiomodus van de telefoon uit of er een gesprek bezig is, en zet ze
+        de pauze stil zolang dat gesprek duurt; ook dit bewaart ze niet. De iPhone- en iPad-app doet
+        geen van deze controles.
       </p>
       <h2>Wat de app opslaat</h2>
       <p>
         De app slaat instellingen en oefenresultaten, zoals namen van oefeningen, herhalingen, duur
-        en data, lokaal op je apparaat op. Ze vereist geen account en verzamelt je naam,
-        e-mailadres, locatie, contacten of surfgedrag niet.
+        en datums, lokaal op je apparaat op. Ze vereist geen account en verzamelt je naam,
+        e-mailadres, locatie, contacten of surfgedrag niet. Elk apparaat houdt zijn eigen
+        geschiedenis bij: de app synchroniseert die niet tussen je apparaten.
       </p>
       <h2>Delen en netwerktoegang</h2>
       <p>
         mybackhurts beheert geen analyse-, advertentie-, tracking- of backenddiensten en doet geen
-        eigen netwerkverzoeken. Als je een Supporter-aankoop of fooi doet, verwerkt de winkel waar
-        je de app vandaan hebt die transactie: Apple via StoreKit op de Mac, onder Apples
-        voorwaarden en privacybeleid, en Microsoft via de Microsoft Store op Windows, onder
-        Microsofts voorwaarden en privacyverklaring. De Windows-versie wordt ook via de Microsoft
-        Store geïnstalleerd en bijgewerkt.
+        eigen netwerkverzoeken. Als je een Supporter-aankoop doet of een fooi geeft, verwerkt de
+        store waar je de app vandaan hebt die transactie: Apple via StoreKit op Mac, iPhone en iPad,
+        onder Apples voorwaarden en privacybeleid; Microsoft via de Microsoft Store op Windows,
+        onder Microsofts voorwaarden en privacyverklaring; en Google via Google Play Billing op
+        Android, onder Googles voorwaarden en privacybeleid. De Windows-versie wordt ook via de
+        Microsoft Store geïnstalleerd en bijgewerkt.
+      </p>
+      <p>
+        Als je de app een tijdje hebt gebruikt, kan ze je één keer vragen om haar te beoordelen, via
+        het eigen beoordelingsvenster van de store: dat van Apple op Mac, iPhone en iPad, dat van de
+        Microsoft Store op Windows en de in-app-review van Google Play op Android. De store bepaalt
+        of dat venster verschijnt. Een beoordeling of review die je achterlaat, gaat naar die store
+        en valt onder de voorwaarden van die store; de app houdt niet bij of je er een hebt
+        achtergelaten.
       </p>
       <h2>Bewaartermijn en verwijdering</h2>
       <p>
@@ -63,10 +82,39 @@
         vragen over privacy kun je contact met ons opnemen via
         <a href="mailto:hello@mybackhurts.app">hello@mybackhurts.app</a>.
       </p>
+      <h2>Deze website</h2>
+      <p>
+        Deze website, mybackhurts.app, bestaat uit statische pagina’s die bij Cloudflare worden
+        gehost. Cloudflare verwerkt elk verzoek, inclusief je IP-adres, om de site te leveren, onder
+        het privacybeleid van Cloudflare, en vraagt je browser om het aan Cloudflare te melden als
+        de site niet laadt. De eigen verzoeklogs, traces en logexports van de site staan uit in de
+        hostingconfiguratie.
+      </p>
+      <ul>
+        <li>
+          De site plaatst geen cookies en draait geen analyse-, advertentie- of trackingscripts.
+        </li>
+        <li>
+          De lettertypen, afbeeldingen en video’s van de site komen van mybackhurts.app zelf. Het
+          inhoudsbeveiligingsbeleid (Content Security Policy) laat de pagina’s alleen bestanden van
+          mybackhurts.app laden en geen eigen verbindingen maken, en het machtigingenbeleid
+          (Permissions Policy) voorkomt dat ze je camera, microfoon of locatie gebruiken.
+        </li>
+        <li>
+          Om de pagina in jouw taal te tonen en de store van je apparaat als eerste te laten zien,
+          leest de pagina de voorkeurstaal en het platform van je browser uit, in je browser zelf.
+          Als je een thema of taal kiest, onthoudt je browser die keuze in zijn lokale opslag; die
+          wordt niet naar ons verstuurd.
+        </li>
+        <li>
+          Links naar andere sites, zoals de stores, gaan alleen open als je ze volgt, en de site
+          vraagt je browser om die sites niet te vertellen van welke pagina je komt.
+        </li>
+      </ul>
       <h2>Wijzigingen</h2>
       <p>
-        We kunnen dit beleid bijwerken als de app of de geldende vereisten veranderen. De datum
-        hierboven laat zien wanneer het voor het laatst is herzien.
+        We kunnen dit beleid bijwerken als de app, deze website of de geldende vereisten veranderen.
+        De datum hierboven laat zien wanneer het voor het laatst is herzien.
       </p>
     </main>
   </body>

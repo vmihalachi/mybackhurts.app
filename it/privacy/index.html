@@ -8,7 +8,7 @@
     <title>Informativa sulla privacy · mybackhurts</title>
     <meta
       name="description"
-      content="mybackhurts è un’app per macOS e Windows di Vlad Mihalachi. Questa informativa spiega come l’app gestisce le tue informazioni."
+      content="mybackhurts è un’app per Mac, iPhone e iPad, Windows e Android di Vlad Mihalachi. Questa informativa spiega come l’app e questo sito gestiscono le tue informazioni."
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,43 +18,62 @@
       <header>
         <a class="legal-back" href="/it/">← mybackhurts</a>
         <h1>Informativa sulla privacy</h1>
-        <p>Ultimo aggiornamento: 10 ottobre 2026</p>
+        <p>Ultimo aggiornamento: 30&nbsp;ottobre 2026</p>
       </header>
       <p>
-        mybackhurts è un’app per macOS e Windows di Vlad Mihalachi. Questa informativa spiega come
-        l’app gestisce le tue informazioni.
+        mybackhurts è un’app per Mac, iPhone e iPad, Windows e Android di Vlad Mihalachi. Questa
+        informativa spiega come l’app e questo sito gestiscono le tue informazioni.
+      </p>
+      <p>
+        L’app per Mac si scarica dal Mac App Store, quella per iPhone e iPad dall’App Store, quella
+        per Windows dal Microsoft Store e quella per Android da Google Play.
       </p>
       <h2>Cosa elabora l’app</h2>
       <p>
         Quando scegli la modalità Webcam, l’app usa la tua fotocamera per rilevare le pose del corpo
-        e contare le ripetizioni degli esercizi. Su Mac usa il framework Vision di Apple. Su Windows
-        usa un modello di posa che gira sul tuo PC tramite Windows ML. In entrambi i casi, i
-        fotogrammi video e i dati delle pose vengono elaborati in memoria sul tuo dispositivo e
-        scartati immediatamente. L’app non registra, carica né conserva immagini o video. La
-        modalità Webcam è facoltativa; in modalità Semplice la fotocamera resta spenta, a meno che
-        non sia tu a chiederlo.
+        e contare le ripetizioni degli esercizi. Su Mac, iPhone e iPad usa il framework Vision di
+        Apple. Su Windows usa un modello di posa che gira sul tuo PC tramite Windows ML. Su Android
+        usa un modello di posa incluso nell’app, che gira sul tuo dispositivo con ONNX Runtime, e
+        accede alla fotocamera tramite CameraX di Android. Su tutte le piattaforme, i fotogrammi
+        video e i dati delle pose vengono elaborati in memoria sul tuo dispositivo e scartati
+        immediatamente. L’app non registra, carica né conserva immagini o video. La modalità Webcam
+        è facoltativa; in modalità Semplice la fotocamera resta spenta, a meno che non sia tu a
+        chiederlo.
       </p>
       <p>
-        Per evitare che i promemoria ti disturbino, l’app controlla da quanto tempo non usi tastiera
-        o mouse, se un’altra app sta usando la fotocamera o il microfono (per esempio durante una
-        chiamata) e se è aperta un’app a schermo intero. Legge solo questo stato dal sistema
-        operativo. Non accende mai la fotocamera o il microfono e non conserva queste informazioni.
+        Su Mac e Windows, per evitare che i promemoria ti disturbino, l’app controlla da quanto
+        tempo non usi tastiera o mouse, se un’altra app sta usando la fotocamera o il microfono (per
+        esempio durante una chiamata) e se è aperta un’app a schermo intero. Legge solo questo stato
+        dal sistema operativo. Non accende mai la fotocamera o il microfono e non conserva queste
+        informazioni. Su Android, durante una pausa in modalità Webcam, l’app ricava dalla modalità
+        audio del telefono se è in corso una chiamata e, finché dura, sospende la pausa; non
+        conserva nemmeno questa informazione. L’app per iPhone e iPad non fa nessuno di questi
+        controlli.
       </p>
       <h2>Cosa conserva l’app</h2>
       <p>
         L’app conserva localmente sul tuo dispositivo le impostazioni e i risultati degli esercizi,
         come nomi degli esercizi, ripetizioni, durate e date. Non richiede un account e non
-        raccoglie il tuo nome, indirizzo email, posizione, contatti o attività di navigazione.
+        raccoglie il tuo nome, indirizzo email, posizione, contatti o attività di navigazione. Ogni
+        dispositivo ha la propria cronologia: l’app non la sincronizza tra i tuoi dispositivi.
       </p>
       <h2>Condivisione e accesso alla rete</h2>
       <p>
-        mybackhurts non utilizza analisi, pubblicità, tracciamento o servizi backend e non effettua
-        autonomamente richieste di rete. Se acquisti il pacchetto Supporter o lasci una mancia, la
-        transazione viene elaborata dallo store da cui hai scaricato l’app: da Apple tramite
-        StoreKit su Mac, secondo i termini e l’informativa sulla privacy di Apple, e da Microsoft
-        tramite il Microsoft Store su Windows, secondo i termini e l’informativa sulla privacy di
-        Microsoft. La versione per Windows viene inoltre installata e aggiornata tramite il
-        Microsoft Store.
+        mybackhurts non usa strumenti di analisi, pubblicità o tracciamento né servizi backend, e
+        non effettua autonomamente richieste di rete. Se acquisti il pacchetto Sostenitore o lasci
+        una mancia, la transazione viene elaborata dallo store da cui hai scaricato l’app: da Apple
+        tramite StoreKit su Mac, iPhone e iPad, secondo i termini e l’informativa sulla privacy di
+        Apple; da Microsoft tramite il Microsoft Store su Windows, secondo i termini e l’informativa
+        sulla privacy di Microsoft; e da Google tramite Google Play Billing su Android, secondo i
+        termini e l’informativa sulla privacy di Google. La versione per Windows viene inoltre
+        installata e aggiornata tramite il Microsoft Store.
+      </p>
+      <p>
+        Dopo che l’hai usata per un po’, l’app potrebbe chiederti una sola volta di valutarla, con
+        la finestra di valutazione dello store stesso: quella di Apple su Mac, iPhone e iPad, quella
+        del Microsoft Store su Windows e quella delle recensioni in-app di Google Play su Android. È
+        lo store a decidere se mostrarla. La valutazione o la recensione che lasci viene inviata a
+        quello store, secondo i suoi termini; l’app non registra se ne hai lasciata una.
       </p>
       <h2>Conservazione e cancellazione</h2>
       <p>
@@ -63,10 +82,37 @@
         l’app. Per domande sulla privacy puoi contattarci all’indirizzo
         <a href="mailto:hello@mybackhurts.app">hello@mybackhurts.app</a>.
       </p>
+      <h2>Questo sito</h2>
+      <p>
+        Questo sito, mybackhurts.app, è un insieme di pagine statiche ospitate da Cloudflare.
+        Cloudflare gestisce ogni richiesta, compreso il tuo indirizzo IP, per fornirti il sito,
+        secondo la propria informativa sulla privacy, e chiede al tuo browser di segnalare a
+        Cloudflare quando il sito non si carica. I log delle richieste, le tracce e le esportazioni
+        dei log del sito stesso sono disattivati nella sua configurazione di hosting.
+      </p>
+      <ul>
+        <li>Il sito non usa cookie e non esegue script di analisi, pubblicità o tracciamento.</li>
+        <li>
+          Font, immagini e video arrivano direttamente da mybackhurts.app. Le regole di sicurezza
+          dei contenuti del sito permettono alle pagine di caricare file solo da mybackhurts.app e
+          vietano loro di aprire connessioni proprie, e le regole sui permessi impediscono loro di
+          usare la tua fotocamera, il microfono o la posizione.
+        </li>
+        <li>
+          Per mostrarti la pagina nella tua lingua e mettere al primo posto lo store del tuo
+          dispositivo, la pagina legge la lingua preferita e la piattaforma del tuo browser,
+          all’interno del browser stesso. Se scegli un tema o una lingua, il browser ricorda la
+          scelta nel suo archivio locale; non ci viene inviata.
+        </li>
+        <li>
+          I link ad altri siti, come gli store, si aprono solo quando ci clicchi, e il sito chiede
+          al tuo browser di non comunicare a quei siti da quale pagina arrivi.
+        </li>
+      </ul>
       <h2>Modifiche</h2>
       <p>
-        Potremmo aggiornare questa informativa quando cambiano l’app o i requisiti applicabili. La
-        data sopra indica l’ultima revisione.
+        Potremmo aggiornare questa informativa quando cambiano l’app, questo sito o i requisiti
+        applicabili. La data sopra indica l’ultima revisione.
       </p>
     </main>
   </body>

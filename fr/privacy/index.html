@@ -8,7 +8,7 @@
     <title>Politique de confidentialité · mybackhurts</title>
     <meta
       name="description"
-      content="mybackhurts est une application pour macOS et Windows créée par Vlad Mihalachi. Cette politique explique ce que l’application fait de vos informations."
+      content="mybackhurts est une application pour Mac, iPhone et iPad, Windows et Android créée par Vlad Mihalachi. Cette politique explique ce que l’application et ce site font de tes informations."
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,58 +18,110 @@
       <header>
         <a class="legal-back" href="/fr/">← mybackhurts</a>
         <h1>Politique de confidentialité</h1>
-        <p>Dernière mise à jour : 10 octobre 2026</p>
+        <p>Dernière mise à jour&nbsp;: 30&nbsp;octobre 2026</p>
       </header>
       <p>
-        mybackhurts est une application pour macOS et Windows créée par Vlad Mihalachi. Cette
-        politique explique ce que l’application fait de vos informations.
+        mybackhurts est une application pour Mac, iPhone et iPad, Windows et Android créée par Vlad
+        Mihalachi. Cette politique explique ce que l’application et ce site font de tes
+        informations.
+      </p>
+      <p>
+        L’application pour Mac provient du Mac App Store, celle pour iPhone et iPad de l’App Store,
+        celle pour Windows du Microsoft Store et celle pour Android de Google Play.
       </p>
       <h2>Ce que l’application traite</h2>
       <p>
-        Lorsque vous choisissez le mode Webcam, l’application utilise votre caméra pour détecter les
-        poses de votre corps et compter les répétitions d’exercices. Sur Mac, elle utilise le
-        framework Vision d’Apple. Sur Windows, elle utilise un modèle de pose qui s’exécute sur
-        votre PC via Windows ML. Dans les deux cas, les images vidéo et les données de pose sont
-        traitées en mémoire sur votre appareil, puis immédiatement supprimées. L’application
-        n’enregistre, n’envoie et ne stocke aucune image ni vidéo. Le mode Webcam est facultatif ;
-        en mode Simple, la caméra reste éteinte, sauf si vous le demandez.
+        Quand tu choisis le mode Webcam, l’application utilise ta caméra pour détecter les poses de
+        ton corps et compter les répétitions des exercices. Sur Mac, iPhone et iPad, elle utilise le
+        framework Vision d’Apple. Sur Windows, elle utilise un modèle de pose qui tourne sur ton PC
+        via Windows ML. Sur Android, elle utilise un modèle de pose intégré à l’application, qui
+        tourne sur ton appareil avec ONNX Runtime, et accède à la caméra via CameraX d’Android. Sur
+        toutes les plateformes, les images vidéo et les données de pose sont traitées en mémoire sur
+        ton appareil, puis aussitôt effacées. L’application n’enregistre, n’envoie et ne stocke
+        aucune image ni vidéo. Le mode Webcam est facultatif&nbsp;; en mode Simple, la caméra reste
+        éteinte, sauf si tu le demandes.
       </p>
       <p>
-        Pour que les rappels ne vous dérangent pas, l’application vérifie depuis combien de temps
-        vous n’avez pas utilisé le clavier ou la souris, si une autre application utilise la caméra
-        ou le micro (par exemple pendant un appel) et si une application est ouverte en plein écran.
-        Elle lit uniquement cet état auprès du système d’exploitation. Elle n’active jamais la
-        caméra ni le micro et ne conserve pas ces informations.
+        Sur Mac et Windows, pour que les rappels ne te dérangent pas, l’application vérifie depuis
+        combien de temps tu n’as pas touché au clavier ou à la souris, si une autre application
+        utilise la caméra ou le micro (par exemple pendant un appel) et si une application est
+        ouverte en plein écran. Elle se contente de lire cet état auprès du système d’exploitation.
+        Elle n’allume jamais la caméra ni le micro et ne garde pas ces informations. Sur Android,
+        pendant une pause en mode Webcam, l’application regarde, d’après le mode audio du téléphone,
+        si un appel est en cours et suspend la pause tant qu’il dure&nbsp;; elle ne garde pas non
+        plus cette information. L’application pour iPhone et iPad ne fait aucune de ces
+        vérifications.
       </p>
       <h2>Ce que l’application stocke</h2>
       <p>
-        L’application stocke localement sur votre appareil les réglages et les résultats de vos
+        L’application stocke localement sur ton appareil les réglages et les résultats de tes
         exercices, notamment les noms des exercices, le nombre de répétitions, les durées et les
-        dates. Elle ne nécessite aucun compte et ne collecte ni votre nom, ni votre adresse e-mail,
-        ni votre localisation, ni vos contacts, ni votre activité de navigation.
+        dates. Elle ne demande aucun compte et ne collecte ni ton nom, ni ton adresse e-mail, ni ta
+        localisation, ni tes contacts, ni ton activité de navigation. Chaque appareil garde son
+        propre historique&nbsp;: l’application ne le synchronise pas entre tes appareils.
       </p>
       <h2>Partage et accès au réseau</h2>
       <p>
-        mybackhurts n’utilise aucun service d’analyse, de publicité, de suivi ou backend, et
-        n’effectue aucune requête réseau de son propre fait. Si vous achetez le pack Supporter ou
-        faites un pourboire, la boutique où vous avez obtenu l’application traite la transaction :
-        Apple via StoreKit sur Mac, conformément à ses conditions et à sa politique de
-        confidentialité, et Microsoft via le Microsoft Store sur Windows, conformément à ses
-        conditions et à sa déclaration de confidentialité. La version Windows est également
-        installée et mise à jour via le Microsoft Store.
+        mybackhurts n’utilise aucun service d’analyse, de publicité ou de suivi, ni aucun serveur
+        backend, et n’effectue aucune requête réseau de son propre chef. Si tu achètes le pack
+        Soutien ou laisses un pourboire, la boutique où tu as obtenu l’application traite la
+        transaction&nbsp;: Apple via StoreKit sur Mac, iPhone et iPad, conformément à ses conditions
+        et à sa politique de confidentialité&nbsp;; Microsoft via le Microsoft Store sur Windows,
+        conformément à ses conditions et à sa déclaration de confidentialité&nbsp;; et Google via
+        Google Play Billing sur Android, conformément à ses conditions et à sa politique de
+        confidentialité. La version Windows est aussi installée et mise à jour via le Microsoft
+        Store.
+      </p>
+      <p>
+        Après un certain temps d’utilisation, l’application peut te demander, une seule fois, de la
+        noter, via la fenêtre de notation propre à la boutique&nbsp;: celle d’Apple sur Mac, iPhone
+        et iPad, celle du Microsoft Store sur Windows et la fenêtre d’avis intégrée de Google Play
+        sur Android. C’est la boutique qui décide de l’afficher ou non. La note ou l’avis que tu
+        laisses est transmis à cette boutique, conformément à ses conditions&nbsp;; l’application
+        n’enregistre pas si tu en as laissé un.
       </p>
       <h2>Conservation et suppression</h2>
       <p>
-        Vos réglages locaux et votre historique de séances restent sur votre appareil jusqu’à ce que
-        vous les supprimiez à l’aide des commandes de l’application, que vous supprimiez les données
-        de l’application ou que vous désinstalliez l’application. Pour toute question relative à la
-        confidentialité, vous pouvez nous contacter à l’adresse
+        Tes réglages locaux et ton historique de séances restent sur ton appareil jusqu’à ce que tu
+        les effaces depuis l’application, que tu supprimes ses données ou que tu la désinstalles.
+        Pour toute question sur la confidentialité, tu peux nous écrire à l’adresse
         <a href="mailto:hello@mybackhurts.app">hello@mybackhurts.app</a>.
       </p>
+      <h2>Ce site</h2>
+      <p>
+        Ce site, mybackhurts.app, est un ensemble de pages statiques hébergées par Cloudflare.
+        Cloudflare traite chaque requête, y compris ton adresse IP, pour te fournir le site,
+        conformément à sa politique de confidentialité, et demande à ton navigateur de lui signaler
+        les cas où le site ne se charge pas. Les journaux de requêtes, les traces et les exports de
+        journaux propres au site sont désactivés dans sa configuration d’hébergement.
+      </p>
+      <ul>
+        <li>
+          Le site ne dépose aucun cookie et n’exécute aucun script d’analyse, de publicité ou de
+          suivi.
+        </li>
+        <li>
+          Ses polices, images et vidéos sont servies depuis mybackhurts.app même. Sa politique de
+          sécurité du contenu n’autorise les pages à charger des fichiers que depuis mybackhurts.app
+          et leur interdit d’ouvrir elles-mêmes la moindre connexion&nbsp;; sa politique
+          d’autorisations les empêche d’utiliser ta caméra, ton micro ou ta localisation.
+        </li>
+        <li>
+          Pour afficher la page dans ta langue et placer en premier la boutique de ton appareil, la
+          page lit, dans ton navigateur même, la langue préférée et la plateforme qu’il indique. Si
+          tu choisis un thème ou une langue, ton navigateur mémorise ce choix dans son stockage
+          local&nbsp;; il ne nous est pas envoyé.
+        </li>
+        <li>
+          Les liens vers d’autres sites, comme les boutiques, ne s’ouvrent que si tu les suis, et le
+          site demande à ton navigateur de ne pas indiquer à ces sites de quelle page tu viens.
+        </li>
+      </ul>
       <h2>Modifications</h2>
       <p>
-        Nous pouvons mettre cette politique à jour si l’application ou les exigences applicables
-        évoluent. La date ci-dessus indique la date de sa dernière révision.
+        Nous pouvons mettre cette politique à jour si l’application, ce site ou les exigences
+        applicables évoluent. La date ci-dessus indique quand elle a été révisée pour la dernière
+        fois.
       </p>
     </main>
   </body>

@@ -8,7 +8,7 @@
     <title>Zásady ochrany osobních údajů · mybackhurts</title>
     <meta
       name="description"
-      content="mybackhurts je aplikace pro macOS a Windows od Vlada Mihalachiho. Tyto zásady vysvětlují, co aplikace dělá s tvými informacemi."
+      content="mybackhurts je aplikace pro Mac, iPhone a iPad, Windows a Android od Vlada Mihalachiho. Tyto zásady vysvětlují, co aplikace a tento web dělají s tvými informacemi."
     />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/src/style.css" />
@@ -18,53 +18,101 @@
       <header>
         <a class="legal-back" href="/cs/">← mybackhurts</a>
         <h1>Zásady ochrany osobních údajů</h1>
-        <p>Naposledy aktualizováno: 10. října 2026</p>
+        <p>Naposledy aktualizováno: 30.&nbsp;října 2026</p>
       </header>
       <p>
-        mybackhurts je aplikace pro macOS a Windows od Vlada Mihalachiho. Tyto zásady vysvětlují, co
-        aplikace dělá s tvými informacemi.
+        mybackhurts je aplikace pro Mac, iPhone a iPad, Windows a Android od Vlada Mihalachiho. Tyto
+        zásady vysvětlují, co aplikace a tento web dělají s tvými informacemi.
+      </p>
+      <p>
+        Aplikace pro Mac pochází z obchodu Mac App Store, aplikace pro iPhone a iPad z obchodu App
+        Store, aplikace pro Windows z obchodu Microsoft Store a aplikace pro Android z Google Play.
       </p>
       <h2>Co aplikace zpracovává</h2>
       <p>
         Když zvolíš režim Webkamera, aplikace používá tvou kameru k rozpoznávání póz těla a počítání
-        opakování cviků. Na Macu k tomu využívá framework Vision od Applu. Ve Windows používá model
-        pózy, který běží na tvém počítači přes Windows ML. V obou případech se snímky videa a data o
-        pózách zpracovávají v paměti tvého zařízení a okamžitě se zahodí. Aplikace žádné snímky ani
-        video nenahrává, nenahrává na server ani neukládá. Režim Webkamera je dobrovolný; v
-        Jednoduchém režimu zůstává kamera vypnutá, dokud o ni sám nepožádáš.
+        opakování cviků. Na Macu, iPhonu a iPadu k tomu využívá framework Vision od Applu. Ve
+        Windows používá model pózy, který běží na tvém počítači přes Windows ML. Na Androidu používá
+        model pózy, který je součástí aplikace a běží v tvém zařízení pomocí ONNX Runtime, a obraz z
+        kamery čte přes CameraX od Androidu. Na všech platformách se snímky videa a data o pózách
+        zpracovávají v paměti tvého zařízení a okamžitě se zahodí. Aplikace obraz ani video
+        nezaznamenává, neodesílá ani neukládá. Režim Webkamera je dobrovolný; v Jednoduchém režimu
+        zůstává kamera vypnutá, dokud o ni sám nepožádáš.
       </p>
       <p>
-        Aby tě připomínky nerušily, aplikace zjišťuje, jak dlouho jsi nepoužil klávesnici nebo myš,
-        zda kameru nebo mikrofon používá jiná aplikace (například během hovoru) a zda je otevřená
-        aplikace na celou obrazovku. Tento stav pouze čte z operačního systému. Nikdy nezapíná
-        kameru ani mikrofon a tyto informace si neuchovává.
+        Aby tě připomínky nerušily, aplikace na Macu a ve Windows zjišťuje, jak dlouho jsi nepoužil
+        klávesnici nebo myš, zda kameru nebo mikrofon používá jiná aplikace (například během hovoru)
+        a zda je otevřená aplikace na celou obrazovku. Tento stav pouze čte z operačního systému.
+        Nikdy nezapíná kameru ani mikrofon a tyto informace si neuchovává. Na Androidu aplikace
+        během pauzy v režimu Webkamera zjišťuje ze zvukového režimu telefonu, zda právě probíhá
+        hovor, a dokud hovor trvá, přestávku pozastaví; ani tuto informaci si neuchovává. Aplikace
+        pro iPhone a iPad nic z toho nezjišťuje.
       </p>
       <h2>Co aplikace ukládá</h2>
       <p>
         Aplikace ukládá nastavení a výsledky cvičení, jako jsou názvy cviků, počty opakování, délky
         a data, lokálně do tvého zařízení. Nevyžaduje účet a neshromažďuje tvé jméno, e-mailovou
-        adresu, polohu, kontakty ani historii prohlížení.
+        adresu, polohu, kontakty ani historii prohlížení. Každé zařízení si vede vlastní historii:
+        aplikace ji mezi tvými zařízeními nesynchronizuje.
       </p>
       <h2>Sdílení a přístup k síti</h2>
       <p>
-        mybackhurts neprovozuje analytické, reklamní, sledovací ani backendové služby a nevytváří
+        mybackhurts neprovozuje analytické, reklamní, sledovací ani backendové služby a neodesílá
         žádné vlastní síťové požadavky. Pokud provedeš nákup Podporovatele nebo pošleš spropitné,
-        transakci zpracuje obchod, ze kterého jsi aplikaci získal: na Macu Apple přes StoreKit podle
-        svých podmínek a zásad ochrany osobních údajů, na Windows Microsoft přes Microsoft Store
-        podle svých podmínek a prohlášení o ochraně osobních údajů. Verze pro Windows se také
-        instaluje a aktualizuje přes Microsoft Store.
+        transakci zpracuje obchod, ze kterého jsi aplikaci získal: na Macu, iPhonu a iPadu Apple
+        přes StoreKit podle svých podmínek a zásad ochrany osobních údajů; ve Windows Microsoft přes
+        Microsoft Store podle svých podmínek a prohlášení o ochraně osobních údajů; na Androidu
+        Google přes Google Play Billing podle svých podmínek a zásad ochrany osobních údajů. Verze
+        pro Windows se také instaluje a aktualizuje přes Microsoft Store.
+      </p>
+      <p>
+        Po nějaké době používání tě aplikace může jednou požádat o hodnocení, a to vlastní výzvou
+        obchodu: na Macu, iPhonu a iPadu výzvou od Applu, ve Windows výzvou obchodu Microsoft Store
+        a na Androidu funkcí Google Play pro hodnocení přímo v aplikaci. Zda se výzva zobrazí,
+        rozhoduje obchod. Hodnocení nebo recenze, které zanecháš, putují do daného obchodu a řídí se
+        jeho podmínkami; aplikace si nezaznamenává, zda jsi nějaké zanechal.
       </p>
       <h2>Uchovávání a mazání</h2>
       <p>
         Tvá místní nastavení a historie pauz zůstávají v zařízení, dokud je nesmažeš pomocí
         ovládacích prvků aplikace, neodstraníš data aplikace nebo aplikaci neodinstaluješ. S dotazy
-        ke správě osobních údajů se na nás můžeš obrátit na adrese
+        k soukromí se na nás můžeš obrátit na adrese
         <a href="mailto:hello@mybackhurts.app">hello@mybackhurts.app</a>.
       </p>
+      <h2>Tento web</h2>
+      <p>
+        Tento web, mybackhurts.app, tvoří statické stránky hostované u Cloudflaru. Cloudflare
+        zpracovává každý požadavek včetně tvé IP adresy, aby ti mohl web doručit, a to podle svých
+        zásad ochrany osobních údajů; zároveň žádá tvůj prohlížeč, aby mu nahlásil, když se web
+        nepodaří načíst. Vlastní protokoly požadavků, trasování i exporty protokolů má web v
+        nastavení hostingu vypnuté.
+      </p>
+      <ul>
+        <li>
+          Web nenastavuje žádné cookies a nespouští žádné analytické, reklamní ani sledovací
+          skripty.
+        </li>
+        <li>
+          Jeho písma, obrázky a videa se načítají přímo z mybackhurts.app. Jeho zásady zabezpečení
+          obsahu povolují stránkám načítat soubory jen z mybackhurts.app a nedovolují jim navazovat
+          žádná vlastní spojení; jeho zásady oprávnění jim brání používat tvou kameru, mikrofon nebo
+          polohu.
+        </li>
+        <li>
+          Aby ti stránka ukázala obsah ve tvém jazyce a na první místo dala obchod tvého zařízení,
+          zjistí přímo v tvém prohlížeči, jaký jazyk preferuje a na jaké platformě běží. Když si
+          zvolíš motiv nebo jazyk, prohlížeč si volbu zapamatuje ve svém místním úložišti; nám se
+          neposílá.
+        </li>
+        <li>
+          Odkazy na jiné weby, například na obchody, se otevřou, jen když na ně klikneš, a web žádá
+          tvůj prohlížeč, aby těmto webům nesděloval, ze které stránky přicházíš.
+        </li>
+      </ul>
       <h2>Změny</h2>
       <p>
-        Tyto zásady můžeme upravit, když se změní aplikace nebo platné požadavky. Datum nahoře
-        ukazuje, kdy byly naposledy revidovány.
+        Tyto zásady můžeme upravit, když se změní aplikace, tento web nebo platné požadavky. Datum
+        nahoře ukazuje, kdy byly naposledy revidovány.
       </p>
     </main>
   </body>

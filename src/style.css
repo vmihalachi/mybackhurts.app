@@ -283,10 +283,12 @@ section,
 /* On a phone the title steps down to the home page h1's phone size, so every word of every title fits
    whole or breaks at a hyphen; long single words (Datenschutzerklärung) hyphenate instead of running
    past the column. Turkish has no browser hyphenation, so its titles carry soft hyphens. The
-   break-word is a last resort for a future title, and no current one needs it. */
+   break-word is a last resort for a future title, and no current one needs it. The line height is
+   looser than other headings' because the display face's accents stand tall above its capitals (the
+   Czech Ů reaches 1.12em, the Danish Å 1.09em): at 1.2 a wrapped title's accents clear the line above. */
 .legal-page h1 {
   margin: 0 0 1rem;
-  font: clamp(2.7rem, 11.5vw, 3.4rem) / 0.95 var(--display);
+  font: clamp(2.7rem, 11.5vw, 3.4rem) / 1.2 var(--display);
   -webkit-hyphens: auto;
   hyphens: auto;
   overflow-wrap: break-word;
