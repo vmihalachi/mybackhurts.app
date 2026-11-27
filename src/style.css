@@ -283,8 +283,10 @@ section,
 /* On a phone the title steps down to the home page h1's phone size, so every word of every title fits
    whole or breaks at a hyphen; long single words (Datenschutzerklärung) hyphenate instead of running
    past the column. A break keeps at least four letters before the hyphen and three after it, so no
-   line ends on a stub like PRI- or D'U- or holds only CY or DE. Turkish has no browser hyphenation,
-   so its titles carry soft hyphens at breaks that keep the same lengths. The break-word is a last
+   line ends on a stub like PRI- or D'U- or starts with one like CY. A short word such as DE can
+   still sit alone on a line: a browser moves a whole word down before it hyphenates the next one.
+   Turkish has no browser hyphenation, so its titles carry soft hyphens at breaks that keep the
+   same lengths. The break-word is a last
    resort for a future title, and no current one needs it. The line height is looser than other
    headings' because the display face's accents stand tall above its capitals (the Czech Ů reaches
    1.12em, the Danish Å 1.09em): at 1.2 a wrapped title's accents clear the line above. */
