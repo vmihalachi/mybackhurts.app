@@ -29,16 +29,16 @@ const faqTopics = ["schedule", "counting", "office", "call"];
  */
 const moreFrom = {
   apps: [
-    { name: "mybackhurts", url: "https://mybackhurts.app/" },
+    { name: "mybackhurts", url: "https://mybackhurts.app" },
     {
       name: "Mister Pagliacci",
-      url: "https://pagliacci.app/",
-      tagline: (locale: Locale) => String(locale.footer.pagliacciTagline),
+      url: "https://pagliacci.app",
+      tagline: (locale: Locale) => String(locale.footer.taglines.pagliacci),
     },
     {
       name: "sunnysays",
-      url: "https://sunnysays.app/",
-      tagline: (locale: Locale) => String(locale.footer.sunnysaysTagline),
+      url: "https://sunnysays.app",
+      tagline: (locale: Locale) => String(locale.footer.taglines.sunnysays),
     },
   ],
   label: (locale: Locale) => String(locale.footer.moreFrom),

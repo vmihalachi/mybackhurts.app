@@ -295,9 +295,11 @@
     "compare": "休息提醒应用对比（英文）",
     "contact": "联系我们",
     "openSource": "本网站是开源的",
-    "moreFrom": "同一作者的其他应用：",
-    "pagliacciTagline": "会讲笑话的忧伤小丑",
-    "sunnysaysTagline": "会说话的小向日葵",
+    "moreFrom": "同一作者的其他应用",
+    "taglines": {
+      "pagliacci": "会讲笑话的忧伤小丑",
+      "sunnysays": "会说话的小向日葵"
+    },
     "builtOn": "基于 Laching 构建"
   },
   "notFound": {

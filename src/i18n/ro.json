@@ -285,9 +285,11 @@
     "compare": "Comparație de aplicații pentru pauze (în engleză)",
     "contact": "Contact",
     "openSource": "Acest site este open source",
-    "moreFrom": "Tot de la același autor:",
-    "pagliacciTagline": "un clovn trist care spune bancuri",
-    "sunnysaysTagline": "o floare-a-soarelui mică ce vorbește",
+    "moreFrom": "Tot de la același autor",
+    "taglines": {
+      "pagliacci": "un clovn trist care spune bancuri",
+      "sunnysays": "o floare-a-soarelui mică ce vorbește"
+    },
     "builtOn": "Făcut cu Laching"
   },
   "notFound": {

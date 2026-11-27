@@ -285,9 +285,11 @@
     "compare": "Comparativa de apps para recordar pausas (en inglés)",
     "contact": "Contacto",
     "openSource": "Este sitio es de código abierto",
-    "moreFrom": "Más del mismo creador:",
-    "pagliacciTagline": "un payaso triste que cuenta chistes",
-    "sunnysaysTagline": "un girasol pequeño que habla",
+    "moreFrom": "Más del mismo creador",
+    "taglines": {
+      "pagliacci": "un payaso triste que cuenta chistes",
+      "sunnysays": "un girasol pequeño que habla"
+    },
     "builtOn": "Hecho con Laching"
   },
   "notFound": {

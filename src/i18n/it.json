@@ -285,9 +285,11 @@
     "compare": "Le app per le pause a confronto (in inglese)",
     "contact": "Contatti",
     "openSource": "Questo sito è open source",
-    "moreFrom": "Dallo stesso autore:",
-    "pagliacciTagline": "un pagliaccio triste che racconta battute",
-    "sunnysaysTagline": "un piccolo girasole che parla",
+    "moreFrom": "Dallo stesso autore",
+    "taglines": {
+      "pagliacci": "un pagliaccio triste che racconta battute",
+      "sunnysays": "un piccolo girasole che parla"
+    },
     "builtOn": "Fatto con Laching"
   },
   "notFound": {
