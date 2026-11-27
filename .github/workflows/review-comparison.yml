@@ -26,7 +26,8 @@ jobs:
         run: |
           set -euo pipefail
           prefix="Re-check the break reminder apps comparison"
-          if gh issue list --state open --limit 500 --json title --jq '.[].title' | grep -qF "$prefix"; then
+          # grep reads all of gh's output (no -q), so gh never gets SIGPIPE under pipefail.
+          if gh issue list --state open --limit 500 --json title --jq '.[].title' | grep -F "$prefix" >/dev/null; then
             echo "A review issue is still open, so no new one."
             exit 0
           fi
@@ -34,15 +35,16 @@ jobs:
           sources="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/$GITHUB_SHA/break-reminder-apps/SOURCES.md"
           {
             echo "Time to re-check [the comparison page](https://mybackhurts.app/break-reminder-apps/)."
-            echo "Open each source in [SOURCES.md]($sources), compare it with the app's table row and paragraph,"
+            echo "Open each source in [SOURCES.md]($sources), compare it with the app's table row and paragraphs,"
             echo "and fix what changed in both places and in SOURCES.md."
             echo
             grep '^## ' break-reminder-apps/SOURCES.md | sed 's/^## //' | grep -vx 'How to review' |
               while IFS= read -r app; do
-                echo "- [ ] $app: table row and paragraph match its sources"
+                echo "- [ ] $app: table row and paragraphs match their sources"
               done
+            echo "- [ ] The intro and \"How to choose\" still match the rows above"
             echo "- [ ] SOURCES.md has the current facts and sources"
-            echo "- [ ] \"Last checked\" on the page and in SOURCES.md is the day the last row was checked"
+            echo "- [ ] \"Last checked\" on the page (the text and the \`datetime\` attribute) and in SOURCES.md is the day the last row was checked"
             echo "- [ ] \`vp check && vp build\` pass"
           } > "$RUNNER_TEMP/body.md"
           gh issue create --title "$prefix ($quarter)" --body-file "$RUNNER_TEMP/body.md"
