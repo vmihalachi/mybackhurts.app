@@ -12,7 +12,8 @@ function pickLanguage() {
       languages.find(({ code }) => code.toLowerCase().split("-")[0] === base)
     );
   };
-  const path = location.pathname.toLowerCase();
+  // With a slash on the end, so /fr and /FR count as /fr/ too.
+  const path = `${location.pathname.toLowerCase()}/`;
   const fromPath = languages.find(
     (language) => language.path !== "/" && path.startsWith(language.path),
   );
@@ -23,7 +24,7 @@ function pickLanguage() {
   return (
     fromPath ||
     (saved && find(saved)) ||
-    [...(navigator.languages ?? [navigator.language])].map(find).find(Boolean)
+    [...(navigator.languages ?? [navigator.language])].filter(Boolean).map(find).find(Boolean)
   );
 }
 
@@ -45,7 +46,11 @@ if (locale) {
   home.textContent = locale.home;
   // The links come from the build's own list, not from text on the page.
   home.href = language.path;
-  document.querySelector(".wordmark")?.setAttribute("href", language.path);
+  const wordmark = document.querySelector(".wordmark");
+  wordmark?.setAttribute("href", language.path);
+  // The masthead's labels, so a screen reader speaks them in the page's language too.
+  if (locale.wordmarkAria) wordmark?.setAttribute("aria-label", locale.wordmarkAria);
+  if (locale.navAria) document.querySelector(".nav")?.setAttribute("aria-label", locale.navAria);
   // The footer's other apps: the build wrote them in English; each tagline is found by its app's link.
   const more = locale.moreFrom;
   if (more) {

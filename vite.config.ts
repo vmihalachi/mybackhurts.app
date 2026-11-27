@@ -115,7 +115,12 @@ const landing = companionLanding({
           Object.fromEntries(
             languages.map(({ code }) => [
               code,
-              { ...locales[code].notFound, moreFrom: notFoundMoreFrom(locales[code]) },
+              {
+                ...locales[code].notFound,
+                moreFrom: notFoundMoreFrom(locales[code]),
+                navAria: locales[code].nav.ariaLabel,
+                wordmarkAria: locales[code].nav.wordmarkAria,
+              },
             ]),
           ),
         );
