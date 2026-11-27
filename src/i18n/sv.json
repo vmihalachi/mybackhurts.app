@@ -295,9 +295,11 @@
     "compare": "Jämförelse av pausappar (på engelska)",
     "contact": "Kontakt",
     "openSource": "Den här webbplatsen är öppen källkod",
-    "moreFrom": "Mer från samma skapare:",
-    "pagliacciTagline": "en sorgsen clown som drar skämt",
-    "sunnysaysTagline": "en liten solros som pratar",
+    "moreFrom": "Mer från samma skapare",
+    "taglines": {
+      "pagliacci": "en sorgsen clown som drar skämt",
+      "sunnysays": "en liten solros som pratar"
+    },
     "builtOn": "Byggd med Laching"
   },
   "notFound": {

@@ -295,9 +295,11 @@
     "compare": "Sammenligning av pauseapper (på engelsk)",
     "contact": "Kontakt",
     "openSource": "Dette nettstedet er åpen kildekode",
-    "moreFrom": "Mer fra samme skaper:",
-    "pagliacciTagline": "en trist klovn som forteller vitser",
-    "sunnysaysTagline": "en liten solsikke som prater",
+    "moreFrom": "Mer fra samme skaper",
+    "taglines": {
+      "pagliacci": "en trist klovn som forteller vitser",
+      "sunnysays": "en liten solsikke som prater"
+    },
     "builtOn": "Laget med Laching"
   },
   "notFound": {

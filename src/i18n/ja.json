@@ -295,9 +295,11 @@
     "compare": "休憩リマインダーアプリ比較（英語）",
     "contact": "お問い合わせ",
     "openSource": "このサイトはオープンソースです",
-    "moreFrom": "同じ作者のアプリ：",
-    "pagliacciTagline": "ジョークを飛ばす悲しいピエロ",
-    "sunnysaysTagline": "おしゃべりな小さなひまわり",
+    "moreFrom": "同じ作者のアプリ",
+    "taglines": {
+      "pagliacci": "ジョークを飛ばす悲しいピエロ",
+      "sunnysays": "おしゃべりな小さなひまわり"
+    },
     "builtOn": "Lachingで作っています"
   },
   "notFound": {

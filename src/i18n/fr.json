@@ -285,9 +285,11 @@
     "compare": "Comparatif d’applis de rappel de pauses (en anglais)",
     "contact": "Contact",
     "openSource": "Ce site est open source",
-    "moreFrom": "Du même créateur :",
-    "pagliacciTagline": "un clown triste qui raconte des blagues",
-    "sunnysaysTagline": "un petit tournesol qui parle",
+    "moreFrom": "Du même créateur",
+    "taglines": {
+      "pagliacci": "un clown triste qui raconte des blagues",
+      "sunnysays": "un petit tournesol qui parle"
+    },
     "builtOn": "Construit avec Laching"
   },
   "notFound": {

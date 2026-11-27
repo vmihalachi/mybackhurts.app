@@ -285,9 +285,11 @@
     "compare": "Comparação de apps de lembrete de pausa (em inglês)",
     "contact": "Contato",
     "openSource": "Este site é de código aberto",
-    "moreFrom": "Mais do mesmo criador:",
-    "pagliacciTagline": "um palhaço triste que conta piadas",
-    "sunnysaysTagline": "um girassolzinho que fala",
+    "moreFrom": "Outros apps do mesmo criador",
+    "taglines": {
+      "pagliacci": "um palhaço triste que conta piadas",
+      "sunnysays": "um girassolzinho que fala"
+    },
     "builtOn": "Feito com Laching"
   },
   "notFound": {

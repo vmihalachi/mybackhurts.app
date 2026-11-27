@@ -285,9 +285,11 @@
     "compare": "Pausen-Apps im Vergleich (auf Englisch)",
     "contact": "Kontakt",
     "openSource": "Diese Website ist Open Source",
-    "moreFrom": "Mehr aus derselben Werkstatt:",
-    "pagliacciTagline": "ein trauriger Clown, der Witze erzählt",
-    "sunnysaysTagline": "eine kleine Sonnenblume, die redet",
+    "moreFrom": "Mehr aus derselben Werkstatt",
+    "taglines": {
+      "pagliacci": "ein trauriger Clown, der Witze erzählt",
+      "sunnysays": "eine kleine Sonnenblume, die redet"
+    },
     "builtOn": "Gebaut mit Laching"
   },
   "notFound": {

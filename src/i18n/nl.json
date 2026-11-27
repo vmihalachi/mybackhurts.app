@@ -295,9 +295,11 @@
     "compare": "Pauzeapps vergeleken (in het Engels)",
     "contact": "Contact",
     "openSource": "Deze site is open source",
-    "moreFrom": "Meer van dezelfde maker:",
-    "pagliacciTagline": "een droevige clown die moppen tapt",
-    "sunnysaysTagline": "een zonnebloempje dat praat",
+    "moreFrom": "Meer van dezelfde maker",
+    "taglines": {
+      "pagliacci": "een droevige clown die moppen tapt",
+      "sunnysays": "een zonnebloempje dat praat"
+    },
     "builtOn": "Gemaakt met Laching"
   },
   "notFound": {

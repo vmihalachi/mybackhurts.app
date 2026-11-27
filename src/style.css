@@ -2918,7 +2918,8 @@ details p {
 }
 /* The owner's other apps and Laching (`{{moreFrom}}`, Laching's markup): a row of its own under the rest, in the
    footer's type and ink, its links underlined like the footer's others. A dash sets each app's few words off its
-   name; screen readers skip it, the space before it already parts them. A wider gap above keeps it one group. */
+   name; screen readers skip it, the space before it already parts them. A wider gap above keeps it one group, and
+   where it is the footer's only row (404.html) the footer's own padding is gap enough. */
 .more-from {
   flex-basis: 100%;
   margin-top: 0.8rem;
@@ -2926,6 +2927,9 @@ details p {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.8rem 1.25rem;
+}
+.more-from:first-child {
+  margin-top: 0;
 }
 .more-from p {
   margin: 0;

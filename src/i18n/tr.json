@@ -295,9 +295,11 @@
     "compare": "Mola hatırlatıcı uygulamaları karşılaştırması (İngilizce)",
     "contact": "İletişim",
     "openSource": "Bu site açık kaynaklıdır",
-    "moreFrom": "Aynı yapımcıdan:",
-    "pagliacciTagline": "fıkra anlatan hüzünlü bir palyaço",
-    "sunnysaysTagline": "konuşan küçük bir ayçiçeği",
+    "moreFrom": "Aynı geliştiriciden",
+    "taglines": {
+      "pagliacci": "fıkra anlatan hüzünlü bir palyaço",
+      "sunnysays": "konuşan küçük bir ayçiçeği"
+    },
     "builtOn": "Laching ile yapıldı"
   },
   "notFound": {

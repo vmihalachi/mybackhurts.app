@@ -295,9 +295,11 @@
     "compare": "Porównanie aplikacji o przerwach (po angielsku)",
     "contact": "Kontakt",
     "openSource": "Ta strona jest open source",
-    "moreFrom": "Więcej od tego samego twórcy:",
-    "pagliacciTagline": "smutny klaun, który opowiada dowcipy",
-    "sunnysaysTagline": "mały gadający słonecznik",
+    "moreFrom": "Więcej od tego samego twórcy",
+    "taglines": {
+      "pagliacci": "smutny klaun, który opowiada dowcipy",
+      "sunnysays": "mały gadający słonecznik"
+    },
     "builtOn": "Zbudowane na Lachingu"
   },
   "notFound": {

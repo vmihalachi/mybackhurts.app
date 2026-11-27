@@ -295,9 +295,11 @@
     "compare": "Srovnání aplikací na připomínání přestávek (anglicky)",
     "contact": "Kontakt",
     "openSource": "Tento web je open source",
-    "moreFrom": "Další aplikace od stejného autora:",
-    "pagliacciTagline": "smutný klaun, který vypráví vtipy",
-    "sunnysaysTagline": "malá mluvící slunečnice",
+    "moreFrom": "Další aplikace od stejného autora",
+    "taglines": {
+      "pagliacci": "smutný klaun, který vypráví vtipy",
+      "sunnysays": "malá mluvící slunečnice"
+    },
     "builtOn": "Postaveno na Lachingu"
   },
   "notFound": {
