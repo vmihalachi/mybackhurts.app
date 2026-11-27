@@ -58,6 +58,7 @@
     "panel1Body": "Only during your work hours. Never mid-call.",
     "panel3Title": "Two or three moves",
     "panel3Body": "Picked for you. Swap any you don't like.",
+    "panel4Aside": "or…",
     "panel4Doodle": "brb",
     "panel4Title": "Walked away? Counts.",
     "panel4Body": "5 minutes away from the keyboard counts as a break."
@@ -204,7 +205,7 @@
     "simpleBody": "A timer and a <b>+1 rep</b> button (or Space). The camera never turns on.",
     "webcamLabel": "Webcam · opt in",
     "hint": "step back a little",
-    "webcamTitle": "It counts. You just move.",
+    "webcamTitle": "The camera does the counting.",
     "webcamBody": "An on-device pose model tracks your joints to count reps and holds, with form hints.",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "Stand up.<br /><span>Seriously, now.</span>",
     "body": "Then grab the app, so a web page doesn't have to nag you.",
     "platforms": "Mac · iPhone · iPad · Windows · Android soon",
-    "small": "Free · no account · 17 languages"
+    "small": "17 languages"
   },
   "store": {
     "apple": "App Store",

@@ -48,6 +48,7 @@
     "panel1Body": "Nur zu deinen Arbeitszeiten. Nie mitten im Call.",
     "panel3Title": "Zwei oder drei Übungen",
     "panel3Body": "Für dich ausgesucht. Tausch, was dir nicht passt.",
+    "panel4Aside": "oder…",
     "panel4Doodle": "gleich zurück",
     "panel4Title": "Weggelaufen? Zählt.",
     "panel4Body": "5 Minuten weg von der Tastatur zählen als Pause."
@@ -194,7 +195,7 @@
     "simpleBody": "Ein Timer und eine Taste <b>+1 Wdh.</b> (oder Leertaste). Die Kamera bleibt immer aus.",
     "webcamLabel": "Webcam · freiwillig",
     "hint": "tritt etwas zurück",
-    "webcamTitle": "Es zählt. Du bewegst dich.",
+    "webcamTitle": "Das Zählen übernimmt die Kamera.",
     "webcamBody": "Ein Pose-Modell auf dem Gerät verfolgt deine Gelenke, um Wiederholungen und Haltezeiten zu zählen, mit Formtipps.",
     "keycapPop": "+1"
   },
@@ -252,7 +253,7 @@
     "title": "Steh auf.<br /><span>Ernsthaft, jetzt.</span>",
     "body": "Dann hol dir die App, damit dich keine Webseite nerven muss.",
     "platforms": "Mac · iPhone · iPad · Windows · Android bald",
-    "small": "Kostenlos · kein Konto · 17 Sprachen"
+    "small": "17 Sprachen"
   },
   "store": {
     "apple": "App Store",

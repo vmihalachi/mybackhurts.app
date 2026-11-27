@@ -48,6 +48,7 @@
     "panel1Body": "Doar în orele de lucru. Niciodată în mijlocul unui apel.",
     "panel3Title": "Două sau trei mișcări",
     "panel3Body": "Alese pentru tine. Schimbă-le pe cele care nu-ți plac.",
+    "panel4Aside": "sau…",
     "panel4Doodle": "revin",
     "panel4Title": "Ai plecat? Contează.",
     "panel4Body": "5 minute departe de tastatură contează ca pauză."
@@ -194,7 +195,7 @@
     "simpleBody": "Un cronometru și un buton <b>+1 repetare</b> (sau Spațiu). Camera nu pornește niciodată.",
     "webcamLabel": "Webcam · opțional",
     "hint": "fă un pas înapoi",
-    "webcamTitle": "El numără. Tu doar te miști.",
+    "webcamTitle": "Camera numără în locul tău.",
     "webcamBody": "Un model de detectare a posturii, pe dispozitiv, îți urmărește articulațiile ca să numere repetările și menținerile, cu sfaturi pentru formă.",
     "keycapPop": "+1"
   },
@@ -252,7 +253,7 @@
     "title": "Ridică-te.<br /><span>Serios, acum.</span>",
     "body": "Apoi ia aplicația, ca să nu trebuiască să te bată la cap o pagină web.",
     "platforms": "Mac · iPhone · iPad · Windows · Android în curând",
-    "small": "Gratuit · fără cont · 17 limbi"
+    "small": "17 limbi"
   },
   "store": {
     "apple": "App Store",

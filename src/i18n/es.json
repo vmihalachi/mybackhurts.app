@@ -48,6 +48,7 @@
     "panel1Body": "Solo en tu horario de trabajo. Nunca en mitad de una llamada.",
     "panel3Title": "Dos o tres ejercicios",
     "panel3Body": "Elegidos para ti. Cambia el que no te guste.",
+    "panel4Aside": "o bien…",
     "panel4Doodle": "vuelvo",
     "panel4Title": "¿Te levantaste? Cuenta.",
     "panel4Body": "5 minutos lejos del teclado cuentan como pausa."
@@ -194,7 +195,7 @@
     "simpleBody": "Un temporizador y un botón <b>+1 repetición</b> (o Espacio). La cámara nunca se enciende.",
     "webcamLabel": "Webcam · opcional",
     "hint": "retrocede un poco",
-    "webcamTitle": "Cuenta por ti. Tú solo muévete.",
+    "webcamTitle": "La cámara lleva la cuenta.",
     "webcamBody": "Un modelo de pose en el dispositivo sigue tus articulaciones para contar repeticiones y tiempos, con consejos de forma.",
     "keycapPop": "+1"
   },
@@ -252,7 +253,7 @@
     "title": "Levántate.<br /><span>En serio, ahora.</span>",
     "body": "Luego descarga la app, para que no tenga que insistirte una página web.",
     "platforms": "Mac · iPhone · iPad · Windows · Android pronto",
-    "small": "Gratis · sin cuenta · 17 idiomas"
+    "small": "17 idiomas"
   },
   "store": {
     "apple": "App Store",

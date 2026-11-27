@@ -48,6 +48,7 @@
     "panel1Body": "Seulement pendant tes heures de travail. Jamais en plein appel.",
     "panel3Title": "Deux ou trois mouvements",
     "panel3Body": "Choisis pour toi. Change ceux qui ne te plaisent pas.",
+    "panel4Aside": "ou alors…",
     "panel4Doodle": "je reviens",
     "panel4Title": "Tu t’es levé&nbsp;? Ça compte.",
     "panel4Body": "5 minutes loin du clavier comptent comme une pause."
@@ -194,7 +195,7 @@
     "simpleBody": "Un minuteur et un bouton <b>+1 répétition</b> (ou Espace). La caméra ne s’allume jamais.",
     "webcamLabel": "Webcam · si tu veux",
     "hint": "recule un peu",
-    "webcamTitle": "Elle compte. Toi, tu bouges.",
+    "webcamTitle": "La caméra compte à ta place.",
     "webcamBody": "Un modèle de posture détecte tes articulations pour compter répétitions et tenues, avec des conseils de posture.",
     "keycapPop": "+1"
   },
@@ -252,7 +253,7 @@
     "title": "Lève-toi.<br /><span>Oui, maintenant.</span>",
     "body": "Puis prends l’app, pour qu’aucune page web n’ait à te le rappeler.",
     "platforms": "Mac · iPhone · iPad · Windows · Android bientôt",
-    "small": "Gratuit · pas de compte · 17 langues"
+    "small": "17 langues"
   },
   "store": {
     "apple": "App Store",

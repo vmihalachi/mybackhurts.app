@@ -58,6 +58,7 @@
     "panel1Body": "Yalnızca çalışma saatlerinde. Görüşmenin ortasında asla.",
     "panel3Title": "İki üç hareket",
     "panel3Body": "Senin için seçilir. Sevmediğin hareketi değiştir.",
+    "panel4Aside": "ya da…",
     "panel4Doodle": "birazdan dönerim",
     "panel4Title": "Uzaklaştın mı? Sayılır.",
     "panel4Body": "Klavyeden 5 dakika uzak kalmak mola sayılır."
@@ -204,7 +205,7 @@
     "simpleBody": "Bir zamanlayıcı ve bir <b>+1 tekrar</b> düğmesi (ya da Boşluk). Kamera asla açılmaz.",
     "webcamLabel": "Webcam · isteğe bağlı",
     "hint": "biraz geri çekil",
-    "webcamTitle": "O sayar. Sen sadece hareket et.",
+    "webcamTitle": "Saymayı kameraya bırak.",
     "webcamBody": "Cihaz üzerinde çalışan bir poz modeli, eklemlerini izleyerek tekrarları ve beklemeleri sayar, form ipuçları da verir.",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "Ayağa kalk.<br /><span>Şaka yok, şimdi.</span>",
     "body": "Sonra uygulamayı indir ki bir web sayfası seni dırdır etmek zorunda kalmasın.",
     "platforms": "Mac · iPhone · iPad · Windows · Android yakında",
-    "small": "Ücretsiz · hesap yok · 17 dil"
+    "small": "17 dil"
   },
   "store": {
     "apple": "App Store",

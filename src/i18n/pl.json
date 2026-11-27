@@ -58,6 +58,7 @@
     "panel1Body": "Tylko w godzinach pracy. Nigdy w trakcie rozmowy.",
     "panel3Title": "Dwa lub trzy ruchy",
     "panel3Body": "Wybrane za ciebie. Wymień te, których nie lubisz.",
+    "panel4Aside": "albo…",
     "panel4Doodle": "zaraz wracam",
     "panel4Title": "Odszedłeś? Liczy się.",
     "panel4Body": "5 minut z dala od klawiatury liczy się jako przerwa."
@@ -204,7 +205,7 @@
     "simpleBody": "Timer i przycisk <b>+1 powtórzenie</b> (albo Spacja). Kamera nigdy się nie włącza.",
     "webcamLabel": "Kamera · na życzenie",
     "hint": "cofnij się trochę",
-    "webcamTitle": "Ona liczy. Ty się tylko ruszasz.",
+    "webcamTitle": "Liczenie zostaw kamerze.",
     "webcamBody": "Model pozy działający na urządzeniu śledzi twoje stawy, żeby zliczać powtórzenia i wytrzymania, i podpowiada, jak poprawić formę.",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "Wstań.<br /><span>Serio, teraz.</span>",
     "body": "Potem pobierz aplikację, żeby strona internetowa nie musiała cię męczyć.",
     "platforms": "Mac · iPhone · iPad · Windows · Android wkrótce",
-    "small": "Za darmo · bez konta · 17 języków"
+    "small": "17 języków"
   },
   "store": {
     "apple": "App Store",

@@ -58,6 +58,7 @@
     "panel1Body": "Kun i din arbejdstid. Aldrig midt i et opkald.",
     "panel3Title": "To eller tre øvelser",
     "panel3Body": "Valgt til dig. Byt dem, du ikke bryder dig om.",
+    "panel4Aside": "eller…",
     "panel4Doodle": "straks tilbage",
     "panel4Title": "Gået væk? Det tæller.",
     "panel4Body": "5 minutter væk fra tastaturet tæller som en pause."
@@ -204,7 +205,7 @@
     "simpleBody": "En timer og en <b>+1 gentagelse</b>-knap (eller mellemrum). Kameraet tændes aldrig.",
     "webcamLabel": "Webcam · fra og til efter valg",
     "hint": "gå lidt tilbage",
-    "webcamTitle": "Den tæller. Du bevæger dig bare.",
+    "webcamTitle": "Kameraet klarer tællingen.",
     "webcamBody": "En positurmodel på enheden sporer dine led for at tælle gentagelser og holdøvelser, med tips til din form.",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "Rejs dig.<br /><span>Helt seriøst, nu.</span>",
     "body": "Hent så appen, så en hjemmeside ikke behøver at pusle til dig.",
     "platforms": "Mac · iPhone · iPad · Windows · Android snart",
-    "small": "Gratis · ingen konto · 17 sprog"
+    "small": "17 sprog"
   },
   "store": {
     "apple": "App Store",

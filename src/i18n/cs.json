@@ -58,6 +58,7 @@
     "panel1Body": "Jen v pracovní době. Nikdy uprostřed hovoru.",
     "panel3Title": "Dva nebo tři cviky",
     "panel3Body": "Vybrané za tebe. Co se ti nelíbí, vyměň.",
+    "panel4Aside": "nebo…",
     "panel4Doodle": "hned jsem zpět",
     "panel4Title": "Pryč od stolu? Počítá se.",
     "panel4Body": "5 minut pryč od klávesnice se počítá jako pauza."
@@ -204,7 +205,7 @@
     "simpleBody": "Časovač a tlačítko <b>+1 opakování</b> (nebo mezerník). Kamera se nikdy nezapne.",
     "webcamLabel": "Webkamera · dobrovolně",
     "hint": "ustup trochu",
-    "webcamTitle": "Ona počítá. Ty se jen hýbeš.",
+    "webcamTitle": "Počítání obstará kamera.",
     "webcamBody": "Model pózy přímo v zařízení sleduje tvoje klouby, počítá opakování a výdrže a radí s provedením.",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "Vstaň.<br /><span>Vážně, hned.</span>",
     "body": "Pak si stáhni aplikaci, ať tě nemusí otravovat webová stránka.",
     "platforms": "Mac · iPhone · iPad · Windows · Android brzy",
-    "small": "Zdarma · bez účtu · 17 jazyků"
+    "small": "17 jazyků"
   },
   "store": {
     "apple": "App Store",

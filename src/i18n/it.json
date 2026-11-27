@@ -48,6 +48,7 @@
     "panel1Body": "Solo negli orari di lavoro. Mai durante una call.",
     "panel3Title": "Due o tre mosse",
     "panel3Body": "Scelte per te. Cambia quelle che non ti vanno.",
+    "panel4Aside": "oppure…",
     "panel4Doodle": "torno",
     "panel4Title": "Ti sei alzato? Vale.",
     "panel4Body": "5 minuti lontano dalla tastiera contano come pausa."
@@ -194,7 +195,7 @@
     "simpleBody": "Un timer e un pulsante <b>+1 rip.</b> (o Spazio). La camera non si accende mai.",
     "webcamLabel": "Webcam · se vuoi",
     "hint": "fai un passo indietro",
-    "webcamTitle": "Lui conta. Tu ti muovi.",
+    "webcamTitle": "Le ripetizioni le conta la camera.",
     "webcamBody": "Un modello di pose on-device segue le articolazioni per contare ripetizioni e tenute, con suggerimenti sulla forma.",
     "keycapPop": "+1"
   },
@@ -252,7 +253,7 @@
     "title": "Alzati.<br /><span>Sì, adesso.</span>",
     "body": "Poi prendi l'app, così non deve ricordartelo una pagina web.",
     "platforms": "Mac · iPhone · iPad · Windows · Android in arrivo",
-    "small": "Gratis · niente account · 17 lingue"
+    "small": "17 lingue"
   },
   "store": {
     "apple": "App Store",

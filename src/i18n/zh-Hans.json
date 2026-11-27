@@ -58,6 +58,7 @@
     "panel1Body": "只在你的工作时间。绝不在通话中打扰。",
     "panel3Title": "两三个动作",
     "panel3Body": "替你选好。不喜欢的可以换掉。",
+    "panel4Aside": "或者……",
     "panel4Doodle": "马上回",
     "panel4Title": "走开了？也算数。",
     "panel4Body": "离开键盘 5 分钟，就算一次休息。"
@@ -204,7 +205,7 @@
     "simpleBody": "一个计时器和一个 <b>+1 次</b> 按钮（或空格键）。摄像头永远不会打开。",
     "webcamLabel": "摄像头 · 需主动开启",
     "hint": "再往后退一点",
-    "webcamTitle": "它来数，你只管动。",
+    "webcamTitle": "计数交给摄像头。",
     "webcamBody": "本机上的姿态模型追踪你的关节，为次数和保持计数，并给出动作提示。",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "站起来。<br /><span>说真的，现在。</span>",
     "body": "然后下载应用，这样就不用网页来催你了。",
     "platforms": "Mac · iPhone · iPad · Windows · 安卓即将推出",
-    "small": "免费 · 无需账号 · 17 种语言"
+    "small": "17 种语言"
   },
   "store": {
     "apple": "App Store",

@@ -58,6 +58,7 @@
     "panel1Body": "勤務時間中だけ。通話中は絶対に邪魔しません。",
     "panel3Title": "2〜3個の動き",
     "panel3Body": "おまかせで選びます。気に入らないものは入れ替えできます。",
+    "panel4Aside": "それか…",
     "panel4Doodle": "すぐ戻る",
     "panel4Title": "席を離れた？それもカウント。",
     "panel4Body": "キーボードから5分離れたら、休憩としてカウントします。"
@@ -204,7 +205,7 @@
     "simpleBody": "タイマーと<b>+1回</b>ボタン（またはスペースキー）。カメラは絶対にオンになりません。",
     "webcamLabel": "Webカメラ · 使いたい人だけ",
     "hint": "少し下がって",
-    "webcamTitle": "数えるのは私。あなたは動くだけ。",
+    "webcamTitle": "カウントはカメラにおまかせ。",
     "webcamBody": "デバイス上のポーズモデルが関節を追跡して、回数やキープ時間を数え、フォームのヒントも出します。",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "立ち上がって。<br /><span>いますぐ、本気で。</span>",
     "body": "それからアプリを入手しましょう。ウェブページにガミガミ言わせないために。",
     "platforms": "Mac · iPhone · iPad · Windows · Androidは近日公開",
-    "small": "無料 · アカウント不要 · 17言語"
+    "small": "17言語"
   },
   "store": {
     "apple": "App Store",

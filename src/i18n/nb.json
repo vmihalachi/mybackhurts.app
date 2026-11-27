@@ -58,6 +58,7 @@
     "panel1Body": "Bare i arbeidstiden din. Aldri midt i en samtale.",
     "panel3Title": "To eller tre øvelser",
     "panel3Body": "Valgt for deg. Bytt ut de du ikke liker.",
+    "panel4Aside": "eller…",
     "panel4Doodle": "brb",
     "panel4Title": "Gått bort? Det teller.",
     "panel4Body": "5 minutter borte fra tastaturet teller som en pause."
@@ -204,7 +205,7 @@
     "simpleBody": "En timer og en <b>+1 rep</b>-knapp (eller mellomrom). Kameraet slås aldri på.",
     "webcamLabel": "Webkamera · valgfritt",
     "hint": "ta et skritt tilbake",
-    "webcamTitle": "Den teller. Du bare beveger deg.",
+    "webcamTitle": "Kameraet tar seg av tellingen.",
     "webcamBody": "En modell for kroppsstilling på enheten sporer leddene dine for å telle reps og hold, med tips om formen.",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "Reis deg.<br /><span>Seriøst, nå.</span>",
     "body": "Hent så appen, så en nettside slipper å mase på deg.",
     "platforms": "Mac · iPhone · iPad · Windows · Android snart",
-    "small": "Gratis · ingen konto · 17 språk"
+    "small": "17 språk"
   },
   "store": {
     "apple": "App Store",

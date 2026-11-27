@@ -58,6 +58,7 @@
     "panel1Body": "Bara under din arbetstid. Aldrig mitt i ett samtal.",
     "panel3Title": "Två eller tre rörelser",
     "panel3Body": "Utvalda åt dig. Byt ut dem du inte gillar.",
+    "panel4Aside": "eller…",
     "panel4Doodle": "snart tillbaka",
     "panel4Title": "Gått iväg? Räknas.",
     "panel4Body": "5 minuter från tangentbordet räknas som en paus."
@@ -204,7 +205,7 @@
     "simpleBody": "En timer och en <b>+1 rep</b>-knapp (eller Mellanslag). Kameran slås aldrig på.",
     "webcamLabel": "Webbkamera · frivilligt",
     "hint": "ta ett steg bakåt",
-    "webcamTitle": "Den räknar. Du bara rör dig.",
+    "webcamTitle": "Kameran sköter räknandet.",
     "webcamBody": "En modell på enheten spårar dina leder för att räkna rep och håll, med formtips.",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "Res dig upp.<br /><span>På allvar, nu.</span>",
     "body": "Hämta sedan appen, så att en webbsida slipper tjata på dig.",
     "platforms": "Mac · iPhone · iPad · Windows · Android snart",
-    "small": "Gratis · inget konto · 17 språk"
+    "small": "17 språk"
   },
   "store": {
     "apple": "App Store",

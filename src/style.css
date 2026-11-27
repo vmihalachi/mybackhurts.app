@@ -209,7 +209,7 @@ h3 {
   font:
     700 0.78rem/1 var(--mono),
     monospace;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
 }
@@ -376,16 +376,16 @@ section {
 }
 
 /* ---------- Masthead ---------- */
-/* Fixed header: full-bleed paper strip, content scrolls beneath it. */
+/* Fixed header: full-bleed paper strip, the same grainy sheet as the page, content scrolls beneath it. */
 .masthead {
   position: sticky;
   top: 0;
   z-index: 50;
   max-width: none;
   padding-inline: 0;
-  background: color-mix(in srgb, var(--paper) 90%, transparent);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  background-color: var(--paper);
+  background-image: var(--grain);
+  background-blend-mode: var(--blend);
   border-bottom: 1px dashed var(--line);
 }
 .nav {
@@ -863,20 +863,14 @@ svg .note {
   margin: 1rem -2rem;
   border-block: 2px solid var(--ink);
 }
+/* Still, like a real strip of tape: the band bleeds past both edges, so the copy starts inside it. */
 .tape-strip p {
   white-space: nowrap;
-  padding: 0.7rem 0;
+  padding: 0.7rem 3rem;
   font:
     400 1.1rem/1 var(--display),
     sans-serif;
   text-transform: uppercase;
-  width: max-content;
-  animation: slide 40s linear infinite;
-}
-@keyframes slide {
-  to {
-    transform: translateX(-50%);
-  }
 }
 
 /* ---------- App preview ---------- */
@@ -1024,6 +1018,14 @@ svg .note {
   color: var(--paper);
   font-weight: 700;
 }
+/* The last panel isn't a step, it's the other way to get the same break: a scrawled aside where a number would be. */
+.panel-aside {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.7rem;
+  font-size: 2.2rem;
+  transform: rotate(-6deg);
+}
 .doodle {
   width: 100%;
   max-width: 150px;
@@ -1104,8 +1106,9 @@ svg .note {
   transition: transform 0.25s;
   font-size: 0.95rem;
 }
+/* A cut-out squares up under the cursor; it stays on the table. */
 .move:hover {
-  transform: rotate(0deg) translateY(-4px);
+  transform: rotate(0deg);
 }
 /* Standing / Seated: swaps calf raise and march for their seated versions, and the hip flexor stretch
    for the figure-four. */
@@ -1337,7 +1340,7 @@ svg .note {
   font:
     700 0.72rem/1 var(--mono),
     monospace;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink-soft);
 }
@@ -2048,6 +2051,19 @@ svg .note {
   border-left: 3px solid var(--ink);
   background: radial-gradient(var(--pink-soft) 1.3px, transparent 1.6px) 0 0 / 9px 9px;
 }
+/* Each mode's name on a strip of pink tape, stuck on a little crooked. The tape is laid over
+   paper so the label keeps its contrast on the halftone too. It's --tape over --paper with --ink
+   text, not the --band / --band-ink pair: that one is 3.85:1 in light, too low for text this small. */
+.mode .label {
+  justify-self: start;
+  padding: 0.35rem 0.7rem;
+  background: linear-gradient(var(--tape), var(--tape)), var(--paper);
+  color: var(--ink);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  clip-path: polygon(2% 0, 98% 5%, 100% 100%, 0 94%);
+  transform: rotate(-2deg);
+}
 .keycap {
   position: relative;
   justify-self: start;
@@ -2122,15 +2138,6 @@ svg .note {
   fill: var(--ink);
   stroke: var(--ink);
   stroke-width: 1;
-  animation: blink 2.4s ease-in-out infinite;
-}
-.skeleton circle:nth-of-type(2n) {
-  animation-delay: 0.6s;
-}
-@keyframes blink {
-  50% {
-    opacity: 0.35;
-  }
 }
 .hint {
   position: absolute;
@@ -2545,14 +2552,11 @@ details p {
   font-size: clamp(2.8rem, 8vw, 6.5rem);
   text-shadow: 0.06em 0.045em 0 var(--pink);
 }
+/* The second line is the same shout, a size down: one voice, no accent face. */
 .get h2 span {
   display: inline-block;
-  font-family: var(--hand);
-  text-transform: none;
-  color: var(--pink-text);
-  text-shadow: none;
-  font-size: 0.72em;
-  transform: rotate(-3deg);
+  font-size: 0.6em;
+  text-shadow: 0.06em 0.045em 0 var(--pink);
 }
 .get-deal {
   display: grid;
@@ -2635,7 +2639,7 @@ details p {
   border-bottom: 2px dashed var(--ink);
   text-align: center;
   font-size: 0.78rem;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   color: var(--ink-soft);
 }
 .receipt dl {
@@ -2815,22 +2819,6 @@ details p {
   color: var(--pink-text);
 }
 
-/* ---------- Reveal on scroll (only when JS runs) ---------- */
-.js .reveal {
-  opacity: 0;
-  transform: translateY(24px) rotate(var(--tilt, 0deg));
-  transition:
-    opacity 0.6s ease,
-    transform 0.6s ease;
-}
-.js .reveal.is-visible {
-  opacity: 1;
-  transform: rotate(var(--tilt, 0deg));
-}
-.js .move.reveal.is-visible:hover {
-  transform: rotate(0deg) translateY(-4px);
-}
-
 /* ---------- Responsive ---------- */
 @media (max-width: 980px) {
   .privacy-list {
@@ -2979,10 +2967,6 @@ details p {
   }
   .note-better {
     opacity: 0;
-  }
-  .js .reveal {
-    opacity: 1;
-    transform: rotate(var(--tilt, 0deg));
   }
 }
 

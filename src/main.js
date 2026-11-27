@@ -306,20 +306,3 @@ if (previewVideo && previewToggle && previewSound && previewControls) {
   syncToggle();
   syncSound();
 }
-
-// Reveal sections as they scroll in.
-const revealables = document.querySelectorAll(
-  ".section-head, .preview-frame, .strip, .move, .coupon, .mode-grid, .chart, .stats-copy, .faq-list, .receipt-wrap",
-);
-revealables.forEach((element) => element.classList.add("reveal"));
-
-const observer = new IntersectionObserver(
-  (entries) =>
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      entry.target.classList.add("is-visible");
-      observer.unobserve(entry.target);
-    }),
-  { threshold: 0.12 },
-);
-revealables.forEach((element) => observer.observe(element));

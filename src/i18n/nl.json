@@ -58,6 +58,7 @@
     "panel1Body": "Alleen tijdens je werkuren. Nooit midden in een gesprek.",
     "panel3Title": "Twee of drie oefeningen",
     "panel3Body": "Voor jou gekozen. Wissel wat je niet leuk vindt.",
+    "panel4Aside": "of…",
     "panel4Doodle": "zo terug",
     "panel4Title": "Weggelopen? Telt mee.",
     "panel4Body": "5 minuten weg van het toetsenbord telt als een pauze."
@@ -204,7 +205,7 @@
     "simpleBody": "Een timer en een <b>+1 herhaling</b>-knop (of Spatie). De camera gaat nooit aan.",
     "webcamLabel": "Webcam · optioneel",
     "hint": "ga iets naar achteren",
-    "webcamTitle": "Hij telt. Jij beweegt gewoon.",
+    "webcamTitle": "De camera doet het telwerk.",
     "webcamBody": "Een houdingsmodel op je apparaat volgt je gewrichten om herhalingen en houdoefeningen te tellen, met tips voor je houding.",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "Sta op.<br /><span>Serieus, nu.</span>",
     "body": "Pak dan de app, zodat een webpagina je niet hoeft op te jagen.",
     "platforms": "Mac · iPhone · iPad · Windows · Android binnenkort",
-    "small": "Gratis · geen account · 17 talen"
+    "small": "17 talen"
   },
   "store": {
     "apple": "App Store",

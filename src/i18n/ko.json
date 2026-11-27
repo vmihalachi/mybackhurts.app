@@ -58,6 +58,7 @@
     "panel1Body": "근무 시간에만. 통화 중에는 절대 안 와요.",
     "panel3Title": "두세 가지 동작",
     "panel3Body": "알아서 골라 줘요. 마음에 안 들면 바꾸세요.",
+    "panel4Aside": "아니면…",
     "panel4Doodle": "잠깐만",
     "panel4Title": "자리를 비웠나요? 인정해요.",
     "panel4Body": "키보드에서 5분 떨어져 있으면 휴식으로 쳐요."
@@ -204,7 +205,7 @@
     "simpleBody": "타이머와 <b>+1회</b> 버튼(또는 스페이스바). 카메라는 절대 켜지지 않아요.",
     "webcamLabel": "웹캠 · 선택 사항",
     "hint": "조금만 뒤로 물러나세요",
-    "webcamTitle": "세는 건 앱이. 당신은 움직이기만 하세요.",
+    "webcamTitle": "카메라가 대신 세어 줘요.",
     "webcamBody": "기기 안의 자세 인식 모델이 관절을 추적해 횟수와 유지 시간을 세고, 자세 힌트도 줘요.",
     "keycapPop": "+1"
   },
@@ -262,7 +263,7 @@
     "title": "일어나세요.<br /><span>진짜로, 지금.</span>",
     "body": "그다음 앱을 받으세요. 웹페이지가 잔소리하지 않아도 되게요.",
     "platforms": "Mac · iPhone · iPad · Windows · Android 곧 출시",
-    "small": "무료 · 계정 필요 없음 · 17개 언어"
+    "small": "17개 언어"
   },
   "store": {
     "apple": "App Store",
