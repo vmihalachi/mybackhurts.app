@@ -282,15 +282,20 @@ section,
 
 /* On a phone the title steps down to the home page h1's phone size, so every word of every title fits
    whole or breaks at a hyphen; long single words (Datenschutzerklärung) hyphenate instead of running
-   past the column. Turkish has no browser hyphenation, so its titles carry soft hyphens. The
-   break-word is a last resort for a future title, and no current one needs it. The line height is
-   looser than other headings' because the display face's accents stand tall above its capitals (the
-   Czech Ů reaches 1.12em, the Danish Å 1.09em): at 1.2 a wrapped title's accents clear the line above. */
+   past the column. A break keeps at least four letters before the hyphen and three after it, so no
+   line ends on a stub like PRI- or D'U- or holds only CY or DE. Turkish has no browser hyphenation,
+   so its titles carry soft hyphens at breaks that keep the same lengths. The break-word is a last
+   resort for a future title, and no current one needs it. The line height is looser than other
+   headings' because the display face's accents stand tall above its capitals (the Czech Ů reaches
+   1.12em, the Danish Å 1.09em): at 1.2 a wrapped title's accents clear the line above. */
 .legal-page h1 {
   margin: 0 0 1rem;
   font: clamp(2.7rem, 11.5vw, 3.4rem) / 1.2 var(--display);
   -webkit-hyphens: auto;
   hyphens: auto;
+  -webkit-hyphenate-limit-before: 4;
+  -webkit-hyphenate-limit-after: 3;
+  hyphenate-limit-chars: 6 4 3;
   overflow-wrap: break-word;
 }
 
@@ -320,6 +325,12 @@ section,
 
 .compare-page {
   max-width: 1040px;
+}
+
+/* The comparison page's title is English, with no accents to clear, so it keeps the display
+   headings' tight leading rather than the legal titles' looser one. */
+.compare-page h1 {
+  line-height: 0.95;
 }
 
 /* A safety net: if the table ever outgrows the column, it scrolls on its own and the page never does. */
