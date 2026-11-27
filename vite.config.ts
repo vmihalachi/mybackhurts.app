@@ -131,6 +131,14 @@ const landing = companionLanding({
       ogDir: resolve(root, "og"),
       iconPath: resolve(root, "public/favicon.svg"),
       locales,
+      // The comparison page (English only) has its own card; its og:image points at og-break-reminder-apps.png.
+      pageCards: [
+        {
+          name: "break-reminder-apps",
+          lang: "en",
+          og: JSON.parse(readFileSync(resolve(root, "break-reminder-apps/og.json"), "utf8")),
+        },
+      ],
     }),
   ],
 });

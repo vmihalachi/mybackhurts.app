@@ -26,6 +26,9 @@ vp build    # dist/
   it. In the app repository this repo is mounted at `landing/`, and a build there rewrites the snapshot
   from the app's own files; commit it here when it changes.
 - `og/` renders the social cards, icons and the printable poster at build time.
+- `break-reminder-apps/` is the comparison page, hand-written and in English only. `og.json` beside it is
+  the copy of its own social card, and `SOURCES.md` says where each fact comes from (neither is deployed).
+  At the start of each quarter `.github/workflows/review-comparison.yml` opens an issue to re-check it.
 
 ## Deploy
 
