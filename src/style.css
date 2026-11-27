@@ -3316,8 +3316,10 @@ details p {
    whatever the browser calls cursive and came out twice as big as the English ones. Each language gets
    installed system faces instead, nothing downloaded: a written or rounded style first where the system
    has one (Klee or Kaiti on a Mac that has them, UD Digi Kyokasho or KaiTi on Windows, Hiragino Maru on
-   Apple devices), plain sans after. The whole note uses it, Latin words included, so a note keeps one
-   hand. Every handwritten size is scaled so the characters stand as tall as Reenie's capitals; the
+   Apple devices), plain sans after. Korean gets the plain system sans on purpose: neither Apple nor
+   Windows installs a handwritten or rounded Korean face, and an optional one we can't size here could
+   fall under the size floor. The whole note uses the chosen face, Latin words included, so a note
+   keeps one hand. Every handwritten size is scaled so the characters stand as tall as Reenie's capitals; the
    smallest note stays above 18px. Square glyphs fill the line, so wrapped notes get more leading. */
 :root:lang(ja) {
   --hand:
@@ -3340,12 +3342,11 @@ details p {
 /* Underlines. CJK characters have no descenders, but they sit lower than Latin letters and fill the
    line from top to bottom, so an underline placed for Latin text ran into them: the footer links' line
    touched the characters above it, and the wavy Supporter and privacy-note lines touched the characters
-   on the next line. Here each line sits a few pixels clear of both. */
+   on the next line. Here each line sits a few pixels clear of both. The Supporter wave keeps the base 0.3em
+   offset, which clears the characters above it (a smaller one nearly touches them), and the detail line
+   below moves down instead. */
 :is(:lang(ja), :lang(ko), :lang(zh)) :is(.footer-links a, .legal-page a) {
   text-underline-offset: 0.3em;
-}
-:is(:lang(ja), :lang(zh)) .receipt-theme {
-  text-underline-offset: 0.22em;
 }
 :is(:lang(ja), :lang(ko), :lang(zh)) .receipt-detail {
   margin-top: 0.45rem !important;
