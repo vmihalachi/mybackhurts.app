@@ -294,7 +294,11 @@
     "terms": "利用規約",
     "compare": "休憩リマインダーアプリ比較（英語）",
     "contact": "お問い合わせ",
-    "openSource": "このサイトはオープンソースです"
+    "openSource": "このサイトはオープンソースです",
+    "moreFrom": "同じ作者のアプリ：",
+    "pagliacciTagline": "ジョークを飛ばす悲しいピエロ",
+    "sunnysaysTagline": "おしゃべりな小さなひまわり",
+    "builtOn": "Lachingで作っています"
   },
   "notFound": {
     "metaTitle": "ページが見つかりません · mybackhurts",

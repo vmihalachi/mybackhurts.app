@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import { companionLanding, scriptJson } from "@laching/landing";
+import { companionLanding, scriptJson, type Locale } from "@laching/landing";
 import { defineConfig } from "vite-plus";
 import { assertLandingMatchesApp } from "./app-sync";
 import { socialAssetsPlugin } from "./og/render";
@@ -21,6 +21,44 @@ const appStoreUrl = "https://apps.apple.com/app/id6817265333";
 const microsoftStoreUrl = "https://apps.microsoft.com/detail/9NT3SV8SQ3KD";
 /** The FAQ's questions, in `index.html`'s order (`faq.<topic>Question`, `faq.<topic>Answer`). */
 const faqTopics = ["schedule", "counting", "office", "call"];
+
+/**
+ * The footer's `{{moreFrom}}`: the owner's other apps, each by the name its own landing writes, and Laching. The other
+ * landings carry the same list; the plugin leaves out the entry whose `url` is this `siteUrl`, so mybackhurts needs no
+ * tagline here. Each sibling's root URL sends a first-time visitor to their own language.
+ */
+const moreFrom = {
+  apps: [
+    { name: "mybackhurts", url: "https://mybackhurts.app/" },
+    {
+      name: "Mister Pagliacci",
+      url: "https://pagliacci.app/",
+      tagline: (locale: Locale) => String(locale.footer.pagliacciTagline),
+    },
+    {
+      name: "sunnysays",
+      url: "https://sunnysays.app/",
+      tagline: (locale: Locale) => String(locale.footer.sunnysaysTagline),
+    },
+  ],
+  label: (locale: Locale) => String(locale.footer.moreFrom),
+  builtOn: {
+    url: "https://vmihalachi.github.io/laching/",
+    label: (locale: Locale) => String(locale.footer.builtOn),
+  },
+};
+
+/**
+ * A language's words for the 404 page's `.more-from` block. The page is built in English and swaps to the visitor's
+ * language in `src/not-found.js`, which finds each tagline by its app's link.
+ */
+const notFoundMoreFrom = (locale: Locale) => ({
+  label: moreFrom.label(locale),
+  taglines: Object.fromEntries(
+    moreFrom.apps.flatMap(({ url, tagline }) => (tagline ? [[url, tagline(locale)]] : [])),
+  ),
+  builtOn: moreFrom.builtOn.label(locale),
+});
 
 const entities: Record<string, string> = { nbsp: " ", amp: "&", lt: "<", gt: ">", quot: '"' };
 /**
@@ -69,7 +107,12 @@ const landing = companionLanding({
         return scriptJson(locales[language.code as LanguageCode].runtime);
       case "notFoundJson":
         return scriptJson(
-          Object.fromEntries(languages.map(({ code }) => [code, locales[code].notFound])),
+          Object.fromEntries(
+            languages.map(({ code }) => [
+              code,
+              { ...locales[code].notFound, moreFrom: notFoundMoreFrom(locales[code]) },
+            ]),
+          ),
         );
       default:
         return undefined;
@@ -112,6 +155,7 @@ const landing = companionLanding({
       },
     ],
   }),
+  moreFrom,
   // The preview videos, same origin.
   csp: { mediaSrc: "'self'" },
   // Browsers' built-in PDF viewers are blocked by the page CSP, so the posters get their own. The posters are

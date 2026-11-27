@@ -294,7 +294,11 @@
     "terms": "Vilkår for bruk",
     "compare": "Sammenligning av pauseapper (på engelsk)",
     "contact": "Kontakt",
-    "openSource": "Dette nettstedet er åpen kildekode"
+    "openSource": "Dette nettstedet er åpen kildekode",
+    "moreFrom": "Mer fra samme skaper:",
+    "pagliacciTagline": "en trist klovn som forteller vitser",
+    "sunnysaysTagline": "en liten solsikke som prater",
+    "builtOn": "Laget med Laching"
   },
   "notFound": {
     "metaTitle": "Siden ble ikke funnet · mybackhurts",

@@ -294,7 +294,11 @@
     "terms": "Terms of use",
     "compare": "Break reminder apps compared",
     "contact": "Contact",
-    "openSource": "This site is open source"
+    "openSource": "This site is open source",
+    "moreFrom": "More from the same maker:",
+    "pagliacciTagline": "a sad clown who tells jokes",
+    "sunnysaysTagline": "a little sunflower that talks",
+    "builtOn": "Built on Laching"
   },
   "notFound": {
     "metaTitle": "Page not found · mybackhurts",

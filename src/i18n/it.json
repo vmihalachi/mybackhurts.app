@@ -284,7 +284,11 @@
     "terms": "Termini di utilizzo",
     "compare": "Le app per le pause a confronto (in inglese)",
     "contact": "Contatti",
-    "openSource": "Questo sito è open source"
+    "openSource": "Questo sito è open source",
+    "moreFrom": "Dallo stesso autore:",
+    "pagliacciTagline": "un pagliaccio triste che racconta battute",
+    "sunnysaysTagline": "un piccolo girasole che parla",
+    "builtOn": "Fatto con Laching"
   },
   "notFound": {
     "metaTitle": "Pagina non trovata · mybackhurts",

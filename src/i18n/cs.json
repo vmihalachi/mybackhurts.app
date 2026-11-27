@@ -294,7 +294,11 @@
     "terms": "Podmínky použití",
     "compare": "Srovnání aplikací na připomínání přestávek (anglicky)",
     "contact": "Kontakt",
-    "openSource": "Tento web je open source"
+    "openSource": "Tento web je open source",
+    "moreFrom": "Další aplikace od stejného autora:",
+    "pagliacciTagline": "smutný klaun, který vypráví vtipy",
+    "sunnysaysTagline": "malá mluvící slunečnice",
+    "builtOn": "Postaveno na Lachingu"
   },
   "notFound": {
     "metaTitle": "Stránka nenalezena · mybackhurts",

@@ -284,7 +284,11 @@
     "terms": "Termos de uso",
     "compare": "Comparação de apps de lembrete de pausa (em inglês)",
     "contact": "Contato",
-    "openSource": "Este site é de código aberto"
+    "openSource": "Este site é de código aberto",
+    "moreFrom": "Mais do mesmo criador:",
+    "pagliacciTagline": "um palhaço triste que conta piadas",
+    "sunnysaysTagline": "um girassolzinho que fala",
+    "builtOn": "Feito com Laching"
   },
   "notFound": {
     "metaTitle": "Página não encontrada · mybackhurts",

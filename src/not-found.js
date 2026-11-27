@@ -46,4 +46,17 @@ if (locale) {
   // The links come from the build's own list, not from text on the page.
   home.href = language.path;
   document.querySelector(".wordmark")?.setAttribute("href", language.path);
+  // The footer's other apps: the build wrote them in English; each tagline is found by its app's link.
+  const more = locale.moreFrom;
+  if (more) {
+    const label = document.querySelector(".more-from-label");
+    if (label) label.textContent = more.label;
+    for (const link of document.querySelectorAll(".more-from-apps a")) {
+      const tagline = link.parentElement.querySelector(".more-from-tagline");
+      const text = more.taglines[link.getAttribute("href")];
+      if (tagline && text) tagline.textContent = text;
+    }
+    const builtOn = document.querySelector(".built-on a");
+    if (builtOn) builtOn.textContent = more.builtOn;
+  }
 }

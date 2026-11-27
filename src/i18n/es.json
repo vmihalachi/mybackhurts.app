@@ -284,7 +284,11 @@
     "terms": "Términos de uso",
     "compare": "Comparativa de apps para recordar pausas (en inglés)",
     "contact": "Contacto",
-    "openSource": "Este sitio es de código abierto"
+    "openSource": "Este sitio es de código abierto",
+    "moreFrom": "Más del mismo creador:",
+    "pagliacciTagline": "un payaso triste que cuenta chistes",
+    "sunnysaysTagline": "un girasol pequeño que habla",
+    "builtOn": "Hecho con Laching"
   },
   "notFound": {
     "metaTitle": "Página no encontrada · mybackhurts",
