@@ -2668,8 +2668,11 @@ details p {
 }
 
 /* ---------- CTA + footer ---------- */
+/* The column stays the page's width: at 320px a one-word heading wider than it ("Levántate.") spills
+   evenly into the gutters instead of widening the receipt past the screen edge. */
 .get {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   justify-items: center;
   text-align: center;
   gap: 1.4rem;
@@ -2726,6 +2729,8 @@ details p {
   transform: rotate(3deg);
 }
 .receipt {
+  /* The card-coloured room between a label's last letter and its first leader dot. */
+  --leader-pad: 0.4rem;
   position: relative;
   padding: 1.6rem 1.4rem 1.3rem;
   background: var(--card);
@@ -2792,7 +2797,7 @@ details p {
 .receipt dt > span,
 .receipt-leader > span {
   margin-right: 0.75rem;
-  padding-right: 0.4rem;
+  padding-right: var(--leader-pad);
   background: var(--card);
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -3088,17 +3093,20 @@ details p {
   }
   /* So the dots follow the label's first line, and the three-dot minimum moves there too: a 1px float at
      the end of that line only. When even the first word can't fit beside it, the line drops by that 1px
-     rather than a whole line. */
+     rather than a whole line. Chromium doesn't count the padding cloned onto a wrapped line's end when it
+     fills that line, so its card colour covered a dot there (Turkish "Destekçi (isteğe" at 336px): a
+     negative margin of the same size makes every engine fit the words alone, and the float holds the
+     padding too. A one-line label fits exactly as before. */
   .receipt-leader {
     background-position-y: calc(1.05em - 2px);
   }
   .receipt-leader > span {
-    margin-right: 0;
+    margin-right: calc(-1 * var(--leader-pad));
   }
   .receipt-leader::before {
     content: "";
     float: right;
-    width: 0.75rem;
+    width: calc(0.75rem + var(--leader-pad));
     height: 1px;
   }
   .hero-art {
@@ -3232,6 +3240,7 @@ details p {
    its card, with the next card still peeking in. This comes after the 720px block it overrides. */
 @media (max-width: 359px) {
   .receipt {
+    --leader-pad: 0.25rem;
     padding-inline: 0.75rem;
     letter-spacing: 0;
   }
@@ -3243,10 +3252,6 @@ details p {
   }
   .receipt dl > div > dt {
     flex: 1 1 0;
-  }
-  .receipt dt > span,
-  .receipt-leader > span {
-    padding-right: 0.25rem;
   }
   .receipt-coffee {
     max-width: none;
