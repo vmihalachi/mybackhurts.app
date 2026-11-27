@@ -1,0 +1,48 @@
+# At the start of each quarter, opens an issue asking someone to re-check the comparison page
+# (break-reminder-apps/index.html) against break-reminder-apps/SOURCES.md, with one checklist item per app.
+# It can be run by hand too, and does nothing while an earlier review issue is still open.
+name: Review the comparison page
+
+on:
+  schedule:
+    # 09:00 UTC on 1 January, 1 April, 1 July and 1 October.
+    - cron: "0 9 1 1,4,7,10 *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  open_issue:
+    runs-on: ubuntu-latest
+    name: Open the review issue
+    steps:
+      - uses: actions/checkout@v7
+      - name: Open the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          prefix="Re-check the break reminder apps comparison"
+          if gh issue list --state open --limit 500 --json title --jq '.[].title' | grep -qF "$prefix"; then
+            echo "A review issue is still open, so no new one."
+            exit 0
+          fi
+          quarter="$(date -u +%Y) Q$(( ($(date -u +%-m) - 1) / 3 + 1 ))"
+          sources="$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/blob/$GITHUB_SHA/break-reminder-apps/SOURCES.md"
+          {
+            echo "Time to re-check [the comparison page](https://mybackhurts.app/break-reminder-apps/)."
+            echo "Open each source in [SOURCES.md]($sources), compare it with the app's table row and paragraph,"
+            echo "and fix what changed in both places and in SOURCES.md."
+            echo
+            grep '^## ' break-reminder-apps/SOURCES.md | sed 's/^## //' | grep -vx 'How to review' |
+              while IFS= read -r app; do
+                echo "- [ ] $app: table row and paragraph match its sources"
+              done
+            echo "- [ ] SOURCES.md has the current facts and sources"
+            echo "- [ ] \"Last checked\" on the page and in SOURCES.md is the day the last row was checked"
+            echo "- [ ] \`vp check && vp build\` pass"
+          } > "$RUNNER_TEMP/body.md"
+          gh issue create --title "$prefix ($quarter)" --body-file "$RUNNER_TEMP/body.md"

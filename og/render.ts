@@ -131,10 +131,14 @@ export function createRenderer(ogDir: string) {
     return widest > maxWidth ? Math.floor((size * maxWidth) / widest) : size;
   }
 
-  /** The 1200×630 social card's SVG, filling {{og.*}} placeholders from a locale's `og` object. */
+  /**
+   * The 1200×630 social card's SVG, filling {{og.*}} placeholders from a locale's `og` object. Without
+   * `og.tape` (or with it empty) the card has no tape strip.
+   */
   function ogSvg(og: OgCopy, lang: string) {
     assertDrawable(og, lang, "The social preview image");
-    const template = readFileSync(resolve(ogDir, "og-image.svg"), "utf8");
+    let template = readFileSync(resolve(ogDir, "og-image.svg"), "utf8");
+    if (!og.tape) template = template.replace(/<g id="tape"[\s\S]*?<\/g>\s*/, "");
     // The left column ends where the stick figure's halftone starts.
     const sizes: Record<string, number> = {
       headline: fit([og.headline1, og.headline2], "Zine Display", 64, 640, lang),
@@ -204,15 +208,19 @@ export function createRenderer(ogDir: string) {
   return { renderOgImage, renderFeatureGraphic, renderIcon, renderPoster };
 }
 
+/** A hand-written page's own social card, rendered from og-image.svg to `og-<name>.png`. */
+export type PageCard = { name: string; lang: string; og: OgCopy };
+
 /**
  * Renders link-preview images, the icons (PNGs and `favicon.ico`) and the printable poster PDFs (`poster/<lang>.pdf`) from SVG
  * sources. They are emitted into the build output and served from memory by the dev server, so nothing
- * generated is committed.
+ * generated is committed. `pageCards` adds a card for a page outside the locales, such as the comparison page.
  */
 export function socialAssetsPlugin(options: {
   ogDir: string;
   iconPath: string;
   locales: Record<string, { og: OgCopy } & Record<string, any>>;
+  pageCards?: PageCard[];
 }): Plugin {
   const { renderOgImage, renderFeatureGraphic, renderIcon, renderPoster } = createRenderer(
     options.ogDir,
@@ -245,6 +253,9 @@ export function socialAssetsPlugin(options: {
     ]);
     for (const [lang, locale] of Object.entries(options.locales)) {
       files.set(`og-${lang}.png`, renderOgImage(locale.og, lang));
+    }
+    for (const card of options.pageCards ?? []) {
+      files.set(`og-${card.name}.png`, renderOgImage(card.og, card.lang));
     }
     return files;
   };
