@@ -63,8 +63,9 @@ const landing = companionLanding({
       // Made by apple/scripts/landing-film-web.sh; Vite hashes them into /assets.
       case "previewVideo":
         return `/src/preview/${language.code}.mp4`;
+      // The film's frame at data-poster-time, as a 1280 px WebP (AVIF would need Safari 16; the site supports 15).
       case "previewPoster":
-        return `/src/preview/${language.code}.jpg`;
+        return `/src/preview/${language.code}.webp`;
       case "runtimeJson":
         return scriptJson(locales[language.code as LanguageCode].runtime);
       case "notFoundJson":
