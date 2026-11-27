@@ -29,6 +29,9 @@ jobs:
       - run: npm ci
       - run: npx vp check
       - run: npm run build
+      # Fails on a dead link, one-way hreflang, a missing page, or a legal page that leaves out a
+      # store or platform: the deploy stops there.
+      - run: npx laching-landing check
       - name: Deploy
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         env:

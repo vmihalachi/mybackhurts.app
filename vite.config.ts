@@ -52,6 +52,10 @@ const landing = companionLanding({
   locales,
   // Written in English first; translated once Search Console shows it bringing visitors.
   pages: [{ page: "break-reminder-apps", languages: ["en"] }],
+  // What `laching-landing check` holds every legal page, in every language, to: each store's name (Google Play has
+  // no public listing yet, so no button either) and each platform as the pages write it. They change no page.
+  stores: { apple: appStoreUrl, microsoft: microsoftStoreUrl, google: null },
+  platforms: ["Mac", "Windows", "iPhone", "iPad", "Android"],
   placeholders: (key, language) => {
     switch (key) {
       case "appStoreUrl":
