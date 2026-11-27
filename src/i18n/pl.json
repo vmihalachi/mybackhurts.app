@@ -294,7 +294,11 @@
     "terms": "Warunki użytkowania",
     "compare": "Porównanie aplikacji o przerwach (po angielsku)",
     "contact": "Kontakt",
-    "openSource": "Ta strona jest open source"
+    "openSource": "Ta strona jest open source",
+    "moreFrom": "Więcej od tego samego twórcy:",
+    "pagliacciTagline": "smutny klaun, który opowiada dowcipy",
+    "sunnysaysTagline": "mały gadający słonecznik",
+    "builtOn": "Zbudowane na Lachingu"
   },
   "notFound": {
     "metaTitle": "Nie znaleziono strony · mybackhurts",

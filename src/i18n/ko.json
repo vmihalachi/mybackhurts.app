@@ -294,7 +294,11 @@
     "terms": "이용 약관",
     "compare": "휴식 알림 앱 비교 (영문)",
     "contact": "문의",
-    "openSource": "이 사이트는 오픈 소스입니다"
+    "openSource": "이 사이트는 오픈 소스입니다",
+    "moreFrom": "같은 제작자의 다른 앱:",
+    "pagliacciTagline": "농담을 들려주는 슬픈 광대",
+    "sunnysaysTagline": "말하는 작은 해바라기",
+    "builtOn": "Laching으로 만들었습니다"
   },
   "notFound": {
     "metaTitle": "페이지를 찾을 수 없어요 · mybackhurts",

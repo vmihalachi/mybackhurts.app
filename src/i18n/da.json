@@ -294,7 +294,11 @@
     "terms": "Brugsvilkår",
     "compare": "Sammenligning af pauseapps (på engelsk)",
     "contact": "Kontakt",
-    "openSource": "Dette websted er open source"
+    "openSource": "Dette websted er open source",
+    "moreFrom": "Mere fra samme skaber:",
+    "pagliacciTagline": "en trist klovn, der fortæller vittigheder",
+    "sunnysaysTagline": "en lille solsikke, der snakker",
+    "builtOn": "Lavet med Laching"
   },
   "notFound": {
     "metaTitle": "Siden blev ikke fundet · mybackhurts",

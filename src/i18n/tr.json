@@ -294,7 +294,11 @@
     "terms": "Kullanım şartları",
     "compare": "Mola hatırlatıcı uygulamaları karşılaştırması (İngilizce)",
     "contact": "İletişim",
-    "openSource": "Bu site açık kaynaklıdır"
+    "openSource": "Bu site açık kaynaklıdır",
+    "moreFrom": "Aynı yapımcıdan:",
+    "pagliacciTagline": "fıkra anlatan hüzünlü bir palyaço",
+    "sunnysaysTagline": "konuşan küçük bir ayçiçeği",
+    "builtOn": "Laching ile yapıldı"
   },
   "notFound": {
     "metaTitle": "Sayfa bulunamadı · mybackhurts",

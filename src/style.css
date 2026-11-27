@@ -2916,6 +2916,37 @@ details p {
 .footer .credit a:hover {
   color: var(--pink-text);
 }
+/* The owner's other apps and Laching (`{{moreFrom}}`, Laching's markup): a row of its own under the rest, in the
+   footer's type and ink, its links underlined like the footer's others. A dash sets each app's few words off its
+   name; screen readers skip it, the space before it already parts them. A wider gap above keeps it one group. */
+.more-from {
+  flex-basis: 100%;
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.8rem 1.25rem;
+}
+.more-from p {
+  margin: 0;
+}
+.more-from-apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.more-from a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+.more-from-tagline::before {
+  content: "– ";
+  content: "– " / "";
+}
 
 /* ---------- Responsive ---------- */
 /* Below 1180px the note on the chart's corner would cover the best day's bar: it sits under the chart.
