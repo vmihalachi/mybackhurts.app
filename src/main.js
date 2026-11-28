@@ -64,13 +64,17 @@ languageSwitcher?.addEventListener("keydown", (event) => {
   languageSwitcher.querySelector("summary").focus();
 });
 
-document.querySelectorAll("[data-lang]").forEach((link) => {
-  link.addEventListener("click", () => {
+// LANGUAGE: the root page and the 404 page follow the language picked here, saved on a click or a middle-click (a new tab).
+for (const link of document.querySelectorAll("[data-lang]")) {
+  const remember = (event) => {
+    if (event.type === "auxclick" && event.button !== 1) return;
     try {
       localStorage.setItem("lang", link.dataset.lang);
     } catch {}
-  });
-});
+  };
+  link.addEventListener("click", remember);
+  link.addEventListener("auxclick", remember);
+}
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
