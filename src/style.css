@@ -2671,7 +2671,10 @@ details p {
 
 /* ---------- CTA + footer ---------- */
 /* The column stays the page's width: at 320px a one-word heading wider than it ("Levántate.") spills
-   evenly into the gutters instead of widening the receipt past the screen edge. */
+   evenly into the gutters instead of widening the receipt past the screen edge. A word wider than the
+   screen itself would lose both ends, so its copy carries a soft hyphen (the Norwegian 404's
+   "ryggskudd.", 325px, has one after RYGG), and only the under-360px block lets a heading break there:
+   wider, every word fits and stays whole. */
 .get {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -2684,6 +2687,8 @@ details p {
 .get h2 {
   font-size: clamp(2.8rem, 8vw, 6.5rem);
   text-shadow: 0.06em 0.045em 0 var(--pink);
+  -webkit-hyphens: none;
+  hyphens: none;
 }
 /* The second line is the same shout, a size down: one voice, no accent face. */
 .get h2 span {
@@ -3240,7 +3245,8 @@ details p {
    enlarged text, does a value drop under its label, as on a till receipt. The move cards widen and their
    insides narrow the same way, so the longest tally ("20 / 20 repeticiones", which never wraps) keeps
    12px between it and the card's border, with the next card still peeking in; like at 360px it reaches
-   about a pixel into the card's padding. This comes after the 720px block it overrides. */
+   about a pixel into the card's padding. The CTA's display headings may break at a soft hyphen here
+   (see .get). This comes after the 720px block it overrides. */
 @media (max-width: 359px) {
   .receipt {
     --leader-pad: 0.25rem;
@@ -3269,6 +3275,11 @@ details p {
   .move .figure {
     margin-inline: -0.8rem;
     width: calc(100% + 1.6rem);
+  }
+  .get h1,
+  .get h2 {
+    -webkit-hyphens: manual;
+    hyphens: manual;
   }
 }
 
