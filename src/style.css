@@ -3244,8 +3244,8 @@ details p {
    "Webbkameraräkning", Italian "(facoltativo)" beside "Una volta"). Only if even that runs out, with
    enlarged text, does a value drop under its label, as on a till receipt. The move cards widen and their
    insides narrow the same way, so the longest tally ("20 / 20 repeticiones", which never wraps) keeps
-   12px between it and the card's border, with the next card still peeking in; like at 360px it reaches
-   about a pixel into the card's padding. The CTA's display headings may break at a soft hyphen here
+   about 14px between it and the card's border, ending just short of the card's padding as it does at
+   360px, with the next card still peeking in. The CTA's display headings may break at a soft hyphen here
    (see .get). This comes after the 720px block it overrides. */
 @media (max-width: 359px) {
   .receipt {
